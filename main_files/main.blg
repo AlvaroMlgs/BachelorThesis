@@ -5,4 +5,6 @@ A level-1 auxiliary file: acknowledgements.aux
 A level-1 auxiliary file: Introduction.aux
 A level-1 auxiliary file: chapter_1.aux
 The style file: ieeetr.bst
+I found no \citation commands---while reading file main.aux
 Database file #1: xbib.bib
+(There was 1 error message)

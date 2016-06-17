@@ -1,16 +1,3 @@
-\begin{thebibliography}{1}
-
-\bibitem{mckay:1981:pgi}
-B.~D. McKay, ``Practical graph isomorphism,'' {\em Congressus Numerantium},
-  vol.~30, pp.~45--87, 1981.
-
-\bibitem{rosenetal:1999:hodacm}
-K.~H. Rosen, ed., {\em Handbook of Discrete and Combinatorial Mathematics}.
-\newblock CRC Press, 2000.
-
-\bibitem{bangjensenandgutin:2000:dtaaa}
-J.~Bang-Jensen and G.~Gutin, {\em Digraphs: Theory, Algorithms and
-  Applications}.
-\newblock Springer-Verlag, 2000.
+\begin{thebibliography}{}
 
 \end{thebibliography}
