@@ -162,8 +162,6 @@
 \usepackage{layouts}					%Layout diagrams
 \usepackage{graphicx}					%Calls figure environment
 \usepackage{longtable,rotating}			%Long tab environments including rotation. 
-\usepackage[applemac]{inputenc}			%Needed to encode non-english characters 
-									%directly for mac
 \usepackage{colortbl}					%Makes coloured tables
 \usepackage{wasysym}					%More math symbols
 \usepackage{mathrsfs}					%Even more math symbols
@@ -178,18 +176,24 @@
 %\usepackage{fixltx2e}					%Eliminates some in felicities of the 
 									%original LaTeX kernel
 \usepackage[spanish,english]{babel}		%For languages characters and hyphenation
-\usepackage{color}                    				%Creates coloured text and background
-\usepackage[colorlinks=true,
-		     allcolors=black]{hyperref}              %Creates hyperlinks in cross references
-\usepackage{memhfixc}					%Must be used on memoir document 
-									%class after hyperref
+\usepackage[utf8]{inputenc}				%Allows for accents
+\usepackage{color}                    	%Creates coloured text and background
+\usepackage{xcolor}                    	%Color definitions for hyperref
+\usepackage[]{hyperref}					%Creates hyperlinks in cross references
+	\hypersetup{
+		pdfborder={0 0 0.5 [2 3]},
+		pdfstartview={FitH},
+		%colorlinks=true,
+		linkbordercolor=blue,
+		urlcolor=blue,
+		hidelinks
+		}
+\usepackage{memhfixc}					%Must be used on memoir document class after hyperref
 \usepackage{enumerate}					%For enumeration counter
 \usepackage{footnote}					%For footnotes
 \usepackage{microtype}					%Makes pdf look better.
-\usepackage{rotfloat}					%For rotating and float environments as tables, 
-									%figures, etc. 
-\usepackage{alltt}						%LaTeX commands are not disabled in 
-									%verbatim-like environment
+\usepackage{rotfloat}					%For rotating and float environments as tables, figures, etc. 
+\usepackage{alltt}						%LaTeX commands are not disabled in verbatim-like environment
 \usepackage[version=0.96]{pgf}			%PGF/TikZ is a tandem of languages for producing vector graphics from a 
 \usepackage{tikz}						%geometric/algebraic description.
 \usetikzlibrary{arrows,shapes,decorations,
@@ -340,11 +344,15 @@
 %
 \input{frontmatter/title}
 \clearemptydoublepage
+
+\addtocontents{toc}{\par\nobreak \mbox{}\hfill{\textbf Page}\par\nobreak}
 %
 \input{frontmatter/abstract}
+\addcontentsline{toc}{section}{Abstract}
 \clearemptydoublepage
 %
 \input{frontmatter/dedication}
+\addcontentsline{toc}{section}{Dedication and Acknowledgements}
 \clearemptydoublepage
 %
 % \input{frontmatter/declaration}
@@ -353,20 +361,24 @@
 \renewcommand{\contentsname}{Table of Contents}
 \maxtocdepth{subsection}
 \tableofcontents*
-\addtocontents{toc}{\par\nobreak \mbox{}\hfill{\textbf Page}\par\nobreak}
+\addcontentsline{toc}{section}{Table of Contents}
 \clearemptydoublepage
 %
-\listoftables
-\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
-\clearemptydoublepage
-%
-\listoffigures
+\begin{KeepFromToc}
+	\listoffigures
+\end{KeepFromToc}
+\addcontentsline{toc}{section}{List of Figures}
 \addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
 \clearemptydoublepage
 %
+\begin{KeepFromToc}
+	\listoftables
+\end{KeepFromToc}
+\addcontentsline{toc}{section}{List of Tables}
+\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
+\clearemptydoublepage
 %
-% The bulk of the document is delegated to these chapter files in
-% subdirectories.
+% The bulk of the document is delegated to these chapter files in subdirectories.
 \mainmatter
 %
 \import{chapters/chapter01/}{chap01.tex}
@@ -392,3 +404,5 @@
 %\printindex
 %   
 \end{document}
+
+
