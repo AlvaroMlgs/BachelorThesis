@@ -360,21 +360,21 @@
 %
 \renewcommand{\contentsname}{Table of Contents}
 \maxtocdepth{subsection}
+\phantomsection\addcontentsline{toc}{section}{Table of Contents}
 \tableofcontents*
-\addcontentsline{toc}{section}{Table of Contents}
 \clearemptydoublepage
 %
+\phantomsection\addcontentsline{toc}{section}{List of Figures}
 \begin{KeepFromToc}
 	\listoffigures
 \end{KeepFromToc}
-\addcontentsline{toc}{section}{List of Figures}
 \addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
 \clearemptydoublepage
 %
+\phantomsection\addcontentsline{toc}{section}{List of Tables}
 \begin{KeepFromToc}
 	\listoftables
 \end{KeepFromToc}
-\addcontentsline{toc}{section}{List of Tables}
 \addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
 \clearemptydoublepage
 %

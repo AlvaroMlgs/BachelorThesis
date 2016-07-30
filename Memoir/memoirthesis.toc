@@ -2,9 +2,9 @@
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\textbf Page}\par \penalty \@M 
 \contentsline {section}{Abstract}{ii}{chapter*.1}
 \contentsline {section}{Dedication and Acknowledgements}{iv}{chapter*.2}
-\contentsline {section}{Table of Contents}{v}{chapter*.2}
-\contentsline {section}{List of Figures}{vii}{chapter*.2}
-\contentsline {section}{List of Tables}{ix}{chapter*.2}
+\contentsline {section}{Table of Contents}{v}{section*.3}
+\contentsline {section}{List of Figures}{vii}{section*.4}
+\contentsline {section}{List of Tables}{ix}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{3}{appendix.A}
-\contentsline {chapter}{Bibliography}{5}{section*.4}
+\contentsline {chapter}{Bibliography}{5}{section*.7}

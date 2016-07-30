@@ -14,7 +14,7 @@
 UAV, obstacle detection, collision avoidance, system integration, ultrasonic rangefinder, APMcopter
 
 ## Introduction
->This is a general introduction to what the thesis is all about -- it is not just a description of the contents of each section. Briefly summarize the question (you will be stating the question in detail later), some of the reasons why it is a worthwhile question, and perhaps give an overview of your main results. This is a birds-eye view of the answers to the main questions answered in the thesis:
+> This is a general introduction to what the thesis is all about -- it is not just a description of the contents of each section. Briefly summarize the question (you will be stating the question in detail later), some of the reasons why it is a worthwhile question, and perhaps give an overview of your main results. This is a birds-eye view of the answers to the main questions answered in the thesis:
 >  - What is this student's research question?
 >  - Is it a good question? (has it been answered before? is it a useful question to work on?)
 >  - Did the student convince me that the question was adequately answered?
