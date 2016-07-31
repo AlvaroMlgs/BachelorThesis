@@ -24,10 +24,7 @@
 - Obstacle detection not yet implemented
 - Objective: Create affordable product integrating Obstacle Alert and Collision Avoidance System
 - Approach: Use front-facing ultrasonic rangefinders for distance-to-obstacle measurement
-  - Simple 1-D data
-  - Easy implementation
-  - Low computational cost
-  
+
 ### Keywords
 UAV, obstacle detection, collision avoidance, system integration, ultrasonic rangefinder, Ardupilot
 
