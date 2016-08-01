@@ -35,7 +35,7 @@
 \pdfinfo{
    /Author (\'Alvaro Melgosa Pascual)
    /Title (Bachelor Thesis)
-   /Keywords (UAV; Obstacle avoidance; Sensor)
+   /Keywords (UAV, obstacle detection, collision avoidance, system integration, ultrasonic rangefinder, Ardupilot)
    /CreationDate (D:\pdfdate)
 }
 \fi
@@ -381,7 +381,7 @@
 % The bulk of the document is delegated to these chapter files in subdirectories.
 \mainmatter
 %
-\import{chapters/chapter01/}{chap01.tex}
+\import{chapters/introduction/}{introduction.tex}
 \clearemptydoublepage
 %
 %
@@ -393,11 +393,11 @@
 % Apparently the guidelines don't say anything about citations or
 % bibliography styles so I guess we can use anything.
 \backmatter
-%\bibliographystyle{siam}
-\bibliographystyle{alpha}
-\nocite{*}                  % Include non-cited entries too
+\bibliographystyle{siam}
+%\bibliographystyle{alpha}
+%\nocite{*}                  % Include non-cited entries too
 \refstepcounter{chapter}
-\bibliography{thesisbiblio}
+\bibliography{biblio}
 \clearemptydoublepage
 %
 % Add index
