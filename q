@@ -1,0 +1,109 @@
+[33mcommit 5aea26b90dacf97a1bf9dde8843ad3db9af12cd7[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Mon Aug 1 12:25:32 2016 +0200
+
+    Background information + Motivation added to Introduction
+
+[33mcommit 1c93a5fa3400e42873c3c5e36535978fd7215acc[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Sun Jul 31 21:18:34 2016 +0200
+
+    Abstract written
+
+[33mcommit a7a30ba3408458eaa2d254f20c0ad0e663644869[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Sun Jul 31 20:30:10 2016 +0200
+
+    Scheme updated
+
+[33mcommit ebfe7f195df00b74b89bb0969a60021c01a53b61[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Sun Jul 31 18:38:52 2016 +0200
+
+    More literature added
+
+[33mcommit 39f80b337570eea6d6a0551fdf24e9bcf595dc4f[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Sat Jul 30 18:22:04 2016 +0200
+
+    Fixed entries of frontmatter sections in Table of Contents
+
+[33mcommit 393e3dd160052fc1bca75e273fb3ae4aadc580e5[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Sat Jul 30 18:03:49 2016 +0200
+
+    Added literature folder
+
+[33mcommit b83b10cb863ad35f924ddbbc143dfe714a272aad[m
+Author: AlvaroMlgs <AlvaroMlgs@users.noreply.github.com>
+Date:   Tue Jul 26 10:13:36 2016 +0200
+
+    Started Scheme.md file for organising the Thesis
+
+[33mcommit 5a1843c2de6dc993a4d55bcb199b86dcb782a7da[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Mon Jul 25 18:50:31 2016 +0200
+
+    Ready to start writing
+
+[33mcommit fb450037d1710c6549f90f03d01c59eb282a854b[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Thu Jul 21 14:10:04 2016 +0200
+
+    Modified template to UC3M
+
+[33mcommit 4f7cec3fc5354ba898e46042fc5ff31e8909f1fb[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Thu Jul 21 13:58:35 2016 +0200
+
+    Changed directory structure
+
+[33mcommit 20cc83ad7d2709f55c55b0bc55146e7475bf89dc[m
+Author: AlvaroMlgs <AlvaroMlgs@users.noreply.github.com>
+Date:   Wed Jul 20 10:50:05 2016 +0200
+
+    Uploaded UC3M logo
+
+[33mcommit 7fbf108565a5202c3a858e0c192fe774935e4848[m
+Author: AlvaroMlgs <AlvaroMlgs@users.noreply.github.com>
+Date:   Wed Jul 20 10:27:20 2016 +0200
+
+    Added Bristol Thesis template. Fancier than UC3M's
+
+[33mcommit bc6bf68c32874931c03f42291722366700b6afea[m
+Author: AlvaroMlgs <AlvaroMlgs@users.noreply.github.com>
+Date:   Fri Jun 24 07:48:36 2016 +0100
+
+    Uploaded the airports project as an example of a good introduction
+
+[33mcommit b27895eb975a7947604e2d1f1d87b33c55241d8f[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Fri Jun 17 19:34:38 2016 +0200
+
+    Added .gitattributes
+
+[33mcommit e5a4f132f964556470c969a7cbe85ad08d471a9f[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Fri Jun 17 19:23:13 2016 +0200
+
+    Baseline
+
+[33mcommit 0bb42ed3cf3e7e8bf70a7d5f96fd31b58f2bc97a[m
+Author: AlvaroMlgs <_melgo_@hotmail.com>
+Date:   Fri Jun 17 08:30:12 2016 +0200
+
+    Update title.tex
+    
+    Updated personal data
+
+[33mcommit 4953c299d1f981859ac885c825275ed0a25ee63f[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Thu Jun 16 20:57:12 2016 +0200
+
+    Base template
+
+[33mcommit 7beb96c4ccacc6bf63df5d3c731762d18416cb83[m
+Author: AlvaroMlgs <100303897@alumnos.uc3m.es>
+Date:   Thu Jun 16 20:55:41 2016 +0200
+
+    first commit

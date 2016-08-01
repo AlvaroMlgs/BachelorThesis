@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  1 AUG 2016 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  1 AUG 2016 18:27
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2128,7 +2128,7 @@ l.29 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.352 \clearemptydoublepage
+l.353 \clearemptydoublepage
                             [2
 
 
@@ -2234,14 +2234,29 @@ Package microtype Info: Loading generic settings for font family
  [1
 
 
-])
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 37.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 37.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 37.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 37.
+
+(chapters/introduction/./figures/pwc.tex)
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 385.
+(Font)              scaled to size 9.29993pt on input line 54.
+ [2]) [3] [4
 
-[2] (chapters/appendices/app0A.tex) [3
+]
+(chapters/appendices/app0A.tex) [5
 
-
-] [4
+] [6
 
 ] (memoirthesis.bbl
 
@@ -2264,43 +2279,51 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 20.
-
-) [5
+(nag)                Use \scshape or \textsc instead on input line 21.
 
 
-] [6
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 24.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 27.
+
+) [7
+
+
+] [8
 
 ]
 
-Package nag Warning: 6 complaints in total.
+Package nag Warning: 8 complaints in total.
 
 \tf@toc=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
 (memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 09163C2FE0CF458F30E3C8966C47154C;863.
+(rerunfilecheck)             Checksum: 03DA6BB017D41B6F891EB05CC21BD468;863.
  ) 
 Here is how much of TeX's memory you used:
- 29039 strings out of 493673
- 531408 string characters out of 3141524
- 804881 words of memory out of 3000000
- 31589 multiletter control sequences out of 15000+200000
- 78322 words of font info for 166 fonts, out of 3000000 for 9000
+ 29177 strings out of 493673
+ 534060 string characters out of 3141524
+ 809128 words of memory out of 3000000
+ 31687 multiletter control sequences out of 15000+200000
+ 89921 words of font info for 206 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 52i,12n,67p,1013b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,12n,67p,1013b,615s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (18 pages, 111891 bytes).
+Output written on memoirthesis.pdf (20 pages, 119753 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 37520 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 42128 words of extra memory for PDF output out of 42996 (max. 10000000)
 
