@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  2 AUG 2016 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  2 AUG 2016 20:52
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2312,20 +2312,19 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 9.29993pt on input line 47.
  [2]
 [3] [4] (chapters/introduction/./figures/gantt.tex
-Overfull \hbox (9.40326pt too wide) in paragraph at lines 2--22
-[]  [] 
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 33.
+
+Overfull \hbox (52.29102pt too wide) in paragraph at lines 2--88
+[][]  [] 
  []
 
-)) [5] [6
+)) [5] [6] (chapters/appendices/app0A.tex) [7
 
-] (chapters/appendices/app0A.tex) [7
 
 ] [8
 
 ] (memoirthesis.bbl
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 4.
-
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 12.
@@ -2395,13 +2394,13 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 (rerunfilecheck)             Checksum: 3ED038190C1BE608D4BF32CB8AB685AF;917.
  ) 
 Here is how much of TeX's memory you used:
- 30323 strings out of 493673
- 563762 string characters out of 3141524
- 836415 words of memory out of 3000000
- 32746 multiletter control sequences out of 15000+200000
+ 30808 strings out of 493673
+ 573307 string characters out of 3141524
+ 855079 words of memory out of 3000000
+ 33231 multiletter control sequences out of 15000+200000
  98481 words of font info for 237 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 53i,12n,80p,1013b,849s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,80p,1013b,911s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiK
@@ -2410,7 +2409,7 @@ ts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncnt
 rsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/unc
 ri8a.pfb>
-Output written on memoirthesis.pdf (22 pages, 179636 bytes).
+Output written on memoirthesis.pdf (22 pages, 185255 bytes).
 PDF statistics:
  271 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
