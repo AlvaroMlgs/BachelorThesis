@@ -179,8 +179,10 @@
 \usepackage[utf8]{inputenc}				%Allows for accents
 \usepackage{color}                    	%Creates coloured text and background
 \usepackage{xcolor}                    	%Color definitions for hyperref
+	\definecolor{purpleAtlas}{RGB}{171,87,135}
 \usepackage[]{hyperref}					%Creates hyperlinks in cross references
 	\hypersetup{
+		bookmarks=true,
 		pdfborder={0 0 0.5 [2 3]},
 		pdfstartview={FitH},
 		%colorlinks=true,
@@ -195,6 +197,7 @@
 \usepackage{rotfloat}					%For rotating and float environments as tables, figures, etc. 
 \usepackage{alltt}						%LaTeX commands are not disabled in verbatim-like environment
 \usepackage[version=0.96]{pgf}			%PGF/TikZ is a tandem of languages for producing vector graphics from a 
+\usepackage{pgfgantt}
 \usepackage{tikz}						%geometric/algebraic description.
 \usetikzlibrary{arrows,shapes,decorations,
 		       automata,backgrounds,
@@ -320,6 +323,7 @@
 \hyphenation{para-me-ters}
 \hyphenation{sol-va-bi-li-ty}
 %
+\renewcommand{\sfdefault}{lmss}
 %
 \begin{document}
 % UoB guidlines:
@@ -342,7 +346,6 @@
 \frontmatter
 \pagenumbering{roman}
 %
-This version was printed on \today
 \input{frontmatter/title}
 \clearemptydoublepage
 

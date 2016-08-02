@@ -42,9 +42,23 @@ This phenomenon is already proving to be very effective for the companies taking
 
 \section{Legal framework}
 
-\cite{manualonremotelypilotedaircraftsystemsrpas2015,ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014}
+Due to the fast-evolving UAV industry, the aviation authorities have not yet been able to develop a reasonable set of regulations and standards to harmonize the legislation across borders.
+Aditionally, this regulatory framework should consider the idea that each system has unique capabilities and characteristics and also that development and innovation are very important concept in the field, and should not be dampened by restrictive rules \cite{valavanis2015}
 
-\section{Motivation}
+However, there have already been some efforts from ICAO to outline some general rules to give a global sense of what is expected from the UAV sector \cite{manualonremotelypilotedaircraftsystemsrpas2015}. 
+In addition to that, some countries are creating their own legislation to enable the operation of Unmanned Aerial Vehicles within their territory.
+
+For example, the Spanish government issued an urgent provisional regulation on October 2014 \cite{ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014} that affects to Remotely Piloted Aircraft Systems (RPAS\footnote{RPAS are considered as a subset of the UAS group. Fully automatic vehicles do not belong to the RPAS category, since the existance of a remote pilot is required at any time}) not exceeding 150 kg of Maximum Take Off Mass (MTOM). Heavier UAVs are subjected to European regulations \cite{regulationecno21620082008}
+Focusing on the smaller segments, UAVs are separated according to their MTOM as follows:
+\begin{description}
+	\item[MTOM < 2 kg:] Flights Beyond Visual Line Of Sight (BVLOS) are allowed, but conditioned to the publication of a NOTAM (NOtice To AirMen). Apart from that, all the other rules in the 2 kg to 25 kg apply.
+	\item[2 kg $\leq$ MTOM < 25 kg:] Only operable in areas separated from groups of buildings in cities, or groups of people elsewhere. Flight shall always take place in uncontrolled airspace, within Visual Line Of Sight (VLOS) and at a maximum distance of 500 m from the position of the pilot, not exceeding 400 ft of heigt over the terrain.
+	\item[25 kg < MTOM:] Flight is only allowed for firefighting, search and rescue missions. They shall only operate in uncontrolled airspace and according to the limitations stablished in their Airworthiness Certificate, as emited by AESA.
+\end{description}
+Nevertheless, even if Spain or other countries have their own regulations to control the usage of UAVs in their territories, it is still important to have an international and stable legislation to allow the sector to grow to its full potential.
+
+
+\section{Motivation}\label{sec:motivation}
 
 Traditionally, the most important payload that could be carried in an aircraft was human beings, that would perform their mission while aloft.
 Nevertheless, the advancements on sensing technology and wireless communications have forced a change on traditional aviation.
@@ -53,15 +67,41 @@ This secondary role of the human operators implies that, given the maturity of t
 The process of ``unmanning'' the aircraft also brings the advantages of decreasing the weight of the aircraft and thus improving its endurance and manoeuvrability, avoids putting the pilot in a dangerous situation, and helps alleviate the errors associated with tedious and repetitive tasks, among others.
 
 However, there are also some downsides.
-The most accused ones for experienced pilots are those related with the loss of situational awareness that comes as a result of eliminating the physical cues (body inertia, vibrations\ldots) and relying on instrumental readings only, and also the limited number of control input, which for civil UAVs do not exceed 8 or 9 scalar channels.
-Thus, for the effective incorporation of Unmanned Vehicles into professional activities it is required to extend and automate some of the tasks that are traditionally performed by the onboard pilot.
+In the technical department, there are still some issues regarding the electromagnetic spectrum allocation for the data-link with the vehicle \cite{civilianunmannedaerialvehiclesreadyfortakeoff2012}, as well as accommodating unmanned aircraft within the Airspace System \cite{unmannedaircraftsystemsperceptionsandpotentials2013}.
+In addition, the most accused issues for experienced pilots are those related with the loss of situational awareness that comes as a result of eliminating the physical cues (body inertia, vibrations\ldots) and relying on instrumental readings only \cite{bergqvist2014}.
+Hence, some enhanced systems need to be integrated into the vehicle to overcome this limitations, providing the pilots with additional information for the safe execution of the mission.
 
 Finally, for this project, the goal is to provide a system that reduces the possibility of it crashing with nearby obstacles, so that regular operations are carried with a higher level of safety.
-Eventually, the authorities will consider this increase in overall safety causing the modification of existing regulations to a more permissive set, allowing the industry to take advantage of all the benefits that the incorporation of UAVs could bring to their activities.
+Eventually, the authorities could consider the increase in overall safety as a standard, triggering the modification of existing regulations to a more permissive set, and allowing the industry to take advantage of all the benefits that the incorporation of UAVs could bring to their activities.
 
-\section{Project objectives}
+\section{Project objectives} \label{sec:objectives}
+
+According to the motivation as stated in Section \ref{sec:motivation}, the final goal of this project is to develop a working prototype for proof of concept of a system able to detect and avoid obstacles that threaten the integrity of the UAV. Towards that end, some more specific objectives can be defined as follows:
+\begin{itemize}
+	\item Identify the requirements needed for the Obstacle Collision Avoidance System (OCAS) to correctly fulfill its purpose
+	\item Define the functional architecture of the OCAS
+	\item Define the interfaces (communication channels and protocols) to be used by the OCAS for its correct integration on the UAV
+	\item Define the interaction channels and procedures between the UAV equiped with OCAS and Ardupilot and the operator
+	\item Develop a first working prototype as proof of concept of the Obstacle Collision Avoidance System (both hardware and software) and integrate it on a real UAV
+\end{itemize}
 
 \section{Methodology}
 
+As some may have noticed, the objectives defined in Section \ref{sec:objectives} remember of the first steps that are usually taken in the Systems Engineering approach for interdisciplinary design \cite{whatissystemsengineering}.
+That approach will be adapted to the project, and some useful tools and concepts will be used \cite{nationalaeronauticsandspaceadministration2007}, such as the requirements capture, the Functional Flow Block Diagram (FFBD), the Functional Architecture definition or the product integration via interfaces definition.
+
+Finally the prototype created from the process will be tested in a series of common situations to prove that the product is capable of completing its task.
+Also, it will be demonstrated how the OCAS has been designed with flexibility and modularity in mind, explaining the possibilities to expand its features and proposing some ideas for future work.
+
 \section{Time planning}
+
+For any big project with defined deadlines, time management is of utmost importance.
+The elaboration of the thesis has been carried out during more than 10 months, and the different work phases have been monitored with a project management software tool.
+The resulting Gantt Diagram can be consulted on Figure \ref{fig:gantt}
+
+\input{./figures/gantt.tex}
+
+\section{Budget}
+
+
 

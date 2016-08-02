@@ -1,8 +1,21 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{civilianunmannedaerialvehiclesreadyfortakeoff2012}
+{\em Civilian unmanned aerial vehicles ready for takeoff}, tech. report, 04
+  2012.
+
+\bibitem{unmannedaircraftsystemsperceptionsandpotentials2013}
+{\em Unmanned aircraft systems: Perceptions and potentials}, tech. report,
+  Arlington, 05 2013.
 
 \bibitem{uasapplications2016}
 {\sc U.~aerial vehicle systems~association applications}, {\em Uas
   applications}, 2016.
+
+\bibitem{nationalaeronauticsandspaceadministration2007}
+{\sc N.~Aeronautics and S.~Administration}, {\em NASA systems engineering
+  handbook}, US National Aeronautics and Space Admin, Washington, 1~ed., 12
+  2007.
 
 \bibitem{ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014}
 {\sc AESA}, {\em Ley 18/2014, de 15 de octubre, de aprobacion de medidas
@@ -17,11 +30,24 @@
 {\sc Airbus}, {\em Airbus demonstrates aircraft inspection by drone at
   farnborough}, 07 2016.
 
+\bibitem{bergqvist2014}
+{\sc P.~Bergqvist}, {\em Drone jobs: What it takes to fly a uav}, 06 2014.
+
 \bibitem{daily2015}
 {\sc J.~Daily}, {\em Dull, dirty, dangerous - it's robot work}, 02 2015.
 
+\bibitem{regulationecno21620082008}
+{\sc EASA}, {\em Regulation (ec) no 216/2008}, 02 2008.
+
 \bibitem{manualonremotelypilotedaircraftsystemsrpas2015}
 {\sc ICAO}, {\em Manual on remotely piloted aircraft systems (rpas)}, 2015.
+
+\bibitem{whatissystemsengineering}
+{\sc INCOSE}, {\em What is systems engineering?}
+
+\bibitem{valavanis2015}
+{\sc K.~P. Valavanis and G.~J. Vachtsevanos}, {\em Handbook of Unmanned Aerial
+  Vehicles}, Springer Reference, New York, 2015.
 
 \bibitem{wisniewski2016}
 {\sc A.~Wisniewski and M.~Mazur}, {\em Clarity from above pwc global report on

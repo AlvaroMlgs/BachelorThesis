@@ -1,0 +1,25 @@
+\begin{figure}[htbp!]
+	\hspace{-2cm}
+	%\centering
+	\begin{ganttchart}[
+		time slot format=little-endian,
+		x unit=0.04cm,
+		y unit chart=0.5cm,
+		title/.style={fill=teal!80},
+		title label font=\color{white},
+		group/.append style={fill=purpleAtlas!60},
+		bar/.append style={fill=purpleAtlas,draw=gray},
+		]
+		{01-11-2015}{15-09-2016}
+
+		\gantttitlecalendar{year,month} \\
+
+		\ganttgroup{Familiarisation with F450}{01-11-2015}{17-11-2015} \\
+			\ganttbar{GCS software tools}{01-11-2015}{04-11-2015} \\
+			\ganttbar{Data-link range improvement}{05-11-2015}{17-11-2015} \\
+
+	\end{ganttchart}
+	
+	\caption{Gantt Diagram of the Thesis}
+	\label{fig:gantt}
+\end{figure}
