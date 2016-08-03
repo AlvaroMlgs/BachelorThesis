@@ -14,5 +14,8 @@
 \contentsline {section}{\numberline {1.6}Methodology}{5}{section.1.6}
 \contentsline {section}{\numberline {1.7}Time planning}{5}{section.1.7}
 \contentsline {section}{\numberline {1.8}Budget}{5}{section.1.8}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{7}{appendix.A}
-\contentsline {chapter}{Bibliography}{9}{section*.7}
+\contentsline {subsection}{\numberline {1.8.1}Personnel expenses}{5}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Software cost}{7}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Hardware cost}{7}{subsection.1.8.3}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{9}{appendix.A}
+\contentsline {chapter}{Bibliography}{11}{section*.7}

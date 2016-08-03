@@ -13,8 +13,11 @@ Warning--entry type for "regulationecno21620082008" isn't style-file defined
 --line 88 of file biblio.bib
 Warning--entry type for "whatissystemsengineering" isn't style-file defined
 --line 113 of file biblio.bib
+Warning--entry type for "disposicin16097deboenm274de20112011" isn't style-file defined
+--line 129 of file biblio.bib
 Warning--to sort, need author or key in civilianunmannedaerialvehiclesreadyfortakeoff2012
 Warning--to sort, need author or key in unmannedaircraftsystemsperceptionsandpotentials2013
+Warning--to sort, need author or key in disposicin16097deboenm274de20112011
 Warning--empty author in civilianunmannedaerialvehiclesreadyfortakeoff2012
 Warning--empty institution in civilianunmannedaerialvehiclesreadyfortakeoff2012
 Warning--empty author in unmannedaircraftsystemsperceptionsandpotentials2013
@@ -22,4 +25,4 @@ Warning--empty institution in unmannedaircraftsystemsperceptionsandpotentials201
 Warning--empty booktitle in aguado2016
 Warning--can't use both author and editor fields in valavanis2015
 Warning--empty institution in wisniewski2016
-(There were 15 warnings)
+(There were 17 warnings)
