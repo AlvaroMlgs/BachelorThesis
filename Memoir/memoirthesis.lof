@@ -1,6 +1,9 @@
 \select@language {english}
 \par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Distribution of potential UAV markets \cite {wisniewski2016}}}{2}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Gantt Diagram of the Project}}{6}{figure.1.2}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Distribution of potential UAV markets \cite {wisniewski2016}\relax }}{2}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Gantt Diagram of the Project\relax }}{6}{figure.caption.7}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces FlySky FS-i6 Remote Control (\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\url {www.flyskyrc.com}})\relax }}{10}{figure.caption.9}
+\addvspace {10pt}
 \addvspace {10pt}

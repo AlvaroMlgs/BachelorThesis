@@ -46,9 +46,11 @@
 	\SetWatermarkText{\textbf Draft: \today}
 \fi
 %
-% Declare figure/table as a subfloat.
-\newsubfloat{figure}
-\newsubfloat{table}
+% This shit makes the subcaption package not to work
+%	% Declare figure/table as a subfloat.
+%	\newsubfloat{figure}
+%	\newsubfloat{table}
+
 % Better page layout for A4 paper, see memoir manual.
 \settrimmedsize{297mm}{210mm}{*}
 \setlength{\trimtop}{0pt} 
@@ -161,13 +163,15 @@
 \usepackage{newlfont}					%Helpful package for fonts and symbols
 \usepackage{layouts}					%Layout diagrams
 \usepackage{graphicx}					%Calls figure environment
+\usepackage{caption}
+\usepackage{subcaption}					%For subfigure support
 \usepackage{longtable,rotating}			%Long tab environments including rotation. 
 \usepackage{colortbl}					%Makes coloured tables
 \usepackage{wasysym}					%More math symbols
 \usepackage{mathrsfs}					%Even more math symbols
 \usepackage{float}						%Helps to place figures, tables, etc. 
 \usepackage{verbatim}					%Permits pre-formated text insertion
-\usepackage{upgreek }					%Calls other kind of greek alphabet
+\usepackage{upgreek}					%Calls other kind of greek alphabet
 \usepackage{latexsym}					%Extra symbols
 \usepackage[square,numbers,
 		     sort&compress]{natbib}		%Calls bibliography commands 
@@ -343,7 +347,7 @@
 % should follow the table of contents, listing with page numbers the
 % tables, photographs, diagrams, etc., in the order in which they appear
 % in the text.
-% 
+
 \frontmatter
 \pagenumbering{roman}
 %
@@ -362,7 +366,7 @@
 %
 % \input{frontmatter/declaration}
 % \clearemptydoublepage
-%
+
 \renewcommand{\contentsname}{Table of Contents}
 \maxtocdepth{subsection}
 \phantomsection\addcontentsline{toc}{section}{Table of Contents}
@@ -382,13 +386,18 @@
 \end{KeepFromToc}
 \addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
 \clearemptydoublepage
-%
+
 % The bulk of the document is delegated to these chapter files in subdirectories.
 \mainmatter
 %
 \import{chapters/introduction/}{introduction.tex}
 \clearemptydoublepage
 %
+\import{chapters/background/}{background.tex}
+\clearemptydoublepage
+%
+\import{chapters/stateArt/}{stateArt.tex}
+\clearemptydoublepage
 %
 % And the appendix goes here
 \appendix

@@ -11,6 +11,9 @@
 {\em Unmanned aircraft systems: Perceptions and potentials}, tech. report,
   Arlington, 05 2013.
 
+\bibitem{dronecode2016}
+{\em Dronecode}, 04 2016.
+
 \bibitem{uasapplications2016}
 {\sc U.~aerial vehicle systems~association applications}, {\em Uas
   applications}, 2016.
@@ -47,6 +50,17 @@
 
 \bibitem{whatissystemsengineering}
 {\sc INCOSE}, {\em What is systems engineering?}
+
+\bibitem{droneindustryinsights2016}
+{\sc D.~I. Insights}, {\em Top20 drone company ranking q2 2016}, tech. report,
+  Hamburg, Germany, 06 2016.
+
+\bibitem{melgosa2016}
+{\sc {\' A}.~Melgosa}, {\em Internship memoir: Centum solutions}, tech. report,
+  UC3M, 05 2016.
+
+\bibitem{ogata2010}
+{\sc K.~Ogata}, {\em Modern Control Engineering}, Prentice Hall, 5~ed., 2010.
 
 \bibitem{valavanis2015}
 {\sc K.~P. Valavanis and G.~J. Vachtsevanos}, {\em Handbook of Unmanned Aerial
