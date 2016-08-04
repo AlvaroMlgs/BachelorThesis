@@ -52,7 +52,43 @@ These elements are externally powered by the primary battery.
 \section{Ardupilot as part of a UAS}
 
 If Ardupilot wants to be used as a professional tool to enhance production or reduce costs, it can not rely on manual control only. 
+For more advanced missions and proper calibration of vehicles with diverse configurations and physical properties, it is necessary to tweak the parameters that the control loops necessitate for their real-time computations.
+It is in those cases when a Ground Control Station can become useful.
+By connecting the vehicle to an external computer, the operator is no longer limited to the 8 input channels that the RC transmitter can provide.
+Instead, the limit on the amount of information that the Ardupilot board can broadcast or absorb is only bound by the communication protocol that is implemented between the two.
 
-\section{Advanced features}
+For the Ardupilot ecosystem the protocol used is also open-source and receives the name of MAVlink\footnote{More information on the protocol can be found on \url{qgroundcontrol.org/mavlink/start}. The message definitions and generator code can be found at its GitHub repository \url{github.com/mavlink/mavlink/}} (MAV stands for Micro Aerial Vehicle).
+Its open nature allows developers to create a very diverse set of software and applications to communicate with the UAV, from the widespread Mission Planner and APM planner, to versions that run on Android devices for on-the-field operation or developer-oriented libraries that run under Python.
 
+Another feature that is worth mentioning is the lightweight nature of the protocol, which not only permits the connection via USB cable, but also wirelessly through what is usually called a telemetry radio, which effectively is a serial transmission of data over a 433 MHz radio wave carrier.
 
+An experienced operator can take advantage of all the mentioned features to receive real-time information on the state of the vehicle while it is on the air, and also to send high-level commands to the vehicle.
+Those options will be further discussed in Section \ref{sec:advanced}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./figures/missionplanner.png}
+	\caption{Screenshot of Mission Planner GCS, implementing the MAVlink protocol}
+	\label{fig:missionplanner}
+\end{figure}
+
+\section{Advanced features}\label{sec:advanced}
+
+For an Ardupilot UAV to be able to automate some missions and procedures there are some additional requirements.
+Firstly, the IMU is appropriate for the evaluation of the vehicle's state variables, but the knowledge of its environment can only be acquired through absolute positioning sensors.
+Those sensors are usually a GPS module for horizontal positioning and a barometer for altitude measurement.
+Secondly, a wireless data-link provides a much more flexible way of interacting with the UAV during the execution of the mission.
+
+\subsection{Flight modes}
+
+Ardupilot has separated the mentioned advanced features in different flight modes, which can be activated with the 5$^{\text{th}}$ channel on the RC transmitter or from the GCS.
+At the time of writing, there are 15 different flight modes, but just the most relevant ones for the project will be described here.
+
+\begin{description}
+	\item[\scshape Stabilize]
+	\item[\scshape Altitude hold]
+	\item[\scshape Loiter]
+	\item[\scshape RLT]
+	\item[\scshape Auto]
+	\item[\scshape Guided]
+\end{description}
