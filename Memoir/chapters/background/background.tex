@@ -83,12 +83,61 @@ Secondly, a wireless data-link provides a much more flexible way of interacting 
 
 Ardupilot has separated the mentioned advanced features in different flight modes, which can be activated with the 5$^{\text{th}}$ channel on the RC transmitter or from the GCS.
 At the time of writing, there are 15 different flight modes, but just the most relevant ones for the project will be described here.
+A summary of the most important features can be found in Table \ref{tab:modes}
+
+\noindent \small{[From this point onwards the concepts involving Ardupilot will be particularised for the multicopter variant, since it is the type of vehicle that will be used for the prototype.
+Similar information can be found for fixed-wing aircraft, helicopters and rovers at the support page.]
 
 \begin{description}
-	\item[\scshape Stabilize]
+
+	\item[\scshape Stabilize] 
+		The default mode for manual control.
+		Uses only the IMU data to control the flight.
+		The pitch and roll channels define the Euler angles (instead of the rotation rate of Acrobatic mode) so that when the controls are released to neutral position, the vehicle will level off automatically.
+		The yaw channel does control the yaw rate of the UAV instead, while the throttle channel
+		Ardupilot will not compensate for wind or other disturbances.
+
 	\item[\scshape Altitude hold]
+		Very similar to the Stabilize mode.
+		The only difference is on the throttle channel, which controls the ascension rate instead of raw power transmitted to the motors.
+		When the throttle stick is centered, the vehicle will hold the current altitude using the information measured by the onboard barometer.
+
 	\item[\scshape Loiter]
-	\item[\scshape RLT]
+		Incorporates the GPS data to the Altitude hold mode, making it possible for the UAV to compensate for wind and IMU drift.
+		The pilot still has control on the vehicle similarly to Altitude hold but when the control sticks are released, the position will be kept within a 1 metre error (provided good quality GPS signal).
+
 	\item[\scshape Auto]
+		This mode allows to automate missions and procedures.
+		With the help of a GCS application, such as the one shown in Figure \ref{fig:missionplanner}, the operator can click on a map to define waypoints and actions (take of, land, point to a certain direction, etc. are within the options) and save a data file to the vehicle's internal storage.
+		Later, when the mode is activated, the vehicle will follow the predefined route without the need of direct input from the pilot.
+		The throttle, yaw, pitch and roll controls will be disregarded when Auto mode is active, but the pilot can change the active mode at any time from the RC transmitter.
+
+	\item[\scshape RTL (Return To Launch)]
+		RTL mode is commonly used as a failsafe feature, when communication either with the pilot or the GCS is lost.
+		It is a very specific version of the Auto mode that automatically starts the return to Home procedure, landing the vehicle exactly where it took of from.
+		The Home location is defined as the point were the motors were initially armed (the arming procedure resembles the engine startup of a conventional aircraft: the motors will not spin unless the vehicle is armed)
+
 	\item[\scshape Guided]
+		The solely difference between the Auto and the Guided modes is that whereas in the Auto mode the mission needs to be completely defined and uploaded to the vehicle before it is executer, the Guided mode allows for on-the-fly control of the vehicle from the GCS, taking complete advantage of the MAVlink commands over the telemetry link.
+		This characteristic makes it very flexible for real-time development of applications.
+
 \end{description}
+
+\begin{table}
+\centering
+\begin{tabular}[h!tbp]{lm{3.1cm}ccm{3cm}} 
+	\hline
+	\bfseries Mode	& \bfseries Sensors used	& \bfseries Throttle	&	\bfseries Roll/Pitch	&	\bfseries Features	\\
+	\hline
+	Stabilize		&	IMU					&	Power			&	Euler angles		&	Fully manual			\\
+	Altitude hold	&	IMU + Barometer		&	Ascension rate	&	Euler angles		&	Enhanced altitude control\\
+	Loiter			&	IMU + Barometer + GPS&	Ascension rate	&	Euler angles		&	Disturbance rejection	\\
+	Auto			&	IMU + Barometer + GPS&	No control		&	No control			&	Mission automation		\\
+	RTL				&	IMU + Barometer + GPS&	No control		&	No control			&	Failsafe				\\
+	Guided			&	IMU + Barometer + GPS&	No control		&	No control			&	Real-time control		\\
+	\hline
+\end{tabular}
+\caption{Summary of the relevant flight modes}
+\label{tab:modes}
+\end{table}
+

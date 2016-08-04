@@ -71,7 +71,7 @@ UAV, obstacle detection, collision avoidance, system integration, ultrasonic ran
 > A brief section giving background information may be necessary, especially if your work spans two or more traditional fields. That means that your readers may not have any experience with some of the material needed to follow your thesis, so you need to give it to them. A different title than that given above is usually better; e.g., "A Brief Review of Frammis Algebra."
 
 - Ardupilot as Flight controller software
-	- Manual control
+	- Basic features (manual control)
 	- Automatic mode (preprogrammed missions)
 	- Ground Control Station (Ardupilot as part of a bigger system - UAS concept) - Communication protocol (MAVlink)
 
@@ -80,15 +80,18 @@ UAV, obstacle detection, collision avoidance, system integration, ultrasonic ran
 
 > You organize this section by idea, and not by author or by publication.
 
-- Legislation
-	- Limitations to use of UAVs (expand on introduction)
-- Socioeconomic aspects
-	- Advantages of using UAVs on certain tasks
-	- Consider operational savings (give some numbers)
-- State of Technology
+- Technology Readiness Level
+- Environment sensing
+	- Sonar
+	- Lidar
+	- Computer vision
+- Collision avoidance
 	- TCAS on commercial aircraft
 	- Phantom 4
 	- [eBumper](http://dronelife.com/2014/10/31/making-flying-easy-panoptes-e-bumper/)
+- Real-time GNC
+	- Vijay Kumar
+	- Andrea DiStefano
 
 
 ## Problem Statement

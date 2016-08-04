@@ -1,73 +1,76 @@
 \begin{thebibliography}{10}
 
-\bibitem{disposicin16097deboenm274de20112011}
-{\em Disposici{\' o}n 16097 de boe n{\' u}m. 274 de 2011}, 10 2011.
-
-\bibitem{civilianunmannedaerialvehiclesreadyfortakeoff2012}
-{\em Civilian unmanned aerial vehicles ready for takeoff}, tech. report, 04
-  2012.
-
-\bibitem{unmannedaircraftsystemsperceptionsandpotentials2013}
-{\em Unmanned aircraft systems: Perceptions and potentials}, tech. report,
-  Arlington, 05 2013.
-
-\bibitem{dronecode2016}
-{\em Dronecode}, 04 2016.
-
-\bibitem{uasapplications2016}
-{\sc U.~aerial vehicle systems~association applications}, {\em Uas
-  applications}, 2016.
-
-\bibitem{nationalaeronauticsandspaceadministration2007}
-{\sc N.~Aeronautics and S.~Administration}, {\em NASA systems engineering
-  handbook}, US National Aeronautics and Space Admin, Washington, 1~ed., 12
-  2007.
-
-\bibitem{ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014}
-{\sc AESA}, {\em Ley 18/2014, de 15 de octubre, de aprobacion de medidas
-  urgentes para el crecimiento, la competitividad y la eficiencia}, 10 2014.
-
-\bibitem{aguado2016}
-{\sc G.~Aguado, {\' A}.~Melgosa, A.~de~Miguel, {\' A}.~Ordax, J.~Perales, J.~L.
-  S{\' a}ez, and L.~C. S{\' a}nchez}, {\em Uav application in search \& rescue
-  at sea}, UC3M, 05 2016.
-
-\bibitem{airbusdemonstratesaircraftinspectionbydroneatfarnborough2016}
-{\sc Airbus}, {\em Airbus demonstrates aircraft inspection by drone at
-  farnborough}, 07 2016.
-
-\bibitem{bergqvist2014}
-{\sc P.~Bergqvist}, {\em Drone jobs: What it takes to fly a uav}, 06 2014.
+\bibitem{wisniewski2016}
+A.~Wisniewski and M.~Mazur, ``Clarity from above pwc global report on the
+  commercial applications of drone technology,'' tech. rep., 05 2016.
 
 \bibitem{daily2015}
-{\sc J.~Daily}, {\em Dull, dirty, dangerous - it's robot work}, 02 2015.
+J.~Daily, ``Dull, dirty, dangerous - it's robot work,'' 02 2015.
 
-\bibitem{regulationecno21620082008}
-{\sc EASA}, {\em Regulation (ec) no 216/2008}, 02 2008.
+\bibitem{uasapplications2016}
+U.~aerial vehicle systems~association applications, ``Uas applications,'' 2016.
 
-\bibitem{manualonremotelypilotedaircraftsystemsrpas2015}
-{\sc ICAO}, {\em Manual on remotely piloted aircraft systems (rpas)}, 2015.
-
-\bibitem{whatissystemsengineering}
-{\sc INCOSE}, {\em What is systems engineering?}
-
-\bibitem{droneindustryinsights2016}
-{\sc D.~I. Insights}, {\em Top20 drone company ranking q2 2016}, tech. report,
-  Hamburg, Germany, 06 2016.
-
-\bibitem{melgosa2016}
-{\sc {\' A}.~Melgosa}, {\em Internship memoir: Centum solutions}, tech. report,
+\bibitem{aguado2016}
+G.~Aguado, {\' A}.~Melgosa, A.~de~Miguel, {\' A}.~Ordax, J.~Perales, J.~L. S{\'
+  a}ez, and L.~C. S{\' a}nchez, ``Uav application in search \& rescue at sea,''
   UC3M, 05 2016.
 
-\bibitem{ogata2010}
-{\sc K.~Ogata}, {\em Modern Control Engineering}, Prentice Hall, 5~ed., 2010.
+\bibitem{airbusdemonstratesaircraftinspectionbydroneatfarnborough2016}
+Airbus, ``Airbus demonstrates aircraft inspection by drone at farnborough,'' 07
+  2016.
 
 \bibitem{valavanis2015}
-{\sc K.~P. Valavanis and G.~J. Vachtsevanos}, {\em Handbook of Unmanned Aerial
-  Vehicles}, Springer Reference, New York, 2015.
+K.~P. Valavanis and G.~J. Vachtsevanos, {\em Handbook of Unmanned Aerial
+  Vehicles}.
+\newblock New York: Springer Reference, 2015.
 
-\bibitem{wisniewski2016}
-{\sc A.~Wisniewski and M.~Mazur}, {\em Clarity from above pwc global report on
-  the commercial applications of drone technology}, tech. report, 05 2016.
+\bibitem{manualonremotelypilotedaircraftsystemsrpas2015}
+ICAO, ``Manual on remotely piloted aircraft systems (rpas),'' 2015.
+
+\bibitem{ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014}
+AESA, ``Ley 18/2014, de 15 de octubre, de aprobacion de medidas urgentes para
+  el crecimiento, la competitividad y la eficiencia,'' 10 2014.
+
+\bibitem{regulationecno21620082008}
+EASA, ``Regulation (ec) no 216/2008,'' 02 2008.
+
+\bibitem{civilianunmannedaerialvehiclesreadyfortakeoff2012}
+``Civilian unmanned aerial vehicles ready for takeoff,'' tech. rep., 04 2012.
+
+\bibitem{unmannedaircraftsystemsperceptionsandpotentials2013}
+``Unmanned aircraft systems: Perceptions and potentials,'' tech. rep.,
+  Arlington, 05 2013.
+
+\bibitem{bergqvist2014}
+P.~Bergqvist, ``Drone jobs: What it takes to fly a uav,'' 06 2014.
+
+\bibitem{whatissystemsengineering}
+INCOSE, ``What is systems engineering?.''
+
+\bibitem{nationalaeronauticsandspaceadministration2007}
+N.~Aeronautics and S.~Administration, {\em NASA systems engineering handbook}.
+\newblock Washington: US National Aeronautics and Space Admin, 1~ed., 12 2007.
+
+\bibitem{melgosa2016}
+{\' A}.~Melgosa, ``Internship memoir: Centum solutions,'' tech. rep., UC3M, 05
+  2016.
+
+\bibitem{disposicin16097deboenm274de20112011}
+``Disposici{\' o}n 16097 de boe n{\' u}m. 274 de 2011,'' 10 2011.
+
+\bibitem{droneindustryinsights2016}
+D.~I. Insights, ``Top20 drone company ranking q2 2016,'' tech. rep., Hamburg,
+  Germany, 06 2016.
+
+\bibitem{dronecode2016}
+``Dronecode,'' 04 2016.
+
+\bibitem{ogata2010}
+K.~Ogata, {\em Modern Control Engineering}.
+\newblock Prentice Hall, 5~ed., 2010.
+
+\bibitem{assistantsecretaryofdefenseforresearchandengineering2011}
+A.~S. of~Defense~for Research and Engineering, ``Technology readiness
+  assessment (tra) guidance,'' tech. rep., USA, 04 2011.
 
 \end{thebibliography}
