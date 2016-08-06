@@ -82,16 +82,18 @@ UAV, obstacle detection, collision avoidance, system integration, ultrasonic ran
 
 - Technology Readiness Level
 - Environment sensing
+	- Radar	
 	- Sonar
 	- Lidar
 	- Computer vision
+	- Comparison: Use sonar because low-power, readily available, light, easy integration
 - Collision avoidance
 	- TCAS on commercial aircraft
 	- Phantom 4
 	- [eBumper](http://dronelife.com/2014/10/31/making-flying-easy-panoptes-e-bumper/)
 - Real-time GNC
 	- Vijay Kumar
-	- Andrea DiStefano
+	- Rafaello D'Andrea
 
 
 ## Problem Statement
