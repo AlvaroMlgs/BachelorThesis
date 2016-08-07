@@ -20,6 +20,8 @@ Warning--entry type for "dronecode2016" isn't style-file defined
 Warning--entry type for "hulsmeyer1904" isn't style-file defined
 --line 178 of file biblio.bib
 Warning--empty institution in wisniewski2016
+Warning--can't use both author and editor fields in ballard1982
+Warning--empty publisher in ballard1982
 Warning--empty booktitle in aguado2016
 Warning--can't use both author and editor fields in valavanis2015
 Warning--empty author in civilianunmannedaerialvehiclesreadyfortakeoff2012
@@ -29,4 +31,4 @@ Warning--empty institution in unmannedaircraftsystemsperceptionsandpotentials201
 Warning--empty institution in melgosa2016
 Warning--empty institution in droneindustryinsights2016
 Warning--empty institution in assistantsecretaryofdefenseforresearchandengineering2011
-(There were 19 warnings)
+(There were 21 warnings)

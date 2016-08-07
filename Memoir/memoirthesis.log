@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  7 AUG 2016 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  7 AUG 2016 14:46
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2380,7 +2380,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 ] (chapters/background/background.tex [9
 
 ]
-<chapters/background/./figures/RCtransmitter.jpg, id=370, 378.41376pt x 370.383
+<chapters/background/./figures/RCtransmitter.jpg, id=374, 378.41376pt x 370.383
 74pt>
 File: chapters/background/./figures/RCtransmitter.jpg Graphic file (type jpg)
  <use chapters/background/./figures/RCtransmitter.jpg>
@@ -2388,7 +2388,7 @@ Package pdftex.def Info: chapters/background/./figures/RCtransmitter.jpg used o
 n input line 30.
 (pdftex.def)             Requested size: 112.0pt x 109.62395pt.
 
-<chapters/background/./figures/RCreceiver.jpg, id=371, 401.5pt x 293.095pt>
+<chapters/background/./figures/RCreceiver.jpg, id=375, 401.5pt x 293.095pt>
 File: chapters/background/./figures/RCreceiver.jpg Graphic file (type jpg)
 
 <use chapters/background/./figures/RCreceiver.jpg>
@@ -2397,7 +2397,7 @@ nput line 36.
 (pdftex.def)             Requested size: 134.40137pt x 98.11252pt.
  [10 <./chapters/background/./figures/RCtransmitter.jpg> <./chapters/background
 /./figures/RCreceiver.jpg>]
-<chapters/background/./figures/missionplanner.png, id=384, 760.34062pt x 548.04
+<chapters/background/./figures/missionplanner.png, id=388, 760.34062pt x 548.04
 75pt>
 File: chapters/background/./figures/missionplanner.png Graphic file (type png)
  <use chapters/background/./figures/missionplanner.png>
@@ -2424,7 +2424,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 47.41772pt on input line 5.
 
-<chapters/stateArt/./figures/antennaPattern.jpg, id=407, 127.22531pt x 119.6971
+<chapters/stateArt/./figures/antennaPattern.jpg, id=411, 127.22531pt x 119.6971
 9pt>
 File: chapters/stateArt/./figures/antennaPattern.jpg Graphic file (type jpg)
  <use chapters/stateArt/./figures/antennaPattern.jpg>
@@ -2443,17 +2443,24 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 33.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 33.
- [16 <./chapters/stateArt/./figures/antennaPattern.jpg>]) [17] [18
+ [16 <./chapters/stateArt/./figures/antennaPattern.jpg>]
+<chapters/stateArt/./figures/stereo.png, id=430, 283.81032pt x 167.87718pt>
+File: chapters/stateArt/./figures/stereo.png Graphic file (type png)
 
-]
-(chapters/appendices/app0A.tex) [19
+<use chapters/stateArt/./figures/stereo.png>
+Package pdftex.def Info: chapters/stateArt/./figures/stereo.png used on input l
+ine 73.
+(pdftex.def)             Requested size: 224.0pt x 132.50368pt.
+) [17 <./chapters/stateArt/./figures/stereo.png>] [18
+
+] (chapters/appendices/app0A.tex) [19
 
 ] [20
 
 ] (memoirthesis.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 23.
- [21
+(Font)              scaled to size 9.29993pt on input line 8.
+[21
 
 
 ]) [22]
@@ -2469,18 +2476,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: CA0B9CAC54617C5403676BB52AA40DD0;2439.
+(rerunfilecheck)             Checksum: 9937460BD3A7CD38F7603EAEEC77CCDF;2439.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 88 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32291 strings out of 493673
- 600067 string characters out of 3141524
- 869675 words of memory out of 3000000
- 34529 multiletter control sequences out of 15000+200000
- 129867 words of font info for 326 fonts, out of 3000000 for 9000
+ 32311 strings out of 493673
+ 600422 string characters out of 3141524
+ 870676 words of memory out of 3000000
+ 34537 multiletter control sequences out of 15000+200000
+ 130221 words of font info for 332 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
  55i,13n,92p,1013b,937s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
@@ -2497,9 +2504,9 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb>
 86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (34 pages, 1247434 bytes).
+Output written on memoirthesis.pdf (34 pages, 1288112 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 52572 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
+ 52577 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -59,7 +59,21 @@ In summary, lidar is a good alternative for ranging, but not so much for detecti
 \subsection{Computer vision}
 
 The usage of regular cameras for physical environment sensing is certainly different than the previously considered, since it is not the flight time of a pulsated signal what encodes the information.
-Instead, one or more cameras provide a two-dimensional array of data that can be processed to extract information of distance and location, among others, of any object that is within frame.
+Instead, one or more cameras provide a two-dimensional array of data each that can be processed to extract information of distance and location, among others, of any object that is within frame.
+
+It is in that processing where both the advantages and draw backs of computer vision lie.
+On one hand, many different transformations can be applied to the stream of data from the cameras, and information can be extracted on very diverse aspects such as colour, luminosity, movement, position, texture\dots \cite{ballard1982}
+Additionally, advanced processing techniques and even artificial intelligence can be applied to the image, which is a very flexible source of information.
+On the other hand though, the aforementioned processing tasks should be computed on a relatively high rate video stream, which implies several transformations on more than one video streams (for stereoscopic vision) with a few million pixels per image at several frames per second.
+Furthermore, if obstacle detection and ranging needs to be performed, more than one viewpoint (and hence more than one camera) are required, and the matching problem of the objects seen by the two and the geometric transformations are also some quite demanding computational problems.
+Such a workload can only be dealt with by higher-end computer graphics cards nowadays at a reasonable rate for the effective control of a moving vehicle.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{./figures/stereo.png}
+	\caption{The stereo matching problem {\footnotesize Source: \cite{ballard1982}}}
+	\label{fig:stereo}
+\end{figure}
 
 
 \subsection{Sensor comparison} \label{sec:sensorCompare}
