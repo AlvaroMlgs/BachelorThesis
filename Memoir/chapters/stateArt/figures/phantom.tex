@@ -1,0 +1,24 @@
+\begin{figure}[htbp]
+	\centering
+	\begin{overpic}[width=0.6\textwidth]{./figures/phantom.png}
+		\put(0,0){
+			\begin{tikzpicture}[xscale=0.094, yscale=0.094]
+
+				%\draw[help lines] (0,0) grid (100,50);
+				\draw[white](0,0) circle [radius=0];	% For alignment only
+
+				\draw[teal,ultra thick](37.5,25.5) circle [radius=3cm];	
+				\draw[teal,ultra thick](62.5,25.5) circle [radius=3cm];	
+
+				\draw[->,teal,thick] (40,24) -- (80,12);
+				\draw[->,teal,thick] (65,24) -- (80,12);
+
+				\node[above right] at (80,8) {\footnotesize Stereoscopic};
+				\node[right] at (80,8) {\footnotesize cameras};
+
+			\end{tikzpicture}
+			}
+	\end{overpic}
+	\caption{DJI Phantom 4 with stereo camera OCAS}
+	\label{fig:phantom}
+\end{figure}

@@ -6,12 +6,12 @@
 For that reason, most of the work considered in the present chapter is not yet ready for the market and has a great capacity to improve.
 Universities are actively exploring the autonomous aptitudes of UAVs, but the economical exploitation potential is still small due to the low reliability issues that these systems are encountering in non-controlled environments.
 
-In the present chapter several fields of interest to the project will be explored.
-First, some environment sensing alternatives will be compared.
-Then, the current commercial implementations of collision avoidance on aircraft will be studied, to finalise with ongoing research at the leading universities in UAV technology development.
+% In the present chapter several fields of interest to the project will be explored.
+% First, some environment sensing alternatives will be compared.
+% Then, the current commercial implementations of collision avoidance on aircraft will be studied, to finalise with ongoing research at the leading universities in UAV technology development.
 
 
-\section{Environment sensing}
+\section{Environment sensing} \label{sec:sensing}
 
 Knowing the environment is the initial step towards any interaction of a system with its surroundings.
 That knowledge could in principle be acquired a-priori and then copied into the system, but when either time-changing or completely unknown scenarios are considered, having a means of sensing the environment is essential.
@@ -24,17 +24,18 @@ Its usage dates back to 1904, when H\"ulsmeyer registered the patent for his Tel
 Nowadays, the radar works by emitting one powerful radio signal impulse against the object that needs to be located.
 If the signal reaches a solid object on its path, the electromagnetic wave will be distorted and part of it will be reflected back to the emission point, where a second listening antenna can detect it.
 
-\begin{wrapfigure}{r}{0.28\textwidth}
-	\centering
-	\includegraphics[width=0.25\textwidth]{./figures/antennaPattern.jpg}
-	\caption{Highly directional radiation pattern. {\footnotesize Source: \url{cisco.com}}}
-	\label{fig:antenna}
-\end{wrapfigure}
 The distance of the detected object is calculated by measuring the flight time of the signal since it was emitted until it is detected, applying the signal propagation speed ($3 \cdot 10^{^8} m/s$ for electromagnetic waves) as correction factor.
 The azimuth position of the object can be estimated if the initial signal was created by a highly directional antenna, since the orientation of the transmitting antenna can be measured and the sensed object must be contained in the electromagnetic radiation field.
 
-The fact that radar uses electromagnetic waves implies that the response time can be very high, although some technical issues may arise for the same fact at the time of processing the returned signal \cite{krolik2005}.
-A more in-depth comparison of reasons for and against each of the sensing methods will be contemplated in Section \ref{sec:sensorCompare}.
+The fact that radar uses electromagnetic waves implies that the response time can be very high, although some technical issues may arise for the same fact at the time of processing the returned signal.
+For that reason, radar-based sensor systems focus on temporal processing techniques to improve the results of the measurements \cite{krolik2005}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{./figures/antennaPattern.jpg}
+	\caption{Highly directional radiation pattern. {\footnotesize Source: \url{cisco.com}}}
+	\label{fig:antenna}
+\end{figure}
 
 \subsection{Sonar}
 
@@ -64,7 +65,7 @@ Instead, one or more cameras provide a two-dimensional array of data each that c
 It is in that processing where both the advantages and draw backs of computer vision lie.
 On one hand, many different transformations can be applied to the stream of data from the cameras, and information can be extracted on very diverse aspects such as colour, luminosity, movement, position, texture\dots \cite{ballard1982}
 Additionally, advanced processing techniques and even artificial intelligence can be applied to the image, which is a very flexible source of information.
-On the other hand though, the aforementioned processing tasks should be computed on a relatively high rate video stream, which implies several transformations on more than one video streams (for stereoscopic vision) with a few million pixels per image at several frames per second.
+On the other hand though, the aforementioned processing tasks should be computed on a relatively high rate video stream, which implies several transformations on various video streams (for stereoscopic vision) with a few million pixels per image, at several frames per second.
 Furthermore, if obstacle detection and ranging needs to be performed, more than one viewpoint (and hence more than one camera) are required, and the matching problem of the objects seen by the two and the geometric transformations are also some quite demanding computational problems.
 Such a workload can only be dealt with by higher-end computer graphics cards nowadays at a reasonable rate for the effective control of a moving vehicle.
 
@@ -76,22 +77,43 @@ Such a workload can only be dealt with by higher-end computer graphics cards now
 \end{figure}
 
 
-\subsection{Sensor comparison} \label{sec:sensorCompare}
-
-
 \section{Collision avoidance}
+
+The conventional sense and control problem has two very defined parts: the data acquisition stage that has been studied in Section \ref{sec:sensing} and the actuation of the control variables to modify the state of the system.
+In this section, the application alternatives of the latter in TRL 9 \cite{assistantsecretaryofdefenseforresearchandengineering2011} products will be studied.
 
 \subsection{TCAS on conventional aircraft}
 
+The Traffic alert and Collision Avoidance System is the standard system mandated for use by commercial aircraft.
+It creates a virtual safety volume around the aircraft, which is based on the time to the Closest Point Approach (CPA) \cite{tooley2009}.
+
+For the system to work, the host aircraft and the threatening aircraft must both equip an ATC transponder.
+If the external aircraft has only a Mode A transponder, only Traffic Advisories (TA) can be issued by the TCAS; when it is Mode C or S, also Resolution Advisores (RA) are issued; if the external aircraft is also equipped with a TCAS II, vertical coordination between the two aircraft is additionally provided by means of an ask-answer procedure.
+
+The system relies on two antennas that are usually placed at the top and bottom of the fuselage to provide antenna diversity.
+The signal carriers are 1030 MHz radio waves for the asking signal and 1090 MHz for the replying ones.
+
+Regarding the actuation component of the system, it is fully manual.
+When a TA or RA are issued, the pilots are responsible to take the control of the aircraft and perform the recommended manoeuvre.
+Thus, the system itself cannot be considered to be the one avoiding the collision, but rather helping the higher-level aircraft + crew system accomplish it.
+
 \subsection{DJI Phantom 4}
 
-\subsection{Tesla Motors}
+An Obstacle Collision Avoidance System was not available for commercial UAVs until as recent as March 2016.
+Chinese manufacturer DJI unveiled their Phantom 4 emphasising its ``aerial camera'' role for video professionals.
+
+Their reason for including such a system is to facilitate the creative process of filming while the UAV manages the flying aspect of the mission as autonomously as possible.
+To that end, apart from the primary recording camera, the Phantom 4 also incorporates two smaller front-facing cameras that use stereoscopic vision algorithms to detect potential obstacles in the planned trajectory and modify it on-the-fly.
+In addition, it also incorporates a lower-level failsafe: when the vehicle is not able to compute a reasonable alternative trajectory before the obstacle enters within a predefined distance to the vehicle as measured by the stereoscopic cameras, the flight controller will command a full stop to stationary flight until the obstacle is manually cleared by the pilot.
+
+\input{./figures/phantom.tex}
 
 
-\section{Real-time Guidance Navigation and Control (GNC)}
 
-\subsection{University of Pennsylvania}
-
-\subsection{ETH Z\"urich}
+% \section{Real-time Guidance Navigation and Control}
+% 
+% \subsection{University of Pennsylvania}
+% 
+% \subsection{ETH Z\"urich}
 
 

@@ -86,7 +86,7 @@ UAV, obstacle detection, collision avoidance, system integration, ultrasonic ran
 	- Sonar
 	- Lidar
 	- Computer vision
-	- Comparison: Use sonar because low-power, readily available, light, easy integration
+	- **(This goes in the Solution to the Problem chapter)** Comparison: Use sonar because low-power, readily available, light, easy integration
 - Collision avoidance
 	- TCAS on commercial aircraft
 	- Phantom 4
