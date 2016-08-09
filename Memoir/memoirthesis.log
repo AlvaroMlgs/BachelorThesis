@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  8 AUG 2016 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  9 AUG 2016 12:27
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2490,23 +2490,22 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10> not available
 (Font)              Font shape `T1/fnc/b/it' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
 (Font)              scaled to size 9.29993pt on input line 27.
-) [19
+[19
 
 
-] [20
+]) [20] (chapters/appendices/app0A.tex) [21
 
-] (chapters/appendices/app0A.tex) [21
 
 ] [22
 
 ] (memoirthesis.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 9.29993pt on input line 8.
+ [23
 
-[23
 
-
-]) [24]
+])
+[24]
 
 Package nag Warning: 2 complaints in total.
 
@@ -2526,10 +2525,10 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 ### simple group (level 1) entered at line 88 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32490 strings out of 493673
- 602952 string characters out of 3141524
+ 32491 strings out of 493673
+ 602963 string characters out of 3141524
  874429 words of memory out of 3000000
- 34678 multiletter control sequences out of 15000+200000
+ 34679 multiletter control sequences out of 15000+200000
  136598 words of font info for 349 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
  55i,13n,92p,1013b,1031s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2548,9 +2547,9 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb>
 eX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (36 pages, 1366437 bytes).
+Output written on memoirthesis.pdf (36 pages, 1367678 bytes).
 PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
+ 565 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
  57158 words of extra memory for PDF output out of 61914 (max. 10000000)
 

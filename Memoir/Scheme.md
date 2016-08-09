@@ -113,7 +113,7 @@ UAV, obstacle detection, collision avoidance, system integration, ultrasonic ran
 
 *Intermediate functional layer:* The proposed solution should work with existing UAVs, offered as an enhancement to the toolbox of functions already provided by the Ardupilot software
 
-**Why is it worthwhile?** 
+**Why is it worthwhile?**
 OCAS allows more autonomous operation of the system: the pilot does not need to be focused on the immediate surroundings of the vehicle, allowing for an improved situational awareness leading to a better execution of the mission.
 
 
