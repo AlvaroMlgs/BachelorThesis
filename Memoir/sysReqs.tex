@@ -1,0 +1,74 @@
+%\begin{table}[htbp]
+\begin{center}
+\begin{longtable}{>{\centering}m{0.7cm}|m{8cm}|>{\centering}m{2.7cm}|>{\centering}m{2.5cm}@{ }c@{ }}
+
+	\hline
+	\cellcolor{teal!10}{Req. ID}	&	\centering Requirement	&	Traceability (sourced from)	&	Traceability (allocated to)	&\\ \endfirsthead \endhead
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Certification}} \\
+	1.1	&	The UAV shall meet European regulations	&	EC No 218/2008	&	\\
+	1.2	&	The UAV shall meet Spanish regulations	&	Ley 18/2014		&	\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Architecture}} \\
+	2.1	&	The OCAS shall work independently of the UAV	&	Motivation	&	\\
+	2.2	&	The OCAS shall be self-contained within the UAV	&	Integration	&	\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Functionality}} \\
+	3.1	&	The OCAS shall detect obstacles surrounding the UAV	&	Motivation	&	\\
+	3.2	&	The OCAS shall avoid collisions with the detected obstacles	&	Motivation	&	\\
+	3.3	&	The OCAS shall not interfere with existing Ardupilot functions	&	Motivation	&	\\
+	3.4	&	The UAV shall maintain a communications data-link with the GCS at all time	&	Safety / FFBD	&	\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Performance}} \\
+	4.1	&	The OCAS shall detect obstacles closer than 4 m to the UAV	&	Technical constraint	&	\\
+	4.2	&	The OCAS shall detect obstacles of at least 0.5 m across	&	Technical constraint	&	\\
+	4.3	&	The OCAS shall be powered along the full mission	&	Safety / FFBD	&	\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Interfaces}} \\
+	5.1	&	The OCAS shall know the state of the UAV	&	FFBD	&	\\
+	5.2	&	The OCAS shall send commands to the UAV	&	FFBD	&	\\
+	5.3	&	The OCAS shall be accessible from the GCS	&	Human factors	&	\\
+	5.4	&	The OCAS shall be activated and deactivated by the pilot	&	Safety / Human factors	&	\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Safety}} \\
+	6.1	&	The OCAS shall improve the operational safety of the UAV	&	Motivation	&	\\
+	6.2	&	The operation of the OCAS shall not be disrupting to the workflow of the pilot	&	Motivation	&	\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Reliability}} \\
+	7.1	&	The OCAS shall avoid any physical collision	&	Motivation	&	\\
+	7.2	&	The OCAS shall be operative regardless of the state of the controller board	&	Safety	&\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Ergonomics and human factors}} \\
+	%\multicolumn{5}{l}{} \\
+	8.1	&	The OCAS shall be operable after a short training by any pilot	&	Motivation	&	\\
+	8.2	&	The OCAS should be engaged and disengaged at discretion of the pilot	&	Safety / FFBD	&	\\ 
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Loads}} \\
+	9.1	&	The OCAS shall stand the same loads as the UAV	&	Integration	&	~	&\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Weight}} \\
+	10.1	&	The UAV + OCAS shall not weight more than the limit of the UAV segment	&	Regulations	&	~	&\\
+
+	\hline
+	\multicolumn{5}{l}{\cellcolor{black!15}{\footnotesize Environment}} \\
+	11.1	&	The OCAS shall withstand the effect of open-air flight	&	Integration	&	~	&\\
+
+	\hline
+
+	\caption{\cellcolor{white}{System-level requirements}}
+	\label{tab:sysReqs}
+
+\end{longtable}
+
+\end{center}
+%\end{table}
