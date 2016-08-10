@@ -34,5 +34,6 @@
 \contentsline {chapter}{\chapternumberline {4}Problem statement}{19}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}System design}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Requirements capture}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Functional Analysis}{23}{section.5.2}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{25}{appendix.A}
 \contentsline {chapter}{Bibliography}{27}{section*.17}
