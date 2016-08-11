@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  10 AUG 2016 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  11 AUG 2016 11:25
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2007,6 +2007,10 @@ File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
 s\tikzlibrarypetri.code.tex"
 File: tikzlibrarypetri.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.3)
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarytrees.code.tex"
+File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box77
@@ -2048,63 +2052,63 @@ Loading lettrine.cfg
 \c@resu=\count352
 
 (memoirthesis.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 338.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 339.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 33
-8.
+9.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\fmlfncmi.fd"
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 338.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 338
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 339.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 339
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\fmsfncm.fd"
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 338.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 338
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 339.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 339
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 338.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 338.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 339.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 339.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 338.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 339.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\t1fnc.fd"
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 338.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 338.
+(Font)              scaled to size 10.18341pt on input line 339.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 339.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 338.
+Package layouts Warning: Layout scale set to 0.5 on input line 339.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2130,7 +2134,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box81
-Package hyperref Info: Link coloring OFF on input line 338.
+Package hyperref Info: Link coloring OFF on input line 339.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2142,13 +2146,13 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 338.
-LaTeX Info: Redefining \ref on input line 338.
-LaTeX Info: Redefining \pageref on input line 338.
-LaTeX Info: Redefining \nameref on input line 338.
+LaTeX Info: Redefining \nameref on input line 339.
+LaTeX Info: Redefining \ref on input line 339.
+LaTeX Info: Redefining \pageref on input line 339.
+LaTeX Info: Redefining \nameref on input line 339.
 (memoirthesis.out) (memoirthesis.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \microtypecontext on input line 338.
+LaTeX Info: Redefining \microtypecontext on input line 339.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2164,13 +2168,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  ABD: EveryShipout initializing macros
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 338.
+t line 339.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 338.
+t line 339.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 338.
+line 339.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 338.
+line 339.
 
 (frontmatter/title.tex
 
@@ -2189,7 +2193,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
-<logos/logoUC3M.pdf, id=154, 87.32625pt x 27.10126pt>
+<logos/logoUC3M.pdf, id=158, 87.32625pt x 27.10126pt>
 File: logos/logoUC3M.pdf Graphic file (type pdf)
  <use logos/logoUC3M.pdf>
 Package pdftex.def Info: logos/logoUC3M.pdf used on input line 34.
@@ -2239,7 +2243,7 @@ l.29 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.366 \clearemptydoublepage
+l.367 \clearemptydoublepage
                             [2
 
 
@@ -2313,7 +2317,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 ) [5])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 379.
+(Font)              scaled to size 9.29993pt on input line 380.
 
 [6] (memoirthesis.lof
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
@@ -2407,7 +2411,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 ] (chapters/background/background.tex [9
 
 ]
-<chapters/background/./figures/RCtransmitter.jpg, id=377, 378.41376pt x 370.383
+<chapters/background/./figures/RCtransmitter.jpg, id=384, 378.41376pt x 370.383
 74pt>
 File: chapters/background/./figures/RCtransmitter.jpg Graphic file (type jpg)
  <use chapters/background/./figures/RCtransmitter.jpg>
@@ -2415,7 +2419,7 @@ Package pdftex.def Info: chapters/background/./figures/RCtransmitter.jpg used o
 n input line 30.
 (pdftex.def)             Requested size: 112.0pt x 109.62395pt.
 
-<chapters/background/./figures/RCreceiver.jpg, id=378, 401.5pt x 293.095pt>
+<chapters/background/./figures/RCreceiver.jpg, id=385, 401.5pt x 293.095pt>
 File: chapters/background/./figures/RCreceiver.jpg Graphic file (type jpg)
 
 <use chapters/background/./figures/RCreceiver.jpg>
@@ -2424,7 +2428,7 @@ nput line 36.
 (pdftex.def)             Requested size: 134.40137pt x 98.11252pt.
  [10 <./chapters/background/./figures/RCtransmitter.jpg> <./chapters/background
 /./figures/RCreceiver.jpg>]
-<chapters/background/./figures/missionplanner.png, id=391, 760.34062pt x 548.04
+<chapters/background/./figures/missionplanner.png, id=398, 760.34062pt x 548.04
 75pt>
 File: chapters/background/./figures/missionplanner.png Graphic file (type png)
  <use chapters/background/./figures/missionplanner.png>
@@ -2457,7 +2461,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
  [15
 
 ]
-<chapters/stateArt/./figures/antennaPattern.jpg, id=421, 127.22531pt x 119.6971
+<chapters/stateArt/./figures/antennaPattern.jpg, id=428, 127.22531pt x 119.6971
 9pt>
 File: chapters/stateArt/./figures/antennaPattern.jpg Graphic file (type jpg)
  <use chapters/stateArt/./figures/antennaPattern.jpg>
@@ -2465,7 +2469,7 @@ Package pdftex.def Info: chapters/stateArt/./figures/antennaPattern.jpg used on
  input line 35.
 (pdftex.def)             Requested size: 134.40137pt x 126.45467pt.
  [16 <./chapters/stateArt/./figures/antennaPattern.jpg>]
-<chapters/stateArt/./figures/stereo.png, id=432, 283.81032pt x 167.87718pt>
+<chapters/stateArt/./figures/stereo.png, id=439, 283.81032pt x 167.87718pt>
 File: chapters/stateArt/./figures/stereo.png Graphic file (type png)
 
 <use chapters/stateArt/./figures/stereo.png>
@@ -2474,7 +2478,7 @@ ine 74.
 (pdftex.def)             Requested size: 224.0pt x 132.50368pt.
  [17 <./chapters/stateArt/./figures/stereo.png>] (chapters/stateArt/./figures/p
 hantom.tex
-<chapters/stateArt/./figures/phantom.png, id=443, 803.0pt x 401.5pt>
+<chapters/stateArt/./figures/phantom.png, id=450, 803.0pt x 401.5pt>
 File: chapters/stateArt/./figures/phantom.png Graphic file (type png)
 
 <use chapters/stateArt/./figures/phantom.png>
@@ -2507,9 +2511,13 @@ LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 Underfull \vbox (badness 10000) detected at line 37
  []
 
-[22])) [23] [24
+[22]) (chapters/design/./figures/functArch.tex
+Overfull \hbox (14.69089pt too wide) in paragraph at lines 4--46
+[][]  [] 
+ []
 
-] (chapters/appendices/app0A.tex) [25
+)) [23] [24] (chapters/appendices/app0A.tex) [25
+
 
 ] [26
 
@@ -2524,26 +2532,26 @@ Package nag Warning: 2 complaints in total.
 \tf@toc=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
 (memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: AC85C2DD141369B32D4A941A4D6DD61F;2293.
+(rerunfilecheck)             Checksum: 2A013683111931D39437490A331F9285;2371.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 88 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32570 strings out of 493673
- 604248 string characters out of 3141524
- 875801 words of memory out of 3000000
- 34712 multiletter control sequences out of 15000+200000
+ 32746 strings out of 493673
+ 608846 string characters out of 3141524
+ 888153 words of memory out of 3000000
+ 34880 multiletter control sequences out of 15000+200000
  140260 words of font info for 362 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 55i,13n,99p,1013b,1031s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,13n,99p,1013b,1447s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
 }{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\
 Usuario\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
@@ -2560,9 +2568,9 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb>
 s/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncn
 trsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (40 pages, 1401032 bytes).
+Output written on memoirthesis.pdf (40 pages, 1405612 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 59230 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 59238 words of extra memory for PDF output out of 61914 (max. 10000000)
 

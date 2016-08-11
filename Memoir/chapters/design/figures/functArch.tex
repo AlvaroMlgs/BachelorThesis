@@ -1,0 +1,49 @@
+
+\begin{figure}[htpb]
+	%\centering
+	\hspace{-2cm}
+\begin{tikzpicture}
+
+	\tikzstyle{every node}=[rectangle,
+		draw=black,fill=teal!20,
+		minimum height=0.7cm,minimum width=2cm,
+		align=center]
+	\tikzstyle{edge from parent}=[black!50,thick,-o,draw]
+
+	\tikzstyle{level 0}=[very thick]
+	\tikzstyle{level 1}=[semithick,
+		sibling distance=6cm,level distance=2cm,inner sep=3mm,
+		edge from parent fork down]
+	\tikzstyle{level 2}=[ultra thin,rounded corners,
+		sibling distance=2cm,level distance=1.5cm,inner sep=2mm,
+		grow=down,anchor=west,
+		edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)},
+		grow via three points={one child at (1.5em,-4em) and
+		two children at (1.5em,-4em) and (1.5em,-7.5em)}]
+	
+	\node[fill=teal!70]	{Obstacle Collision Avoidance System}
+		child	{node[fill=teal!40] {Communicate with\\ Ground Control}
+			child	{node {Start OCAS}}
+			child	{node {Log information}}
+			child	{node {Stop OCAS}}
+		}
+		child	{node[fill=teal!40] {Detect obstacle}
+			child	{node {Monitor environment}}
+			child	{node {Confirm detection}}
+			child	{node {Determine distance}}
+			child	{node {Determine velocity}}
+			child	{node {Establish level of threat}}
+			child	{node {Decide on action}}
+		}
+		child	{node[fill=teal!40] {Avoid collision}
+			child	{node {Compute trajectory}}
+			child	{node {Compute\\ recquired actuation}}
+			child	{node {Command actuation}}
+		};
+
+
+\end{tikzpicture}
+
+	\caption{Functional architecture}
+	\label{fig:functArch}
+\end{figure}
