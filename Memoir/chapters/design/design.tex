@@ -43,8 +43,27 @@ Its purpose is to understand the manner in which the requirements affect the way
 
 \subsection{Functional Architecture}
 
-The logical decomposition perform during the functional analysis decomposes the top level requirements and allocates them down to the lowest desired levels.
+The logical decomposition performed during the functional analysis decomposes the top level requirements and allocates them down to the lowest desired levels.
 The main outcome of the process is the Functional Architecture (Figure \ref{fig:functArch}), which helps establish relationships between requirements, and ultimately build a System Architecture.
 
 \input{./figures/functArch.tex}
+
+The main purpose is to create an association between the requirements and the functions that the system needs to be able to perform to meet them.
+In the process, any discrepancy or missing items can (and should) be identified and corrected in an iterative manner.
+
+\subsection{Functional Flow Block Diagram (FFBD)}
+
+Once the functions of the system are defined, it is useful to dispose them so that the sequential use of each of them during the mission is shown.
+To that end, the Functional Flow Block Diagram is used.
+
+In the FFBD each function is represented by a block, and it is described in terms of inputs, outputs and interfaces.
+In the case that a function is composed of several sub-functions, those will be represented hierarchically, so that the general flow is maintained.
+
+The FFBD shows \emph{what} must happen, and provides an end-to-end path considering all the functionality of the system and the predefined use-case scenarios.
+Parallel or alternate paths might be considered.
+
+\input{./figures/ffbd.tex}
+
+
+
 

@@ -1,7 +1,7 @@
 
 \begin{figure}[htpb]
 	%\centering
-	\hspace{-2cm}
+	\hspace{-1cm}
 \begin{tikzpicture}
 
 	\tikzstyle{every node}=[rectangle,
@@ -12,20 +12,27 @@
 
 	\tikzstyle{level 0}=[very thick]
 	\tikzstyle{level 1}=[semithick,
-		sibling distance=6cm,level distance=2cm,inner sep=3mm,
+		sibling distance=4.5cm,level distance=2.5cm,inner sep=3mm,
 		edge from parent fork down]
 	\tikzstyle{level 2}=[ultra thin,rounded corners,
 		sibling distance=2cm,level distance=1.5cm,inner sep=2mm,
 		grow=down,anchor=west,
-		edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)},
-		grow via three points={one child at (1.5em,-4em) and
-		two children at (1.5em,-4em) and (1.5em,-7.5em)}]
+		edge from parent path={(\tikzparentnode.south west) |- (\tikzchildnode.west)},
+		grow via three points={one child at (-3em,-4.5em) and
+		two children at (-3em,-4.5em) and (-3em,-8em)}]
 	
-	\node[fill=teal!70]	{Obstacle Collision Avoidance System}
+	\node[fill=teal!70]	{\scshape Obstacle Collision Avoidance System}
 		child	{node[fill=teal!40] {Communicate with\\ Ground Control}
+			child	{node {Create\\ data-link}}
 			child	{node {Start OCAS}}
 			child	{node {Log information}}
+			child	{node {Send information\\ to GCS}}
 			child	{node {Stop OCAS}}
+		}
+		child	{node[fill=teal!40] {Communicate\\ with UAV}
+			child	{node {Create\\ data-link}}
+			child	{node {Read state}}
+			child	{node {Send commands}}
 		}
 		child	{node[fill=teal!40] {Detect obstacle}
 			child	{node {Monitor environment}}
@@ -37,13 +44,14 @@
 		}
 		child	{node[fill=teal!40] {Avoid collision}
 			child	{node {Compute trajectory}}
-			child	{node {Compute\\ recquired actuation}}
+			child	{node {Determine\\ recquired actuation}}
 			child	{node {Command actuation}}
 		};
 
 
 \end{tikzpicture}
 
-	\caption{Functional architecture}
+	\caption{OCAS Functional Architecture}
 	\label{fig:functArch}
+
 \end{figure}
