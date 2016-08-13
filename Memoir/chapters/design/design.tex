@@ -55,7 +55,6 @@ In the process, any discrepancy or missing items can (and should) be identified 
 
 Once the functions of the system are defined, it is useful to dispose them so that the sequential use of each of them during the mission is shown.
 To that end, the Functional Flow Block Diagram is used.
-
 In the FFBD each function is represented by a block, and it is described in terms of inputs, outputs and interfaces.
 In the case that a function is composed of several sub-functions, those will be represented hierarchically, so that the general flow is maintained.
 
@@ -64,6 +63,27 @@ Parallel or alternate paths might be considered.
 
 \input{./figures/ffbd.tex}
 
+For the block diagrams depicted in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}, the symbology used is explained below:
 
+\begin{itemize}
+	\item 
+		\tikz \draw[rounded corners=1mm,fill=teal!40,draw=black,semithick] (0,0) rectangle (6mm,3mm);
+		\ represents an individual function or subfunction as defined in the Functional Architecture from Figure \ref{fig:functArch}.
+	\item
+		\tikz \draw[circle,fill=teal!70!black!70,draw=none,text=white,inner sep=1mm,node distance=2cm] (0,0) circle (2mm);
+		\ represents a logical \textit{and} or \textit{or} gate for defining parallel or alternative paths, respectively.
+	\item
+		\tikz \draw[rectangle,rounded corners=1.5mm,fill=black!30,draw=black,thin] (0,0) rectangle (5mm,3mm);
+		\ represents a reference block that specifies the origin or destination of a path from an external function of the system.
+	\item
+		\tikz \draw[rounded corners=1mm,draw=red!70!black!100,very thick,dashed] (0,0) rectangle (6mm,3mm);
+		\ represents the boundaries of the functional description, be it the whole system or a subfunction of it.
+	\item
+		\tikz \draw[>=stealth,->,thick] (0,0) -- (5mm,0);
+		\ indicates the secuential order that is to be followed from one function to another.
+	\item
+		\tikz \draw[>=stealth,->,thick,dashed] (0,0) -- (5mm,0);
+		\ indicates an information flow between two functional blocks.
+\end{itemize}
 
 

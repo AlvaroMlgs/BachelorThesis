@@ -76,9 +76,9 @@
 		\tikzstyle{arrow}=[>=stealth,->,thick]
 
 		\node[reference]	(pilot)	{Ref./\\ Pilot input};
-		\node[function,right of=pilot]	(GCS)	{1.1/ Start\\ data-link\\ with GCS};
+		\node[function,right of=pilot]	(GCS)	{1.1/ Create\\ data-link\\ with GCS};
 		\node[function,right of=GCS]	(OCAS)	{1.2/ Start\\ OCAS};
-		\node[function,right of=OCAS]	(UAV)	{1.3/ Start\\ data-link\\ with UAV};
+		\node[function,right of=OCAS]	(UAV)	{1.3/ Create\\ data-link\\ with UAV};
 		\node[reference,right of=UAV]	(start)	{Ref. 2.0/\\ Start mission};
 
 		\draw[arrow] (pilot) -- (GCS);
@@ -150,3 +150,131 @@
 	\label{fig:ffbd3}
 
 \end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+	\begin{tikzpicture}
+		
+		\tikzstyle{reference}=[rectangle,rounded corners=0.5cm,
+			fill=black!30,draw=black,thin,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=3.5cm]
+		\tikzstyle{function}=[rectangle,rounded corners,
+			fill=teal!40,draw=black,semithick,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=3.5cm]
+		\tikzstyle{logic}=[circle,
+			fill=teal!70!black!70,text=white,
+			inner sep=1mm,node distance=2.3cm]
+		\tikzstyle{boundary}=[rounded corners,
+			draw=red!70!black!100,very thick,dashed]
+		\tikzstyle{arrow}=[>=stealth,->,thick]
+
+		\node[reference]	(detect)	{Ref. 3.0/\\ Detect obstacle};
+		\node[function,right of=detect]	(trajectory)	{4.1/ Compute\\ trajectory};
+		\node[function,right of=trajectory]	(actuation)	{4.2/ Determine\\ actuation};
+		\node[function,right of=actuation]	(command)	{4.3/ Command\\ actuation};
+		\node[reference,right of=command]	(terminate)	{Ref. 7.0/\\ Terminate\\ mission};
+		\node[reference,below of=command,yshift=1.2cm]	(UAV)	{Ref. 5.2/\\ Communicate\\ with UAV};
+
+		\draw[arrow] (detect) -- (trajectory);
+		\draw[arrow] (trajectory) -- (actuation);
+		\draw[arrow] (actuation) -- (command);
+		\draw[arrow] (command) -- (terminate);
+		\draw[arrow,dashed] (command) -- (UAV);
+
+		\draw[boundary] ($(trajectory)+(-1.7cm,1cm)$) rectangle ($(command)+(1.8cm,-1cm)$);
+		
+	\end{tikzpicture}
+
+	\caption{OCAS Functional Flow Block Diagram. 4$^{\text{th}}$ STAGE}
+	\label{fig:ffbd4}
+
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+	\begin{tikzpicture}
+		
+		\tikzstyle{reference}=[rectangle,rounded corners=0.5cm,
+			fill=black!30,draw=black,thin,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=2.3cm]
+		\tikzstyle{function}=[rectangle,rounded corners,
+			fill=teal!40,draw=black,semithick,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=3cm]
+		\tikzstyle{logic}=[circle,
+			fill=teal!70!black!70,text=white,
+			inner sep=1mm,node distance=2.5cm]
+		\tikzstyle{boundary}=[rounded corners,
+			draw=red!70!black!100,very thick,dashed]
+		\tikzstyle{arrow}=[>=stealth,->,thick]
+
+		\node[reference]	(start)	{Ref. 2.0/\\ Start mission};
+		\node[logic,right of=start]	(and)	{and};
+		\node[function,above right of=and,yshift=-1cm]	(read)	{5.1/ Read\\ state};
+		\node[function,below right of=and,yshift=1cm]	(send)	{5.2/ Send\\ command};
+		\node[reference,below of=send,yshift=0.5cm]	(avoid)	{Ref. 4.3/\\ Avoid collision};
+		\coordinate[right of=and,xshift=3cm]	(coord)	{};
+		\node[reference,right of=coord]	(terminate)	{Ref. 7.0/\\ Terminate\\ mission};
+
+		\draw[arrow] (start) -- (and);
+		\draw[arrow] (and) |- (read);
+		\draw[arrow] (and) |- (send);
+		\draw[arrow,dashed] (avoid) -- (send);
+		\draw[arrow] (read) -| (coord) -- (terminate);
+		\draw[arrow] (send) -| (coord) -- (terminate);
+
+		\draw[boundary] ($(and)+(-0.8cm,2cm)$) rectangle ($(coord)+(0.8cm,-2cm)$);
+		
+	\end{tikzpicture}
+
+	\caption{OCAS Functional Flow Block Diagram. 5$^{\text{th}}$ STAGE}
+	\label{fig:ffbd5}
+
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+	\begin{tikzpicture}
+		
+		\tikzstyle{reference}=[rectangle,rounded corners=0.5cm,
+			fill=black!30,draw=black,thin,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=3cm]
+		\tikzstyle{function}=[rectangle,rounded corners,
+			fill=teal!40,draw=black,semithick,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=3cm]
+		\tikzstyle{logic}=[circle,
+			fill=teal!70!black!70,text=white,
+			inner sep=1mm,node distance=2.5cm]
+		\tikzstyle{boundary}=[rounded corners,
+			draw=red!70!black!100,very thick,dashed]
+		\tikzstyle{arrow}=[>=stealth,->,thick]
+
+		\node[reference]	(start)	{Ref. 2.0/\\ Start mission};
+		\node[reference,below of=start,yshift=1cm]	(detect)	{Ref. 3.1/\\ Detect obstacle};
+		\node[function,right of=start]	(GCS)	{6.1/ Send\\ information\\ to GCS};
+		\node[function,right of=GCS]	(log)	{6.2/ Log\\ information};
+		\node[reference,right of=log]	(terminate)	{Ref. 7.0/\\ Terminate\\ mission};
+
+		\draw[arrow] (start) -- (GCS);
+		\draw[arrow] (GCS) -- (log);
+		\draw[arrow] (log) -- (terminate);
+		\draw[arrow,dashed] (detect) -| (GCS);
+
+		\draw[boundary] ($(GCS)+(-1.5cm,1.2cm)$) rectangle ($(log)+(1.5cm,-1.2cm)$);
+		
+	\end{tikzpicture}
+
+	\caption{OCAS Functional Flow Block Diagram. 6$^{\text{th}}$ STAGE}
+	\label{fig:ffbd6}
+
+\end{figure}
+
+
