@@ -39,5 +39,6 @@
 \contentsline {subsection}{\numberline {5.2.2}Functional Flow Block Diagram (FFBD)}{24}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Product Breakdown Structure (PBS)}{27}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Functional-Physical matrix}{28}{subsection.5.2.4}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{29}{appendix.A}
-\contentsline {chapter}{Bibliography}{31}{section*.27}
+\contentsline {subsection}{\numberline {5.2.5}Interfaces definition (N$^2$ diagram)}{29}{subsection.5.2.5}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{31}{appendix.A}
+\contentsline {chapter}{Bibliography}{33}{section*.29}

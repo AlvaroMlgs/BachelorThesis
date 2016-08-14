@@ -1,0 +1,61 @@
+
+\begin{figure}[htbp]
+	\hspace{-2.9cm}
+	\begin{tikzpicture}
+
+		\tikzstyle{module}=[rectangle,
+			fill=teal!50,draw=black,
+			minimum height=1.7cm,minimum width=1.7cm,
+			node distance=2.4042cm,	%=sqrt(1.7cm)
+			align=center,inner sep=0mm]
+		\tikzstyle{arrow}=[->,>=stealth,
+			draw=black,thick,
+			rounded corners=0.8cm]
+
+		\node[module,fill=gray]	(pilot)	{PILOT};
+		\node[module,below right of=pilot]	(power)	{Power};
+		\node[module,below right of=power]	(computer-m)	{Computer\\ mount};
+		\node[module,below right of=computer-m]	(sensor-m)	{Sensor\\ mount};
+		\node[module,below right of=sensor-m]	(sensors)	{Sensors};
+		\node[module,below right of=sensors]	(cpu)	{Processing\\ unit};
+		\node[module,below right of=cpu]	(gcs)	{GCS\\ connector};
+		\node[module,below right of=gcs]	(sensor-o)	{Sensor\\ operator};
+		\node[module,below right of=sensor-o]	(signal)	{Signal\\ processor};
+		\node[module,below right of=signal]	(actuation)	{Actuation\\ calculator};
+		\node[module,below right of=actuation]	(uav)	{UAV\\ connector};
+		\node[module,below right of=uav,fill=gray]	(UAV)	{UAV};
+
+		\draw[arrow]	(pilot)		-|	(gcs);
+		\draw[arrow]	(pilot)		-|	(UAV);
+		\draw[arrow]	(UAV)		-|	(pilot);
+		\draw[arrow]	(gcs)		-|	(pilot);
+
+		\draw[arrow]	(power)		-|	(sensors);
+		\draw[arrow]	(power)		-|	(cpu);
+
+		\draw[arrow]	(computer-m)-|	(cpu);
+
+		\draw[arrow]	(sensor-m)	-|	(sensors);
+
+		\draw[arrow]	(sensors)	-|	(sensor-o);
+
+		\draw[arrow]	(cpu)		-|	(gcs);
+		\draw[arrow]	(cpu)		-|	(sensor-o);
+		\draw[arrow]	(gcs)		-|	(cpu);
+		\draw[arrow]	(signal)	-|	(cpu);
+		\draw[arrow]	(uav)		-|	(cpu);
+
+		\draw[arrow]	(sensor-o)	-|	(signal);
+
+		\draw[arrow]	(signal)	-|	(actuation);
+
+		\draw[arrow]	(actuation)	-|	(uav);
+
+		\draw[arrow]	(uav)		-|	(UAV);
+		\draw[arrow]	(UAV)		-|	(uav);
+		
+	\end{tikzpicture}
+
+	\caption{OCAS N$^2$ diagram for interfaces definition}
+	\label{fig:N2}
+\end{figure}

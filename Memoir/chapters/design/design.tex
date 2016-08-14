@@ -108,6 +108,22 @@ For the matrix represented in Table \ref{tab:functPhys}, the requirements, funct
 
 \input{./tables/functPhys.tex}
 
+As it can be seen for requirements 9.1, 10.1 and 11.1, they are requirements affecting the entire system, and thus cannot be associated to any function: they are requirements that impose hardware constrains only.
 
+\subsection{Interfaces definition (N$^2$ diagram)}
+
+For the correct integration of the system the definition of its interfaces is of utmost importance.
+The N$^2$ diagram is commonly used for the development of those interfaces.
+
+In the N$^2$ diagram, an N$\times$N matrix is built.
+In the main diagonal all the systems or subsystems are placed, while the upper and lower triangles are reserved for the interfaces, which are clasified into inputs and outputs.
+An input to any of the modules is represented through its vertical cells, while the output is place on the horizontal rows.
+An example N$^2$ diagram can be found in Figure \ref{fig:N2example}
+
+\input{./figures/N2example.tex}
+
+For the Obstacle Collision Avoidance System N$^2$ diagram in Figure \ref{fig:N2}, the subsystems defined in the Product Breakdown Structure (Figure \ref{fig:pbs}) will be placed in the main diagonal.
+
+\input{./figures/N2.tex}
 
 
