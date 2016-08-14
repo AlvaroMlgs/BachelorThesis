@@ -34,8 +34,10 @@
 \contentsline {chapter}{\chapternumberline {4}Problem statement}{19}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}System design}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Requirements capture}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Functional Analysis}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Functional Architecture}{23}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}Logical Decomposition}{23}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Functional Architecture}{24}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Functional Flow Block Diagram (FFBD)}{24}{subsection.5.2.2}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{27}{appendix.A}
-\contentsline {chapter}{Bibliography}{29}{section*.24}
+\contentsline {subsection}{\numberline {5.2.3}Product Breakdown Structure (PBS)}{27}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Functional-Physical matrix}{28}{subsection.5.2.4}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{29}{appendix.A}
+\contentsline {chapter}{Bibliography}{31}{section*.27}

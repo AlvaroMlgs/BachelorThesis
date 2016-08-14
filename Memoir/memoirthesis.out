@@ -32,8 +32,10 @@
 \BOOKMARK [0][-]{chapter.4}{Problem statement}{}% 32
 \BOOKMARK [0][-]{chapter.5}{System design}{}% 33
 \BOOKMARK [1][-]{section.5.1}{Requirements capture}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Functional Analysis}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.2}{Logical Decomposition}{chapter.5}% 35
 \BOOKMARK [2][-]{subsection.5.2.1}{Functional Architecture}{section.5.2}% 36
 \BOOKMARK [2][-]{subsection.5.2.2}{Functional Flow Block Diagram \(FFBD\)}{section.5.2}% 37
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 38
-\BOOKMARK [0][-]{section*.24}{Bibliography}{}% 39
+\BOOKMARK [2][-]{subsection.5.2.3}{Product Breakdown Structure \(PBS\)}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.4}{Functional-Physical matrix}{section.5.2}% 39
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 40
+\BOOKMARK [0][-]{section*.27}{Bibliography}{}% 41

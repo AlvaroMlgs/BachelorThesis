@@ -1,0 +1,52 @@
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+		
+		\tikzstyle{every node}=[rectangle,
+			draw=black,fill=teal!15,
+			minimum height=0.7cm,minimum width=2cm,
+			align=center]
+		\tikzstyle{edge from parent}=[black!50,thick,-o,draw]
+
+		\tikzstyle{level 0}=[very thick]
+		\tikzstyle{level 1}=[semithick,
+			sibling distance=8cm,level distance=2cm,inner sep=3mm,
+			edge from parent fork down]
+		\tikzstyle{level 2}=[semithick,
+			sibling distance=3cm,level distance=2cm,inner sep=3mm,
+			edge from parent fork down]
+		\tikzstyle{level 3}=[ultra thin,rounded corners,
+			sibling distance=2cm,level distance=1.5cm,inner sep=1mm,
+			grow=down,anchor=west,
+			edge from parent path={(\tikzparentnode.south west) |- (\tikzchildnode.west)},
+			grow via three points={one child at (-2em,-4.5em) and
+			two children at (-2em,-4.4em) and (-2em,-7.6em)}]
+		
+		\node[fill=teal!70]	{\scshape Obstacle Collision Avoidance System}
+			child	{node[fill=teal!40] {Hardware}
+				child	{node[fill=teal!20] {1.0/ Computer\\ board}
+					child	{node {1.1/ Processing\\ unit}}
+					child	{node {1.2/ Peripheral\\ connections}}
+				}
+				child	{node[fill=teal!20] {2.0/ Sensors}}
+				child	{node[fill=teal!20] {3.0/ Structure}
+					child	{node {3.1/ Sensor\\ mount}}
+					child	{node {3.2/ Computer\\ mount}}
+				}
+				child	{node[fill=teal!20] {4.0/ Power}}
+			}
+			child	{node[fill=teal!40] {Software}
+				child	{node {5.0/ Program\\ driver}
+					child	{node {5.1/ GCS\\ connector}}
+					child	{node {5.2/ Sensor\\ operator}}
+					child	{node {5.3/ Signal\\ processor}}
+					child	{node {5.4/ Actuation\\ calculator}}
+					child	{node {5.5/ UAV\\ connector}}
+				}
+			}
+		;
+
+	\end{tikzpicture}
+	\caption{OCAS Product Breakdown Structure}
+	\label{fig:pbs}
+\end{figure}

@@ -29,17 +29,19 @@ However, for this project, customers and stakeholders will be disregarded (since
 
 In the present section some requirements will be posed, but only those that directly apply to the OCAS subsystem or its interfaces, since the platform is considered to be completely functional prior to the introduction of the solution (following the modularity concept).
 
-\input{./sysReqs.tex}
+\input{./tables/sysReqs.tex}
 
 Notice that Table \ref{tab:sysReqs} is not static, and should be updated during the design process, since some of the tools of Systems Engineering are designed to expose missing requirements.
 Thus, some requirements have been written at later design stages, as the ``Traceability (sourced from)'' column shows.
 Also, the fourth column is to be completed in the subsystem design stage, when the system requirements will be allocated to one or more specific subsystems or components.
 
 
-\section{Functional Analysis}
+\section{Logical Decomposition}
 
-The Functional Analysis is an intermediate step between the Requirements Capture and the Design phases.
-Its purpose is to understand the manner in which the requirements affect the way that the system functions, for the requirements loop; and to identify a feasible solution that functions in a way that meets the requirements, for the design loop.
+The Logical Decomposition is an intermediate step between the Requirements Capture and the Design phases.
+Its purpose is to understand the manner in which the requirements affect the way that the system functions, for the requirements loop; and to identify a feasible solution that functions in a way that meets the requirements, for the design loop, as shown in Figure \ref{fig:decomposition}
+
+\input{./figures/decomposition.tex}
 
 \subsection{Functional Architecture}
 
@@ -56,14 +58,14 @@ In the process, any discrepancy or missing items can (and should) be identified 
 Once the functions of the system are defined, it is useful to dispose them so that the sequential use of each of them during the mission is shown.
 To that end, the Functional Flow Block Diagram is used.
 In the FFBD each function is represented by a block, and it is described in terms of inputs, outputs and interfaces.
-In the case that a function is composed of several sub-functions, those will be represented hierarchically, so that the general flow is maintained.
+In the case that a function is composed of several sub-functions, those will be represented hierarchicallyfrom the top level down to the most specific sub-function, maintaining the general flow.
 
 The FFBD shows \emph{what} must happen, and provides an end-to-end path considering all the functionality of the system and the predefined use-case scenarios.
 Parallel or alternate paths might be considered.
 
 \input{./figures/ffbd.tex}
 
-For the block diagrams depicted in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}, the symbology used is explained below:
+For the block diagrams depicted in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}, the symbology explained below is used:
 
 \begin{itemize}
 	\item 
@@ -85,5 +87,27 @@ For the block diagrams depicted in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}, t
 		\tikz \draw[>=stealth,->,thick,dashed] (0,0) -- (5mm,0);
 		\ indicates an information flow between two functional blocks.
 \end{itemize}
+
+
+\subsection{Product Breakdown Structure (PBS)}
+
+Once the functions are properly defined, they need to be allocated to the subsystems that will be in charge of accomplishing them.
+To that end, the system is decomposed in its forming subsystems ensuring that all the functions can be achieved by the system.
+The decomposition process is visually show via the Product Breakdown Structure, which is represented in Figure \ref{fig:pbs}
+
+\input{./figures/pbs.tex}
+
+
+\subsection{Functional-Physical matrix}
+
+Finally, to couple the Requirements (Table \ref{tab:sysReqs}) with the Functional Architecture (Figure \ref{fig:functArch}) and with the Physical product (Figure \ref{fig:pbs}), a functional-physical matrix can be built.
+This tool is very relevant since it exposes possible mismatches between the three steps, which would lead to requirements not being met or a product that cannot perform its intended functions.
+Thus, by filling the matrix, the designer can go back to previous steps and adjust anything that is needed in order to avoid the exponential increase in cost that was mentioned at the beginning of the present Chapter.
+
+For the matrix represented in Table \ref{tab:functPhys}, the requirements, functions and subsystems have been represented by their ID as defined in Table \ref{tab:sysReqs}, Figures \ref{fig:ffbd0} to \ref{fig:ffbd6} and Figure \ref{fig:pbs}, respectively.
+
+\input{./tables/functPhys.tex}
+
+
 
 

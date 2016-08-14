@@ -137,8 +137,8 @@
 		\draw[arrow] (distance) -| (coord) -- (threat);
 		\draw[arrow] (velocity) -| (coord) -- (threat);
 		\draw[arrow] (threat) -- (decide);
-		\draw[arrow] (decide) -- node[right]{Dangerous}(avoid);
-		\draw[arrow] (decide) -- node[right,align=left]{Not\\ dangerous} ($(decide)+(0,1.9cm)$) 
+		\draw[arrow] (decide) -- node[right]{Unsafe}(avoid);
+		\draw[arrow] (decide) -- node[right,align=left]{Safe} ($(decide)+(0,1.9cm)$) 
 			-- ($(monitor)+(0.3cm,1.9cm)$) -- ($(monitor)+(0.3cm,0.582cm)$);
 		\draw[arrow,dashed] (monitor) -- (GCS);
 
