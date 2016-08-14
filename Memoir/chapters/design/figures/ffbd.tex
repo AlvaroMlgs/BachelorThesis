@@ -26,7 +26,8 @@
 		\node[function,right of=detect]	(avoid)	{4.0/ Avoid\\ collision};
 		\node[function,right of=start-and,xshift=2cm]	(UAV)	{5.0/ Communicate\\ with UAV};
 		\node[function,below right of=start-and]	(GCS)	{6.0/ Communicate\\ with GCS};
-		\node[function,right of=UAV,xshift=1.5cm]	(end-mission)	{7.0/ Terminate\\ mission};
+		\node[function,below of=start-mission,yshift=-0.5cm]	(power)	{7.0/ Provide\\ power};
+		\node[function,right of=UAV,xshift=1.5cm]	(end-mission)	{8.0/ Terminate\\ mission};
 		\coordinate[left of=end-mission,node distance=2cm] (end-node) {};
 
 		\draw[arrow] (prelaunch) -- (start-mission);
@@ -38,14 +39,15 @@
 		\draw[arrow] (avoid) -| (end-node) -- (end-mission);
 		\draw[arrow] (UAV) -- (end-mission);
 		\draw[arrow] (GCS) -| (end-node) -- (end-mission);
+		\draw[arrow] (prelaunch) |- (power);
+		\draw[arrow] (power) -| (end-mission);
 		\draw[arrow,dashed] (detect) -- (GCS);
 		\draw[arrow,dashed] (UAV) -- (avoid);
 
-		\draw[boundary] ($(prelaunch)+(-1.8cm,-1cm)$) -- ($(prelaunch)+(-1.8cm,1cm)$)
+		\draw[boundary] ($(prelaunch)+(-1.8cm,-4.5cm)$) -- ($(prelaunch)+(-1.8cm,1cm)$)
 			-- ($(prelaunch)+(1.8cm,1cm)$) -- ($(prelaunch)+(1.8cm,-0.8cm)$)
 			-- ($(start-and)+(-0.7cm,-0.8cm)$) -- ($(start-and)+(-0.7cm,3cm)$)
-			-- ($(end-node)+(0.3cm,3cm)$) -- ($(end-node)+(0.3cm,-3cm)$)
-			-- ($(start-and)+(-0.7cm,-3cm)$) -- ($(start-and)+(-0.7cm,-1cm)$) 
+			-- ($(end-node)+(0.3cm,3cm)$) -- ($(end-node)+(0.3cm,-4.5cm)$)
 			-- cycle;
 		
 	\end{tikzpicture}
@@ -219,7 +221,7 @@
 		\node[function,below right of=and,yshift=1cm]	(send)	{5.2/ Send\\ command};
 		\node[reference,below of=send,yshift=0.5cm]	(avoid)	{Ref. 4.3/\\ Avoid collision};
 		\coordinate[right of=and,xshift=3cm]	(coord)	{};
-		\node[reference,right of=coord]	(terminate)	{Ref. 7.0/\\ Terminate\\ mission};
+		\node[reference,right of=coord]	(terminate)	{Ref. 8.0/\\ Terminate\\ mission};
 
 		\draw[arrow] (start) -- (and);
 		\draw[arrow] (and) |- (read);
@@ -261,7 +263,7 @@
 		\node[reference,below of=start,yshift=1cm]	(detect)	{Ref. 3.1/\\ Detect obstacle};
 		\node[function,right of=start]	(GCS)	{6.1/ Send\\ information\\ to GCS};
 		\node[function,right of=GCS]	(log)	{6.2/ Log\\ information};
-		\node[reference,right of=log]	(terminate)	{Ref. 7.0/\\ Terminate\\ mission};
+		\node[reference,right of=log]	(terminate)	{Ref. 8.0/\\ Terminate\\ mission};
 
 		\draw[arrow] (start) -- (GCS);
 		\draw[arrow] (GCS) -- (log);
