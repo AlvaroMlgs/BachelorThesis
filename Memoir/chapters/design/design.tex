@@ -126,4 +126,20 @@ For the Obstacle Collision Avoidance System N$^2$ diagram in Figure \ref{fig:N2}
 
 \input{./figures/N2.tex}
 
+In this Figure, the grey blocks represent external systems to the OCAS, while the blue ones are subsystems of the OCAS itself.
+In a regular UAV, with no OCAS implemented, the pilot would only be executing the outermost green loop: only in direct control with the UAV.
+Nonetheless, the OCAS provides an additional layer of safety that is functionally placed between the pilot and the UAV; but also adds another interface the pilot has to deal with: the GCS connector is the gate to the OCAS, which in turn connects via the Central Processing Unit to the rest of the system.
+Hence, the ``green'' interfaces designate the human links with both the OCAS and the UAV.
+
+Further, the ``yellow'' interfaces have been highlighted since they represent the traditional sensing and control problem.
+Notice how the state of the UAV is transmitted from the UAV connector (that information is relayed by the UAV) and the sensors to the Processing Unit.
+From the hardware-software interface downwards, the information is processed, the actuation calculated and ultimately the command is sent to the UAV. 
+
+The ``blue'' interface has been created for information logging in response to Function 6.2 as defined in the FFBD.
+It could also serve as a debugging channel during the implementation phase.
+
+Finally, the ``black'' interfaces on the hardware side shows how the system has been designed meeting requirements 2.1 and 2.2, which stated that the OCAS shall be independent of the UAV and self-contained.
+In this case, it has been decided that the OCAS would carry its own power source to provide energy to its components.
+However, the power is not transmitted down to the UAV, which could be more weight efficient but would significantly modify the architecture of the original UAV, disregarding one of the main requirements from the motivation of the project.
+
 
