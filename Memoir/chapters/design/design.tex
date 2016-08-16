@@ -19,7 +19,7 @@ Figure \ref{fig:incose} shows the results of the study.
 Hence, in the present chapter, some of the most relevant Systems Engineering tools from the NASA Systems Engineering Handbook \cite{nationalaeronauticsandspaceadministration2007} will be applied
 
 
-\section{Requirements capture}
+\section{Requirements capture} \label{sec:sysReqs}
 
 The design process for a system is requirement driven, since the requirements are what will define the cost, design, schedule\ldots\ % Space after \ldots
 A requirement is a statement about or a characteristic of something that is needed.
@@ -142,4 +142,43 @@ Finally, the ``black'' interfaces on the hardware side shows how the system has 
 In this case, it has been decided that the OCAS would carry its own power source to provide energy to its components.
 However, the power is not transmitted down to the UAV, which could be more weight efficient but would significantly modify the architecture of the original UAV, disregarding one of the main requirements from the motivation of the project.
 
+
+\section{Component choice}
+
+Only after properly defining the requirements, functions and subsystems of the Obstacle Collision Avoidance System can the components be chosen to ensure that the system is correctly designed to meet specifications.
+
+\subsection{Sensors}
+
+The most relevant sensing alternatives were already exposed in Section \ref{sec:sensing}.
+In this Section, the most appropriate one for the project will be chosen according to the specifications.
+
+Certainly, all the options considered have their advantages and disadvantages.
+The purpose of the selection process is to evaluate all of those in a trade-off study which ensures that the final selection provides the best alternative to the system.
+The steps to a successful trade-off study are:
+\begin{enumerate}
+	\item Definition of the problem
+	\item Definition of the constraints
+	\item Generation of alternative solutions
+	\item Definition of the evaluation criteria
+	\item Definition of the weight factors
+	\item Fulfillment of the trade study
+	\item Ranking of the solutions
+\end{enumerate}
+
+For the three first steps, those have already been done in Chapter \ref{chap:problem}, Section \ref{sec:sysReqs} and Section \ref{sec:sensing}, respectively.
+
+For the rest of the steps, a tabular format will be used.
+
+The evaluation criteria can be defined as the parameters considered important for the sensors to fulfill towards the correct achievement of their function, and will be presented on the first column of the table.
+
+A weight factor will be given to each of the evaluation criteria according to their importance in the sensing and integration problems.
+Those will be normalised ensuring that the sum of all of them add up to unity, and will be presented in the second column of the table.
+
+The trade study will then be fulfilled by rating each of the alternatives on the evaluation criteria as previously defined.
+The mark given, ranging from 0 to 1, represents the capability of the alternative on the corresponding evaluation criteria.
+
+Finally, the ranking of the solutions is performed by combining (multiplying) the criteria's weight factors with the ratings given to the alternatives on each of those criteria, to ultimately sum all of those and obtain a single figure for every alternative considered.
+The objectively most appropriate alternative is the one with highest rating after the trade-off study.
+
+\input{./tables/tradeoff.tex}
 
