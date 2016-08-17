@@ -182,3 +182,23 @@ The objectively most appropriate alternative is the one with highest rating afte
 
 \input{./tables/tradeoff.tex}
 
+As it can be seen in Table \ref{tab:tradeoff}, the most appropriate sensor to be used in the OCAS is the ultrasonic rangefinder.
+The reasons for that are mainly the high score obtained in the ease of operation, integration and processing, as will be seen during the implementation process, as well as its low cost; which were all considered to be important properties for the chosen sensor to meet for this project.
+
+
+\section{Computer board}
+
+The choice of processing unit for the OCAS is not nearly as complex as the sensor case.
+The main available alternatives are either a microcontroller board or a Single Board Computer (SBC), which differ in the type of CPU architecture.
+
+A microcontroller board can be as simple as a single Atmel AVR microchip, although they generally incorporate additional features for easier programming and connection with other peripherals.
+The best example of microcontroller boards is the Arduino family.
+These board usually incorporate an 8-bit processing unit, which can be considered computationally underpowered according to present standards, and thus the programs are frequently coded in C/C++ languages due to their high resource efficiency.
+Also, these boards do not have any software feature out-of-the-box, which implies that every required function needs to be programmed from scratch on the chip.
+
+On the other hand, an SBC can be thought of as a full Personal Computer, except in a reduced form-factor.
+These computers do not generally exceed the footprint of a credit card, albeit embodying all the necessary components such as RAM and non-volatile memory, USB ports and even the convenient General Purpose Input / Output (GPIO) pins for low-level hardware integration.
+Moreover, SBCs are driven by complete Operating Systems (OS), featuring convenient general kernel and communications tools.
+Additionally, these computers are able to run virtually any computer software available, which also means that applications can be programmed in a wide range of languages. 
+
+
