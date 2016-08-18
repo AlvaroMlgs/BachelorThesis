@@ -85,12 +85,14 @@
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {2}A brief introduction to Ardupilot}{9}{chapter.2}}
 \newlabel{chap:ardupilot}{{\M@TitleReference {2}{A brief introduction to Ardupilot}}{9}{A brief introduction to Ardupilot}{chapter.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Basic features}{9}{section.2.1}}
+\newlabel{sec:basics}{{\M@TitleReference {2.1}{Basic features}}{9}{Basic features}{section.2.1}{}}
 \citation{ogata2010}
 \newlabel{fig:RCtransmitter}{{\M@TitleReference {2.1a}{RC transmitter\relax }}{10}{RC transmitter\relax }{figure.caption.9}{}}
 \newlabel{sub@fig:RCtransmitter}{{\M@TitleReference {a}{RC transmitter\relax }}{10}{RC transmitter\relax }{figure.caption.9}{}}
 \newlabel{fig:RCreceiver}{{\M@TitleReference {2.1b}{RC receiver\relax }}{10}{RC receiver\relax }{figure.caption.9}{}}
 \newlabel{sub@fig:RCreceiver}{{\M@TitleReference {b}{RC receiver\relax }}{10}{RC receiver\relax }{figure.caption.9}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces FlySky FS-i6 Remote Control (\relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\url  {www.flyskyrc.com}})\relax }}{10}{figure.caption.9}}
+\newlabel{fig:rc}{{\M@TitleReference {2.1}{FlySky FS-i6 Remote Control (\relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\url  {www.flyskyrc.com}})\relax }}{10}{FlySky FS-i6 Remote Control (\footnotesize {\url {www.flyskyrc.com}})\relax }{figure.caption.9}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Ardupilot as part of a UAS}{10}{section.2.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Screenshot of Mission Planner GCS, implementing the MAVlink protocol\relax }}{11}{figure.caption.10}}
 \newlabel{fig:missionplanner}{{\M@TitleReference {2.2}{Screenshot of Mission Planner GCS, implementing the MAVlink protocol\relax }}{11}{Screenshot of Mission Planner GCS, implementing the MAVlink protocol\relax }{figure.caption.10}{}}
@@ -189,9 +191,19 @@
 \newlabel{fig:rpi}{{\M@TitleReference {5.13}{Raspberry Pi 2 Model B. {\relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url  {raspberrypi.org}}\relax }}{32}{Raspberry Pi 2 Model B. {\footnotesize Source: \url {raspberrypi.org}}\relax }{figure.caption.29}{}}
 \citation{arteta2015}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Other components}{33}{subsection.5.3.3}}
+\citation{arteta2015}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {6}System implementation}{35}{chapter.6}}
+\newlabel{chap:implementation}{{\M@TitleReference {6}{System implementation}}{35}{System implementation}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}The OCAS within the UAS}{35}{section.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Overview of the existing UAS}{35}{subsection.6.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Regular Ardupilot UAS architecture\relax }}{36}{figure.caption.30}}
+\newlabel{fig:uas}{{\M@TitleReference {6.1}{Regular Ardupilot UAS architecture\relax }}{36}{Regular Ardupilot UAS architecture\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Integration of the OCAS}{36}{subsection.6.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}OCAS peripheral connections (interfaces)}{36}{section.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Software: Bringing everything together}{36}{section.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}The Python script}{36}{section.6.4}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {appendix}{\chapternumberline {A}Appendix A}{37}{appendix.A}}
@@ -219,7 +231,7 @@
 \bibcite{droneindustryinsights2016}{{19}{}{{}}{{}}}
 \bibcite{dronecode2016}{{20}{}{{}}{{}}}
 \bibcite{ogata2010}{{21}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{39}{section*.31}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{39}{section*.32}}
 \bibcite{assistantsecretaryofdefenseforresearchandengineering2011}{{22}{}{{}}{{}}}
 \bibcite{hulsmeyer1904}{{23}{}{{}}{{}}}
 \bibcite{krolik2005}{{24}{}{{}}{{}}}

@@ -1,11 +1,49 @@
 
 \let\textcircled=\pgftextcircled
-\chapter{System implementation}
+\chapter{System implementation}	\label{chap:implementation}
 
 \initial{T}he design phase of the Systems Engineering approach will be presented in the current chapter instead of the previous one since the focus of this phase was put in the software part, for the hardware one (mainly structural mounts) being too dependant on the configuration of the existing UAV.
 Hence, all the design, implementation and testing of the software branch were conducted in a parallel manner, as will be exposed in this part of the thesis.
 Nevertheless, the final hardware assembly of the system in the working prototype will also be discussed at the end of the present chapter.
 %Also, the software design was a parallel process to the coding itself, and the functioning of the computer programs is better explained through real code snippets rather than pseudocode or block diagrams, although some might be used.
+
+Chapter \ref{chap:implementation} will describe the complete implementation of the Obstacle Collision Avoidance System within the Unmanned Aerial System starting from the uppermost level and deepening through the execution of the interfaces and the software layers down to the custom-built control script.
+
+
+\section{The OCAS within the UAS}
+
+This section describes the architecture of the UAS prior to the implementation of the OCAS.
+Then, the uppermost integration level is explained, emphasising the compliance with Requirement 3.4 (lack of interference with the Ardupilot functions)
+
+\subsection{Overview of the existing UAS}
+
+The regular Ardupilot-based Unmanned Aerial System with Ground Control Station capabilities is composed of three main subsystems:
+
+Firstly, the UAV, which is considered to be fully operable.
+That is, the UAV concept encloses the airframe, propulsion, power source and all the other components as described in \cite{arteta2015}; but most importantly, the controller board with the Ardupilot software, considered as the ``brain'' of the UAV.
+
+Secondly, the pilot with the Radio Control transmitter (see Figure \ref{fig:RCtransmitter}) will also be considered a subsystem of the UAS.
+He/she has direct control of the UAV when flying in manual mode, plus is responsible of the operation of the GCS when the UAV is in Automatic mode (see Chapter \ref{chap:ardupilot}).
+
+Thirdly, the computer running the GCS software and having a real-time wireless connection with the UAV while in the air.
+
+\input{./figures/uas.tex}
+
+In addition, the interfaces between these subsystems are depicted in Figure \ref{fig:uas} and work as follows:
+
+The Radio Control (RC) link is established between the RC transmitter held by the pilot and the RC receiver that is directly connected to the controller board.
+A 2.4 GHz signal transmits information on the position of the control sticks as a PWM directly to the Ardupilot software, as explained in Section \ref{sec:basics}.
+
+\subsection{Integration of the OCAS}
+
+
+\section{OCAS peripheral connections (interfaces)}
+
+
+\section{Software: Bringing everything together}
+
+
+\section{The Python script}
 
 
 
