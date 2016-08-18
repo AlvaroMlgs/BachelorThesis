@@ -186,7 +186,7 @@ As it can be seen in Table \ref{tab:tradeoff}, the most appropriate sensor to be
 The reasons for that are mainly the high score obtained in the ease of operation, integration and processing, as will be seen during the implementation process, as well as its low cost; which were all considered to be important properties for the chosen sensor to meet for this project.
 
 
-\section{Computer board}
+\subsection{Computer board}
 
 The choice of processing unit for the OCAS is not nearly as complex as the sensor case.
 The main available alternatives are either a microcontroller board or a Single Board Computer (SBC), which differ in the type of CPU architecture.
@@ -201,4 +201,27 @@ These computers do not generally exceed the footprint of a credit card, albeit e
 Moreover, SBCs are driven by complete Operating Systems (OS), featuring convenient general kernel and communications tools.
 Additionally, these computers are able to run virtually any computer software available, which also means that applications can be programmed in a wide range of languages. 
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\centering
+	\includegraphics[width=0.3\textwidth]{./figures/rpi.jpg}
+	\caption{Raspberry Pi 2 Model B. {\footnotesize Source: \url{raspberrypi.org}}}
+	\label{fig:rpi}
+\end{wrapfigure}
+This brief analysis should be enough to prove that an SBC is more capable on almost any aspect than a microcontroller board and significantly more flexible.
+Thus, for this project, a Raspberry Pi 2 Model B SBC was selected for the reasons mentioned above and additionally because it is widely available and runs a full Debian Operating System.
+The only disadvantage is its higher power consumption as compared with the Arduino family of microcontrollers, which can nevertheless be neutralised by powering the OCAS with an off-the-shelf portable USB battery pack which outputs a continuous current of 5V, 2A: just enough to provide energy to the Raspberry Pi and all the peripherals.
+
+\subsection{Other components}
+
+Clearly, the most important components of the OCAS are its sensors and processing unit.
+The other elements are less critical and the selection process was less exhaustive.
+The component list considered for the prototype will only be listed here for completeness and to aid any interested researcher on the reproduction of the project.
+
+\begin{description}
+	\item[\scshape Power source] As mentioned in the previous section, any portable USB battery pack with at least 5V, 2A continuous current will sufice to power the computer board and its peripherals.
+		The one used for the project is the Amazon Basics 5600 mAh battery, which can potentially last more than two hours powering the OCAS.
+	\item[\scshape Network adapter] For the connection with the Ground Control Station, a wireless WiFi network will be used.
+		Unfortunately, the Raspberry Pi does not include one, so the external TP-Link TL-WN822N has to be mounted on the testing platform, although any other model would be just as suitable.
+	\item[\scshape Testing platform] The testing part of this project is based upon the Bachelor Thesis by M. Arteta \cite{arteta2015}, which provided an already calibrated and flight-capable F450 quadrotor UAV.
+\end{description}
 

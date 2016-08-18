@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: memoirthesis.aux
 The style file: ieeetr.bst
 Database file #1: biblio.bib
+Warning--entry type for "arteta2015" isn't style-file defined
+--line 8 of file biblio.bib
 Warning--entry type for "manualonremotelypilotedaircraftsystemsrpas2015" isn't style-file defined
 --line 15 of file biblio.bib
 Warning--entry type for "ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014" isn't style-file defined
@@ -32,4 +34,4 @@ Warning--empty institution in melgosa2016
 Warning--empty institution in droneindustryinsights2016
 Warning--empty institution in assistantsecretaryofdefenseforresearchandengineering2011
 Warning--can't use both author and editor fields in tooley2009
-(There were 22 warnings)
+(There were 23 warnings)
