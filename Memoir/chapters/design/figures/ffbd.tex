@@ -1,5 +1,5 @@
 
-\begin{figure}[htbp]
+\begin{figure}[hbtp]
 \centering
 	\begin{tikzpicture}
 		
@@ -26,7 +26,7 @@
 		\node[function,right of=detect]	(avoid)	{4.0/ Avoid\\ collision};
 		\node[function,right of=start-and,xshift=2cm]	(UAV)	{5.0/ Communicate\\ with UAV};
 		\node[function,below right of=start-and]	(GCS)	{6.0/ Communicate\\ with GCS};
-		\node[function,below of=start-mission,yshift=-0.5cm]	(power)	{7.0/ Provide\\ power};
+		\node[function,below of=start-mission,yshift=-1cm]	(power)	{7.0/ Provide\\ power};
 		\node[function,right of=UAV,xshift=1.5cm]	(end-mission)	{8.0/ Terminate\\ mission};
 		\coordinate[left of=end-mission,node distance=2cm] (end-node) {};
 
@@ -44,10 +44,10 @@
 		\draw[arrow,dashed] (detect) -- (GCS);
 		\draw[arrow,dashed] (UAV) -- (avoid);
 
-		\draw[boundary] ($(prelaunch)+(-1.8cm,-4.5cm)$) -- ($(prelaunch)+(-1.8cm,1cm)$)
+		\draw[boundary] ($(prelaunch)+(-1.8cm,-5cm)$) -- ($(prelaunch)+(-1.8cm,1cm)$)
 			-- ($(prelaunch)+(1.8cm,1cm)$) -- ($(prelaunch)+(1.8cm,-0.8cm)$)
 			-- ($(start-and)+(-0.7cm,-0.8cm)$) -- ($(start-and)+(-0.7cm,3cm)$)
-			-- ($(end-node)+(0.3cm,3cm)$) -- ($(end-node)+(0.3cm,-4.5cm)$)
+			-- ($(end-node)+(0.3cm,3cm)$) -- ($(end-node)+(0.3cm,-5cm)$)
 			-- cycle;
 		
 	\end{tikzpicture}
@@ -58,7 +58,7 @@
 \end{figure}
 
 
-\begin{figure}[htbp]
+\begin{figure}[hbtp]
 \centering
 	\begin{tikzpicture}
 		
@@ -100,7 +100,7 @@
 \end{figure}
 
 
-\begin{figure}[htbp]
+\begin{figure}[hbtp]
 \centering
 	\begin{tikzpicture}
 		
@@ -144,7 +144,7 @@
 			-- ($(monitor)+(0.3cm,1.9cm)$) -- ($(monitor)+(0.3cm,0.582cm)$);
 		\draw[arrow,dashed] (monitor) -- (GCS);
 
-		\draw[boundary] ($(monitor)+(-1.7cm,2.2cm)$) rectangle ($(decide)+(2.2cm,-2.2cm)$);
+		\draw[boundary] ($(monitor)+(-1.7cm,2.2cm)$) rectangle ($(decide)+(1.6cm,-2.2cm)$);
 		
 	\end{tikzpicture}
 
@@ -154,7 +154,7 @@
 \end{figure}
 
 
-\begin{figure}[htbp]
+\begin{figure}[hbtp]
 \centering
 	\begin{tikzpicture}
 		
@@ -196,7 +196,7 @@
 \end{figure}
 
 
-\begin{figure}[htbp]
+\begin{figure}[hbtp]
 \centering
 	\begin{tikzpicture}
 		
@@ -240,7 +240,7 @@
 \end{figure}
 
 
-\begin{figure}[htbp]
+\begin{figure}[hbtp]
 \centering
 	\begin{tikzpicture}
 		

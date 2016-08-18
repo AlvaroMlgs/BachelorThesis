@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  18 AUG 2016 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  18 AUG 2016 18:26
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2511,13 +2511,13 @@ LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 Underfull \vbox (badness 10000) detected at line 37
  []
 
-[22]) (chapters/design/./figures/decomposition.tex)
+[22]) (chapters/design/./figures/decomposition.tex) [23]
 (chapters/design/./figures/functArch.tex
 Overfull \hbox (40.39745pt too wide) in paragraph at lines 4--53
 [][]  [] 
  []
 
-) [23] [24] (chapters/design/./figures/ffbd.tex
+) (chapters/design/./figures/ffbd.tex
 Overfull \hbox (56.80014pt too wide) in paragraph at lines 53--54
  [][][] 
  []
@@ -2528,7 +2528,7 @@ Overfull \hbox (19.17635pt too wide) in paragraph at lines 95--96
  []
 
 
-Overfull \hbox (65.34952pt too wide) in paragraph at lines 149--150
+Overfull \hbox (48.27814pt too wide) in paragraph at lines 149--150
  [][][] 
  []
 
@@ -2537,10 +2537,10 @@ Overfull \hbox (22.25194pt too wide) in paragraph at lines 191--192
  [][][] 
  []
 
-)
+) [24] [25] [26]
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 (Font)              scaled to size 9.29993pt on input line 72.
- [25] [26] (chapters/design/./figures/pbs.tex
+ (chapters/design/./figures/pbs.tex
 Overfull \hbox (1.81459pt too wide) in paragraph at lines 49--50
  [][][] 
  []
@@ -2645,7 +2645,7 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 Here is how much of TeX's memory you used:
  33443 strings out of 493673
  621316 string characters out of 3141524
- 923059 words of memory out of 3000000
+ 943079 words of memory out of 3000000
  35487 multiletter control sequences out of 15000+200000
  150376 words of font info for 401 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
@@ -2666,7 +2666,7 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb>
 s/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncn
 trsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (52 pages, 4500927 bytes).
+Output written on memoirthesis.pdf (52 pages, 4500845 bytes).
 PDF statistics:
  796 PDF objects out of 1000 (max. 8388607)
  163 named destinations out of 1000 (max. 500000)
