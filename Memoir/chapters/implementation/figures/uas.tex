@@ -2,7 +2,71 @@
 	\centering
 	\begin{tikzpicture}
 		
+		\newcommand{\drawpilot}[1]{
+			\node[rounded corners=2pt,minimum height=1.3cm,minimum width=0.4cm,fill=gray,#1] (body) {};
+			\node[circle,fill=gray,minimum size=5mm,above=1pt of body] (head) {};
+			\draw[line width=1mm,round cap-round cap,gray] ([shift={(2pt,-1pt)}]body.north east) --++(-90:6mm);
+			\draw[line width=1mm,round cap-round cap,gray] ([shift={(-2pt,-1pt)}]body.north west)--++(-90:6mm);
+			\draw[thick,white,-round cap] (body.south) --++(90:5.5mm);
+			\node[below of=pilot](pilot-label){Pilot};
+
+			\node[fit=(body)(head)(pilot-label),
+				inner sep=3mm,rounded corners=5mm] 
+				(pilot) {}; %Group the pilot together
+		}
+
+		\newcommand{\drawgcs}[1]{
+			\node[rectangle,rounded corners,double,draw=gray,very thick,minimum height=1cm,minimum width=1.5cm,#1](display){GCS};
+			\node[trapezium,rounded corners,draw=gray,ultra thick,trapezium angle=50,minimum height=0.3cm,inner ysep=1pt,inner xsep=0.15cm,below=2pt of display](keyboard){};
+
+			\node[fit=(display)(keyboard),
+				inner sep=5mm,rounded corners=5mm] 
+				(gcs) {};	%Group the GCS together
+		}
+
+		\newcommand{\drawuav}[1]{
+			\node[#1](coord){};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m1) at ($(coord)+(-0.7cm,0.7cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m2) at ($(coord)+(0.7cm,0.7cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m3) at ($(coord)+(0.7cm,-0.7cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m4) at ($(coord)+(-0.7cm,-0.7cm)$) {};
+
+			%Airframe
+			\path[fill=gray,draw=gray,line width=1mm] (m1.base)
+				.. controls (coord) .. (m2.base)
+				.. controls (coord) .. (m3.base)
+				.. controls (coord) .. (m4.base)
+				.. controls (coord) .. (m1.base);
+				
+
+			%Propellers
+			\path[fill=gray,draw=white] (m1) arc (155:115:0.8cm) arc (335:295:0.8cm)
+				arc (115:155:0.8cm) arc (295:335:0.8cm);
+			\path[fill=gray,draw=white] (m2) arc (65:25:0.8cm) arc (245:205:0.8cm)
+				arc (25:65:0.8cm) arc (205:245:0.8cm);
+			\path[fill=gray,draw=white] (m3) arc (155:115:0.8cm) arc (335:295:0.8cm)
+				arc (115:155:0.8cm) arc (295:335:0.8cm);
+			\path[fill=gray,draw=white] (m4) arc (65:25:0.8cm) arc (245:205:0.8cm)
+				arc (25:65:0.8cm) arc (205:245:0.8cm);
+
+			\node[yshift=-0.7cm](uav-label) at (coord) {UAV};
+
+			\node[fit=(coord)(m1)(m2)(m3)(m4)(uav-label),
+				inner sep=5mm,rounded corners=5mm]
+				(uav) {};	%Group the UAV together
+		}
+
+
+		\drawpilot{}
+		\drawgcs{below right=3cm of pilot,xshift=1cm}
+		\drawuav{below left=3.7cm of pilot,xshift=-1cm}
+
+		\draw[loosely dashdotted,thick] (pilot) -- node[above,sloped]{Radio Control} (uav);
+		\draw[thick] (pilot) -- node[above,sloped]{Physical} (gcs);
+		\draw[dashed,thick] (uav) -- node[above,sloped]{Telemetry} (gcs);
+
 	\end{tikzpicture}
+
 	\caption{Regular Ardupilot UAS architecture}
 	\label{fig:uas}
 \end{figure}

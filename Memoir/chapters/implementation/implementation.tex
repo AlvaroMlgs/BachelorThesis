@@ -34,10 +34,23 @@ In addition, the interfaces between these subsystems are depicted in Figure \ref
 The Radio Control (RC) link is established between the RC transmitter held by the pilot and the RC receiver that is directly connected to the controller board.
 A 2.4 GHz signal transmits information on the position of the control sticks as a PWM directly to the Ardupilot software, as explained in Section \ref{sec:basics}.
 
+Likewise, the telemetry link consists of a 433 MHz duplex radio wave that carries MAVlink messages from the UAV to the GCS and viceversa, allowing for configuration, calibration and operation of the autonomous flight modes while the vehicle is aloft.
+
 \subsection{Integration of the OCAS}
 
+The introduction of the OCAS into the UAS shall preserve the basic Ardupilot functions.
+Thus, the architecture should not be significantly modifyied.
+The final decision on the UAS architecture after the integration of the OCAS is shown in Figure \ref{fig:uas-ocas}
 
-\section{OCAS peripheral connections (interfaces)}
+\input{./figures/uas-ocas.tex}
+
+With this setup, the original connections and functions are maintained while the OCAS, which is mounted onboard the UAV, communicates with it through a USB cable via the MAVlink protocol (the same one used for the telemetry link).
+Additionally the GCS has a second wireless link to the OCAS via WiFi, making use of the SSH (plus X11 forwarding) protocol.
+More information on these interfaces is provided in Section \ref{sec:peripheral}.
+
+\section{OCAS peripheral connections (hardware interfaces)} \label{sec:peripheral}
+
+As already stated in Section \ref{sec:interfaces}, the main component of the OCAS is the computer board, which can be considered as a hub on which the rest of the components of the OCAS are brought together.
 
 
 \section{Software: Bringing everything together}

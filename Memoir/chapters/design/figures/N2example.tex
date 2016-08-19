@@ -23,15 +23,17 @@
 			\node[interface,right of=31]	(32)	{};
 			\node[module,right of=32]		(33)	{\bfseries C};
 
-			\draw[red!60!black,line width=12pt,latex-latex,opacity=0.4]
-				(11.north)  -- (31.south) 
-				node[midway,text=black,font=\footnotesize\bfseries]{Inputs};
-			\draw[red!60!black,line width=12pt,latex-latex,opacity=0.4]
-				(12.north)  -- (32.south) 
-				node[midway,text=black,font=\footnotesize\bfseries]{Inputs};
-			\draw[red!60!black,line width=12pt,latex-latex,opacity=0.4]
-				(13.north)  -- (33.south) 
-				node[midway,text=black,font=\footnotesize\bfseries]{Inputs};
+			\begin{scope}[transparency group,opacity=0.4]
+				\draw[red!60!black,line width=12pt,latex-latex]
+					(11.north)  -- (31.south);
+				\draw[red!60!black,line width=12pt,latex-latex]
+					(12.north)  -- (32.south);
+				\draw[red!60!black,line width=12pt,latex-latex]
+					(13.north)  -- (33.south);
+			\end{scope}
+				\node[rotate=90] at (21) {Inputs};
+				\node[rotate=90] at (22) {Inputs};
+				\node[rotate=90] at (23) {Inputs};
 				
 			\end{tikzpicture}
 
@@ -60,15 +62,17 @@
 			\node[interface,right of=31]	(32)	{};
 			\node[module,right of=32]		(33)	{\bfseries C};
 
-			\draw[red!60!black,line width=12pt,latex-latex,opacity=0.4]
-				(11.west)  -- (13.east) 
-				node[midway,text=black,font=\footnotesize\bfseries]{Outputs};
-			\draw[red!60!black,line width=12pt,latex-latex,opacity=0.4]
-				(21.west)  -- (23.east) 
-				node[midway,text=black,font=\footnotesize\bfseries]{Outputs};
-			\draw[red!60!black,line width=12pt,latex-latex,opacity=0.4]
-				(31.west)  -- (33.east) 
-				node[midway,text=black,font=\footnotesize\bfseries]{Outputs};
+			\begin{scope}[transparency group,opacity=0.4]
+				\draw[red!60!black,line width=12pt,latex-latex]
+					(11.west)  -- (13.east);
+				\draw[red!60!black,line width=12pt,latex-latex]
+					(21.west)  -- (23.east);
+				\draw[red!60!black,line width=12pt,latex-latex]
+					(31.west)  -- (33.east);
+			\end{scope}
+				\node at (12){Outputs};
+				\node at (22){Outputs};
+				\node at (32){Outputs};
 
 		\end{tikzpicture}
 

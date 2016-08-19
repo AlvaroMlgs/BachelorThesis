@@ -48,8 +48,8 @@
 \contentsline {section}{\numberline {6.1}The OCAS within the UAS}{35}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Overview of the existing UAS}{35}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Integration of the OCAS}{36}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}OCAS peripheral connections (interfaces)}{36}{section.6.2}
-\contentsline {section}{\numberline {6.3}Software: Bringing everything together}{36}{section.6.3}
-\contentsline {section}{\numberline {6.4}The Python script}{36}{section.6.4}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{37}{appendix.A}
-\contentsline {chapter}{Bibliography}{39}{section*.32}
+\contentsline {section}{\numberline {6.2}OCAS peripheral connections (hardware interfaces)}{36}{section.6.2}
+\contentsline {section}{\numberline {6.3}Software: Bringing everything together}{37}{section.6.3}
+\contentsline {section}{\numberline {6.4}The Python script}{37}{section.6.4}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{39}{appendix.A}
+\contentsline {chapter}{Bibliography}{41}{section*.33}
