@@ -1,0 +1,26 @@
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[circuit ee IEC,large circuit symbols]
+
+		%\node[ground,point down,info={GND}](gnd){};	
+		%\node[resistor,point up,info={R$_1$},right of=gnd](r1){};
+		%\coordinate[above of=r1](coord);
+		%\node[resistor,point up,info={R$_2$},right of=coord](r2){};
+		%\node[contact,info={V$_{in}$},above left of=r2,yshift=0.4cm](vin){};
+		%\node[contact,info={V$_{out}$},right of=coord](vout){};
+
+		%\draw (vin) -| (r2) to (coord) to (vout) to (coord) to (r1) to (gnd);
+
+		\node[ground,info=GND](gnd){};	
+        \node[resistor,info=R$_2$,left=1 of gnd](r2){};
+        \coordinate[left of=r2](coord);
+        \node[resistor,info=R$_1$,left of=coord](r1){};
+        \node[contact,info=left:V$_{in}$,above left of=r1,xshift=-10](vin){};
+		\node[contact,info=left:V$_{out}$,below of=coord](vout){};
+
+		\draw (vin) |- (r1) to (coord) to (vout) to (coord) to (r2) to (gnd);
+		
+	\end{tikzpicture}
+	\caption{Schematic of a voltage divider}
+	\label{fig:voltage}
+\end{figure}

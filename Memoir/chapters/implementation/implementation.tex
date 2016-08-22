@@ -51,6 +51,77 @@ More information on these interfaces is provided in Section \ref{sec:peripheral}
 \section{OCAS peripheral connections (hardware interfaces)} \label{sec:peripheral}
 
 As already stated in Section \ref{sec:interfaces}, the main component of the OCAS is the computer board, which can be considered as a hub on which the rest of the components of the OCAS are brought together.
+Thus, the first step is to define the information pathways of the Raspberry Pi with the oter hardware components.
+
+The physical layout of the OCAS is shown in Figure \ref{fig:ocas}. 
+Notice that only Raspberry Pi peripherals are being considered. 
+They are handled in the following manner:
+
+\input{./figures/ocas.tex}
+
+\subsection{Power connection}
+For the Raspberry Pi to boot up, the only requirement is to provide a continuous current of 5V and enough current to power any other peripheral as well as the board, which in any case will not be higher than 2A.
+Thus, the battery pack, providing a continuous source of energy during during the whole duration of the mission is enough to meet the requirement.
+It is connected to the Raspberry Pi SBC via a conventional USB type A, at the battery end, to micro-USB type B, at the computer end; no additional action being required.
+
+\subsection{MAVlink connection}
+The connection with the UAV (i.e. with the Ardupilot controller board) is done also via a regular USB cable, making use of the serial communications protocol.
+The serial protocol is a simple manner of tranfering information which consists on transmitting the data one bit at a time, avoiding the synchronisation problem.
+Hence, the only issue is that both ends must agree in advance on the transmission rate.
+This is done by setting a common ``baud rate'', where a baud is the unit for symbol change (signal event) rate, commonly measured in bits per second.
+In the particular case of communicating with the UAV, the messages transmitted through the serial link are defined according to the MAVlink protocol.
+
+\subsection{GCS connection}
+The link with the Ground Control Station is composed of two intermediate steps:
+
+On one hand, the network adapter is connected to a USB port on the Raspberry Pi to provide the SBC with wireless networking capabilities.
+This connection is entirely handled by the kernel, the adapter's drivers and the operating system, and needs no further action from the engineer.
+
+The second step is decidedly more complex.
+Firstly, the Raspberry Pi needs to be set up to wirelessly connect to the same network as the GCS computer.
+There are several ways to achieve this goal, but an uncomplicated one is to create an ad-hoc network from the GCS computer (running Windows) to which the Raspberry Pi is directly connected.
+The specific details are explained in Appendix \ref{app:network}.
+This approach has been mainly chosen for its simplicity and portability, but notice that there exist more advanced network architectures that could provide significantly better performance.
+Secondly, the SSH connection needs to be stablished over the network.
+The process involves searching for the Raspberry Pi's address on the network, connecting to the SSH port and, optionally, setting up an X server for an easier Graphical User Interface (GUI) with the OCAS.
+More details on the steps to be taken are developed in Appendix \ref{app:ssh}.
+
+\subsection{GPIO connection}
+
+The General Purpose Input / Output pins on the Raspberry Pi operate on a notably lower level than the previous hardware connections.
+As their name implies, the GPIO pins are the most general type of connection the Raspberry Pi can handle.
+The reason is that these pins have to be manually operated; that is, each of the pins can be set via software to either a HIGH or LOW state, meaning 3.3V or 0V with respect to the Ground (GND) potential, respectively.
+
+Hence, in this project, the GPIO pins will be used to both trigger the ultrasonic rangefinders and read the returning signal that encodes the information on the distance from the sensor to the detected obstacle.
+
+Besides, the sonar is equipped with its own microcontroller, which handles the lowest-level signals.
+For its operation, it counts with 4 different pins (see Figure \ref{fig:hc-sr04}) 
+\begin{enumerate}
+	\item GND, or Ground, specifies the reference voltage of the device.
+	\item VCC, which stands for Voltage Continuous Current, powers the sensor at 5V.
+	\item Trigger is an input signal pin.
+		A HIGH value on this pin triggers (hence the name) a series of short bursts of sound from the piezoelectric speaker, which will rebound on any close obstacle.
+	\item Echo is the output signal pin.
+		The sensor's microcontroller processes the sound captured by the microphone and sends a short pulse through the echo pin exactly after the rebounded sound signal is received.
+		Knowing the speed of propagation of sound (given by $a=\sqrt{\gamma R_g T}$) and the time taken for the wave to travel to the obstacle and back, the distance can be calculated with $d=v \cdot t/2$
+\end{enumerate}
+The ultrasonic rangefinder's technical documentation can be found in Appendix \ref{app:sonar}.
+
+On the Raspberry Pi side, the VCC pin shall be connected to any 5V pin, the GND pin to a Ground pin, and the Trigger and Echo pins to any numbered GPIO pins, depicted in Figure \ref{fig:gpio}.
+
+\input{./figures/gpio.tex}
+
+There is one important issue that needs to be noticed, though.
+The rangefinders work on 5V only and, while the Raspberry Pi can provide 5V to power the sensors, the GPIO pins can be damaged if operated at more than 3.3V.
+Thus, the signal pins must be reduced from 5V to 3.3V before being connected to the SBC.
+The solution to the problem is to use a ``voltage divider'', which is a passive circuit that outputs a fraction of the input voltage by means of a pair of resistors, which are connected as shown in Figure \ref{fig:voltage}.
+
+\input{./figures/voltage.tex}
+
+In the present case, for the voltage to drop from 5V to 3.3V, the resistors need to meet:
+\begin{equation}
+	\frac{V_{in}}{R_1+R_2}=\frac{V_{out}}{R_2} \ \Rightarrow\ \frac{V_{in}}{V_{out}}=\frac{R_1}{R_2}+1 \ \Rightarrow\ \frac{R_1}{R_2}=\frac{5V}{3.3V}-1 \ \Rightarrow\ \frac{R_1}{R_2}=\frac{1}{2} 
+\end{equation}
 
 
 \section{Software: Bringing everything together}

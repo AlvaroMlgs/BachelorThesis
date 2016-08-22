@@ -3,11 +3,11 @@
 	\begin{tikzpicture}
 		
 		\newcommand{\drawpilot}[1]{
-			\node[rounded corners=2pt,minimum height=1.3cm,minimum width=0.4cm,fill=gray,#1] (body) {};
-			\node[circle,fill=gray,minimum size=5mm,above=1pt of body] (head) {};
+			\node[rounded corners=2pt,minimum height=1cm,minimum width=0.4cm,fill=gray,#1] (body) {};
+			\node[circle,fill=gray,minimum size=4.5mm,above=1pt of body] (head) {};
 			\draw[line width=1mm,round cap-round cap,gray] ([shift={(2pt,-1pt)}]body.north east) --++(-90:6mm);
 			\draw[line width=1mm,round cap-round cap,gray] ([shift={(-2pt,-1pt)}]body.north west)--++(-90:6mm);
-			\draw[thick,white,-round cap] (body.south) --++(90:5.5mm);
+			\draw[thick,white,-round cap] (body.south) --++(90:5mm);
 			\node[below of=pilot](pilot-label){Pilot};
 
 			\node[fit=(body)(head)(pilot-label),
@@ -57,7 +57,7 @@
 		}
 
 		\newcommand{\drawocas}[1]{
-			\node[#1,fill=teal,minimum height=2cm,minimum width=3cm](ocas-block){};
+			\node[#1,fill=teal,minimum height=1.5cm,minimum width=2.5cm](ocas-block){};
 			\coordinate[label=above right:\textcolor{white}{\bfseries OCAS}]
 				(ocas-label) at (ocas-block.south west) {};
 
@@ -66,15 +66,15 @@
 
 
 		\drawpilot{}
-		\drawgcs{below right=2cm of pilot,xshift=2cm}
-		\drawuav{below left=2.7cm of pilot,xshift=-2cm}
-		\drawocas{below =5cm of pilot}
+		\drawgcs{right=3.5cm of pilot,yshift=-2cm}
+		\drawuav{left=4cm of pilot,yshift=-2cm}
+		\drawocas{below =2cm of pilot}
 
 		\draw[loosely dashdotted,thick] (pilot) -- node[above,sloped]{RC} (uav);
 		\draw[thick] (pilot) -- node[above,sloped]{Physical} (gcs);
 		\draw[dashed,thick] (uav) -- node[above,sloped]{Telemetry} (gcs);
-		\draw[thick,decorate,decoration={coil,aspect=0,segment length=1cm}] (ocas) -- node[below=2mm,sloped]{MAVlink} (uav);
-		\draw[thick,decorate,decoration=zigzag] (ocas) -- node[below=2mm,sloped]{SSH (WiFi)} (gcs);
+		\draw[thick,decorate,decoration={coil,aspect=0,segment length=0.9cm}] (ocas) -- node[below=2mm,sloped]{MAVlink} (uav);
+		\draw[thick,decorate,decoration={expanding waves,angle=6,segment length=2mm}] (ocas) -- node[below=2mm,sloped]{SSH (WiFi)} (gcs);
 
 	\end{tikzpicture}
 

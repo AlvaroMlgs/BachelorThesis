@@ -48,8 +48,14 @@
 \contentsline {section}{\numberline {6.1}The OCAS within the UAS}{35}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Overview of the existing UAS}{35}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Integration of the OCAS}{36}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}OCAS peripheral connections (hardware interfaces)}{36}{section.6.2}
-\contentsline {section}{\numberline {6.3}Software: Bringing everything together}{37}{section.6.3}
-\contentsline {section}{\numberline {6.4}The Python script}{37}{section.6.4}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{39}{appendix.A}
-\contentsline {chapter}{Bibliography}{41}{section*.33}
+\contentsline {section}{\numberline {6.2}OCAS peripheral connections (hardware interfaces)}{37}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Power connection}{37}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}MAVlink connection}{37}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}GCS connection}{38}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}GPIO connection}{38}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Software: Bringing everything together}{39}{section.6.3}
+\contentsline {section}{\numberline {6.4}The Python script}{39}{section.6.4}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{41}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{43}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{45}{appendix.C}
+\contentsline {chapter}{Bibliography}{49}{section*.38}

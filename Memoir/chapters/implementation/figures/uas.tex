@@ -3,11 +3,11 @@
 	\begin{tikzpicture}
 		
 		\newcommand{\drawpilot}[1]{
-			\node[rounded corners=2pt,minimum height=1.3cm,minimum width=0.4cm,fill=gray,#1] (body) {};
-			\node[circle,fill=gray,minimum size=5mm,above=1pt of body] (head) {};
+			\node[rounded corners=2pt,minimum height=1cm,minimum width=0.4cm,fill=gray,#1] (body) {};
+			\node[circle,fill=gray,minimum size=4.5mm,above=1pt of body] (head) {};
 			\draw[line width=1mm,round cap-round cap,gray] ([shift={(2pt,-1pt)}]body.north east) --++(-90:6mm);
 			\draw[line width=1mm,round cap-round cap,gray] ([shift={(-2pt,-1pt)}]body.north west)--++(-90:6mm);
-			\draw[thick,white,-round cap] (body.south) --++(90:5.5mm);
+			\draw[thick,white,-round cap] (body.south) --++(90:5mm);
 			\node[below of=pilot](pilot-label){Pilot};
 
 			\node[fit=(body)(head)(pilot-label),
@@ -58,8 +58,8 @@
 
 
 		\drawpilot{}
-		\drawgcs{below right=3cm of pilot,xshift=1cm}
-		\drawuav{below left=3.7cm of pilot,xshift=-1cm}
+		\drawgcs{right=3.5cm of pilot,yshift=-2cm}
+		\drawuav{left=4cm of pilot,yshift=-2cm}
 
 		\draw[loosely dashdotted,thick] (pilot) -- node[above,sloped]{Radio Control} (uav);
 		\draw[thick] (pilot) -- node[above,sloped]{Physical} (gcs);

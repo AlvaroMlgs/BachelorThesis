@@ -24,8 +24,15 @@
 \contentsline {figure}{\numberline {5.10}{\ignorespaces OCAS Product Breakdown Structure\relax }}{27}{figure.caption.24}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Example of a N$^2$ diagram\relax }}{29}{figure.caption.26}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces OCAS N$^2$ diagram for interfaces definition\relax }}{30}{figure.caption.27}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Raspberry Pi 2 Model B. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {raspberrypi.org}}\relax }}{32}{figure.caption.29}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Chosen ultrasonic rangefinder: HC-SR04 {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {arduinolearning.com}}\relax }}{32}{figure.caption.29}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Raspberry Pi 2 Model B. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {raspberrypi.org}}\relax }}{33}{figure.caption.30}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Testing platform, with OCAS already integrated\relax }}{33}{figure.caption.31}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Regular Ardupilot UAS architecture\relax }}{36}{figure.caption.30}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces OCAS-equiped UAS architecture\relax }}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Regular Ardupilot UAS architecture\relax }}{36}{figure.caption.32}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces OCAS-equiped UAS architecture\relax }}{36}{figure.caption.33}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces OCAS hardware layout\relax }}{37}{figure.caption.34}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces GPIO pins on the Raspberry Pi 2 model B {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {raspberrypi.org}}\relax }}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Schematic of a voltage divider\relax }}{39}{figure.caption.36}
+\addvspace {10pt}
+\addvspace {10pt}
 \addvspace {10pt}

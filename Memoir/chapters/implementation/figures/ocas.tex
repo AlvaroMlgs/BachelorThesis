@@ -1,0 +1,102 @@
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+
+		\newcommand{\drawgcs}[1]{
+			\node[rectangle,rounded corners,double,draw=gray,very thick,minimum height=1cm,minimum width=1.5cm,#1](display){GCS};
+			\node[trapezium,rounded corners,draw=gray,ultra thick,trapezium angle=50,minimum height=0.3cm,inner ysep=1pt,inner xsep=0.15cm,below=2pt of display](keyboard){};
+
+			\node[fit=(display)(keyboard),
+				inner sep=5mm,rounded corners=5mm] 
+				(gcs) {};	%Group the GCS together
+		}
+
+		\newcommand{\drawuav}[1]{
+			\node[#1](coord){};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m1) at ($(coord)+(-0.7cm,0.7cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m2) at ($(coord)+(0.7cm,0.7cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m3) at ($(coord)+(0.7cm,-0.7cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.15cm,inner sep=0] (m4) at ($(coord)+(-0.7cm,-0.7cm)$) {};
+
+			%Airframe
+			\path[fill=gray,draw=gray,line width=1mm] (m1.base)
+				.. controls (coord) .. (m2.base)
+				.. controls (coord) .. (m3.base)
+				.. controls (coord) .. (m4.base)
+				.. controls (coord) .. (m1.base);
+				
+
+			%Propellers
+			\path[fill=gray,draw=white] (m1) arc (155:115:0.8cm) arc (335:295:0.8cm)
+				arc (115:155:0.8cm) arc (295:335:0.8cm);
+			\path[fill=gray,draw=white] (m2) arc (65:25:0.8cm) arc (245:205:0.8cm)
+				arc (25:65:0.8cm) arc (205:245:0.8cm);
+			\path[fill=gray,draw=white] (m3) arc (155:115:0.8cm) arc (335:295:0.8cm)
+				arc (115:155:0.8cm) arc (295:335:0.8cm);
+			\path[fill=gray,draw=white] (m4) arc (65:25:0.8cm) arc (245:205:0.8cm)
+				arc (25:65:0.8cm) arc (205:245:0.8cm);
+
+			\node[yshift=-0.7cm](uav-label) at (coord) {UAV};
+
+			\node[fit=(coord)(m1)(m2)(m3)(m4)(uav-label),
+				inner sep=5mm,rounded corners=5mm]
+				(uav) {};	%Group the UAV together
+		}
+
+		\newcommand{\drawocas}[1]{
+			\node[#1,fill=teal,opacity=0.4,minimum height=5cm,minimum width=7cm](ocas-block){};
+			\coordinate[label=above right:\textcolor{white}{\bfseries OCAS}]
+				(ocas-label) at (ocas-block.south west) {};
+
+				\node[fit=(ocas-block)(ocas-label)](ocas) {};
+		}
+
+		\newcommand{\drawrpi}[1]{
+			\node[#1,fill=green!70!black,minimum height=2.5cm,minimum width=4cm,rounded corners=2mm](rpi) {};
+			\coordinate[label=above right:\textcolor{white}{RPi}]
+				(rpi-label) at (rpi.south west) {};
+			\node[draw,fill=gray!50,minimum height=6mm,minimum width=8mm,anchor=north west,yshift=-2pt](usb1) at (rpi.north west) {\includegraphics[width=5mm]{./figures/usb.png}};
+			\node[draw,fill=gray!50,minimum height=6mm,minimum width=8mm,below=2pt of usb1](usb2) {\includegraphics[width=5mm]{./figures/usb.png}};
+			\node[draw,fill=gray!50,minimum height=3mm,minimum width=4mm,anchor=north east,xshift=-0.7cm](microusb) at (rpi.north east) {};
+			\node[fill=black!80,minimum height=3mm,minimum width=20mm,anchor=south east,xshift=-2mm,yshift=2mm](gpio) at (rpi.south east) {};
+				\node[right=0.1cm of gpio]{\footnotesize \scshape gpio};
+			\foreach \position in {1,2,...,15}{
+				\node[fill=yellow!60,circle,inner sep=0.5pt](pin\position) at ($(gpio.north west)+(\position/8,-1mm)$) {};
+				\node[fill=yellow!60,circle,inner sep=0.5pt](pin\position+15) at ($(gpio.north west)+(\position/8,-2mm)$) {};
+			}
+		}
+
+		\drawocas{}
+		\drawuav{left=2.5cm of ocas,yshift=0.3cm}
+		\drawgcs{left=2cm of ocas,yshift=3.5cm}
+		\drawrpi{}
+
+		% Wifi
+		\node[fill,inner sep=0pt,minimum width=1mm,minimum height=6mm,above left=0.5cm of usb1](wifi-stick){};
+		\node[circle,inner sep=0.7mm,fill,above=-1pt of wifi-stick](wifi-ball) {};
+		\node[fit=(wifi-stick)(wifi-ball)](wifi) {};
+
+		% Power
+		\node[fill=black!50,minimum height=4mm,minimum width=7mm,above right=0.5cm of microusb](power) {\footnotesize Power};
+
+		% Sonar
+		\node[fill=blue!70,minimum height=5mm,minimum width=9mm,below=0.7cm of gpio,xshift=5mm](sonar-board){};
+		\node[fill=black!80,draw=black!50,very thick,circle,inner sep=1mm,xshift=-2mm](sonar1) at (sonar-board) {};
+		\node[fill=black!80,draw=black!50,very thick,circle,inner sep=1mm,xshift=2mm](sonar2) at (sonar-board) {};
+		\node[fit=(sonar-board)(sonar1)(sonar2)](sonar){};
+
+
+		% Connections (paths)
+		\draw[semithick,decorate,decoration={coil,aspect=0,segment length=1.1cm}] (usb2.west) -- node[below=2mm,sloped]{MAVlink} (uav);
+		\draw[semithick,decorate,decoration={expanding waves,angle=4,segment length=2mm}] (wifi-ball.north east) -- node[above=2mm,sloped]{SSH (WiFi)} (gcs);
+		\draw[semithick] (usb1.west) -| (wifi-stick.south);
+		\draw[semithick,double] (microusb) |- (power);
+		\foreach \wire in {-1.5,-0.5,0.5,1.5}
+			\draw ($(sonar-board.north)+(\wire/20,0)$) -- ($(sonar-board.north|-gpio.south)+(\wire/20,0)$);
+
+	\end{tikzpicture}
+
+	\caption{OCAS hardware layout}
+	\label{fig:ocas}
+\end{figure}
