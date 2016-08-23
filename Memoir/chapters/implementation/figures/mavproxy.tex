@@ -1,0 +1,58 @@
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+		
+		\newcommand{\drawuav}[1]{
+			\node[#1](coord){};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m1) at ($(coord)+(-0.4cm,0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m2) at ($(coord)+(0.4cm,0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m3) at ($(coord)+(0.4cm,-0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m4) at ($(coord)+(-0.4cm,-0.4cm)$) {};
+
+			%Airframe
+			\path[fill=gray,draw=gray,line width=0.7mm] (m1.center)
+				.. controls (coord) .. (m2.center)
+				.. controls (coord) .. (m3.center)
+				.. controls (coord) .. (m4.center)
+				.. controls (coord) .. (m1.center);
+				
+
+			%Propellers
+			\path[fill=gray] (m1) arc (155:115:0.5cm) arc (335:295:0.5cm)
+				arc (115:155:0.5cm) arc (295:335:0.5cm);
+			\path[fill=gray] (m2) arc (65:25:0.5cm) arc (245:205:0.5cm)
+				arc (25:65:0.5cm) arc (205:245:0.5cm);
+			\path[fill=gray] (m3) arc (155:115:0.5cm) arc (335:295:0.5cm)
+				arc (115:155:0.5cm) arc (295:335:0.5cm);
+			\path[fill=gray] (m4) arc (65:25:0.5cm) arc (245:205:0.5cm)
+				arc (25:65:0.5cm) arc (205:245:0.5cm);
+
+			\node[yshift=-0.8cm](uav-label) at (coord) {\footnotesize UAV};
+
+			\node[fit=(coord)(m1)(m2)(m3)(m4),inner sep=1.4mm]
+				(uav) {};	%Group the UAV together
+		}
+
+		\tikzset{node distance=2cm}
+
+		\drawuav{}
+		\node[draw,fill=gray!50,minimum height=6mm,minimum width=8mm,right=3cm of uav](usb) {\includegraphics[width=5mm]{./figures/usb.png}};
+			\node[below=0pt of usb]{\footnotesize /dev/ttyUSB0};
+		\node[ellipse,draw,double,thick,inner sep=2mm,right=of usb](mavproxy){MAVproxy};
+		\node[draw,rounded corners,below=1cm of mavproxy](window){State window};
+		\node[draw,rounded corners,above=1cm of mavproxy](map){Map};
+		\node[draw,semithick,minimum width=2cm,minimum height=1.5cm,above right=5cm of mavproxy,yshift=-3cm,align=center](script){Custom\\ control\\ script};
+		\node[draw,semithick,minimum width=2cm,minimum height=1.5cm,below right=5cm of mavproxy,yshift=3cm,align=center](gcs){Other GCS\\ software};
+
+		\draw[thick,stealth-stealth] (uav) -- node[above]{\footnotesize Serial comm.} (usb);
+		\draw[thick,stealth-stealth] (usb) -- (mavproxy);
+		\draw[thick,stealth-stealth] (mavproxy) -- node[above,sloped]{\footnotesize UDP: 127.0.0.1:14550} (script);
+	\draw[thick,stealth-stealth] (mavproxy) -- node[below,sloped]{\footnotesize UDP: --.--.--.--:---} (gcs);
+		\draw[-stealth] (mavproxy) -- (map);
+		\draw[-stealth] (mavproxy) -- (window);
+
+
+	\end{tikzpicture}
+	\caption{MAVproxy setup}
+	\label{fig:mavproxy}
+\end{figure}

@@ -1,0 +1,108 @@
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+
+		\newcommand{\drawrpi}[1]{
+			\node[#1,fill=green!70!black,minimum height=6cm,minimum width=10cm,rounded corners=2mm](rpi) {};
+			\coordinate[label=above right:\textcolor{white}{RPi}]
+				(rpi-label) at (rpi.south west) {};
+			\node[draw,fill=gray!50,minimum height=6mm,minimum width=8mm,anchor=north west,yshift=-2pt](usb1) at (rpi.north west) {\includegraphics[width=5mm]{./figures/usb.png}};
+			\node[draw,fill=gray!50,minimum height=6mm,minimum width=8mm,below=2pt of usb1](usb2) {\includegraphics[width=5mm]{./figures/usb.png}};
+			\node[draw,fill=gray!50,minimum height=3mm,minimum width=4mm,anchor=north east,xshift=-0.7cm](microusb) at (rpi.north east) {};
+			\node[fill=black!80,minimum height=3mm,minimum width=20mm,anchor=south east,xshift=-2mm,yshift=2mm](gpio) at (rpi.south east) {};
+				%\node[right=0.1cm of gpio]{\footnotesize \scshape gpio};
+			\foreach \position in {1,2,...,15}{
+				\node[fill=yellow!60,circle,inner sep=0.5pt](pin\position) at ($(gpio.north west)+(\position/8,-1mm)$) {};
+				\node[fill=yellow!60,circle,inner sep=0.5pt](pin\position+15) at ($(gpio.north west)+(\position/8,-2mm)$) {};
+			}
+		}
+
+		\newcommand{\drawgcs}[1]{
+			\node[rectangle,rounded corners=3pt,double,draw=gray,thick,minimum height=0.3cm,minimum width=0.5cm,#1](display){\footnotesize GCS};
+			\node[trapezium,rounded corners=2pt,draw=gray,very thick,trapezium angle=50,minimum height=0.1cm,inner ysep=1pt,inner xsep=3mm,below=2pt of display](keyboard){};
+
+			\node[fit=(display)(keyboard),inner sep=0mm] 
+				(gcs) {};	%Group the GCS together
+		}
+
+		\newcommand{\drawuav}[1]{
+			\node[#1](coord){};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m1) at ($(coord)+(-0.4cm,0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m2) at ($(coord)+(0.4cm,0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m3) at ($(coord)+(0.4cm,-0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m4) at ($(coord)+(-0.4cm,-0.4cm)$) {};
+
+			%Airframe
+			\path[fill=gray,draw=gray,line width=0.7mm] (m1.center)
+				.. controls (coord) .. (m2.center)
+				.. controls (coord) .. (m3.center)
+				.. controls (coord) .. (m4.center)
+				.. controls (coord) .. (m1.center);
+				
+
+			%Propellers
+			\path[fill=gray] (m1) arc (155:115:0.5cm) arc (335:295:0.5cm)
+				arc (115:155:0.5cm) arc (295:335:0.5cm);
+			\path[fill=gray] (m2) arc (65:25:0.5cm) arc (245:205:0.5cm)
+				arc (25:65:0.5cm) arc (205:245:0.5cm);
+			\path[fill=gray] (m3) arc (155:115:0.5cm) arc (335:295:0.5cm)
+				arc (115:155:0.5cm) arc (295:335:0.5cm);
+			\path[fill=gray] (m4) arc (65:25:0.5cm) arc (245:205:0.5cm)
+				arc (25:65:0.5cm) arc (205:245:0.5cm);
+
+			\node[yshift=-0.8cm](uav-label) at (coord) {\footnotesize UAV};
+
+			\node[fit=(coord)(m1)(m2)(m3)(m4)(uav-label),inner sep=1.4mm]
+				(uav) {};	%Group the UAV together
+		}
+
+		\newcommand{\drawsensor}[1]{
+			\node[#1,fill=blue!70,minimum height=5mm,minimum width=9mm](sonar-board){};
+			\node[fill=black!80,draw=black!50,very thick,circle,inner sep=1mm,xshift=-2mm](sonar1) at (sonar-board) {};
+			\node[fill=black!80,draw=black!50,very thick,circle,inner sep=1mm,xshift=2mm](sonar2) at (sonar-board) {};
+			\node[fit=(sonar-board)(sonar1)(sonar2),inner sep=0](sonar){};
+		}
+
+		\newcommand{\drawos}[1]{
+			\node[#1,fill=brown,minimum height=4.5cm,minimum width=7cm](os){};
+			\coordinate[label=above right:\textcolor{white}{Raspbian}]
+				(raspbian-label) at (os.south west) {};
+			\node[fill=brown!80!black,anchor=north west,align=left,inner sep=2mm](network) at (os.north west) {Network tools\\ SSH client};
+			%\node[rectangle,right=1cm of network](shell) {Unix shell};
+			\node[fill=yellow!90!black,rounded corners,anchor=south east,minimum height=2.7cm,minimum width=4.6cm](python) at ($(os.south east)+(-3mm,3mm)$) {};
+			\coordinate[label=above right:\textcolor{white}{Python}]
+				(python-label) at (python.south west) {};
+			\node[anchor=north west](gui) at ($(python.north west)+(6mm,-2mm)$) {GUI};
+			\node[anchor=west](mavproxy) at ($(python.west)+(1mm,-2mm)$) {MAVproxy};
+			\node[anchor=north east,align=right](script) at ($(python.north east)+(-3mm,-2mm)$) {Control\\ script};
+		}
+
+
+		\begin{scope}[transparency group,opacity=0.4]
+			\drawrpi{}
+			\drawgcs{left=of usb1,yshift=1mm}
+			\drawuav{below left=of usb2,xshift=-3mm}
+			\drawsensor{right=of gpio}
+		\end{scope}
+		\drawos{}
+
+		\coordinate (mav) at ($(mavproxy)+(-3.5cm,0)$);
+
+		\draw[thick,decorate,decoration={expanding waves,angle=10,segment length=0.8mm}] (usb1) -- node[above=2mm,sloped]{SSH} (gcs);
+		\draw[thick,rounded corners] (usb1) -| (network);
+		\draw[thick,rounded corners,-stealth] (network) |- node[fill=brown,align=center,inner sep=0,opacity=0.8](shell){\small Unix\\[-1ex] \small shell} (gui);
+
+		\draw[thick,decorate,decoration={coil,aspect=0,amplitude=0.5mm,segment length=0.5cm}] (usb2) -| node[below right=1.5mm]{MAVlink} (uav) ;
+		\draw[thick,decorate,decoration={coil,aspect=0,amplitude=0.5mm,segment length=0.5cm}] (mavproxy) -- (mav) |- (usb2) ;
+		\draw[thick,-stealth] (gui) -- (script.west|-gui);
+		\draw[thick,-stealth] (gui) -- (mavproxy);
+		\draw[thick,decorate,decoration={coil,aspect=0,amplitude=0.5mm,segment length=0.3cm,pre length=5pt,post length=3pt},stealth-stealth] ($(mavproxy.north east)+(-3mm,-1mm)$) -- ($(script.south west)+(3mm,4mm)$);
+
+		\draw[thick,decorate,decoration=zigzag] (sonar) -- (gpio);
+		\draw[thick,decorate,decoration=zigzag,-stealth] (gpio) -| (script);
+
+		
+	\end{tikzpicture}
+	\caption{Software architecture of the OCAS computer}
+	\label{fig:software}
+\end{figure}

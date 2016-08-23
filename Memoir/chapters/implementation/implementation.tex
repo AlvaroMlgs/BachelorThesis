@@ -36,7 +36,7 @@ A 2.4 GHz signal transmits information on the position of the control sticks as 
 
 Likewise, the telemetry link consists of a 433 MHz duplex radio wave that carries MAVlink messages from the UAV to the GCS and viceversa, allowing for configuration, calibration and operation of the autonomous flight modes while the vehicle is aloft.
 
-\subsection{Integration of the OCAS}
+\subsection{Integration of the OCAS} \label{sec:ocasintegration}
 
 The introduction of the OCAS into the UAS shall preserve the basic Ardupilot functions.
 Thus, the architecture should not be significantly modifyied.
@@ -45,7 +45,7 @@ The final decision on the UAS architecture after the integration of the OCAS is 
 \input{./figures/uas-ocas.tex}
 
 With this setup, the original connections and functions are maintained while the OCAS, which is mounted onboard the UAV, communicates with it through a USB cable via the MAVlink protocol (the same one used for the telemetry link).
-Additionally the GCS has a second wireless link to the OCAS via WiFi, making use of the SSH (plus X11 forwarding) protocol.
+Additionally the GCS has a second wireless link to the OCAS via WiFi, making use of the SSH (plus optional X Window System forwarding) protocol.
 More information on these interfaces is provided in Section \ref{sec:peripheral}.
 
 \section{OCAS peripheral connections (hardware interfaces)} \label{sec:peripheral}
@@ -123,15 +123,62 @@ In the present case, for the voltage to drop from 5V to 3.3V, the resistors need
 	\frac{V_{in}}{R_1+R_2}=\frac{V_{out}}{R_2} \ \Rightarrow\ \frac{V_{in}}{V_{out}}=\frac{R_1}{R_2}+1 \ \Rightarrow\ \frac{R_1}{R_2}=\frac{5V}{3.3V}-1 \ \Rightarrow\ \frac{R_1}{R_2}=\frac{1}{2} 
 \end{equation}
 
-So finally, an ultrasonic rangefinder connected to GPIO pins 14 and 15, for instance, would be connected a shown in Figure \ref{fig:sonarconnect}
+So finally, an ultrasonic rangefinder connected to GPIO pins 14 and 15, for instance, would be connected a shown in Figure \ref{fig:sonarconnect}.
 
 \input{./figures/sonarconnect}
 
 
 \section{Software: Bringing everything together}
 
+Having several flows of information arriving to the Raspberry Pi, it is crucial to set up a system that acquires all the data before it can be processed. 
+In the present section such a system will be described.
 
-\section{The Python script}
+\subsection{The Operating System}
+
+The first software layer on the Raspberry Pi (apart from the kernel) is the Operating System (OS).
+In this case, the linux OS is Raspbian Wheezy, which is a version of Debian adapted to be run on the Raspberry Pi's ARMv7 chip.
+
+Raspbian is a complete OS, and as such its abilities are varied, being the most relevant for the project the network management tools and the capability of running external software applications.
+Within the OCAS, Raspbian will be used as container of the software subsystems specified in the Logical Decomposition phase of the design process (Figure \ref{fig:pbs}), plus it will directly handle the functions associated to the GCS connector.
+An schematic of the relevant software architecture to the OCAS is represented in Figure \ref{fig:software}.
+
+\input{./figures/software.tex}
+
+As it can be deduced from Figure \ref{fig:software}, all the interaction from the Ground Control Station to the OCAS computer is performed through the Unix Shell, which only provides a command interface with the user.
+Nevertheless, the SSH connection allows an optional X Window System protocol forwarding (as mentioned in Section \ref{sec:ocasintegration}); and a Graphical User Interface (GUI) will be developed in response to Requirement 8.1, allowing the execution of MAVproxy as well as the custom control scripts in order to enhance the intuitive operation of the system by the pilot.
+
+\subsection{MAVproxy}
+
+MAVproxy is an open-source Ground Control Station piece of software that is distributed as a Python application.
+Thus, it can be run on any machine on which a Python distribution can be installed (virtually any operating system).
+
+Its most significant difference compared with traditional GCS software such as Mission Planner or QGroundControl is that MAVproxy is built for the command line and does not need a graphical desktop environment to operate (although a small state window and map are also implemented), which means that it is the most adequate alternative for the operation of the UAV from the OCAS.
+Furthermore, another decisive feature is the ability of MAVproxy of forwarding the MAVlink messages that are received from and sent to the UAV, allowing the possibility of operating as an intermediate software layer between the UAV and other GCS pieces of software.
+That in particular is the chosen architecture for the OCAS in terms of communication between the UAV and the custom control scripts, which will be covered in Section \ref{sec:script}.
+
+Concerning the present section, the setup of MAVproxy will be explained.
+
+\input{./figures/mavproxy.tex}
+
+As previously mentioned and shown in Figure \ref{fig:mavproxy}, the connection from the UAV to the Raspberry Pi is done via a serial communication through USB cable.
+The Ardupilot software utilises a baud rate of 115200 bd/s by default, which is an important parameter that needs to be specified to MAVproxy before connecting to the vehicle (else the connection will fail).
+In addition, the address given by the OS to the USB port (/dev/ttyUSB0 in Figure \ref{fig:mavproxy}) has to be provided too. 
+
+Finally, the redirection of MAVlink messages is done via the User Datagram Protocol (UDP), making use of the Internet Transport Layer.
+However, a remote Internet connection is not needed, since both MAVproxy and the intended target (the custom control script) will be running on the same machine; hence the local IP address can be used (127.0.0.1) together with any available port of choice.
+The optional second rerouting path is to be defined at the operator's discretion, and can be either a local or remote address.
+
+The auxiliary Map and State windows are internally created by MAVproxy, using only Python function calls and libraries.
+
+For completeness, the command to be executed in order to run the MAVproxy GCS software with the mentioned settings is:
+\begin{lstlisting}[language=bash,basicstyle=\ttfamily\small,breaklines=true,breakatwhitespace=true,escapeinside={(*@}{@*)}]
+	(*@\textbf{\$}@*) sudo ./mavproxy.py --master=/dev/ttyUSB0 --baud=115200 --out=127.0.0.1:14550 --out=127.0.0.1:14551
+\end{lstlisting}
+
+\subsection{The Python environment}
+
+
+\section{The Python script}	\label{sec:script}
 
 
 
