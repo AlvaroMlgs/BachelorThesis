@@ -177,9 +177,23 @@ For completeness, the command to be executed in order to run the MAVproxy GCS so
 
 \subsection{The Python environment}
 
+Python is an open-source general-purpose programming language built to be powerful and easy to use.
+Additionally, it is implemented to run on virtually any machine, providing interpreters and compilers for most of the operating systems available, which means that the source code can be seamlessly ported from one system to another without any modifications to the source code.
+Furthermore, Python as a considerable community of developers that contribute to the development of the language through a vast repository of libraries which allow for a greater abstraction and automation of common tasks.
+
+These features and flexibility of Python make it ideal for the development of the OCAS.
+In particular, there exists a community of developers leaded by 3D Robotics who are creating an Application Programming Interface (API) that provides several useful tools for the communication and operation of Ardupilot-based UAVs.
+For instance, DroneKit API\footnote{Documentation can be found at \url{www.dronekit.io}} creates a \texttt{vehicle} class upon connection to a MAVlink stream (both serial and UDP protocols are supported) which is automatically updated at a rate of 50 Hz and stores the instantaneous values of important state variables of the UAV, such as absolute GPS position (latitude, longitude, altitude), relative position with respect to the take-off location (north, east, down) or velocity in the body-fixed reference frame, among others.
+Moreover, it also provides some routines that translate commands like \emph{take-off}, \emph{change flight mode} or guiding instructions and reference states into MAVlink messages that can be readily sent to the UAV through the \texttt{vehicle} class.
+
+In addition, DroneKit includes a branch of development that aims to provide other developers with an Ardupilot Simulator.
+The approach taken is to simulate the Arduino control board and other hardware on the UAV by means of software, hence the name Software-In-The-Loop (SITL) simulator.
+However, DroneKit-SITL does not aim to provide an accurate physical representation of the UAV \cite{vegaastorga2016}, since the physical properties change from vehicle to vehicle; the main goal of the simulator is to emulate the Ardupilot firmware, so that MAVlink communication and commands can be safely tested prior to their implementation on the physical platform.
+Conveniently enough, DroneKit-SITL can be installed as a Python application, and outputs the MAVlink messages via the TCP Internet protocol, which is additionally supported by MAVlink as an input data stream, similarly to the Serial communication by the real UAV.
+
 
 \section{The Python script}	\label{sec:script}
 
-
+At this point it can be useful to collect all the information generated in Chapters \ref{chap:design} and \ref{chap:implementation} do determine what functions and components have still not been covered and shall be implemented within the custom control script.
 
 

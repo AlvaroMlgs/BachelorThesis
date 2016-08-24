@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  24 AUG 2016 01:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  24 AUG 2016 18:01
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2789,10 +2789,9 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 175.
-) [41]
-[42
+ [41])
+[42] (chapters/appendices/network.tex) [43
 
-] (chapters/appendices/network.tex) [43
 
 ] [44
 
@@ -2802,7 +2801,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 ] [46
 
 ] (chapters/appendices/sonar.tex
-<chapters/appendices/./sonar.pdf, id=847, 597.23125pt x 845.1575pt>
+<chapters/appendices/./sonar.pdf, id=854, 597.23125pt x 845.1575pt>
 File: chapters/appendices/./sonar.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./sonar.pdf>
@@ -2822,7 +2821,7 @@ File: chapters/appendices/./sonar.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./sonar.pdf used on input line 4.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<chapters/appendices/./sonar.pdf, id=852, page=1, 597.23125pt x 845.1575pt>
+<chapters/appendices/./sonar.pdf, id=859, page=1, 597.23125pt x 845.1575pt>
 File: chapters/appendices/./sonar.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./sonar.pdf, page 1>
@@ -2857,7 +2856,7 @@ Package pdftex.def Info: chapters/appendices/./sonar.pdf, page1 used on input l
 ine 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [48 <./chapters/appendices/./sonar.pdf>]
-<chapters/appendices/./sonar.pdf, id=879, page=2, 597.23125pt x 845.1575pt>
+<chapters/appendices/./sonar.pdf, id=886, page=2, 597.23125pt x 845.1575pt>
 File: chapters/appendices/./sonar.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./sonar.pdf, page 2>
@@ -2877,7 +2876,7 @@ Package pdftex.def Info: chapters/appendices/./sonar.pdf, page2 used on input l
 ine 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [49 <./chapters/appendices/./sonar.pdf>]
-<chapters/appendices/./sonar.pdf, id=887, page=3, 597.23125pt x 845.1575pt>
+<chapters/appendices/./sonar.pdf, id=894, page=3, 597.23125pt x 845.1575pt>
 File: chapters/appendices/./sonar.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./sonar.pdf, page 3>
@@ -2920,10 +2919,10 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 ### simple group (level 1) entered at line 89 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37652 strings out of 493673
- 703378 string characters out of 3141524
- 1016728 words of memory out of 3000000
- 39518 multiletter control sequences out of 15000+200000
+ 37658 strings out of 493673
+ 703491 string characters out of 3141524
+ 1016800 words of memory out of 3000000
+ 39522 multiletter control sequences out of 15000+200000
  160361 words of font info for 423 fonts, out of 3000000 for 9000
  1031 hyphenation exceptions out of 8191
  61i,18n,108p,1013b,1690s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2943,9 +2942,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (64 pages, 9734337 bytes).
+Output written on memoirthesis.pdf (64 pages, 9738697 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
  66186 words of extra memory for PDF output out of 74296 (max. 10000000)
 

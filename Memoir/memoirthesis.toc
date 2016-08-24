@@ -57,7 +57,7 @@
 \contentsline {subsection}{\numberline {6.3.1}The Operating System}{40}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}MAVproxy}{40}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}The Python environment}{41}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}The Python script}{41}{section.6.4}
+\contentsline {section}{\numberline {6.4}The Python script}{42}{section.6.4}
 \contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{43}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{45}{appendix.B}
 \contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{47}{appendix.C}
