@@ -1,0 +1,64 @@
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+
+		\tikzstyle{function}=[rectangle,fill=teal!20,draw,
+			minimum width=2.3cm,minimum height=0.9cm,
+			node distance=0.7cm,
+			align=center,inner sep=1.5mm]
+		\tikzstyle{arrow}=[-stealth,semithick]
+
+		\node[function,fill=teal!50,double](start){\scshape Script Start};
+		\node[function,below=of start](logging){Logging setup};
+		\coordinate (coordstart) at ($(logging.south)+(0,-0.5cm)$); 
+		\node[function,below=0.5cm of coordstart,xshift=-5cm](connect){Connect\\ to UAV};
+		\node[function,below=7cm of coordstart,xshift=5cm](log){Log information};
+		\coordinate (coordlog) at ($(log)+(-3.5cm,0)$);
+		\node[function,below=of log](pilot){Alert pilot};
+		\node[function,below=of connect,align=left](observe){Observe state:\\~~- Monitor env.\\~~- Confirm detection\\~~- Evaluate distance\\~~- Evaluate velocity\\~~- Compute trajectory};
+		\node[function,below=of observe](threat){Evaluate\\ level of threat};
+		\coordinate (coordloop1) at ($(threat.south)+(-2.5cm,-4mm)$);
+		\coordinate (coordloop2) at ($(observe.north)+(-3mm,3mm)$);
+		\node[function,below=1.4cm of threat](take){Take control\\ of UAV};
+		\node[function,below=of take,xshift=-3cm](observemission){Observe\\ state};
+		\node[function,below=of take,xshift=3cm,align=left](avoid){Avoid obstacle:\\~~- Determine actuation\\~~- Command actuation};
+		\coordinate (coordmission) at ($(take.south)+(0,-0.4cm)$);
+		\node[function,below=of avoid,xshift=-3cm](avoided){Threat avoided?};
+		\coordinate (coordavoid) at ($(avoided.north)+(0,3mm)$);
+		\coordinate (coordreturn) at ($(avoided.south)+(3.2cm,-3mm)$);
+		\node[function,below=1.1 cm of avoided](return){Return control\\ to pilot};
+		%\coordinate (coordend1) at ($(logging)+(0,-18cm)$);
+			%\draw[very thick] ($(coordend1)+(-4mm,2mm)$)--($(coordend1)+(-4mm,0)$)--($(coordend1)+(4mm,0)$)--($(coordend1)+(4mm,2mm)$);
+		\node[function,fill=teal!50,double,below=19cm of start](end){\scshape Script End};
+		\coordinate (coordend) at ($(end)+(0,1cm)$);
+
+
+		\draw[arrow] (start) -- (logging);
+		\draw[arrow] (logging) |- (coordstart) -| (connect);
+		\draw[arrow] (logging) |- (coordstart) -| (log);
+		\draw[arrow] (log) -- (pilot);
+		\draw[arrow] (connect) -- (observe);
+		\draw[arrow,dashed] (observe) -| (coordlog) |- (log);
+		\draw[arrow] (observe) -- (threat);
+		\draw[arrow,dashed,-] (threat) -| (coordlog);% |- (log);
+		\draw[arrow] ($(threat.south)+(-3mm,0)$) |- node[below,xshift=-1cm]{Safe} (coordloop1) |- (coordloop2) -- ($(observe.north)+(-3mm,0)$);
+		\draw[arrow] (threat) -- node[right]{Unsafe} (take);
+		\draw[arrow,dashed,-] (take) -| (coordlog);% |- (log);
+		\draw[arrow] (take) -- (coordmission) -| (observemission);
+		\draw[arrow] (take) -- (coordmission) -| (avoid);
+		\draw[arrow,dashed,-] (avoid) -| (coordlog);% |- (log);
+		\draw[arrow] (avoid) |- (coordavoid) -- (avoided);
+		\draw[arrow,dashed] (observemission) -- (avoid.west|-observemission);
+		\draw[arrow,dashed] (observemission) |- (avoided);
+		\draw[arrow] (avoided) -- node[left]{Yes} (return);
+		\draw[arrow] ($(avoided.south)+(3mm,0)$) |- node[below right]{No} (coordreturn) -- (coordreturn|-avoid.south);
+		\draw[arrow] (return) |- (coordend) -- (end);
+		\draw[arrow,dashed,-] (return) -| (coordlog);% |- (log);
+		\draw[arrow] (pilot) |- (coordend) -- (end);
+
+		
+	\end{tikzpicture}
+	\caption{Functional flow diagram of the Python script}
+	\label{fig:script}
+\end{figure}

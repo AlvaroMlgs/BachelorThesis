@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{llcc}
+
+		\hline
+		Function		&	Logical component	&	Actual component	&	Script component	\\
+		\hline
+		GCS data-link	&	GCS connector		&	WiFi / SSH			&	\\
+		Start OCAS		&	GCS connector		&	GUI					&	GUI	\\
+		Send data to GCS&	GCS connector		&	SSH					&	\\
+		Log information	&	Program driver		&	Script				&	Logger	\\
+		Stop OCAS		&	GCS connector		&	SSH					&	SSH	\\
+		UAV communication&	UAV connector		&	Script				&	DroneKit API \\
+		Monitor environment&Sonar operator		&	Script				&	Sonar class	\\
+		Determine distance&	Sonar operator		&	Script				&	Sonar class	\\
+		Determine velocity&	Sonar operator		&	Script				&	Sonar class	\\
+		Confirm detection&	Signal processor	&	Script				&	Sonar class	\\
+		Level of threat	&	Signal processor	&	Script				&	Sonar class	\\
+		Decide on action&	Signal processor	&	Script				&	Auto class	\\
+		Compute trajectory&	Sonar operator		&	Script				&	Sonar class	\\
+		Determine actuation&Actuation calculator&	Script				&	main	\\
+		Command actuation&	UAV connector		&	Script				&	DroneKit API \\
+		\hline
+
+	\end{tabular}
+	\caption{Functional and component allocation matrix}
+	\label{tab:allocation}
+\end{table}

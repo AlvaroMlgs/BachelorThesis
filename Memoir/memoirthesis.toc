@@ -3,8 +3,8 @@
 \contentsline {section}{Abstract}{ii}{chapter*.1}
 \contentsline {section}{Dedication and Acknowledgements}{iv}{chapter*.2}
 \contentsline {section}{Table of Contents}{v}{section*.3}
-\contentsline {section}{List of Figures}{vii}{section*.4}
-\contentsline {section}{List of Tables}{ix}{section*.5}
+\contentsline {section}{List of Figures}{ix}{section*.4}
+\contentsline {section}{List of Tables}{xi}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background information}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Socioeconomic environment}{2}{section.1.2}
@@ -58,7 +58,13 @@
 \contentsline {subsection}{\numberline {6.3.2}MAVproxy}{40}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}The Python environment}{41}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}The Python script}{42}{section.6.4}
-\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{43}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{45}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{47}{appendix.C}
-\contentsline {chapter}{Bibliography}{51}{section*.41}
+\contentsline {subsection}{\numberline {6.4.1}Script architecture}{42}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Log information}{43}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Connect to UAV}{45}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Observe state}{45}{subsection.6.4.4}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{47}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{49}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{51}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Logging setup}{55}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Connect.py}{57}{appendix.E}
+\contentsline {chapter}{Bibliography}{59}{section*.43}

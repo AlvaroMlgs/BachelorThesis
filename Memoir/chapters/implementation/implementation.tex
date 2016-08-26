@@ -147,7 +147,7 @@ An schematic of the relevant software architecture to the OCAS is represented in
 As it can be deduced from Figure \ref{fig:software}, all the interaction from the Ground Control Station to the OCAS computer is performed through the Unix Shell, which only provides a command interface with the user.
 Nevertheless, the SSH connection allows an optional X Window System protocol forwarding (as mentioned in Section \ref{sec:ocasintegration}); and a Graphical User Interface (GUI) will be developed in response to Requirement 8.1, allowing the execution of MAVproxy as well as the custom control scripts in order to enhance the intuitive operation of the system by the pilot.
 
-\subsection{MAVproxy}
+\subsection{MAVproxy} \label{sec:mavproxy}
 
 MAVproxy is an open-source Ground Control Station piece of software that is distributed as a Python application.
 Thus, it can be run on any machine on which a Python distribution can be installed (virtually any operating system).
@@ -171,15 +171,19 @@ The optional second rerouting path is to be defined at the operator's discretion
 The auxiliary Map and State windows are internally created by MAVproxy, using only Python function calls and libraries.
 
 For completeness, the command to be executed in order to run the MAVproxy GCS software with the mentioned settings is:
-\begin{lstlisting}[language=bash,basicstyle=\ttfamily\small,breaklines=true,breakatwhitespace=true,escapeinside={(*@}{@*)}]
-	(*@\textbf{\$}@*) sudo ./mavproxy.py --master=/dev/ttyUSB0 --baud=115200 --out=127.0.0.1:14550 --out=127.0.0.1:14551
-\end{lstlisting}
+\begin{center}
+\includegraphics[width=0.9\textwidth,clip,trim={0.5cm 13.8cm 1cm 0.2cm}]{./figures/mavproxysh.pdf}
+\end{center}
+
+%\begin{lstlisting}[language=bash,basicstyle=\ttfamily\small,breaklines=true,breakatwhitespace=true,escapeinside={(*@}{@*)}]
+%	(*@\textbf{\$}@*) sudo ./mavproxy.py --master=/dev/ttyUSB0 --baud=115200 --out=127.0.0.1:14550 --out=127.0.0.1:14551
+%\end{lstlisting}
 
 \subsection{The Python environment}
 
 Python is an open-source general-purpose programming language built to be powerful and easy to use.
 Additionally, it is implemented to run on virtually any machine, providing interpreters and compilers for most of the operating systems available, which means that the source code can be seamlessly ported from one system to another without any modifications to the source code.
-Furthermore, Python as a considerable community of developers that contribute to the development of the language through a vast repository of libraries which allow for a greater abstraction and automation of common tasks.
+Furthermore, Python has a considerable community of developers that contribute to the development of the language through a vast repository of libraries which allow for a greater abstraction and automation of common tasks.
 
 These features and flexibility of Python make it ideal for the development of the OCAS.
 In particular, there exists a community of developers leaded by 3D Robotics who are creating an Application Programming Interface (API) that provides several useful tools for the communication and operation of Ardupilot-based UAVs.
@@ -195,5 +199,46 @@ Conveniently enough, DroneKit-SITL can be installed as a Python application, and
 \section{The Python script}	\label{sec:script}
 
 At this point it can be useful to collect all the information generated in Chapters \ref{chap:design} and \ref{chap:implementation} do determine what functions and components have still not been covered and shall be implemented within the custom control script.
+To that end, an allocation matrix can be created as represented in Table \ref{tab:allocation}.
+In this matrix, the functions as defined in Figure \ref{fig:functArch}, the subsystems from Figure \ref{fig:pbs} (software branch) and the implementation in Chapter \ref{chap:implementation} up to this point will be related.
+Besides, a fourth column will represent the structure that the Python script will follow, and will be used during its development and coding phases.
+
+\input{./tables/allocation.tex}
+
+As it can be noticed, there are some script components that have not been made modular (encapsulated in a class).
+The reason is that those actions are very dependent on the actual computational approach taken by the programmer, and can become significantly complex algorithms.
+Since the development of those algorithms is not within the objectives of the project, the coding phase has been simplified by inserting those functions directly into the ``main'' function as simple routines, even though if complex functionality is to be implemented, the most adequate approach would be to create classes to group all the related information to perform those tasks.
+
+\subsection{Script architecture}
+
+The tasks to be performed by the script are quite time dependent, since they have to be executed alongside the main mission.
+Thus, the nature of the script needs to be relatively sequential (following the functional paths from the FFBD in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}).
+Nevertheless, the Functional Diagrams also show that some tasks need to be performed simultaneously for the correct execution of the mission.
+Hence, for the diverging paths in Figure \ref{fig:script}, a multi-threading processing approach has been implemented on the functions that are to be evaluated in parallel to each other.
+
+\input{./figures/script.tex}
+
+Figure \ref{fig:script} represents the \texttt{main.py} file within the script, from which additional classes and methods are derived and used during execution.
+For instance, the ``Observe state'' blocks are indeed performed by the Sensor operator from the PBS, and has been implemented as a set of variables and methods within the \texttt{Sonar} class, allowing for example for the simplified operation of multiple rangefinders by creating multiple instances of the same class.
+
+In the following subsections within Section \ref{sec:script}, all the functionality of the Python script will be explored, starting from the auxiliary classes and functions to finally combine all the missing parts of the Obstacle Collision Avoidance System into the \texttt{main} Python script.
+The entire Python files will be included in the Appendices for completeness.
+
+\subsection{Log information}
+
+Information report is done from the script in two manners:
+text with relevant data is immediately printed on the GCS screen through the SSH connection, but additionally those same messages are stored in a dedicated log folder contained in the script's directory with precise information on the time each event is recorded.
+The logs are handled with the \texttt{logging} library, which is set up at the beginning of the \texttt{main} file as shown in Appendix \ref{app:logging}.
+
+\subsection{Connect to UAV}
+
+The file \texttt{connect.py} (see Appendix \ref{app:connect}) defines the function \texttt{Connect()} which conveniently encapsulates the function \texttt{dronekit.connect}\footnote{In Python, functions derived from libraries prepend the name of the library to the function itself, separated by the ``dot'' syntax} and makes the default arguments equal to the output settings of MAVproxy as defined in Section \ref{sec:mavproxy}.
+In addition, the syntax \texttt{Connect(mode,address)} can be used for the cases when MAVproxy is not set up to work as an intermediate layer, accepting the Serial, UDP and TCP communication protocols on any local or remote address.
+
+The output of the function is the \texttt{vehicle} class which handles all the communications with the UAV (through MAVproxy or otherwise) and updates the values of the state variables automatically on the background, as well as providing some convenient methods for interacting with it.
+
+\subsection{Observe state}
+
+
 
 

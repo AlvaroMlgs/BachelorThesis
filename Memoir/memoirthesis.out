@@ -56,7 +56,13 @@
 \BOOKMARK [2][-]{subsection.6.3.2}{MAVproxy}{section.6.3}% 56
 \BOOKMARK [2][-]{subsection.6.3.3}{The Python environment}{section.6.3}% 57
 \BOOKMARK [1][-]{section.6.4}{The Python script}{chapter.6}% 58
-\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 59
-\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 60
-\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 61
-\BOOKMARK [0][-]{section*.41}{Bibliography}{}% 62
+\BOOKMARK [2][-]{subsection.6.4.1}{Script architecture}{section.6.4}% 59
+\BOOKMARK [2][-]{subsection.6.4.2}{Log information}{section.6.4}% 60
+\BOOKMARK [2][-]{subsection.6.4.3}{Connect to UAV}{section.6.4}% 61
+\BOOKMARK [2][-]{subsection.6.4.4}{Observe state}{section.6.4}% 62
+\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 63
+\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 64
+\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 65
+\BOOKMARK [0][-]{appendix.D}{Logging setup}{}% 66
+\BOOKMARK [0][-]{appendix.E}{Connect.py}{}% 67
+\BOOKMARK [0][-]{section*.43}{Bibliography}{}% 68
