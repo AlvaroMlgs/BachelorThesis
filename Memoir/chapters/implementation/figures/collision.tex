@@ -1,0 +1,74 @@
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+
+		\newcommand{\drawuav}[1]{
+			\node[#1](coord){};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m1) at ($(coord)+(-0.4cm,0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m2) at ($(coord)+(0.4cm,0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m3) at ($(coord)+(0.4cm,-0.4cm)$) {};
+			\coordinate[fill=gray,draw=gray,circle,minimum size=0.1cm,inner sep=0] (m4) at ($(coord)+(-0.4cm,-0.4cm)$) {};
+
+			%Airframe
+			\path[fill=gray,draw=gray,line width=0.7mm] (m1.center)
+				.. controls (coord) .. (m2.center)
+				.. controls (coord) .. (m3.center)
+				.. controls (coord) .. (m4.center)
+				.. controls (coord) .. (m1.center);
+				
+
+			%Propellers
+			\path[fill=gray] (m1) arc (155:115:0.5cm) arc (335:295:0.5cm)
+				arc (115:155:0.5cm) arc (295:335:0.5cm);
+			\path[fill=gray] (m2) arc (65:25:0.5cm) arc (245:205:0.5cm)
+				arc (25:65:0.5cm) arc (205:245:0.5cm);
+			\path[fill=gray] (m3) arc (155:115:0.5cm) arc (335:295:0.5cm)
+				arc (115:155:0.5cm) arc (295:335:0.5cm);
+			\path[fill=gray] (m4) arc (65:25:0.5cm) arc (245:205:0.5cm)
+				arc (25:65:0.5cm) arc (205:245:0.5cm);
+
+			%\node[yshift=-0.8cm](uav-label) at (coord) {\footnotesize UAV};
+
+			\node[fit=(m1)(m2)(m3)(m4),inner sep=3mm]
+				(uav) {};	%Group the UAV together
+		}
+
+		\tikzstyle{dim}=[|latex-latex]
+
+		
+		% Wall
+		\draw[very thick] (13,0) -- (13,7);
+		\foreach \c in {0,1,...,32}
+			\draw[thin] (13,\c/5) -- ($(13,\c/5)+(0.5,0.5)$);
+			\draw[thin] (13,33/5) -- ($(13,33/5)+(0.4,0.4)$);
+			\draw[thin] (13,34/5) -- ($(13,34/5)+(0.2,0.2)$);
+			\draw[thin] ($(13,0)+(0.2,0)$) -- ($(13,0)+(0.5,0.3)$);
+			\draw[thin] ($(13,0)+(0.4,0)$) -- ($(13,0)+(0.5,0.1)$);
+
+		\draw[dashed] (0,0) -- (0,7);
+		\drawuav{yshift=6cm}
+			\draw[dim] (uav.north) -- node[above]{$x_0$} (13,0|-uav.north);
+			\draw[-latex] (uav.center) -- node[right=0.5cm]{$v_0$} ($(uav.center)+(1cm,0)$);
+
+		\begin{scope}[transparency group,opacity=0.6]
+			\drawuav{yshift=5.2cm,xshift=13cm}
+				\draw[dim] (0,0|-uav.center) -- node[below]{$t_{collision}$} (uav.center);
+				\node[below left=-0.5cm of uav]{Crash};
+		\end{scope}
+
+		\drawuav{yshift=3cm,xshift=2cm}
+			\draw[dim] (uav.north) -- node[above]{$t_{reaction}$} (0,0|-uav.north);
+			\draw[-latex] (uav.center) -- node[right=0.5cm]{$v_0$} ($(uav.center)+(1cm,0)$);
+			\node[above right=-0.4cm of uav,align=left]{Script\\ in control};
+			\draw[dim] ($(10,0|-uav.south)+(0,-3mm)$) -- node[above]{$t_{stop}$} ($(uav.south)+(0,-3mm)$);
+
+		\drawuav{yshift=1cm,xshift=10cm}
+			\node[right=0cm of uav,align=left]{$v=0$};
+			\draw[dim] (uav.south) -- node[below]{$t_{margin}$} (13,0|-uav.south);
+
+		
+	\end{tikzpicture}
+	\caption{Prediction of a collision by the OCAS}
+	\label{fig:collision}
+\end{figure}

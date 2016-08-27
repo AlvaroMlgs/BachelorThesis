@@ -103,4 +103,13 @@ M.~Arteta, ``Assembly, modeling, simulation and control of a quadcopter for
 R.~V. Astorga, ``Simulation of an unmanned aerial vehicle.'' BSc Thesis, 07
   2016.
 
+\bibitem{sasiadek2000}
+J.~Sasiadek, Q.~Wang, and M.~Zeremba, ``Fuzzy adaptive kalman filtering for
+  ins/gps data fusion,'' in {\em Proceedings of the 2000 IEEE International
+  Symposium}, 2000.
+
+\bibitem{asselin1972}
+R.~Asselin, ``Frequency filter for time integrations,'' {\em Monthly Weather
+  Review}, pp.~487--490, 06 1972.
+
 \end{thebibliography}

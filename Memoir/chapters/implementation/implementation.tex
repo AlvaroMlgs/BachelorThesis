@@ -105,7 +105,7 @@ For its operation, it counts with 4 different pins (see Figure \ref{fig:hc-sr04}
 		The sensor's microcontroller processes the sound captured by the microphone and sends a short pulse through the echo pin exactly after the rebounded sound signal is received.
 		Knowing the speed of propagation of sound (given by $a=\sqrt{\gamma R_g T}$) and the time taken for the wave to travel to the obstacle and back, the distance can be calculated with $d=v \cdot t/2$
 \end{enumerate}
-The ultrasonic rangefinder's technical documentation can be found in Appendix \ref{app:sonar}.
+The ultrasonic rangefinder's technical documentation can be found in Appendix \ref{app:sonar-doc}.
 
 On the Raspberry Pi side, the VCC pin shall be connected to any 5V pin, the GND pin to a Ground pin, and the Trigger and Echo pins to any numbered GPIO pins, depicted in Figure \ref{fig:gpio}.
 
@@ -172,7 +172,7 @@ The auxiliary Map and State windows are internally created by MAVproxy, using on
 
 For completeness, the command to be executed in order to run the MAVproxy GCS software with the mentioned settings is:
 \begin{center}
-\includegraphics[width=0.9\textwidth,clip,trim={0.5cm 13.8cm 1cm 0.2cm}]{./figures/mavproxysh.pdf}
+\includegraphics[width=0.9\textwidth,clip,trim={2.5cm 26.6cm 1cm 2.3cm}]{./figures/mavproxysh.pdf}
 \end{center}
 
 %\begin{lstlisting}[language=bash,basicstyle=\ttfamily\small,breaklines=true,breakatwhitespace=true,escapeinside={(*@}{@*)}]
@@ -224,6 +224,14 @@ For instance, the ``Observe state'' blocks are indeed performed by the Sensor op
 In the following subsections within Section \ref{sec:script}, all the functionality of the Python script will be explored, starting from the auxiliary classes and functions to finally combine all the missing parts of the Obstacle Collision Avoidance System into the \texttt{main} Python script.
 The entire Python files will be included in the Appendices for completeness.
 
+\subsection{Multi-threading capabilities}
+
+As mentioned earlier, it is important for the OCAS to execute several critical tasks at in parallel, avoiding interference between them.
+Fortunately, Raspbian is a multitasking Operating System, and Python provides a \texttt{threading} library that manages the system calls invisibly to the user.
+
+For achieving better accessibility, the \texttt{thrd} class has been developed to allow calls to the \texttt{threading} library to perform actions defined by functions which might or might not demand additional arguments.
+The complete code is displayed in Appendix \ref{app:thrd}.
+
 \subsection{Log information}
 
 Information report is done from the script in two manners:
@@ -239,6 +247,84 @@ The output of the function is the \texttt{vehicle} class which handles all the c
 
 \subsection{Observe state}
 
+The \texttt{Sonar} class performs the most important functions of the OCAS.
+It is not only responsible for operating the ultrasonic rangefinders, but also performs some basic signal processing to determine the speed and velocity of the UAV with respect to the detected obstacle, deciding if could become a threat for the flight and triggering the avoid manoeuvre.
+In the future, it might be interesting that these functions, which in principle could contain rather complex algorithms and processing techniques, would be developed in separate classes to enhance the modularity and upgradeability of the system.
 
+The \texttt{Sonar} class defines three different methods which operate the sonar and calculate the distance to the closest obstacle, compute the velocity from distance measurements and evaluate the potential of a collision to trigger the avoiding manoeuvre, respectively.
+
+\subsubsection{Measure distance}
+
+The \texttt{measureDistance()} (Appendix \ref{app:sonar}. Lines 41 to 91) method triggers the ultrasonic rangefinder defined at the initialisation (\texttt{\_\_init\_\_()}) of the class to take a measurement following the procedure from the technical documentation of the sensor (Appendix \ref{app:sonar-doc}), which specifies to start with the Trigger pin in LOW state, change it to HIGH state for at least 10 $\mu s$, and return to LOW state.
+These commands are sent in a parallel thread, created with the \texttt{thrd} class, to avoid timing issues with the \texttt{main} script.
+After the Trigger signal is sent, two system interrupts are set with the help of the Raspberry Pi's GPIO library to listen to the Echo pin for both the rising and falling edge, storing the times at which they happen.
+The distance to the obstacle can be calculated with the flight time of the ultrasonic signal, which has the same duration as the HIGH state time of the Echo signal returned by the sonar, with Equation \eqref{eq:flight-time} where $d$ is the distance to the obstacle, $t_{echo}$ is the time of the HIGH state in the Echo pin and $a(T)$ is the speed of propagation of sound.
+\begin{equation}
+	d=a(T)\times \frac{t_{echo}}{2}
+	\label{eq:flight-time}
+\end{equation}
+Unfortunately, the speed of sound depends on the temperature of the air it propagates through.
+Thus, if the most accurate results were to be achieved, a temperature sensor should be integrated to compensate for temperature variations during operation.
+Nevertheless, the effect that reasonable temperature fluctuations have on the final distance is relatively small, as shown in Appendix \ref{app:temperature}, and can be effectively neglected, setting $a(T)=340 m/s$ as the standard and constant speed of sound value.
+
+Occasionally, the rangefinders give incorrect measurements (probably due to multipath errors, cross-interference or noise) that can make the algorithms believe that the UAV is moving closer or faster to the detected obstacle than reality, which causes false-positive activation of the ``avoid'' procedures.
+To prevent these kind of errors, a rolling average with a default window of 5 measurements is computed on the distance, even though more advanced filtering techniques could be implemented in the future, ranging from a basic low-pass filter to the more complex Extended Kalman Filter (EKF) combined with IMU data \cite{sasiadek2000}, for instance. 
+
+\subsubsection{Compute velocity} \label{sec:velocity}
+
+The \texttt{computeVelocity()} method in the \texttt{Sonar} class computes the speed of the vehicle with respect to its closest detected obstacle.
+Notice that since the ultrasonic rangefinders are non-directional (they provide the distance to the obstacle regardless of the direction it is found, as long as it lies within its field of view), the returned speed is effectively the normal component of the velocity vector of the UAV with respect to the obstacle.
+
+Again, due to noise issues, the signal should be filtered before being fed to the decision module; but this time the rolling average does not seem appropriate since the velocity can be modified at a fairly high rate on quadcopter vehicles as is the case for the testing platform.
+Thus, a first-order, three-data-points backward difference approach is suggested \cite{asselin1972}, since it provides convenient damping properties, although higher-order or bigger stencil approximations would also be appropriate.
+
+The mathematical derivation is as follows:
+
+The normal component of velocity obeys the equation
+\begin{equation}
+	v=\frac{d x}{d t}
+	\label{eq:v}
+\end{equation}
+where x is the distance measurement taken by the ultrasonic rangefinder.
+
+Performing the Taylor expansion to that equation at both the previous data point and its preceding, that is, at $t_1=t_0-\Delta t_1$ and $t_2=t_0-\Delta t_2$ being $t_0$ the most recent data point, the expressions obtained, respectively, are:
+\begin{eqnarray}
+	x_1=x\left(t_1\right)=x\left(t_0\right) 
+		- \frac{dx}{dt} \Bigg\rvert_{t_0} \left(t_0-t_1\right) 
+		+ \mathcal{O}\left(\Delta t^2\right)	\\
+	x_2=x\left(t_2\right)=x\left(t_0\right)
+		- \frac{dx}{dt} \Bigg\rvert_{t_0} \left(t_0-t_2\right) 
+		+ \mathcal{O}\left(\Delta t^2\right)
+	\label{eq:taylor}
+\end{eqnarray}
+
+Summing both equations together:
+\begin{equation}
+	x_1+x_2=2x_0+\frac{dx}{dt}\Bigg\rvert_{t_0}
+		\left[\left(t_0-t_1\right)+\left(t_0-t_2\right)\right]
+	\label{eq:finite}
+\end{equation}
+
+Since $\frac{dx}{dt}\big\rvert_{t_0}=v$:
+\begin{equation}
+	v\left(t_0\right)=v_0=\frac{x_1+x_2-2x_0}{2t_0-t_1-t_2}
+	\label{eq:finitediff}
+\end{equation}
+
+From equation \eqref{eq:finitediff}, $v_0$ is the returned value that is used to predict a potential collision.
+
+\subsubsection{Calculate collision}
+
+To successfully predict a potential collision, the future state of the vehicle shall be estimated.
+For the first prototype, the collision will be anticipated considering the present position and velocity of the UAV with respect to the closest obstacle, together with some intrinsic parameters.
+
+The algorithm computes the parameter $t_{safe}$ which encapsulates all the available information so that when $t_{safe}<0$, a collision is expected to happen.
+\begin{equation}
+	t_{safe}=t_{collision}-t_{reaction}-t_{stop}-t_{margin}
+	\label{eq:tsafe}
+\end{equation}
+From equation \eqref{eq:tsafe}, $t_{collision}$ is the estimated time to the obstacle computed with the actual velocity as computed in Section \ref{sec:velocity}, $t_{reaction}$ is the time taken by the Python script to actually take control of the UAV after the obstacle situation has been considered as unsafe, $t_{stop}$ can be estimated according to the avoidance procedure as the time it would take to completely stop the vehicle after control has been taken by the script, and finally $t_{margin}$ is a figure representing the clearance to the obstacle after the avoidance manoeuvre is complete, also accounting for possible sensor errors, as shown in Figure \ref{fig:collision}.
+
+\input{./figures/collision.tex}
 
 

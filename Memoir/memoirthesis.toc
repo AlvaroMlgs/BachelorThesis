@@ -59,12 +59,19 @@
 \contentsline {subsection}{\numberline {6.3.3}The Python environment}{41}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}The Python script}{42}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Script architecture}{42}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Log information}{43}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Connect to UAV}{45}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Observe state}{45}{subsection.6.4.4}
-\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{47}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{49}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{51}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Logging setup}{55}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Connect.py}{57}{appendix.E}
-\contentsline {chapter}{Bibliography}{59}{section*.43}
+\contentsline {subsection}{\numberline {6.4.2}Multi-threading capabilities}{43}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Log information}{45}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Connect to UAV}{45}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Observe state}{45}{subsection.6.4.5}
+\contentsline {subsubsection}{\numberline {6.4.5.1}Measure distance}{45}{subsubsection.6.4.5.1}
+\contentsline {subsubsection}{\numberline {6.4.5.2}Compute velocity}{46}{subsubsection.6.4.5.2}
+\contentsline {subsubsection}{\numberline {6.4.5.3}Calculate collision}{47}{subsubsection.6.4.5.3}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{49}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{51}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{53}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Thrd.py}{57}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Logging setup}{59}{appendix.E}
+\contentsline {appendix}{\chapternumberline {F}Connect.py}{61}{appendix.F}
+\contentsline {appendix}{\chapternumberline {G}Sonar.py}{63}{appendix.G}
+\contentsline {appendix}{\chapternumberline {H}Temperature sensitivity effect on ultrasonic rangefinder}{67}{appendix.H}
+\contentsline {chapter}{Bibliography}{69}{section*.44}
