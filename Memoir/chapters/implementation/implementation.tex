@@ -230,22 +230,22 @@ As mentioned earlier, it is important for the OCAS to execute several critical t
 Fortunately, Raspbian is a multitasking Operating System, and Python provides a \texttt{threading} library that manages the system calls invisibly to the user.
 
 For achieving better accessibility, the \texttt{thrd} class has been developed to allow calls to the \texttt{threading} library to perform actions defined by functions which might or might not demand additional arguments.
-The complete code is displayed in Appendix \ref{app:thrd}.
+The complete code is displayed in Appendix \ref{app:threads}.
 
-\subsection{Log information}
+\subsection{Log information} \label{sec:logging}
 
 Information report is done from the script in two manners:
 text with relevant data is immediately printed on the GCS screen through the SSH connection, but additionally those same messages are stored in a dedicated log folder contained in the script's directory with precise information on the time each event is recorded.
 The logs are handled with the \texttt{logging} library, which is set up at the beginning of the \texttt{main} file as shown in Appendix \ref{app:logging}.
 
-\subsection{Connect to UAV}
+\subsection{Connect to UAV} \label{sec:connect}
 
 The file \texttt{connect.py} (see Appendix \ref{app:connect}) defines the function \texttt{Connect()} which conveniently encapsulates the function \texttt{dronekit.connect}\footnote{In Python, functions derived from libraries prepend the name of the library to the function itself, separated by the ``dot'' syntax} and makes the default arguments equal to the output settings of MAVproxy as defined in Section \ref{sec:mavproxy}.
 In addition, the syntax \texttt{Connect(mode,address)} can be used for the cases when MAVproxy is not set up to work as an intermediate layer, accepting the Serial, UDP and TCP communication protocols on any local or remote address.
 
 The output of the function is the \texttt{vehicle} class which handles all the communications with the UAV (through MAVproxy or otherwise) and updates the values of the state variables automatically on the background, as well as providing some convenient methods for interacting with it.
 
-\subsection{Observe state}
+\subsection{Observe state} \label{sec:sonar}
 
 The \texttt{Sonar} class performs the most important functions of the OCAS.
 It is not only responsible for operating the ultrasonic rangefinders, but also performs some basic signal processing to determine the speed and velocity of the UAV with respect to the detected obstacle, deciding if could become a threat for the flight and triggering the avoid manoeuvre.
@@ -327,4 +327,79 @@ From equation \eqref{eq:tsafe}, $t_{collision}$ is the estimated time to the obs
 
 \input{./figures/collision.tex}
 
+\subsection{Take control of UAV} \label{sec:takeControl}
 
+When the condition is met that the UAV is approaching the detected obstacle and $t_{safe}$is calculated as smaller than zero, the trigger is released for the Python script to take control in order to avoid the collision.
+The most appropriate way, as explained in Section \ref{sec:advanced}, is to activate Ardupilot's Guided mode to allow the script to send commands to the UAV in real time.
+
+Thus, the \texttt{Control} class defines the methods \texttt{take()}, \texttt{checkTake()}, \texttt{give()} and \texttt{checkGive()} which, when called in pairs, performs the action given as argument (e.g. send a MAVlink command to the UAV) while simultaneously checks a certain condition (in this case the activation of a certain flight mode), both in independent parallel threads to avoid interference with the \texttt{main} function or with themselves (the complete code can be found in Appendix \ref{app:control}).
+
+Finally, when both the \texttt{take()} and \texttt{checkTake()} threads are terminated (indicating that the action was successful) the script advances to the so called ``autonomous flight'', which in the Python script's scope represents the avoidance manoeuvre, not to be confused with Ardupilot's Auto mode.
+
+\subsection{Avoid obstacle} \label{sec:avoid}
+
+The obstacle avoidance phase can be accomplished in a wide variety of actions, from real-time control to higher-level trajectory planning.
+However, being Ardupilot the main controller of the UAV, some of its features can be used to make the algorithms simpler in this first proof of concept.
+
+For example, the default behaviour of the quadcopter UAV when Guided mode is activated and no other MAVlink command is received from the GCS (or the OCAS) is to loiter in place by making use of the GPS data, which is a reasonably effective manner of preventing the collision by completely stopping the vehicle.
+
+Furthermore, the MAVlink protocol defines several message headers which allow for the straightforward definition of the desired position or velocity, being responsible for the state transitions the Ardupilot board itself.
+Thus, any function defining a MAVlink command can be passed to the \texttt{Auto} class (full code in Appendix \ref{app:auto}) which, operating in a similar manner as the \texttt{Control} class, performs the specified action in one thread while a second one checks for a condition to be satisfied before killing the first thread and itself, hence considering the avoidance manoeuvre as complete. 
+
+\subsection{Return control to the pilot} \label{sec:returnControl}
+
+Once the obstacle is considered to be cleared, control needs to be returned to the pilot in a safe manner.
+The procedure is handled by the \texttt{Control} class's methods \texttt{give()} and \texttt{checkGive()} in an identical way as explained in Section \ref{sec:takeControl}.
+
+Besides, it has been found that the most appropriate action to return control is to change to Altitude Hold mode, since such mode will try to balance the UAV while maintaining a constant altitude, provided that the control sticks of the transmitter are in a centred position.
+
+\subsection{The ``main'' file}
+
+Finally, the \texttt{main.py} file is what should be executed by the pilot.
+It contains the required sequential calls to the previously mentioned functions and methods, together with the definition of the functions that are passed to them as arguments.
+
+The complete file can be found in Appendix \ref{app:main}, but the main blocks it is divided in are:
+
+\begin{enumerate}
+	\item Import of the relevant libraries and files
+	\item Logging setup, as explained in Section \ref{sec:logging}
+	\item Connect to the vehicle (Section \ref{sec:connect}), returning the \texttt{vehicle} class
+	\item Operate and monitor the information from the ultrasonic rangefinders (Section \ref{sec:sonar}). This phase will not be exited until $t_{safe}<0$
+	\item Take control of the vehicle, changing to Guided mode as explained in Section \ref{sec:takeControl}
+	\item Perform the manoeuvre to avoid the detected obstacle (Section \ref{sec:avoid}). The manoeuvre is also defined within this step, and passed as argument to the \texttt{Auto} class
+	\item Safely return control to the pilot, as described in Section \ref{sec:returnControl}
+	\item End the script by closing the external connections and resetting the GPIO pins on the Raspberry Pi (to avoid errors on subsequent executions)
+\end{enumerate}
+
+
+\section{Graphical User Interface}
+
+The task of the GUI is to facilitate the operation of the OCAS by a briefly trained pilot without much knowledge on Linux systems.
+Hence the GUI shall be able to generate the software architecture depicted in Figure \ref{fig:mavproxy} effortlessly every time the OCAS is initialised.
+
+A graphical Python application has been created with that purpose, making use of the \texttt{Tkinter} library, whose code can be seen in Appendix \ref{app:gui}.
+The application itself is shown in Figure \ref{fig:gui}.
+
+\begin{figure}[htbp]
+	\centering
+
+	\begin{subfigure}[b]{0.7\textwidth}
+		\includegraphics[width=\textwidth]{./figures/GUIwin.png}
+		\caption{Windows version}
+	\end{subfigure}
+	~\\[1ex]
+	\begin{subfigure}[b]{0.7\textwidth}
+		\includegraphics[width=\textwidth]{./figures/GUIlinux.png}
+		\caption{Linux version}
+	\end{subfigure}
+
+	\caption{Graphical User Interface}
+	\label{fig:gui}
+\end{figure}
+
+As it can be seen, the two versions have minimal differences.
+Mainly, the Windows version, which was used in the early testing phases, provides the options of launching the SITL simulator as well as the Mission Planner GCS software for in-depth analysis of the incoming data (the bottom branch in Figure \ref{fig:mavproxy}).
+Also, both versions autocomplete the MAVproxy fields according to the system they are run from, minimising errors and avoiding the memorisation of parameters by the pilot.
+
+
+\section{Hardware implementation}

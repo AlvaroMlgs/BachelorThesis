@@ -66,12 +66,21 @@
 \contentsline {subsubsection}{\numberline {6.4.5.1}Measure distance}{45}{subsubsection.6.4.5.1}
 \contentsline {subsubsection}{\numberline {6.4.5.2}Compute velocity}{46}{subsubsection.6.4.5.2}
 \contentsline {subsubsection}{\numberline {6.4.5.3}Calculate collision}{47}{subsubsection.6.4.5.3}
-\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{49}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{51}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{53}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Thrd.py}{57}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Logging setup}{59}{appendix.E}
-\contentsline {appendix}{\chapternumberline {F}Connect.py}{61}{appendix.F}
-\contentsline {appendix}{\chapternumberline {G}Sonar.py}{63}{appendix.G}
-\contentsline {appendix}{\chapternumberline {H}Temperature sensitivity effect on ultrasonic rangefinder}{67}{appendix.H}
-\contentsline {chapter}{Bibliography}{69}{section*.44}
+\contentsline {subsection}{\numberline {6.4.6}Take control of UAV}{47}{subsection.6.4.6}
+\contentsline {subsection}{\numberline {6.4.7}Avoid obstacle}{48}{subsection.6.4.7}
+\contentsline {subsection}{\numberline {6.4.8}Return control to the pilot}{48}{subsection.6.4.8}
+\contentsline {subsection}{\numberline {6.4.9}The ``main'' file}{48}{subsection.6.4.9}
+\contentsline {section}{\numberline {6.5}Graphical User Interface}{49}{section.6.5}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{51}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{53}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{55}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Threads.py}{59}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Logging setup}{61}{appendix.E}
+\contentsline {appendix}{\chapternumberline {F}Connect.py}{63}{appendix.F}
+\contentsline {appendix}{\chapternumberline {G}Sonar.py}{65}{appendix.G}
+\contentsline {appendix}{\chapternumberline {H}Control.py}{69}{appendix.H}
+\contentsline {appendix}{\chapternumberline {I}Auto.py}{73}{appendix.I}
+\contentsline {appendix}{\chapternumberline {J}Main.py}{75}{appendix.J}
+\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{81}{appendix.K}
+\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{83}{appendix.L}
+\contentsline {chapter}{Bibliography}{87}{section*.45}
