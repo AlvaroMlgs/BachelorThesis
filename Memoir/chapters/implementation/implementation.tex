@@ -403,3 +403,22 @@ Also, both versions autocomplete the MAVproxy fields according to the system the
 
 
 \section{Hardware implementation}
+
+The default configuration of the F450 frame is with the main battery directly on top and the Ardupilot board between the upper and lower plates, to better avoid shocks and electromagnetic noise from the motors, as shown in Figure \ref{fig:f450stock}
+
+\input{./figures/f450stock.tex}
+
+However, the inclusion of the OCAS, with its independent power source, sensors and computer board, implies that the platform needs to be modified in order to fit the additional components.
+The followed approach is to add a second bottom plate below the original one, separated by 5 cm.
+Also, the landing gear shall be extended to avoid touching ground with the belly of the vehicle.
+
+The distribution of the components had to be altered to improve the stability and accessibility of the UAV, moving the heavy main battery to the lower deck and mounting the Raspberry Pi and its power source on the upper plate.
+Room was also made for the sensor mount and the WiFi adapter over the lower plate, next to the main battery.
+
+The resulting platform is displayed in Figure \ref{fig:f450}.
+
+\input{./figures/f450.tex}
+
+Notice that the F450 platform is not designed to carry the OCAS.
+This fact imposes some limitations to the UAV since the weight is significantly increased, affecting manoeuvrability and flight time.
+Nevertheless, the main purpose of this project is not to develop the platform, being the existing one adequate enough for the testing phase of the OCAS.

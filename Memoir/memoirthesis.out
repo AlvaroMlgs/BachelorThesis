@@ -66,16 +66,17 @@
 \BOOKMARK [2][-]{subsection.6.4.8}{Return control to the pilot}{section.6.4}% 66
 \BOOKMARK [2][-]{subsection.6.4.9}{The ``main'' file}{section.6.4}% 67
 \BOOKMARK [1][-]{section.6.5}{Graphical User Interface}{chapter.6}% 68
-\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 69
-\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 70
-\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 71
-\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 72
-\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 73
-\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 74
-\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 75
-\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 76
-\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 77
-\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 78
-\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 79
-\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 80
-\BOOKMARK [0][-]{section*.45}{Bibliography}{}% 81
+\BOOKMARK [1][-]{section.6.6}{Hardware implementation}{chapter.6}% 69
+\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 70
+\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 71
+\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 72
+\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 73
+\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 74
+\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 75
+\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 76
+\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 77
+\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 78
+\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 79
+\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 80
+\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 81
+\BOOKMARK [0][-]{section*.47}{Bibliography}{}% 82
