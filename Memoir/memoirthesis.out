@@ -67,16 +67,22 @@
 \BOOKMARK [2][-]{subsection.6.4.9}{The ``main'' file}{section.6.4}% 67
 \BOOKMARK [1][-]{section.6.5}{Graphical User Interface}{chapter.6}% 68
 \BOOKMARK [1][-]{section.6.6}{Hardware implementation}{chapter.6}% 69
-\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 70
-\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 71
-\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 72
-\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 73
-\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 74
-\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 75
-\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 76
-\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 77
-\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 78
-\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 79
-\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 80
-\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 81
-\BOOKMARK [0][-]{section*.47}{Bibliography}{}% 82
+\BOOKMARK [0][-]{chapter.7}{Testing and results}{}% 70
+\BOOKMARK [1][-]{section.7.1}{Testing methods}{chapter.7}% 71
+\BOOKMARK [2][-]{subsection.7.1.1}{Component testing}{section.7.1}% 72
+\BOOKMARK [2][-]{subsection.7.1.2}{Software testing: SITL}{section.7.1}% 73
+\BOOKMARK [2][-]{subsection.7.1.3}{System testing}{section.7.1}% 74
+\BOOKMARK [1][-]{section.7.2}{Results}{chapter.7}% 75
+\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 76
+\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 77
+\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 78
+\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 79
+\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 80
+\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 81
+\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 82
+\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 83
+\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 84
+\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 85
+\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 86
+\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 87
+\BOOKMARK [0][-]{section*.47}{Bibliography}{}% 88
