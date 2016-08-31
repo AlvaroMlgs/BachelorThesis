@@ -74,7 +74,7 @@
 \contentsline {section}{\numberline {6.6}Hardware implementation}{50}{section.6.6}
 \contentsline {chapter}{\chapternumberline {7}Testing and results}{53}{chapter.7}
 \contentsline {section}{\numberline {7.1}Testing methods}{53}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Component testing}{54}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}Component testing}{53}{subsection.7.1.1}
 \contentsline {subsubsection}{\numberline {7.1.1.1}Interfaces}{54}{subsubsection.7.1.1.1}
 \contentsline {subsubsection}{\numberline {7.1.1.2}Ultrasonic rangefinders}{54}{subsubsection.7.1.1.2}
 \contentsline {subsection}{\numberline {7.1.2}Software testing: SITL}{54}{subsection.7.1.2}
@@ -92,4 +92,5 @@
 \contentsline {appendix}{\chapternumberline {J}Main.py}{79}{appendix.J}
 \contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{85}{appendix.K}
 \contentsline {appendix}{\chapternumberline {L}GUI.pyw}{87}{appendix.L}
-\contentsline {chapter}{Bibliography}{91}{section*.47}
+\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{91}{appendix.M}
+\contentsline {chapter}{Bibliography}{93}{section*.47}

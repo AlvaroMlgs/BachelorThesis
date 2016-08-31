@@ -17,9 +17,28 @@ Thus, the actions described in this chapter can be seen as complementary and, in
 
 \subsection{Component testing}
 
+The validation of each individual component is assumed to be successfully done by the manufacturer.
+Therefore, comprehensive testing will only be performed on the parts of the system that have been actively developed during the execution of this project, such as the interfaces and the operation algorithms of the ultrasonic rangefinders, since they are a critical component of the OCAS.
+
 \subsubsection{Interfaces}
 
-\subsubsection{Ultrasonic rangefinders}
+Assuming that the stock UAV interfaces (RC transmitter / receiver, telemetry link with GCS) are already tested and working, the connections to be verified are those involving the OCAS only, shown in Figure \ref{fig:ocas}.
+In particular, the GCS connection over WiFi is of higher interest, since the power connection is straightforward to check by ensuring that the Raspberry Pi boots when plugged; and the MAVlink serial connection should not entail any difficulty once the appropriate communication port and baud rate are selected upon startup of MAVproxy (which is automatically done when using the GUI for that purpose).
+Also, the testing of the GPIO connection will be covered in Section \ref{sec:sonartest}.
+
+Concerning the network connection of the Raspberry Pi, it is controlled by the Raspbian OS.
+Having set up the ad-hoc network from the Windows machine at the GCS as specified in Appendix \ref{app:network}, the Dynamic Host Configuration Protocol (DHCP) server should be properly configured to imitate the Local Area Network (LAN) settings to which the GCS machine is connected.
+Thus, the DHCP service will provide the Raspberry Pi with a compatible IP, together with other important network parameters, automatically. 
+
+Nevertheless, the problem with DHCP is that the address of the computers connected to the network will occasionally change, altering the settings for a successful SSH connection (those varying setting can be found by following the steps in Appendix \ref{app:ssh}).
+Thus, for a more convenient debugging option, an static IP interface was selected on the Raspberry Pi's ethernet port.
+
+Finally, in order to resemble the described setting on the Raspberry Pi, the configuration must be done by modifying the \texttt{interfaces} file which is present in all Debian-based Operating Systems at /etc/network/interfaces.
+The specific file for the OCAS computer board is copied in Appendix \ref{app:interfaces} for completeness, together with an example of the \texttt{wpa\_suplicant.conf} file which holds the parameters for the wireless network connections.
+
+In terms of the evaluation of the connection, considering the scope of the project, it is considered that the interface is successfully connected if the communication is responsive and stable, which can be certainly proven by construction\footnote{From Wolfram Mathworld: A constructive proof is a proof that directly provides a specific example, or which gives an algorithm for producing an example. Constructive proofs are also called demonstrative proofs}, following the steps in Appendices \ref{app:network} and \ref{app:ssh}.
+
+\subsubsection{Ultrasonic rangefinders} \label{sec:sonartest}
 
 
 \subsection{Software testing: SITL}
