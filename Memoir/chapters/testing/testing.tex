@@ -40,8 +40,39 @@ In terms of the evaluation of the connection, considering the scope of the proje
 
 \subsubsection{Ultrasonic rangefinders} \label{sec:sonartest}
 
+The selected HC-SR04 sensors are mainly built to be connected to Arduino microcontrolers, which operate at 5 V.
+Hence, in order to obtain some familiarity with their usage, as documented by the manufacturer (see Appendix \ref{app:sonar-doc}), the operation was initially made from an Arduino Mega board, which would trigger the ultrasonic signal and receive the processed echo to be transformed into the distance to the closest obstacle.
+
+Ensuring that all the connections on the Arduino board were successful, the following logical step is to perform the same test from the Raspberry Pi, which inherits the inclusion of the voltage dividers (Figure \ref{fig:voltage}) and the Python GPIO libraries.
+It was during this stage that the \texttt{Sonar} class was developed, requiring only a ``driver'' file that would make calls to the \texttt{Sonar}'s methods, which can be found in Appendix \ref{app:sonarDriver}.
+
+Apart from triggering the ultrasonic rangefinders, the driver file would print the measured distance for any amount of attached sensors and display a graph with their values together with the calculated velocity, to help with their study in the Results section.
+
 
 \subsection{Software testing: SITL}
+
+Prior to the implementation of the OCAS in the real UAV, and knowing by individual tests that the hardware components were working properly, it was necessary to test the definition of the MAVlink messages that were to be sent to control the UAV in flight.
+Furthermore, it was of utmost importance that the navigation coordinates were correctly defined, and also the transformations between different reference systems, since the MAVlink protocol only supports commands in the global (latitude, longitude, altitude) reference system, while for physical obstacle navigation it is more convenient to define the procedures either in Flat Earth (North, East, Down) or even body fixed (x, y, z) reference frames, from which the transformations needed to be computed.
+
+To ensure safety during the software testing phase, the scripts were initially tested in a simulator.
+In particular, the DroneKit development team provides a Software-In-The-Loop (SITL) simulator that works in a similar manner than a real Ardupilot UAV would.
+
+Software-In-The-Loop means that, for the control algorithms, only software input is considered.
+Hence, the physical characteristics of the UAV, together with its default sensors (IMU, barometer, GPS\ldots) all have what is considered to be a reasonably accurate software representation of their hardware counterparts (accuracy which, in the case of the SITL simulator, is not where the emphasis has been put as studied in \cite{vegaastorga2016}).
+Nevertheless, the existent inaccuracies do not present any major problems for the script testing since the closed-loop PID control algorithms ensure that disturbances and errors are cancelled, finally reaching the requested state albeit by taking slightly different transient responses.
+
+What is of higher importance in the software testing phase is the actual interpretation of the MAVlink commands by the Ardupilot control board, and the general physical response to them.
+Fortunately, it is in the Ardupilot firmware simulation where the SITL software excels, since the simulator runs the exact same source code, only adapted to run on a regular computer rather than an Arduino board and to receive input from the software models rather than the real sensors.
+
+However, the simulation of the default sensors via software means that the OCAS is not implemented (for being a custom build for this project).
+Thus, the $t_{safe}<0$ condition can not be computed in the simulated environment.
+For the purpose of testing, the sonars step in the \texttt{main.py} file of the custom script was adapted to include the monitorisation of Channel 7 on the RC transmitter, which would cause the same reaction as the ultrasonic rangefinders at the change of state of the corresponding switch, by modifying the lines 41 to 93 on Appendix \ref{app:main} by the fragment of code in Appendix \ref{app:ch7}, accompanied by the \texttt{Observe} class.
+
+Finally, it is worth mentioning the role of the simulator within the rest of the subsystems of the OCAS, since SITL is only aimed at replacing the UAV block from Figure \ref{fig:ocas}.
+The MAVlink stream of data out of the simulator is transmitted using the TCP protocol, which can be substituted in the MAVproxy startup options instead of the serial address that is used for the connection with the UAV.
+Hence, the two leftmost blocks in Figure \ref{fig:mavproxy} would be substituted by the simulator, with the TCP interface with MAVproxy, being this change completely transparent to the Python script, which does not need any further modification.
+
+In addition, in the Windows version of the GUI application, the option to launch the simulator and autocomplete the address and port fields on the MAVproxy parameters (see Figure \ref{fig:gui}) was included to facilitate the testing stages of the project, together with the Mission Planner button, which greatly simplify the testing workflow.
 
 
 \subsection{System testing}
