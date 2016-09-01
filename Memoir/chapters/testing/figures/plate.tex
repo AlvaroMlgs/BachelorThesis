@@ -1,0 +1,44 @@
+\begin{figure}[htbp]
+	\centering
+
+	\begin{tikzpicture}
+
+		\begin{scope}[rotate=-35,local bounding box=plate1]
+				\path[shade,bottom color=white,top color=black!70] (1.5,6.5-1) arc[radius=1,start angle=270,end angle=305] -- (1.5,6.5) -- cycle;
+				\node[inner sep=0] at (1.5+0.35,6.5-1.2) {\footnotesize < 35$^\circ$};
+			\draw[thick] (0,0) -- (3,0);
+			\foreach \c in {0,1,2,...,20}
+				\draw (\c/7,0) -- ($(\c/7,0)+(0.2,-0.2)$);
+			\draw[dashed] (1.5,0) -- (1.5,6.5);
+			\draw (1.5-0.2,0) arc[radius=0.2,start angle=180,end angle=90];
+			\draw[fill] (1.5-0.08,0.08) circle[radius=0.15mm];
+		\end{scope}
+
+		\begin{scope}[rotate=20,shift={($(plate1.center)+(-0.28cm,-3.9cm)$)}]
+				\path[shade,left color=white,right color=black!70] (1.5-1,0) arc[radius=1,start angle=180,end angle=160] -- (1.5,0) -- cycle;
+				\node at (0.5,0.2) {\footnotesize < 20$^\circ$};
+			\draw[thick] (0,0) -- (3,0);
+			\foreach \c in {0,1,2,...,20}
+				\draw (\c/7,0) -- ($(\c/7,0)+(0.2,-0.2)$);
+			\draw[dashed] (1.5,0) -- (1.5+6.5*sin{20},6.5*cos{20});
+			\draw[thin,dashdotted] (1.5,0) -- (1.5-1*cos{20},1*sin{20});
+		\end{scope}
+
+		% Sonar
+		\coordinate(coord) at (1.5*cos{35}+6.5*sin{35},-1.5*sin{35}+6.5*cos{35});
+		\path[fill=blue!70!black!80] ($(coord)+(-1,0)$) rectangle ($(coord)+(1,0.05)$);
+		\path[draw,fill=gray!70] ($(coord)+(-0.8,0)$) rectangle ($(coord)+(-0.3,-0.3)$);
+		\path[draw,fill=gray!70] ($(coord)+(0.8,0)$) rectangle ($(coord)+(0.3,-0.3)$);
+		\node[above=0.1cm of coord]{Sonar};
+
+		\node[below=3cm of coord,xshift=0.5cm]{$\approx$2m};
+
+		\begin{scope}
+
+		\end{scope}
+
+	\end{tikzpicture}
+
+	\caption{Ultrasonic rangefinder FOV test setup}
+	\label{fig:plate}
+\end{figure}

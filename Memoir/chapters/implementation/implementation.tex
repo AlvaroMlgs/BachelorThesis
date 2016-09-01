@@ -253,7 +253,7 @@ In the future, it might be interesting that these functions, which in principle 
 
 The \texttt{Sonar} class defines three different methods which operate the sonar and calculate the distance to the closest obstacle, compute the velocity from distance measurements and evaluate the potential of a collision to trigger the avoiding manoeuvre, respectively.
 
-\subsubsection{Measure distance}
+\subsubsection{Measure distance} \label{sec:measureDistance}
 
 The \texttt{measureDistance()} (Appendix \ref{app:sonar}. Lines 41 to 91) method triggers the ultrasonic rangefinder defined at the initialisation (\texttt{\_\_init\_\_()}) of the class to take a measurement following the procedure from the technical documentation of the sensor (Appendix \ref{app:sonar-doc}), which specifies to start with the Trigger pin in LOW state, change it to HIGH state for at least 10 $\mu s$, and return to LOW state.
 These commands are sent in a parallel thread, created with the \texttt{thrd} class, to avoid timing issues with the \texttt{main} script.

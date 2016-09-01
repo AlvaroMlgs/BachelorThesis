@@ -48,6 +48,9 @@ It was during this stage that the \texttt{Sonar} class was developed, requiring 
 
 Apart from triggering the ultrasonic rangefinders, the driver file would print the measured distance for any amount of attached sensors and display a graph with their values together with the calculated velocity, to help with their study in the Results section.
 
+On the hardware side, it is known that the ultrasonic rangefinders are rather directional sensors and do not perform at their best if the obstacle is not situated directly on the symmetry plane.
+In order to assess the maximum spatial capability of the sensors, a 4m$^2$ aluminium plate was used as object to be detected, placing it in various positions in order to determine the spatial range limits in terms of maximum angles at which the ultrasonic signal is adequately reflected back to the sensor, getting a successful reading on the distance.
+
 
 \subsection{Software testing: SITL}
 
@@ -74,10 +77,57 @@ Hence, the two leftmost blocks in Figure \ref{fig:mavproxy} would be substituted
 
 In addition, in the Windows version of the GUI application, the option to launch the simulator and autocomplete the address and port fields on the MAVproxy parameters (see Figure \ref{fig:gui}) was included to facilitate the testing stages of the project, together with the Mission Planner button, which greatly simplify the testing workflow.
 
-
 \subsection{System testing}
+
+As the last step in the validation process, the OCAS shall be tested as a complete system in a realistic scenario.
+For that purpose, the full operative UAS was taken to a flight field and flown against a simulated soft (cardboard) obstacle to avoid any serious damage in case of failure.
+In this stage, the logs (defined in Section \ref{sec:logging}) acquire maximum importance since they allow to compare and contrast the data and sequence of events with the video footage from the tests.
 
 
 \section{Results}
 
+In the present section, the results concerning the previously described tests from which a valuable lesson can be extracted will be discussed.
+Successful tests in which the systems work as expected will be left out of the discussion in the case that they do not contribute to any further knowledge on the functioning of the system.
 
+\subsection{Ultrasonic rangefinders}
+
+Two main issues appeared when assessing the performance of the sonars: First, the Field Of View (FOV) of each individual sensor is quite limited, which encouraged for the incorporation of an array of several sensor with slightly different orientations to cover a wider range.
+On the other hand, the implementation of more than one rangefinder created some unwanted effects when operating simultaneously, since the signal from one of them could be seen as the echo reflection of the previously triggered sensor, causing ghost signals and bad readings.
+
+In terms of the sonar's capabilities, the tests with the aluminium plate as obstacle placed at approximately 2 m from the sensor unveiled that their maximum FOV against a large surface completely perpendicular to the line of sight is of 35$^\circ$, while the maximum inclination that reflects a valid signal is of 20$^\circ$ with respect to the plane of symmetry, as shown in Figure \ref{fig:plate}.
+
+\input{./figures/plate.tex}
+
+These limitations in the maximum FOV imply that more than one sensor with slightly different orientations shall be used to cover the complete space in front of the UAV.
+For the first prototype, 3 sonars were mounted with approximately 20$^\circ$ between them, which ensures that the complete frontal path is covered during forward flight.
+
+However, operating more than one ultrasonic rangefinder generates an additional problem, since they generate and receive identical signals for their measurements, implying that the signal generated from one sensor can be captured by a different one, creating misleading signal flight times.
+This problem can be mitigated in two different ways.
+First, triggering the sonars all at the same time would generate an assortment of similar signals from which no sensible discrimination can be done; the solution is to send the trigger signals at different intervals in time, ensuring that the echo signal from one sonar is received before the trigger signal of the next one is sent.
+Nevertheless, there can still be lost signals and multipath errors which need to be alleviated.
+Thus, the second step can be to filter the signals to account for suspicious discrepancies, which in the scope of the first prototype was done by performing the rolling average of the last several measurements (see Section \ref{sec:measureDistance}), although more advanced signal processing techniques can definitely provide better results.
+
+
+\subsection{Simulator}
+
+There is one essential difference between a simulator and reality: any simulator represents a model of the physical world, but the physical world is so complex that no simulator can achieve an infinitely precise representation of reality.
+
+That being said, there are some physical effects that are not implemented in the SITL simulator. For example, the input from the simulated sensors perfectly represents the calculated state of the UAV, albeit with some artificial gaussian noise added to them according to their individual accuracy and response rates.
+
+This fact became a problem when the SITL validated software was to be tested on the real UAV.
+For example, while the relative location computations and MAVlink commands appeared to work perfectly well in the simulator, there was some unknown phenomenon that was causing the real UAV to behave violently instead of maintaining the position when the Guided mode was activated by the script.
+
+After several weeks trying to find the root of the problem, and analysing all the inputs that could be affecting the behaviour of the Ardupilot controller, it was concluded that, since the GPS sensor was a requirement for the loitering capabilities of the Guided mode, and the tests were being done in a controlled space within the city (see Figure \ref{fig:leganes}, surrounded by high buildings, there was a significant chance that the reception of the very weak GPS signals from the satellites (orbiting in Medium Earth Orbit at around 20,200 km) were being blocked and / or affected by the surrounding walls.
+
+\input{./figures/leganes.tex}
+
+This phenomenon is called multipath error: the GPS sensor can determine its position by receiving the signals from at least 4 satellites for which their location in the sky (ephemeris) and the precise time of transmission of those messages is known.
+By comparing the time of arrival of the signal with the time of emission, the GPS module can calculate the exact distance to that particular satellite.
+Then, by triangulating (intersecting the spherical loci) those distances (and solving for the clock bias), the global position of the vehicle can be precisely located.
+However, the high propagation speed of the electromagnetic waves (speed of light, $\approx 3\times 10^8$ m/s) conveys that a small mismatch in the time of arrival of the signal can generate large errors in the final calculated distance from the GPS module to the satellite.
+Furthermore, the GPS signals can rebound on the walls of buildings, effectively covering more distance than the straight line that joins the satellite and the sensor, significantly magnifying the effect.
+
+Once the possible source of error was pointed down, the only action needed to verify or discard it was to move to a countryside location for the tests, which indeed proved the multipath error to be the source of the unwanted behaviour of the UAV in the preceeding tests.
+
+The lesson to be learnt from these events is the dependence of the Guided mode on a high quality GPS signal, which implies that the solution presented in this thesis is not still applicable to indoor nor urban flight; at least not if the control commands encode information on the global location of the UAV.
+Nevertheless, in future work, some control procedures could be implemented in order to consider the input streams from the ultrasonic rangefinder as the main source of information for the navigation algorithms, overriding the RC transmitter channels directly instead of commanding higher level ``go-to'' manoeuvres to the Ardupilot control board.

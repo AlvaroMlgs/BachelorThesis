@@ -80,19 +80,21 @@
 \contentsline {subsection}{\numberline {7.1.2}Software testing: SITL}{55}{subsection.7.1.2}
 \contentsline {subsection}{\numberline {7.1.3}System testing}{56}{subsection.7.1.3}
 \contentsline {section}{\numberline {7.2}Results}{56}{section.7.2}
-\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{57}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{59}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{61}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Threads.py}{65}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Logging setup}{67}{appendix.E}
-\contentsline {appendix}{\chapternumberline {F}Connect.py}{69}{appendix.F}
-\contentsline {appendix}{\chapternumberline {G}Sonar.py}{71}{appendix.G}
-\contentsline {appendix}{\chapternumberline {H}Control.py}{75}{appendix.H}
-\contentsline {appendix}{\chapternumberline {I}Auto.py}{79}{appendix.I}
-\contentsline {appendix}{\chapternumberline {J}Main.py}{81}{appendix.J}
-\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{87}{appendix.K}
-\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{89}{appendix.L}
-\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{93}{appendix.M}
-\contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{95}{appendix.N}
-\contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{97}{appendix.O}
-\contentsline {chapter}{Bibliography}{101}{section*.47}
+\contentsline {subsection}{\numberline {7.2.1}Ultrasonic rangefinders}{56}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Simulator}{57}{subsection.7.2.2}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{59}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{61}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{63}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Threads.py}{67}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Logging setup}{69}{appendix.E}
+\contentsline {appendix}{\chapternumberline {F}Connect.py}{71}{appendix.F}
+\contentsline {appendix}{\chapternumberline {G}Sonar.py}{73}{appendix.G}
+\contentsline {appendix}{\chapternumberline {H}Control.py}{77}{appendix.H}
+\contentsline {appendix}{\chapternumberline {I}Auto.py}{81}{appendix.I}
+\contentsline {appendix}{\chapternumberline {J}Main.py}{83}{appendix.J}
+\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{89}{appendix.K}
+\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{91}{appendix.L}
+\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{95}{appendix.M}
+\contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{97}{appendix.N}
+\contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{99}{appendix.O}
+\contentsline {chapter}{Bibliography}{103}{section*.49}
