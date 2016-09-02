@@ -75,19 +75,23 @@
 \BOOKMARK [1][-]{section.7.2}{Results}{chapter.7}% 75
 \BOOKMARK [2][-]{subsection.7.2.1}{Ultrasonic rangefinders}{section.7.2}% 76
 \BOOKMARK [2][-]{subsection.7.2.2}{Simulator}{section.7.2}% 77
-\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 78
-\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 79
-\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 80
-\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 81
-\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 82
-\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 83
-\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 84
-\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 85
-\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 86
-\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 87
-\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 88
-\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 89
-\BOOKMARK [0][-]{appendix.M}{Raspberry Pi's interfaces configuration}{}% 90
-\BOOKMARK [0][-]{appendix.N}{SonarDriver.py}{}% 91
-\BOOKMARK [0][-]{appendix.O}{Channel 7 script trigger}{}% 92
-\BOOKMARK [0][-]{section*.49}{Bibliography}{}% 93
+\BOOKMARK [2][-]{subsection.7.2.3}{UAS}{section.7.2}% 78
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 79
+\BOOKMARK [1][-]{section.8.1}{Summary of contributions}{chapter.8}% 80
+\BOOKMARK [1][-]{section.8.2}{Future work}{chapter.8}% 81
+\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 82
+\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 83
+\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 84
+\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 85
+\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 86
+\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 87
+\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 88
+\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 89
+\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 90
+\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 91
+\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 92
+\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 93
+\BOOKMARK [0][-]{appendix.M}{Raspberry Pi's interfaces configuration}{}% 94
+\BOOKMARK [0][-]{appendix.N}{SonarDriver.py}{}% 95
+\BOOKMARK [0][-]{appendix.O}{Channel 7 script trigger}{}% 96
+\BOOKMARK [0][-]{section*.49}{Bibliography}{}% 97

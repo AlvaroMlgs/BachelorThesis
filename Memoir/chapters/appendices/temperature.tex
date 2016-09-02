@@ -1,4 +1,36 @@
 
 \chapter{Temperature sensitivity of ultrasonic rangefinders} \label{app:temperature}
 
-\initial{\textcolor{red}{Pending}}
+\initial{T}he ultrasonic rangefinders rely on an accurate definition of the speed of propagation of sound in air in order to compute the distance to the closest detected object.
+However, the speed of sound depends on the temperature of the medium, which could be fluctuating along the duration of the mission.
+
+In the present appendix it will be proven that reasonable temperature fluctuations actually have a negligible effect on the distance measurements within the scope of the ultrasonic rangefinders.
+
+The speed of propagation of a sound wave in an ideal gaseous medium obeys the equation
+\begin{equation}
+	a=\sqrt{\gamma R_g T}
+\end{equation}
+where $\gamma=1.4$ is the adiabatic coefficient and $R_g=287\frac{J}{kg\cdot K}$ is the specific gas constant.
+
+For the variation of $a$ with temperature:
+\begin{equation}
+	\frac{da}{dT}=\sqrt{\gamma R_g}\cdot \frac{1}{2\sqrt{T}}
+\end{equation}
+
+Considering that the speed of sound at room temperature is $a_{298 K}=340 m/s$, the speed of sound gradient is:
+\begin{equation}
+	\frac{da}{dT}\Bigg\rvert_{298 K} = 0.581 \frac{m/s}{K}
+\end{equation}
+
+Assuming measurements of the order of 1 metre, the order of times being dealt with is:
+\begin{equation}
+	x=\Delta t \cdot a \sim 1 m \ \Rightarrow\ \Delta t \sim 2.9\times 10^{-3} s
+	\label{eq:x}
+\end{equation}
+
+Finally, differentiating equation \eqref{eq:x} with respect to temperature gives:
+\begin{equation}
+	\frac{dx}{dT}\Bigg\rvert_{T=298K} = \Delta t\cdot \frac{da}{dT}\Bigg\rvert_{T=298K} \sim 1.7\times 10^{-3} m
+\end{equation}
+
+So, for an extreme temperature departure of 10 K from the calibrated standard speed of sound, the resulting distance error would be in the order of the centimeter, which lies within the accuracy levels of the sensor itself, making the measurement errors due to temperature change effectively negligible.

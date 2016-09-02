@@ -120,6 +120,7 @@ OCAS allows more autonomous operation of the system: the pilot does not need to 
 ## Describing How You Solved the Problem or Answered the Question
 > This part of the thesis is much more free-form. It may have one or several sections and subsections. But it all has only one purpose: to convince the examiners that you answered the question or solved the problem that you set for yourself in the Problem Statement section. So show what you did that is relevant to answering the question or solving the problem: if there were blind alleys and dead ends, do not include these, unless specifically relevant to the demonstration that you answered the thesis question.
 
+
 ## Conclusions
 > You generally cover three things in the Conclusions section, and each of these usually merits a separate subsection:
 
