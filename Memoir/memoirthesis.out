@@ -75,7 +75,7 @@
 \BOOKMARK [1][-]{section.7.2}{Results}{chapter.7}% 75
 \BOOKMARK [2][-]{subsection.7.2.1}{Ultrasonic rangefinders}{section.7.2}% 76
 \BOOKMARK [2][-]{subsection.7.2.2}{Simulator}{section.7.2}% 77
-\BOOKMARK [2][-]{subsection.7.2.3}{UAS}{section.7.2}% 78
+\BOOKMARK [2][-]{subsection.7.2.3}{UAS + OCAS}{section.7.2}% 78
 \BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 79
 \BOOKMARK [1][-]{section.8.1}{Summary of contributions}{chapter.8}% 80
 \BOOKMARK [1][-]{section.8.2}{Future work}{chapter.8}% 81
@@ -94,4 +94,4 @@
 \BOOKMARK [0][-]{appendix.M}{Raspberry Pi's interfaces configuration}{}% 94
 \BOOKMARK [0][-]{appendix.N}{SonarDriver.py}{}% 95
 \BOOKMARK [0][-]{appendix.O}{Channel 7 script trigger}{}% 96
-\BOOKMARK [0][-]{section*.49}{Bibliography}{}% 97
+\BOOKMARK [0][-]{section*.50}{Bibliography}{}% 97

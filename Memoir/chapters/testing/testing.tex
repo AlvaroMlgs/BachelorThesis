@@ -132,11 +132,23 @@ Once the possible source of error was pointed down, the only action needed to ve
 The lesson to be learnt from these events is the dependence of the Guided mode on a high quality GPS signal, which implies that the solution presented in this thesis is not still applicable to indoor nor urban flight; at least not if the control commands encode information on the global location of the UAV.
 Nevertheless, in future work, some control procedures could be implemented in order to consider the input streams from the ultrasonic rangefinder as the main source of information for the navigation algorithms, overriding the RC transmitter channels directly instead of commanding higher level ``go-to'' manoeuvres to the Ardupilot control board.
 
-\subsection{UAS}
+\subsection{UAS + OCAS}
 
 Finally, it is necessary to confirm that each of the subsystems are properly integrated and are able to work together for a common goal within the UAS.
 After a realistic test flight, the logged information provides some valuable insight on the execution of the tasks and their effectiveness to actually avoid the collision with foreign obstacles.
 
-\textcolor{red}{Copy log in an appendix and analyse it here}
+For the selected flight test, vast amounts of data are recorded (more than 5000 individual messages) containing information on the complete state of the UAV as recorded from all the onboard sensors.
+Fortunately, since the particular script that was run defined as the avoidance manoeuvre to command a climb of the vehicle, the different stages of the flight can be easily recognised from the relative altitude plot depicted in Figure \ref{fig:flight}.
+Additionally to Ardupilot's logs, the data recorded from the Python script itself is overlayed to show the precise moments at which commands are being sent to the UAV, and its response to them, indicating who is in control of the vehicle as the test progresses.
+Furthermore, from the telemetry logs the flight modes of the UAV at any instant of time can be extracted, as are displayed at the bottom of the plot.
 
+\input{./figures/flight.tex}
+
+As it can be seen, the initial stages of the flight are quite unsteady while the pilot tries to approach the testing obstacle.
+Then, when the ultrasonic rangefinders determine that the state of the UAV with respect to the obstacle is not safe enough, the Guided mode gets activated (after a $\approx$1 second delay), and the vehicle stabilises trying to keep the position of activation of the mode while the command is sent.
+A set of functions translates the position that lies exactly 3 metres over the actual position of the UAV at the time of the computation and sends the MAVlink message to Ardupilot, which starts to climb to the commanded location, which will be maintained until the pilot is given back control.
+After a small delay, the Python script assumes that the UAV has reached the commanded location, and proceeds to return control to the pilot, which takes $\approx$2 seconds.
+The control of the vehicle is given back to the pilot in Loiter mode, since it allows for adjustments in the horizontal plane and the vertical controls behave similarly to Altitude Hold mode (see Chapter \ref{chap:ardupilot}), allowing for a smooth transition.
+Finally, the pilot changes back to Stabilize mode and performs the landing manually.
+Notice that the landing altitude lies 2 metres below the reference take off altitude; such discrepancy is due to the fact that the take off was done from an elevated site to avoid false-positive activation of the avoidance stage by the reflection of the ultrasonic signals on the ground itself.
 

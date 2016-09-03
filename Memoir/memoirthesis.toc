@@ -82,7 +82,7 @@
 \contentsline {section}{\numberline {7.2}Results}{56}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Ultrasonic rangefinders}{56}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Simulator}{57}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}UAS}{59}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.3}UAS + OCAS}{59}{subsection.7.2.3}
 \contentsline {chapter}{\chapternumberline {8}Conclusions}{61}{chapter.8}
 \contentsline {section}{\numberline {8.1}Summary of contributions}{61}{section.8.1}
 \contentsline {section}{\numberline {8.2}Future work}{61}{section.8.2}
@@ -101,4 +101,4 @@
 \contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{101}{appendix.M}
 \contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{103}{appendix.N}
 \contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{105}{appendix.O}
-\contentsline {chapter}{Bibliography}{109}{section*.49}
+\contentsline {chapter}{Bibliography}{109}{section*.50}
