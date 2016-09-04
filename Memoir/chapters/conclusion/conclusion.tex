@@ -31,5 +31,43 @@ Finally, it is worth mentioning that Systems Engineering is a much more exhausti
 
 \section{Summary of contributions}
 
+Naturally, the main body of this thesis (Chapters \ref{chap:design}, \ref{chap:implementation} and \ref{chap:testing}) contains all the contributions that have been made to the field of UAVs during the execution of the project.
+Nonetheless, they will be summarised here for easier access:
+
+\begin{itemize}
+
+	\item A conceptual safety layer has been designed to operate between the UAV and its physical surroundings.
+		Such safety layer (the OCAS) gives additional information of the environment to the UAS so that more complex decisions can be made automatically, enhancing the situational awareness and overall safety of the vehicle.
+
+		During the design process, a study has been made on the requirements that should be fulfilled by the Obstacle Collision Avoidance System, together with a logical decomposition of its functional and physical architecture, and the definition of the interfaces with the rest of the UAS.
+
+	\item The proposed design has been implemented into a prototype as a proof of concept, focusing on the integration of the system and the creation of the interfaces.
+		This approach was followed after the belief that once the successful integration of the system is complete, it will hardly need any modification, simplifying future research on the technical problems that are still to be solved (information capture, signal processing\ldots), while the robust baseline remains unchanged.
+
+		Naturally, the proposed implementation is just one among many different alternatives, and the capabilities of the OCAS could be extended or enhanced with some modifications to the solution, while still meeting the requirements and the architecture of the system.
+
+	\item Finally, a working prototype has been built according to the design guidelines, testing it in a series of realistic test which show that the proposed solution is completely functional and fulfills the problem statement from Chapter \ref{chap:problem}, representing a good baseline on which to base further research.
+
+\end{itemize}
+
 \section{Future work}
 
+The development of a complex system like the OCAS can by no means be complete within the duration of one single Bachelor's Thesis.
+Thus, this project has been focused on providing a capable baseline on which to found future research.
+In particular, some of the ideas that have been generated during the execution of the project but could not be further developed even though they can be interesting to work on in the future are:
+
+\begin{itemize}
+
+	\item The acquisition of data from the ultrasonic rangefinders can be greatly improved; from the location of the sensors for better spatial awareness to the triggering procedure, the noise filtering of the incoming signal to reduce false-positives or the processing of the data with more sophisticated algorithms to better predict a potential collision.
+
+	\item The integration of alternative sensors, especially stereoscopic cameras but also radar or lidar, which can be more difficult to operate and extract useful information from than the sonar but also provide other advantages over it, as explained in Section \ref{sec:choice}.
+
+	\item The improvement of the algorithms that predict the trajectory of the UAV with respect to the obstacle, to obtain a more reliable avoidance of potential collisions.
+
+	\item The automation / simplification of the connection of the GCS with the OCAS and the script initialisation procedures.
+
+	\item The improvement of the testing platform, since the available one has serious limitations in terms of the flight duration and the additional weight that the OCAS entails.
+
+	\item The application of the UAV + OCAS system to real life problems, such as precise positioning in GPS neglected areas, indoor / urban navigation, localisation and mapping (SLAM), etc.
+
+\end{itemize}
