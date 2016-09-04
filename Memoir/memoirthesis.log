@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  3 SEP 2016 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  4 SEP 2016 12:02
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2947,16 +2947,14 @@ Package pdftex.def Info: chapters/testing/./figures/flight-eps-converted-to.pdf
 [59 <./chapters/testing/./figures/flight-eps-converted-to.pdf>] [60
 
 ]
-(chapters/conclusion/conclusion.tex) [61
+(chapters/conclusion/conclusion.tex [61
 
-] [62
-
-] (chapters/appendices/network.tex
+]) [62] (chapters/appendices/network.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/setnetwork.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/setnetwork.pdf, id=1273, 597.55246pt x 845.07724pt
+<chapters/appendices/./files/setnetwork.pdf, id=1275, 597.55246pt x 845.07724pt
 >
 File: chapters/appendices/./files/setnetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/setnetwork.pdf>
@@ -2973,7 +2971,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 21--22
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/startnetwork.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/startnetwork.pdf, id=1275, 597.55246pt x 845.07724
+<chapters/appendices/./files/startnetwork.pdf, id=1277, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/startnetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/startnetwork.pdf>
@@ -2990,7 +2988,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 25--26
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/restartif.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/restartif.pdf, id=1278, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/restartif.pdf, id=1280, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/restartif.pdf Graphic file (type pdf)
 <use chapters/appendices/./files/restartif.pdf>
 Package pdftex.def Info: chapters/appendices/./files/restartif.pdf used on inpu
@@ -3003,13 +3001,14 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 31--32
 
 [63
 
+
  <./chapters/appendices/./files/setnetwork.pdf> <./chapters/appendices/./files/
 startnetwork.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/shownetwork.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/shownetwork.pdf, id=1343, 597.55246pt x 845.07724p
+<chapters/appendices/./files/shownetwork.pdf, id=1345, 597.55246pt x 845.07724p
 t>
 File: chapters/appendices/./files/shownetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/shownetwork.pdf>
@@ -3039,7 +3038,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 11--12
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/arpnetwork.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/arpnetwork.pdf, id=1412, 597.55246pt x 845.07724pt
+<chapters/appendices/./files/arpnetwork.pdf, id=1414, 597.55246pt x 845.07724pt
 >
 File: chapters/appendices/./files/arpnetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/arpnetwork.pdf>
@@ -3062,7 +3061,7 @@ Underfull \vbox (badness 7631) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/flusharp.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/flusharp.pdf, id=1423, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/flusharp.pdf, id=1425, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/flusharp.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/flusharp.pdf>
@@ -3074,7 +3073,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 21--22
 [][] [] 
  []
 
-<chapters/appendices/./files/putty.png, id=1425, 340.27126pt x 328.97906pt>
+<chapters/appendices/./files/putty.png, id=1427, 340.27126pt x 328.97906pt>
 File: chapters/appendices/./files/putty.png Graphic file (type png)
 
 <use chapters/appendices/./files/putty.png>
@@ -3082,7 +3081,7 @@ Package pdftex.def Info: chapters/appendices/./files/putty.png used on input li
 ne 30.
 (pdftex.def)             Requested size: 268.80273pt x 259.89563pt.
 
-<chapters/appendices/./files/moba.png, id=1426, 667.74469pt x 389.95688pt>
+<chapters/appendices/./files/moba.png, id=1428, 667.74469pt x 389.95688pt>
 File: chapters/appendices/./files/moba.png Graphic file (type png)
 
 <use chapters/appendices/./files/moba.png>
@@ -3098,7 +3097,7 @@ les/flusharp.pdf> <./chapters/appendices/./files/putty.png>]
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/password.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/password.pdf, id=1485, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/password.pdf, id=1487, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/password.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/password.pdf>
@@ -3114,7 +3113,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 41--42
 es/moba.png>] [68
 
 ] (chapters/appendices/sonar-doc.tex
-<chapters/appendices/./files/sonar-doc.pdf, id=1523, 597.23125pt x 845.1575pt>
+<chapters/appendices/./files/sonar-doc.pdf, id=1525, 597.23125pt x 845.1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/sonar-doc.pdf>
@@ -3140,7 +3139,7 @@ Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf used on inpu
 t line 4.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<chapters/appendices/./files/sonar-doc.pdf, id=1528, page=1, 597.23125pt x 845.
+<chapters/appendices/./files/sonar-doc.pdf, id=1530, page=1, 597.23125pt x 845.
 1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar-doc.pdf, page 1>
@@ -3175,7 +3174,7 @@ Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf, page1 used
 on input line 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [70 <./chapters/appendices/./files/sonar-doc.pdf>]
-<chapters/appendices/./files/sonar-doc.pdf, id=1555, page=2, 597.23125pt x 845.
+<chapters/appendices/./files/sonar-doc.pdf, id=1557, page=2, 597.23125pt x 845.
 1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar-doc.pdf, page 2>
@@ -3195,7 +3194,7 @@ Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf, page2 used
 on input line 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [71 <./chapters/appendices/./files/sonar-doc.pdf>]
-<chapters/appendices/./files/sonar-doc.pdf, id=1563, page=3, 597.23125pt x 845.
+<chapters/appendices/./files/sonar-doc.pdf, id=1565, page=3, 597.23125pt x 845.
 1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar-doc.pdf, page 3>
@@ -3219,7 +3218,7 @@ ds.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/threads.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/threads.pdf, id=1568, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/threads.pdf, id=1570, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/threads.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/threads.pdf>
@@ -3241,7 +3240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--443
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/logging.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/logging.pdf, id=1596, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/logging.pdf, id=1598, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/logging.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/logging.pdf>
@@ -3262,7 +3261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--446
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/connect.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/connect.pdf, id=1632, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/connect.pdf, id=1634, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/connect.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/connect.pdf>
@@ -3283,7 +3282,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--449
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonar.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/sonar.pdf, id=1661, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/sonar.pdf, id=1663, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/sonar.pdf>
@@ -3308,7 +3307,7 @@ clusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonar.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonar.pdf, id=1664, page=1, 597.55246pt x 845.0772
+<chapters/appendices/./files/sonar.pdf, id=1666, page=1, 597.55246pt x 845.0772
 4pt>
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar.pdf, page 1>
@@ -3347,7 +3346,7 @@ nput line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonar.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonar.pdf, id=1698, page=2, 597.55246pt x 845.0772
+<chapters/appendices/./files/sonar.pdf, id=1700, page=2, 597.55246pt x 845.0772
 4pt>
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar.pdf, page 2>
@@ -3372,7 +3371,7 @@ nput line 4.
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/control.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/control.pdf, id=1707, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/control.pdf, id=1709, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/control.pdf>
@@ -3397,7 +3396,7 @@ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/control.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/control.pdf, id=1710, page=1, 597.55246pt x 845.07
+<chapters/appendices/./files/control.pdf, id=1712, page=1, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/control.pdf, page 1>
@@ -3436,7 +3435,7 @@ Package pdftex.def Info: chapters/appendices/./files/control.pdf, page1 used on
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/control.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/control.pdf, id=1745, page=2, 597.55246pt x 845.07
+<chapters/appendices/./files/control.pdf, id=1747, page=2, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/control.pdf, page 2>
@@ -3461,7 +3460,7 @@ Package pdftex.def Info: chapters/appendices/./files/control.pdf, page2 used on
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/auto.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/auto.pdf, id=1754, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/auto.pdf, id=1756, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/auto.pdf>
@@ -3486,7 +3485,7 @@ lusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/auto.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/auto.pdf, id=1757, page=1, 597.55246pt x 845.07724
+<chapters/appendices/./files/auto.pdf, id=1759, page=1, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/auto.pdf, page 1>
@@ -3524,7 +3523,7 @@ put line 4.
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/main.pdf, id=1791, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/main.pdf, id=1793, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/main.pdf>
@@ -3549,7 +3548,7 @@ lusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1794, page=1, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1796, page=1, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 1>
@@ -3589,7 +3588,7 @@ put line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1829, page=2, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1831, page=2, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 2>
@@ -3613,7 +3612,7 @@ put line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1834, page=3, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1836, page=3, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 3>
@@ -3637,7 +3636,7 @@ put line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1839, page=4, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1841, page=4, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 4>
@@ -3661,7 +3660,7 @@ put line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1844, page=5, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1846, page=5, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 5>
@@ -3691,7 +3690,7 @@ e.tex) [95
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/GUIwin.pdf, id=1864, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/GUIwin.pdf, id=1866, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/GUIwin.pdf>
@@ -3716,7 +3715,7 @@ nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/GUIwin.pdf, id=1867, page=1, 597.55246pt x 845.077
+<chapters/appendices/./files/GUIwin.pdf, id=1869, page=1, 597.55246pt x 845.077
 24pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/GUIwin.pdf, page 1>
@@ -3755,7 +3754,7 @@ input line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/GUIwin.pdf, id=1901, page=2, 597.55246pt x 845.077
+<chapters/appendices/./files/GUIwin.pdf, id=1903, page=2, 597.55246pt x 845.077
 24pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/GUIwin.pdf, page 2>
@@ -3779,7 +3778,7 @@ input line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/GUIwin.pdf, id=1906, page=3, 597.55246pt x 845.077
+<chapters/appendices/./files/GUIwin.pdf, id=1908, page=3, 597.55246pt x 845.077
 24pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/GUIwin.pdf, page 3>
@@ -3804,7 +3803,7 @@ ces.tex
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/interfaces.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/interfaces.pdf, id=1911, 597.55246pt x 845.07724pt
+<chapters/appendices/./files/interfaces.pdf, id=1913, 597.55246pt x 845.07724pt
 >
 File: chapters/appendices/./files/interfaces.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/interfaces.pdf>
@@ -3816,7 +3815,7 @@ ut line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/wpa_suplicant.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/wpa_suplicant.pdf, id=1913, 597.55246pt x 845.0772
+<chapters/appendices/./files/wpa_suplicant.pdf, id=1915, 597.55246pt x 845.0772
 4pt>
 File: chapters/appendices/./files/wpa_suplicant.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/wpa_suplicant.pdf>
@@ -3839,7 +3838,7 @@ wpa_suplicant.pdf>] [102
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonarDriver.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonarDriver.pdf, id=2000, 597.55246pt x 845.07724p
+<chapters/appendices/./files/sonarDriver.pdf, id=2002, 597.55246pt x 845.07724p
 t>
 File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonarDriver.pdf>
@@ -3864,7 +3863,7 @@ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonarDriver.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonarDriver.pdf, id=2003, page=1, 597.55246pt x 84
+<chapters/appendices/./files/sonarDriver.pdf, id=2005, page=1, 597.55246pt x 84
 5.07724pt>
 File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonarDriver.pdf, page 1>
@@ -3903,7 +3902,7 @@ d on input line 4.
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/ch7.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/ch7.pdf, id=2037, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/ch7.pdf, id=2039, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/ch7.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/ch7.pdf>
@@ -3914,7 +3913,7 @@ Package pdftex.def Info: chapters/appendices/./files/ch7.pdf used on input line
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/observe.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/observe.pdf, id=2039, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/observe.pdf, id=2041, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/observe.pdf>
@@ -3939,7 +3938,7 @@ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/observe.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/observe.pdf, id=2042, page=1, 597.55246pt x 845.07
+<chapters/appendices/./files/observe.pdf, id=2044, page=1, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/observe.pdf, page 1>
@@ -3978,7 +3977,7 @@ Package pdftex.def Info: chapters/appendices/./files/observe.pdf, page1 used on
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/observe.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/observe.pdf, id=2102, page=2, 597.55246pt x 845.07
+<chapters/appendices/./files/observe.pdf, id=2104, page=2, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/observe.pdf, page 2>
@@ -4022,10 +4021,10 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 ### simple group (level 1) entered at line 89 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 38134 strings out of 493673
- 720324 string characters out of 3141524
- 1057809 words of memory out of 3000000
- 39745 multiletter control sequences out of 15000+200000
+ 38135 strings out of 493673
+ 720334 string characters out of 3141524
+ 1057867 words of memory out of 3000000
+ 39746 multiletter control sequences out of 15000+200000
  161773 words of font info for 428 fonts, out of 3000000 for 9000
  1031 hyphenation exceptions out of 8191
  61i,18n,99p,1013b,1690s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4046,9 +4045,9 @@ mtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (124 pages, 30191338 bytes).
+Output written on memoirthesis.pdf (124 pages, 30194528 bytes).
 PDF statistics:
- 2252 PDF objects out of 2487 (max. 8388607)
+ 2254 PDF objects out of 2487 (max. 8388607)
  353 named destinations out of 1000 (max. 500000)
  66378 words of extra memory for PDF output out of 74296 (max. 10000000)
 

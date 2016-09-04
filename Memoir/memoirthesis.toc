@@ -84,8 +84,8 @@
 \contentsline {subsection}{\numberline {7.2.2}Simulator}{57}{subsection.7.2.2}
 \contentsline {subsection}{\numberline {7.2.3}UAS + OCAS}{59}{subsection.7.2.3}
 \contentsline {chapter}{\chapternumberline {8}Conclusions}{61}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of contributions}{61}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future work}{61}{section.8.2}
+\contentsline {section}{\numberline {8.1}Summary of contributions}{62}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future work}{62}{section.8.2}
 \contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{63}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{65}{appendix.B}
 \contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{69}{appendix.C}

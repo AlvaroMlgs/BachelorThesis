@@ -2,7 +2,32 @@
 \let\textcircled=\pgftextcircled
 \chapter{Conclusions} \label{chapter:conclusions}
 
-The main goal of this thesis was to 
+The main goal of this thesis was to make unmanned flight more secure and flexible by means of a modular Obstacle Collision Avoidance System, as defined in Chapter \ref{chap:problem}. From the work done during the project, it can be concluded that:
+
+\begin{itemize}
+
+	\item There exists a large capacity of improvement in terms of the safety levels that could be achieved during the operation of Unmanned Aerial Vehicles, being the Obstacle Avoidance feature an mere example of the available potential.
+		Advanced communications, ADS-B surveillance, decentralised swarming\ldots would also contribute to the common safety issue.
+
+	\item There are several options in terms of environment sensing alternatives which provide various advantages and drawback to the OCAS in terms of range, accuracy or flexibility.
+		The ultrasonic rangefinders have been chosen mainly for their ease of use and small processing requirements.
+
+	\item The design phase of a complex system depends on a large amount of variables and assumptions, which are difficult to track if a systematic design procedure is not followed.
+		For this project, as well as for the vast majority of systems developed by the most important companies, the Systems Engineering approach was selected for the orderly flow of ideas due to its proved reliability.
+
+	\item The definition of interfaces is of utmost importance for the system to work as a whole and properly perform its functions.
+		When two subsystems or components cannot communicate in a common language, an intermediate translation layer shall be created to translate the information.
+		For example, between the UAV and the Python scripts, MAVproxy acted as a translator; or between the Python algorithms and MAVproxy, the DroneKit API translated the commands into usable MAVlink messages.
+
+	\item Some decisions on the scripts architecture were made during the implementation and programming phases which nevertheless should have been made through the Systems Engineering methods applied to the design of each particular (software) subsystem.
+
+	\item The theoretical or simulator-based inferences should be considered incomplete, and only blindly applicable to the scenarios that accurately represent the mathematical model being studied, as shown in Section \ref{sec:sitl}.
+
+	\item Systematically testing the design and implementation of the product and its components is a very important step in the development process, allowing to validate both the solution and the process itself, and avoiding later modifications of the system that could be really expensive to resolve in the production or operation phases.
+
+\end{itemize}
+
+Finally, it is worth mentioning that Systems Engineering is a much more exhaustive activity than what was shown in this thesis, involving a large set of engineers and specialists working on projects that span several years of development and implementation.
 
 \section{Summary of contributions}
 
