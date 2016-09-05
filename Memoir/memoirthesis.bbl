@@ -65,17 +65,6 @@ N.~Aeronautics and S.~Administration, {\em NASA systems engineering handbook}.
 \bibitem{disposicin16097deboenm274de20112011}
 ``Disposici{\' o}n 16097 de boe n{\' u}m. 274 de 2011,'' 10 2011.
 
-\bibitem{droneindustryinsights2016}
-D.~I. Insights, ``Top20 drone company ranking q2 2016,'' tech. rep., Hamburg,
-  Germany, 06 2016.
-
-\bibitem{dronecode2016}
-``Dronecode,'' 04 2016.
-
-\bibitem{ogata2010}
-K.~Ogata, {\em Modern Control Engineering}.
-\newblock Prentice Hall, 5~ed., 2010.
-
 \bibitem{assistantsecretaryofdefenseforresearchandengineering2011}
 A.~S. of~Defense~for Research and Engineering, ``Technology readiness
   assessment (tra) guidance,'' tech. rep., USA, 04 2011.
@@ -91,6 +80,17 @@ J.~Krolik, ``Radar and sonar signal processing: Similarities and differences,''
 \bibitem{tooley2009}
 M.~Tooley and D.~Wyatt, {\em Aerospace engineering e-mega reference}.
 \newblock United Kingdom: Butterworth-Heinemann, 03 2009.
+
+\bibitem{droneindustryinsights2016}
+D.~I. Insights, ``Top20 drone company ranking q2 2016,'' tech. rep., Hamburg,
+  Germany, 06 2016.
+
+\bibitem{dronecode2016}
+``Dronecode,'' 04 2016.
+
+\bibitem{ogata2010}
+K.~Ogata, {\em Modern Control Engineering}.
+\newblock Prentice Hall, 5~ed., 2010.
 
 \bibitem{beasley2015}
 R.~Beasley, ``Systems engineering - what and why?,'' 02 2015.
