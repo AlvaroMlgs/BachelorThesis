@@ -281,6 +281,8 @@ The approach taken is to simulate the Arduino control board and other hardware o
 However, DroneKit-SITL does not aim to provide an accurate physical representation of the UAV \cite{vegaastorga2016}, since the physical properties change from vehicle to vehicle; the main goal of the simulator is to emulate the Ardupilot firmware, so that MAVlink communication and commands can be safely tested prior to their implementation on the physical platform.
 Conveniently enough, DroneKit-SITL can be installed as a Python application, and outputs the MAVlink messages via the TCP Internet protocol, which is additionally supported by MAVlink as an input data stream, similarly to the Serial communication by the real UAV.
 
+Additional documentation on the DroneKit project can be found on their webpage: \url{python.dronekit.io/}.
+
 
 \section{The Python script}	\label{sec:script}
 
@@ -293,7 +295,7 @@ Besides, a fourth column will represent the structure that the Python script wil
 
 As it can be noticed, there are some script components that have not been made modular (encapsulated in a class).
 The reason is that those actions are very dependent on the actual computational approach taken by the programmer, and can become significantly complex algorithms.
-Since the development of those algorithms is not within the objectives of the project, the coding phase has been simplified by inserting those functions directly into the ``main'' function as simple routines, even though if complex functionality is to be implemented, the most adequate approach would be to create classes to group all the related information to perform those tasks.
+Since the development of those algorithms is not within the objectives of the project, the coding phase has been simplified by inserting those functions directly into the ``main'' function as simple routines, even though if complex functionality is to be implemented, the most adequate approach would be to create classes to group all the related information needed to perform those tasks.
 
 \subsection{Script architecture}
 
@@ -313,7 +315,7 @@ The entire Python files will be included in the Appendices for completeness.
 \subsection{Multi-threading capabilities}
 
 As mentioned earlier, it is important for the OCAS to execute several critical tasks at in parallel, avoiding interference between them.
-Fortunately, Raspbian is a multitasking Operating System, and Python provides a \texttt{threading} library that manages the system calls invisibly to the user.
+Fortunately, Raspbian is a multitasking Operating System, and Python provides a \texttt{threading} library that manages the system calls invisibly to the user (more information and derived methods can be found on \url{docs.python.org/2/library/threading.html}).
 
 For achieving better accessibility, the \texttt{thrd} class has been developed to allow calls to the \texttt{threading} library to perform actions defined by functions which might or might not demand additional arguments.
 The complete code is displayed in Appendix \ref{app:threads}.
@@ -323,6 +325,8 @@ The complete code is displayed in Appendix \ref{app:threads}.
 Information report is done from the script in two manners:
 text with relevant data is immediately printed on the GCS screen through the SSH connection, but additionally those same messages are stored in a dedicated log folder contained in the script's directory with precise information on the time each event is recorded.
 The logs are handled with the \texttt{logging} library, which is set up at the beginning of the \texttt{main} file as shown in Appendix \ref{app:logging}.
+
+Additional information on the \texttt{logging} library can be found on \url{docs.python.org/2/library/logging.html}.
 
 \subsection{Connect to UAV} \label{sec:connect}
 
@@ -334,7 +338,7 @@ The output of the function is the \texttt{vehicle} class which handles all the c
 \subsection{Observe state} \label{sec:sonar}
 
 The \texttt{Sonar} class performs the most important functions of the OCAS.
-It is not only responsible for operating the ultrasonic rangefinders, but also performs some basic signal processing to determine the speed and velocity of the UAV with respect to the detected obstacle, deciding if could become a threat for the flight and triggering the avoid manoeuvre.
+It is not only responsible for operating the ultrasonic rangefinders via the built-in RPi.GPIO library, but also performs some basic signal processing to determine the speed and velocity of the UAV with respect to the detected obstacle, deciding if could become a threat for the flight and triggering the avoidance manoeuvre.
 In the future, it might be interesting that these functions, which in principle could contain rather complex algorithms and processing techniques, would be developed in separate classes to enhance the modularity and upgradeability of the system.
 
 The \texttt{Sonar} class defines three different methods which operate the sonar and calculate the distance to the closest obstacle, compute the velocity from distance measurements and evaluate the potential of a collision to trigger the avoiding manoeuvre, respectively.
@@ -463,25 +467,10 @@ The complete file can be found in Appendix \ref{app:main}, but the main blocks i
 The task of the GUI is to facilitate the operation of the OCAS by a briefly trained pilot without much knowledge on Linux systems.
 Hence the GUI shall be able to generate the software architecture depicted in Figure \ref{fig:mavproxy} effortlessly every time the OCAS is initialised.
 
-A graphical Python application has been created with that purpose, making use of the \texttt{Tkinter} library, whose code can be seen in Appendix \ref{app:gui}.
+A graphical Python application has been created with that purpose, making use of the \texttt{Tkinter} library, whose code can be seen in Appendix \ref{app:gui}, with further documentation on \url{docs.python.org/2/library/tkinter.html}.
 The application itself is shown in Figure \ref{fig:gui}.
 
-\begin{figure}[htbp]
-	\centering
-
-	\begin{subfigure}[b]{0.7\textwidth}
-		\includegraphics[width=\textwidth]{./figures/GUIwin.png}
-		\caption{Windows version}
-	\end{subfigure}
-	~\\[1ex]
-	\begin{subfigure}[b]{0.7\textwidth}
-		\includegraphics[width=\textwidth]{./figures/GUIlinux.png}
-		\caption{Linux version}
-	\end{subfigure}
-
-	\caption{Graphical User Interface}
-	\label{fig:gui}
-\end{figure}
+\input{./figures/gui.tex}
 
 As it can be seen, the two versions have minimal differences.
 Mainly, the Windows version, which was used in the early testing phases, provides the options of launching the SITL simulator as well as the Mission Planner GCS software for in-depth analysis of the incoming data (the bottom branch in Figure \ref{fig:mavproxy}).

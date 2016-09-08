@@ -59,8 +59,8 @@
 \contentsline {subsection}{\numberline {6.4.3}The Python environment}{42}{subsection.6.4.3}
 \contentsline {section}{\numberline {6.5}The Python script}{43}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Script architecture}{43}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Multi-threading capabilities}{45}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Log information}{45}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.2}Multi-threading capabilities}{44}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Log information}{44}{subsection.6.5.3}
 \contentsline {subsection}{\numberline {6.5.4}Connect to UAV}{46}{subsection.6.5.4}
 \contentsline {subsection}{\numberline {6.5.5}Observe state}{46}{subsection.6.5.5}
 \contentsline {subsubsection}{\numberline {6.5.5.1}Measure distance}{46}{subsubsection.6.5.5.1}
@@ -71,7 +71,7 @@
 \contentsline {subsection}{\numberline {6.5.8}Return control to the pilot}{49}{subsection.6.5.8}
 \contentsline {subsection}{\numberline {6.5.9}The ``main'' file}{49}{subsection.6.5.9}
 \contentsline {section}{\numberline {6.6}Graphical User Interface}{50}{section.6.6}
-\contentsline {section}{\numberline {6.7}Hardware implementation}{50}{section.6.7}
+\contentsline {section}{\numberline {6.7}Hardware implementation}{51}{section.6.7}
 \contentsline {chapter}{\chapternumberline {7}Testing and results}{53}{chapter.7}
 \contentsline {section}{\numberline {7.1}Testing methods}{53}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Component testing}{53}{subsection.7.1.1}
