@@ -40,65 +40,65 @@
 \contentsline {subsection}{\numberline {5.2.3}Product Breakdown Structure (PBS)}{29}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Functional-Physical matrix}{30}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Interfaces definition (N$^2$ diagram)}{31}{subsection.5.2.5}
-\contentsline {section}{\numberline {5.3}Component choice}{33}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sensors}{33}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Computer board}{34}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Other components}{35}{subsection.5.3.3}
-\contentsline {chapter}{\chapternumberline {6}System implementation}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}The OCAS within the UAS}{37}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Overview of the existing UAS}{37}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Integration of the OCAS}{38}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}OCAS peripheral connections (hardware interfaces)}{39}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Power connection}{39}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}MAVlink connection}{39}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}GCS connection}{40}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}GPIO connection}{40}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Software: Bringing everything together}{42}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}The Operating System}{42}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}MAVproxy}{42}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}The Python environment}{43}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}The Python script}{44}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Script architecture}{44}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Multi-threading capabilities}{45}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Log information}{47}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Connect to UAV}{47}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Observe state}{47}{subsection.6.4.5}
-\contentsline {subsubsection}{\numberline {6.4.5.1}Measure distance}{47}{subsubsection.6.4.5.1}
-\contentsline {subsubsection}{\numberline {6.4.5.2}Compute velocity}{48}{subsubsection.6.4.5.2}
-\contentsline {subsubsection}{\numberline {6.4.5.3}Calculate collision}{49}{subsubsection.6.4.5.3}
-\contentsline {subsection}{\numberline {6.4.6}Take control of UAV}{49}{subsection.6.4.6}
-\contentsline {subsection}{\numberline {6.4.7}Avoid obstacle}{50}{subsection.6.4.7}
-\contentsline {subsection}{\numberline {6.4.8}Return control to the pilot}{50}{subsection.6.4.8}
-\contentsline {subsection}{\numberline {6.4.9}The ``main'' file}{50}{subsection.6.4.9}
-\contentsline {section}{\numberline {6.5}Graphical User Interface}{51}{section.6.5}
-\contentsline {section}{\numberline {6.6}Hardware implementation}{52}{section.6.6}
-\contentsline {chapter}{\chapternumberline {7}Testing and results}{55}{chapter.7}
-\contentsline {section}{\numberline {7.1}Testing methods}{55}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Component testing}{55}{subsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.1.1}Interfaces}{56}{subsubsection.7.1.1.1}
-\contentsline {subsubsection}{\numberline {7.1.1.2}Ultrasonic rangefinders}{56}{subsubsection.7.1.1.2}
-\contentsline {subsection}{\numberline {7.1.2}Software testing: SITL}{57}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}System testing}{58}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Results}{58}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Ultrasonic rangefinders}{58}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Simulator}{59}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}UAS + OCAS}{61}{subsection.7.2.3}
-\contentsline {chapter}{\chapternumberline {8}Conclusions}{63}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of contributions}{64}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future work}{64}{section.8.2}
-\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{67}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{69}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{73}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Threads.py}{77}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Logging setup}{79}{appendix.E}
-\contentsline {appendix}{\chapternumberline {F}Connect.py}{81}{appendix.F}
-\contentsline {appendix}{\chapternumberline {G}Sonar.py}{83}{appendix.G}
-\contentsline {appendix}{\chapternumberline {H}Control.py}{87}{appendix.H}
-\contentsline {appendix}{\chapternumberline {I}Auto.py}{91}{appendix.I}
-\contentsline {appendix}{\chapternumberline {J}Main.py}{93}{appendix.J}
-\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{99}{appendix.K}
-\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{101}{appendix.L}
-\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{105}{appendix.M}
-\contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{107}{appendix.N}
-\contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{109}{appendix.O}
-\contentsline {chapter}{Bibliography}{113}{section*.50}
+\contentsline {chapter}{\chapternumberline {6}System implementation}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}The OCAS within the UAS}{33}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Overview of the existing UAS}{33}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Integration of the OCAS}{34}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Component choice}{35}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Sensors}{35}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Computer board}{36}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Other components}{37}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}OCAS peripheral connections (hardware interfaces)}{38}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Power connection}{38}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}MAVlink connection}{38}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}GCS connection}{39}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}GPIO connection}{39}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Software: Bringing everything together}{40}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}The Operating System}{41}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}MAVproxy}{41}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}The Python environment}{42}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}The Python script}{43}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Script architecture}{43}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Multi-threading capabilities}{45}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Log information}{45}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}Connect to UAV}{46}{subsection.6.5.4}
+\contentsline {subsection}{\numberline {6.5.5}Observe state}{46}{subsection.6.5.5}
+\contentsline {subsubsection}{\numberline {6.5.5.1}Measure distance}{46}{subsubsection.6.5.5.1}
+\contentsline {subsubsection}{\numberline {6.5.5.2}Compute velocity}{47}{subsubsection.6.5.5.2}
+\contentsline {subsubsection}{\numberline {6.5.5.3}Calculate collision}{48}{subsubsection.6.5.5.3}
+\contentsline {subsection}{\numberline {6.5.6}Take control of UAV}{48}{subsection.6.5.6}
+\contentsline {subsection}{\numberline {6.5.7}Avoid obstacle}{49}{subsection.6.5.7}
+\contentsline {subsection}{\numberline {6.5.8}Return control to the pilot}{49}{subsection.6.5.8}
+\contentsline {subsection}{\numberline {6.5.9}The ``main'' file}{49}{subsection.6.5.9}
+\contentsline {section}{\numberline {6.6}Graphical User Interface}{50}{section.6.6}
+\contentsline {section}{\numberline {6.7}Hardware implementation}{50}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Testing and results}{53}{chapter.7}
+\contentsline {section}{\numberline {7.1}Testing methods}{53}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Component testing}{53}{subsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.1}Interfaces}{54}{subsubsection.7.1.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.2}Ultrasonic rangefinders}{54}{subsubsection.7.1.1.2}
+\contentsline {subsection}{\numberline {7.1.2}Software testing: SITL}{55}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}System testing}{56}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Results}{56}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Ultrasonic rangefinders}{56}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Simulator}{57}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}UAS + OCAS}{59}{subsection.7.2.3}
+\contentsline {chapter}{\chapternumberline {8}Conclusions}{61}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of contributions}{62}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future work}{62}{section.8.2}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{65}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{67}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{71}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Threads.py}{75}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Logging setup}{77}{appendix.E}
+\contentsline {appendix}{\chapternumberline {F}Connect.py}{79}{appendix.F}
+\contentsline {appendix}{\chapternumberline {G}Sonar.py}{81}{appendix.G}
+\contentsline {appendix}{\chapternumberline {H}Control.py}{85}{appendix.H}
+\contentsline {appendix}{\chapternumberline {I}Auto.py}{89}{appendix.I}
+\contentsline {appendix}{\chapternumberline {J}Main.py}{91}{appendix.J}
+\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{97}{appendix.K}
+\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{99}{appendix.L}
+\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{103}{appendix.M}
+\contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{105}{appendix.N}
+\contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{107}{appendix.O}
+\contentsline {chapter}{Bibliography}{111}{section*.50}
