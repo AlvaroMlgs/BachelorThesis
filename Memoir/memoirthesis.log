@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  8 SEP 2016 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  8 SEP 2016 17:56
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2918,25 +2918,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [58 <./chapters/testing/./figures/leganes.png>] (chapters/testing/./figures/fl
 ight.tex
 Package epstopdf Info: Source file: <chapters/testing/./figures/flight.eps>
-(epstopdf)                    date: 2016-09-03 19:30:10
-(epstopdf)                    size: 258309 bytes
+(epstopdf)                    date: 2016-09-08 17:56:42
+(epstopdf)                    size: 301766 bytes
 (epstopdf)             Output file: <chapters/testing/./figures/flight-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2016-09-03 19:30:39
-(epstopdf)                    size: 12886 bytes
+(epstopdf)                    date: 2016-09-08 17:56:08
+(epstopdf)                    size: 15817 bytes
 (epstopdf)             Command: <epstopdf --outfile=chapters/testing/./figures/
 flight-eps-converted-to.pdf chapters/testing/./figures/flight.eps>
 (epstopdf)             \includegraphics on input line 4.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=chapters/testing/./figures/flight-eps-converted-to
+.pdf chapters/testing/./figures/flight.eps)...executed (allowed).
 
-<chapters/testing/./figures/flight-eps-converted-to.pdf, id=1245, 562.1pt x 211
-.79124pt>
+Package epstopdf Info: Result file: <chapters/testing/./figures/flight-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2016-09-08 17:57:13
+(epstopdf)                    size: 16096 bytes.
+
+<chapters/testing/./figures/flight-eps-converted-to.pdf, id=1245, 479.7925pt x 
+173.64874pt>
 File: chapters/testing/./figures/flight-eps-converted-to.pdf Graphic file (type
  pdf)
  <use chapters/testing/./figures/flight-eps-converted-to.pdf>
 Package pdftex.def Info: chapters/testing/./figures/flight-eps-converted-to.pdf
  used on input line 4.
-(pdftex.def)             Requested size: 448.0pt x 164.26414pt.
+(pdftex.def)             Requested size: 448.0pt x 156.82967pt.
 ))
 [59 <./chapters/testing/./figures/flight-eps-converted-to.pdf>] [60
 
@@ -4019,7 +4025,7 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 Here is how much of TeX's memory you used:
  38150 strings out of 493673
  720538 string characters out of 3141524
- 1058567 words of memory out of 3000000
+ 1058570 words of memory out of 3000000
  39745 multiletter control sequences out of 15000+200000
  162245 words of font info for 436 fonts, out of 3000000 for 9000
  1031 hyphenation exceptions out of 8191
@@ -4041,7 +4047,7 @@ mtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (126 pages, 30125028 bytes).
+Output written on memoirthesis.pdf (126 pages, 30128242 bytes).
 PDF statistics:
  2274 PDF objects out of 2487 (max. 8388607)
  355 named destinations out of 1000 (max. 500000)
