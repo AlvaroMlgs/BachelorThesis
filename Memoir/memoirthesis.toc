@@ -48,8 +48,8 @@
 \contentsline {subsection}{\numberline {6.2.1}Sensors}{35}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Computer board}{36}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Other components}{37}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}OCAS peripheral connections (hardware interfaces)}{38}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Power connection}{38}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.3}OCAS peripheral connections (hardware interfaces)}{37}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Power connection}{37}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}MAVlink connection}{38}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}GCS connection}{39}{subsection.6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}GPIO connection}{39}{subsection.6.3.4}
@@ -101,4 +101,5 @@
 \contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{103}{appendix.M}
 \contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{105}{appendix.N}
 \contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{107}{appendix.O}
-\contentsline {chapter}{Bibliography}{111}{section*.50}
+\contentsline {appendix}{\chapternumberline {P}Observe.py}{109}{appendix.P}
+\contentsline {chapter}{Bibliography}{113}{section*.50}

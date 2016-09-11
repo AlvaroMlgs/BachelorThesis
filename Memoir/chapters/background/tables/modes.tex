@@ -1,0 +1,18 @@
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lm{3.1cm}ccm{3cm}} 
+	\hline
+	\bfseries Mode	& \bfseries Sensors used	& \bfseries Throttle	&	\bfseries Roll/Pitch	&	\bfseries Features	\\
+	\hline
+	Stabilize		&	IMU					&	Power			&	Euler angles		&	Fully manual			\\
+	Altitude hold	&	IMU + Barometer		&	Ascension rate	&	Euler angles		&	Enhanced altitude control\\
+	Loiter			&	IMU + Barometer + GPS&	Ascension rate	&	Euler angles		&	Disturbance rejection	\\
+	Auto			&	IMU + Barometer + GPS&	No control		&	No control			&	Mission automation		\\
+	RTL				&	IMU + Barometer + GPS&	No control		&	No control			&	Failsafe				\\
+	Guided			&	IMU + Barometer + GPS&	No control		&	No control			&	Real-time control		\\
+	\hline
+\end{tabular}
+\caption{Summary of the relevant flight modes}
+\label{tab:modes}
+\end{table}

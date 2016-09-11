@@ -52,7 +52,7 @@ For example, the Spanish government issued an urgent provisional regulation on O
 Focusing on the smaller segments, UAVs are separated according to their MTOM as follows:
 \begin{description}
 	\item[MTOM < 2 kg:] Flights Beyond Visual Line Of Sight (BVLOS) are allowed, but conditioned to the publication of a NOTAM (NOtice To AirMen). Apart from that, all the other rules in the 2 kg to 25 kg apply.
-	\item[2 kg $\leq$ MTOM < 25 kg:] Only operable in areas separated from groups of buildings in cities, or groups of people elsewhere. Flight shall always take place in uncontrolled airspace, within Visual Line Of Sight (VLOS) and at a maximum distance of 500 m from the position of the pilot, not exceeding 400 ft of heigt over the terrain.
+	\item[2 kg $\leq$ MTOM < 25 kg:] Only operable in areas separated from groups of buildings in cities, or groups of people elsewhere. Flight shall always take place in uncontrolled airspace, within Visual Line Of Sight (VLOS) and at a maximum distance of 500 m from the position of the pilot, not exceeding 400 ft of height over the terrain.
 	\item[25 kg < MTOM:] Flight is only allowed for firefighting, search and rescue missions. They shall only operate in uncontrolled airspace and according to the limitations stablished in their Airworthiness Certificate, as emited by AESA.
 \end{description}
 Nevertheless, even if Spain or other countries have their own regulations to control the usage of UAVs in their territories, it is still important to have an international and stable legislation to allow the sector to grow to its full potential.
@@ -69,7 +69,7 @@ The process of ``unmanning'' the aircraft also brings the advantages of decreasi
 However, there are also some downsides.
 In the technical department, there are still some issues regarding the electromagnetic spectrum allocation for the data-link with the vehicle \cite{civilianunmannedaerialvehiclesreadyfortakeoff2012}, as well as accommodating unmanned aircraft within the Airspace System \cite{unmannedaircraftsystemsperceptionsandpotentials2013}.
 In addition, the most accused issues for experienced pilots are those related with the loss of situational awareness that comes as a result of eliminating the physical cues (body inertia, vibrations\ldots) and relying on instrumental readings only \cite{bergqvist2014}.
-Hence, some enhanced systems need to be integrated into the vehicle to overcome this limitations, providing the pilots with additional information for the safe execution of the mission.
+Hence, some enhanced systems need to be integrated into the vehicle to overcome these limitations, providing the pilots with additional information for the safe execution of the mission.
 
 Finally, for this project, the goal is to provide a system that reduces the risk of the widest range of UAVs from crashing with nearby obstacles, so that regular operations are carried with a higher level of safety.
 Eventually, the authorities could consider the increase in overall safety as a standard, triggering the modification of existing regulations to a more permissive set, and allowing the industry to take advantage of all the benefits that the incorporation of UAVs could bring to their activities.
@@ -83,8 +83,8 @@ Towards that end, some more specific objectives can be defined as follows:
 	\item Identify the requirements needed for the Obstacle Collision Avoidance System (OCAS) to correctly fulfill its purpose
 	\item Define the functional architecture of the OCAS
 	\item Define the interfaces (communication channels and protocols) to be used by the OCAS for its correct integration on the UAV.
-	\item Define the interaction channels and procedures between the UAV equiped with OCAS and Ardupilot and the operator.
-	\item Develop a first working prototype as proof of concept of the Obstacle Collision Avoidance System (both hardware and software) and integrate it on a real UAVtroduction.tex
+	\item Define the interaction channels and procedures between the operator and the UAV equiped with the Obstacle Collision Avoidance System.
+	\item Develop a first working prototype as proof of concept of the Obstacle Collision Avoidance System (both hardware and software) and integrate it on a real UAV.
 \end{itemize}
 
 Additionally, the architecture of the solution should be designed with modularity in mind, permitting easy adaptation of the algorithms for later research activities.
@@ -127,34 +127,9 @@ For the hardware part of the project, the aforementioned laptop will be consider
 
 The PC was bought for 500 \euro. Assuming a linear depreciation period of 4 years, and that the dedication to the project equals the amount of total labour hours, the resultant expense is estimated as 7.85 \euro.
 
-Unexpectedly, the prototype is composed of numerous individual components acquired to different sources.
+As expected, the prototype is composed of numerous individual components acquired to different sources.
 In Table \ref{tab:budget}, an estimation of their cost is done according to current prices on relevant stores.
 Notice that the F450 kit already includes most of the components needed for the UAV to fly (motors, controller board, frame\ldots)
 
-\begin{table}
-\centering
-\begin{tabular}[htbp]{lrcr}
-	\hline
-	\bfseries Component	&	\bfseries Unitary Price	&	\bfseries Units	&	\bfseries Total	\\
-	\hline
-	F450 kit			&	399 \euro				&	1			&	399 \euro	\\
-	Propeller blades	&	2 \euro					&	4			&	8 \euro		\\
-	Radio transmitter / receiver	&	51 \euro	&	1			&	51 \euro	\\
-	Telemetry radio		&	48 \euro				&	1			&	48 \euro	\\
-	Primary battery		&	40.85 \euro				&	5			&	204.25 \euro\\
-	Secondary battery	&	14 \euro				&	1			&	14 \euro	\\
-	Raspberry Pi		&	33.81 \euro				&	1			&	33.81 \euro	\\
-	Wireless WiFi adapter	&	19.95 \euro			&	1			&	19.95 \euro	\\
-	Ultrasonic range finder	&	4.50 \euro			&	8			&	36 \euro	\\
-	Resistor			&	0.05 \euro				&	30			&	1.50 \euro	\\
-	Connection wires	&	0.10 \euro				&	50			&	5 \euro		\\
-	Camera				&	24 \euro				&	2			&	48 \euro	\\
-	Optical flow sensor	&	36 \euro				&	1			&	36 \euro	\\
-	\hline
-	\bfseries TOTAL		&	&	&	\bfseries 904.51 \euro\\
-	\hline
-\end{tabular}
-\caption{Prototype hardware costs}
-\label{tab:budget}
-\end{table}
+\input{./tables/budget.tex}
 

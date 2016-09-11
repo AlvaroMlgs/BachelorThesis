@@ -59,7 +59,7 @@ By connecting the vehicle to an external computer, the operator is no longer lim
 Instead, the limit on the amount of information that the Ardupilot board can broadcast or absorb is only bound by the communication protocol that is implemented between the two.
 
 For the Ardupilot ecosystem the protocol used is also open-source and receives the name of MAVlink\footnote{More information on the protocol can be found on \url{qgroundcontrol.org/mavlink/start}. The message definitions and generator code can be found at its GitHub repository \url{github.com/mavlink/mavlink/}} (MAV stands for Micro Aerial Vehicle).
-Its open nature allows developers to create a very diverse set of software and applications to communicate with the UAV, from the widespread Mission Planner and APM planner, to versions that run on Android devices for on-the-field operation or developer-oriented libraries that run under Python.
+Its open nature allows developers to create a very diverse set of software and applications to communicate with the UAV, from the widespread Mission Planner and APM planner, to versions that run on Android devices for on-the-field operation or developer-oriented libraries that run under Python, for example.
 
 Another feature that is worth mentioning is the lightweight nature of the protocol, which not only permits the connection via USB cable, but also wirelessly through what is usually called a telemetry radio, which effectively is a serial transmission of data over a 433 MHz radio wave carrier.
 
@@ -95,7 +95,7 @@ Similar information can be found for fixed-wing aircraft, helicopters and rovers
 		The default mode for manual control.
 		Uses only the IMU data to control the flight.
 		The pitch and roll channels define the Euler angles (instead of the rotation rate of Acrobatic mode) so that when the controls are released to neutral position, the vehicle will level off automatically.
-		The yaw channel does control the yaw rate of the UAV instead, while the throttle channel
+		The yaw channel does control the yaw rate of the UAV instead, while for the throttle channel
 		Ardupilot will not compensate for wind or other disturbances.
 
 	\item[\scshape Altitude hold]
@@ -115,30 +115,15 @@ Similar information can be found for fixed-wing aircraft, helicopters and rovers
 
 	\item[\scshape RTL (Return To Launch)]
 		RTL mode is commonly used as a failsafe feature, when communication either with the pilot or the GCS is lost.
-		It is a very specific version of the Auto mode that automatically starts the return to Home procedure, landing the vehicle exactly where it took of from.
+		It is a very specific version of the Auto mode that automatically starts the return to Home procedure, landing the vehicle exactly where it took off from.
 		The Home location is defined as the point were the motors were initially armed (the arming procedure resembles the engine startup of a conventional aircraft: the motors will not spin unless the vehicle is armed)
 
 	\item[\scshape Guided]
-		The only difference between the Auto and the Guided modes is that whereas in the Auto mode the mission needs to be completely defined and uploaded to the vehicle before it is executer, the Guided mode allows for on-the-fly control of the vehicle from the GCS, taking complete advantage of the MAVlink commands over the telemetry link.
+		The only difference between the Auto and the Guided modes is that whereas in the Auto mode the mission needs to be completely defined and uploaded to the vehicle before it is executed, the Guided mode allows for on-the-fly control of the vehicle from the GCS, taking complete advantage of the MAVlink commands over the telemetry link.
 		This characteristic makes it very flexible for real-time development of applications.
 
+		
 \end{description}
 
-\begin{table}
-\centering
-\begin{tabular}[h!tbp]{lm{3.1cm}ccm{3cm}} 
-	\hline
-	\bfseries Mode	& \bfseries Sensors used	& \bfseries Throttle	&	\bfseries Roll/Pitch	&	\bfseries Features	\\
-	\hline
-	Stabilize		&	IMU					&	Power			&	Euler angles		&	Fully manual			\\
-	Altitude hold	&	IMU + Barometer		&	Ascension rate	&	Euler angles		&	Enhanced altitude control\\
-	Loiter			&	IMU + Barometer + GPS&	Ascension rate	&	Euler angles		&	Disturbance rejection	\\
-	Auto			&	IMU + Barometer + GPS&	No control		&	No control			&	Mission automation		\\
-	RTL				&	IMU + Barometer + GPS&	No control		&	No control			&	Failsafe				\\
-	Guided			&	IMU + Barometer + GPS&	No control		&	No control			&	Real-time control		\\
-	\hline
-\end{tabular}
-\caption{Summary of the relevant flight modes}
-\label{tab:modes}
-\end{table}
+\input{./tables/modes.tex}
 

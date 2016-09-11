@@ -10,13 +10,13 @@ As explained by Rolls-Royce Global Chief of Systems Engineering \cite{beasley201
 	Systems Engineering collects and organises all the information needed to understand the whole problem, explores it from all angles, and then finds the most appropriate system solution.
 \end{quote}
 
-Furthermore, A key study published through INCOSE \cite{incoseuk2016} looked at the phase of detection of errors, and the consequent cost of fixing them.
+Furthermore, a key study published through INCOSE \cite{incoseuk2016} looked at the phase of detection of errors, and the consequent cost of fixing them.
 Cost modelling was validated against a cross-industry range of defence and aerospace projects.
 Figure \ref{fig:incose} shows the results of the study.
 
 \input{./figures/incose.tex}
 
-Hence, in the present chapter, some of the most relevant Systems Engineering tools from the NASA Systems Engineering Handbook \cite{nationalaeronauticsandspaceadministration2007} will be applied
+Hence, in the present chapter, some of the most relevant Systems Engineering tools from the NASA Systems Engineering Handbook \cite{nationalaeronauticsandspaceadministration2007} will be applied.
 
 
 \section{Requirements capture} \label{sec:sysReqs}
@@ -50,7 +50,7 @@ The main outcome of the process is the Functional Architecture (Figure \ref{fig:
 
 \input{./figures/functArch.tex}
 
-The main purpose is to create an association between the requirements and the functions that the system needs to be able to perform to meet them.
+The main purpose is to create an association between the requirements and the functions that the system needs to be able to perform in order to meet them.
 In the process, any discrepancy or missing items can (and should) be identified and corrected in an iterative manner.
 
 \subsection{Functional Flow Block Diagram (FFBD)}
@@ -58,7 +58,7 @@ In the process, any discrepancy or missing items can (and should) be identified 
 Once the functions of the system are defined, it is useful to dispose them so that the sequential use of each of them during the mission is shown.
 To that end, the Functional Flow Block Diagram is used.
 In the FFBD each function is represented by a block, and it is described in terms of inputs, outputs and interfaces.
-In the case that a function is composed of several sub-functions, those will be represented hierarchicallyfrom the top level down to the most specific sub-function, maintaining the general flow.
+In the case that a function is composed of several sub-functions, those will be represented hierarchically from the top level down to the most specific sub-function, maintaining the general flow.
 
 The FFBD shows \emph{what} must happen, and provides an end-to-end path considering all the functionality of the system and the predefined use-case scenarios.
 Parallel or alternate paths might be considered.
@@ -117,8 +117,8 @@ The N$^2$ diagram is commonly used for the development of those interfaces.
 
 In the N$^2$ diagram, an N$\times$N matrix is built.
 In the main diagonal all the systems or subsystems are placed, while the upper and lower triangles are reserved for the interfaces, which are clasified into inputs and outputs.
-An input to any of the modules is represented through its vertical cells, while the output is place on the horizontal rows.
-An example N$^2$ diagram can be found in Figure \ref{fig:N2example}
+An input to any of the modules is represented through its vertical cells, while the output is placed on the horizontal rows.
+An example N$^2$ diagram can be found in Figure \ref{fig:N2example}.
 
 \input{./figures/N2example.tex}
 
@@ -127,18 +127,18 @@ For the Obstacle Collision Avoidance System N$^2$ diagram in Figure \ref{fig:N2}
 \input{./figures/N2.tex}
 
 In this Figure, the grey blocks represent external systems to the OCAS, while the blue ones are subsystems of the OCAS itself.
-In a regular UAV, with no OCAS implemented, the pilot would only be executing the outermost green loop: only in direct control with the UAV.
+In a regular UAV, with no OCAS implemented, the pilot would only be executing the outermost \emph{green} loop: only in direct control with the UAV.
 Nonetheless, the OCAS provides an additional layer of safety that is functionally placed between the pilot and the UAV; but also adds another interface the pilot has to deal with: the GCS connector is the gate to the OCAS, which in turn connects via the Central Processing Unit to the rest of the system.
-Hence, the ``green'' interfaces designate the human links with both the OCAS and the UAV.
+Hence, the \emph{green} interfaces designate the human links with both the OCAS and the UAV.
 
-Further, the ``yellow'' interfaces have been highlighted since they represent the traditional sensing and control problem.
+Further, the \emph{yellow} interfaces have been highlighted since they represent the traditional sensing and control problem.
 Notice how the state of the UAV is transmitted from the UAV connector (that information is relayed by the UAV) and the sensors to the Processing Unit.
 From the hardware-software interface downwards, the information is processed, the actuation calculated and ultimately the command is sent to the UAV. 
 
-The ``blue'' interface has been created for information logging in response to Function 6.2 as defined in the FFBD.
+The \emph{blue} interface has been created for information logging in response to Function 6.2 as defined in the FFBD.
 It could also serve as a debugging channel during the implementation phase.
 
-Finally, the ``black'' interfaces on the hardware side shows how the system has been designed meeting requirements 2.1 and 2.2, which stated that the OCAS shall be independent of the UAV and self-contained.
+Finally, the \emph{black} interfaces on the hardware side shows how the system has been designed meeting requirements 2.1 and 2.2, which stated that the OCAS shall be independent of the UAV and self-contained.
 In this case, it has been decided that the OCAS would carry its own power source to provide energy to its components.
 However, the power is not transmitted down to the UAV, which could be more weight efficient but would significantly modify the architecture of the original UAV, disregarding one of the main requirements from the motivation of the project.
 

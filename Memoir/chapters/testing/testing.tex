@@ -2,7 +2,7 @@
 \let\textcircled=\pgftextcircled
 \chapter{Testing and results} \label{chap:testing}
 
-\initial{I}n order to prove the effectiveness of the Obstacle Collision Avoidance System, it needs to be tested to prove that it meets the requirements and design specifications.
+\initial{I}n order to prove the effectiveness of the Obstacle Collision Avoidance System, it needs to be tested to check that it meets the requirements and design specifications.
 Hence, a set of individual tests have to be designed to assess the capabilities of each of the components involved in the system.
 
 The present chapter will cover the experimental setups and results of those experiments performed on the critical components, subsystems and, finally, the system as a whole in a realistic environment.
@@ -10,7 +10,7 @@ The present chapter will cover the experimental setups and results of those expe
 
 \section{Testing methods}
 
-Most of the testing was done in parallel to the implementation of the design into the real product, ensuring that the system was built over robust and properly working components, since possible modifications to the design are significantly more costly the later the development phase in which errors are detected (Figure \ref{fig:incose}).
+Most of the testing was done in parallel to the implementation of the design into the real product, ensuring that the system was built over robust and properly working components, since possible modifications to the design are significantly more costly the later the development phase in which errors are detected (see Figure \ref{fig:incose}).
 Furthermore, tests can give valuable insight on the functioning of the components, which can prove useful in the decision making process within the implementation stages, effectively improving the overall performance of the system.
 
 Thus, the actions described in this chapter can be seen as complementary and, in some sense also contributing, to the implementation phase of the OCAS.
@@ -30,7 +30,7 @@ Concerning the network connection of the Raspberry Pi, it is controlled by the R
 Having set up the ad-hoc network from the Windows machine at the GCS as specified in Appendix \ref{app:network}, the Dynamic Host Configuration Protocol (DHCP) server should be properly configured to imitate the Local Area Network (LAN) settings to which the GCS machine is connected.
 Thus, the DHCP service will provide the Raspberry Pi with a compatible IP, together with other important network parameters, automatically. 
 
-Nevertheless, the problem with DHCP is that the address of the computers connected to the network will occasionally change, altering the settings for a successful SSH connection (those varying setting can be found by following the steps in Appendix \ref{app:ssh}).
+Nevertheless, the problem with DHCP is that the address of the computers connected to the network will occasionally change, altering the settings for a successful SSH connection (those varying settings can be found by following the steps in Appendix \ref{app:ssh}).
 Thus, for a more convenient debugging option, an static IP interface was selected on the Raspberry Pi's ethernet port.
 
 Finally, in order to resemble the described setting on the Raspberry Pi, the configuration must be done by modifying the \texttt{interfaces} file which is present in all Debian-based Operating Systems at /etc/network/interfaces.
@@ -69,7 +69,7 @@ Fortunately, it is in the Ardupilot firmware simulation where the SITL software 
 
 However, the simulation of the default sensors via software means that the OCAS is not implemented (for being a custom build for this project).
 Thus, the $t_{safe}<0$ condition can not be computed in the simulated environment.
-For the purpose of testing, the sonars step in the \texttt{main.py} file of the custom script was adapted to include the monitorisation of Channel 7 on the RC transmitter, which would cause the same reaction as the ultrasonic rangefinders at the change of state of the corresponding switch, by modifying the lines 41 to 93 on Appendix \ref{app:main} by the fragment of code in Appendix \ref{app:ch7}, accompanied by the \texttt{Observe} class.
+For the purpose of testing, the sonars step in the \texttt{main.py} file of the custom script was adapted to include the monitorisation of Channel 7 on the RC transmitter, which would cause the same reaction as the ultrasonic rangefinders at the change of state of the corresponding switch, by modifying the lines 41 to 93 on Appendix \ref{app:main} by the fragment of code in Appendix \ref{app:ch7}, accompanied by the \texttt{Observe} class from Appendix \ref{app:observe}.
 
 Finally, it is worth mentioning the role of the simulator within the rest of the subsystems of the OCAS, since SITL is only aimed at replacing the UAV block from Figure \ref{fig:ocas}.
 The MAVlink stream of data out of the simulator is transmitted using the TCP protocol, which can be substituted in the MAVproxy startup options instead of the serial address that is used for the connection with the UAV.
@@ -117,13 +117,13 @@ That being said, there are some physical effects that are not implemented in the
 This fact became a problem when the SITL validated software was to be tested on the real UAV.
 For example, while the relative location computations and MAVlink commands appeared to work perfectly well in the simulator, there was some unknown phenomenon that was causing the real UAV to behave violently instead of maintaining the position when the Guided mode was activated by the script.
 
-After several weeks trying to find the root of the problem, and analysing all the inputs that could be affecting the behaviour of the Ardupilot controller, it was concluded that, since the GPS sensor was a requirement for the loitering capabilities of the Guided mode, and the tests were being done in a controlled space within the city (see Figure \ref{fig:leganes}, surrounded by high buildings, there was a significant chance that the reception of the very weak GPS signals from the satellites (orbiting in Medium Earth Orbit at around 20,200 km) were being blocked and / or affected by the surrounding walls.
+After several weeks trying to find the root of the problem, and analysing all the inputs that could be affecting the behaviour of the Ardupilot controller, it was concluded that, since the GPS sensor was a requirement for the loitering capabilities of the Guided mode, and the tests were being done in a controlled space within the city (see Figure \ref{fig:leganes}), surrounded by high buildings, there was a significant chance that the reception of the very weak GPS signals from the satellites (orbiting in Medium Earth Orbit at around 20,200 km) were being blocked and / or affected by the surrounding walls.
 
 \input{./figures/leganes.tex}
 
 This phenomenon is called multipath error: the GPS sensor can determine its position by receiving the signals from at least 4 satellites for which their location in the sky (ephemeris) and the precise time of transmission of those messages is known.
 By comparing the time of arrival of the signal with the time of emission, the GPS module can calculate the exact distance to that particular satellite.
-Then, by triangulating (intersecting the spherical loci) those distances (and solving for the clock bias), the global position of the vehicle can be precisely located.
+Then, by triangulating (intersecting the spherical loci of) those distances (and solving for the clock bias), the global position of the vehicle can be precisely determined.
 However, the high propagation speed of the electromagnetic waves (speed of light, $\approx 3\times 10^8$ m/s) conveys that a small mismatch in the time of arrival of the signal can generate large errors in the final calculated distance from the GPS module to the satellite.
 Furthermore, the GPS signals can rebound on the walls of buildings, effectively covering more distance than the straight line that joins the satellite and the sensor, significantly magnifying the effect.
 

@@ -4,7 +4,7 @@
 
 \initial{T}he product realisation phase of the Systems Engineering approach will be presented in the current chapter instead of the previous one since the focus of this phase was put in the software part, for the hardware one (mainly structural mounts) being too dependant on the configuration of the existing UAV.
 Hence, all the design, implementation and testing of the software branch of the project were conducted in a parallel manner, as will be exposed in this part of the thesis.
-Nevertheless, the final hardware assembly of the system in the working prototype will also be discussed at the end of the present chapter.
+Nevertheless, the final hardware assembly of the system in the working prototype will also be discussed at the end of the present Chapter for completeness.
 
 Chapter \ref{chap:implementation} will describe the complete implementation of the Obstacle Collision Avoidance System within the Unmanned Aerial System starting from the uppermost level and deepening through the execution of the interfaces and the software layers down to the custom-built control script.
 
@@ -35,10 +35,12 @@ A 2.4 GHz signal transmits information on the position of the control sticks as 
 
 Likewise, the telemetry link consists of a 433 MHz duplex radio wave that carries MAVlink messages from the UAV to the GCS and viceversa, allowing for configuration, calibration and operation of the autonomous flight modes while the vehicle is aloft.
 
+Finally, the pilot has direct physical access to the GCS computer.
+
 \subsection{Integration of the OCAS} \label{sec:ocasintegration}
 
-The introduction of the OCAS into the UAS shall preserve the basic Ardupilot functions.
-Thus, the architecture should not be significantly modifyied.
+The integration of the OCAS into the UAS shall preserve the basic Ardupilot functions.
+Thus, the architecture should not be significantly modified.
 The final decision on the UAS architecture after the integration of the OCAS is shown in Figure \ref{fig:uas-ocas}
 
 \input{./figures/uas-ocas.tex}
@@ -71,7 +73,6 @@ The steps to a successful trade-off study are:
 \end{enumerate}
 
 For the three first steps, those have already been done in Chapter \ref{chap:problem}, Section \ref{sec:sysReqs} and Section \ref{sec:sensing}, respectively.
-
 For the rest of the steps, a tabular format will be used.
 
 The evaluation criteria can be defined as the parameters considered important for the sensors to fulfill towards the correct achievement of their function, and will be presented on the first column of the table.
@@ -80,9 +81,9 @@ A weight factor will be given to each of the evaluation criteria according to th
 Those will be normalised ensuring that the sum of all of them add up to unity, and will be presented in the second column of the table.
 
 The trade study will then be fulfilled by rating each of the alternatives on the evaluation criteria as previously defined.
-The mark given, ranging from 0 to 1, represents the capability of the alternative on the corresponding evaluation criteria.
+The mark given, ranging from 0 to 1, represents the general capability of the alternative on the corresponding evaluation criteria.
 
-Finally, the ranking of the solutions is performed by combining (multiplying) the criteria's weight factors with the ratings given to the alternatives on each of those criteria, to ultimately sum all of those and obtain a single figure for every alternative considered.
+Finally, the ranking of the solutions is performed by combining (multiplying) the criteria' weight factors with the ratings given to the alternatives on each of those criteria, to ultimately sum all of those and obtain a single figure for every alternative considered.
 The objectively most appropriate alternative is the one with highest rating after the trade-off study.
 
 \input{./tables/tradeoff.tex}
@@ -110,7 +111,7 @@ Additionally, these computers are able to run virtually any computer software av
 \begin{wrapfigure}{r}{0.3\textwidth}
 	\centering
 	\includegraphics[width=0.3\textwidth]{./figures/rpi.jpg}
-	\caption{Raspberry Pi 2 Model B. {\footnotesize Source: \url{raspberrypi.org}}}
+	\caption{\small Raspberry Pi 2 Model B. {\footnotesize Source: \url{raspberrypi.org}}}
 	\label{fig:rpi}
 \end{wrapfigure}
 This brief analysis should be enough to prove that an SBC is more capable on almost any aspect than a microcontroller board and significantly more flexible.
@@ -127,7 +128,7 @@ The component list considered for the prototype will only be listed here for com
 	\item[\scshape Power source] As mentioned in the previous section, any portable USB battery pack with at least 5V, 2A continuous current will sufice to power the computer board and its peripherals.
 		The one used for the project is the Amazon Basics 5600 mAh battery, which can potentially last more than two hours powering the OCAS.
 	\item[\scshape Network adapter] For the connection with the Ground Control Station, a wireless WiFi network will be used.
-		Unfortunately, the Raspberry Pi does not include one, so the external TP-Link TL-WN822N has to be mounted on the testing platform, although any other model would be just as suitable.
+		Unfortunately, the Raspberry Pi does not include any wireless antenna, so the external TP-Link TL-WN822N has to be mounted on the testing platform, although any other similar model would be just as suitable.
 	\item[\scshape Testing platform] The testing part of this project is based upon the Bachelor Thesis by M. Arteta \cite{arteta2015}, which provided an already calibrated and flight-capable F450 quadrotor UAV.
 \end{description}
 
@@ -137,11 +138,11 @@ The component list considered for the prototype will only be listed here for com
 \section{OCAS peripheral connections (hardware interfaces)} \label{sec:peripheral}
 
 As already stated in Section \ref{sec:interfaces}, the main component of the OCAS is the computer board, which can be considered as a hub on which the rest of the components of the OCAS are brought together.
-Thus, the first step is to define the information pathways of the Raspberry Pi with the oter hardware components.
+Thus, the first step is to define the information pathways of the Raspberry Pi with the other hardware components.
 
 The physical layout of the OCAS is shown in Figure \ref{fig:ocas}. 
 Notice that only Raspberry Pi peripherals are being considered. 
-They are handled in the following manner:
+They are connected in the following manner:
 
 \input{./figures/ocas.tex}
 
@@ -161,7 +162,7 @@ In the particular case of communicating with the UAV, the messages transmitted t
 The link with the Ground Control Station is composed of two intermediate steps:
 
 On one hand, the network adapter is connected to a USB port on the Raspberry Pi to provide the SBC with wireless networking capabilities.
-This connection is entirely handled by the kernel, the adapter's drivers and the operating system, and needs no further action from the engineer.
+This connection is entirely handled by the kernel, the adapter's drivers and the operating system, and needs no further action from the integrator.
 
 The second step is decidedly more complex.
 Firstly, the Raspberry Pi needs to be set up to wirelessly connect to the same network as the GCS computer.
@@ -188,7 +189,7 @@ For its operation, it counts with 4 different pins (see Figure \ref{fig:hc-sr04}
 	\item Trigger is an input signal pin.
 		A HIGH value on this pin triggers (hence the name) a series of short bursts of sound from the piezoelectric speaker, which will rebound on any close obstacle.
 	\item Echo is the output signal pin.
-		The sensor's microcontroller processes the sound captured by the microphone and sends a short pulse through the echo pin exactly after the rebounded sound signal is received.
+		The sensor's microcontroller processes the sound captured by the microphone and sends a pulse through the echo pin which lasts exactly the same amount of time that the ultrasonic signal took to rebound on the obstacle and be received back at the sensor.
 		Knowing the speed of propagation of sound (given by $a=\sqrt{\gamma R_g T}$) and the time taken for the wave to travel to the obstacle and back, the distance can be calculated with $d=v \cdot t/2$
 \end{enumerate}
 The ultrasonic rangefinder's technical documentation can be found in Appendix \ref{app:sonar-doc}.
@@ -222,7 +223,7 @@ In the present section such a system will be described.
 \subsection{The Operating System}
 
 The first software layer on the Raspberry Pi (apart from the kernel) is the Operating System (OS).
-In this case, the linux OS is Raspbian Wheezy, which is a version of Debian adapted to be run on the Raspberry Pi's ARMv7 chip.
+In this case, the Linux OS is Raspbian Wheezy, which is a version of Debian adapted to be run on the Raspberry Pi's ARMv7 chip.
 
 Raspbian is a complete OS, and as such its abilities are varied, being the most relevant for the project the network management tools and the capability of running external software applications.
 Within the OCAS, Raspbian will be used as container of the software subsystems specified in the Logical Decomposition phase of the design process (Figure \ref{fig:pbs}), plus it will directly handle the functions associated to the GCS connector.
@@ -231,7 +232,7 @@ An schematic of the relevant software architecture to the OCAS is represented in
 \input{./figures/software.tex}
 
 As it can be deduced from Figure \ref{fig:software}, all the interaction from the Ground Control Station to the OCAS computer is performed through the Unix Shell, which only provides a command interface with the user.
-Nevertheless, the SSH connection allows an optional X Window System protocol forwarding (as mentioned in Section \ref{sec:ocasintegration}); and a Graphical User Interface (GUI) will be developed in response to Requirement 8.1, allowing the execution of MAVproxy as well as the custom control scripts in order to enhance the intuitive operation of the system by the pilot.
+Nevertheless, the SSH connection allows an optional X Window System protocol forwarding (as mentioned in Section \ref{sec:ocasintegration}); and a Graphical User Interface (GUI) will be developed in response to Requirement 8.1, allowing the execution of MAVproxy as well as the custom control scripts graphically in order to enhance the intuitive operation of the system by the pilot.
 
 \subsection{MAVproxy} \label{sec:mavproxy}
 
@@ -240,7 +241,7 @@ Thus, it can be run on any machine on which a Python distribution can be install
 
 Its most significant difference compared with traditional GCS software such as Mission Planner or QGroundControl is that MAVproxy is built for the command line and does not need a graphical desktop environment to operate (although a small state window and map are also implemented), which means that it is the most adequate alternative for the operation of the UAV from the OCAS.
 Furthermore, another decisive feature is the ability of MAVproxy of forwarding the MAVlink messages that are received from and sent to the UAV, allowing the possibility of operating as an intermediate software layer between the UAV and other GCS pieces of software.
-That in particular is the chosen architecture for the OCAS in terms of communication between the UAV and the custom control scripts, which will be covered in Section \ref{sec:script}.
+This functionality in particular shapes the chosen architecture for the OCAS in terms of communication between the UAV and the custom control scripts, which will be covered in Section \ref{sec:script}.
 
 Concerning the present section, the setup of MAVproxy will be explained.
 
@@ -294,8 +295,8 @@ Besides, a fourth column will represent the structure that the Python script wil
 \input{./tables/allocation.tex}
 
 As it can be noticed, there are some script components that have not been made modular (encapsulated in a class).
-The reason is that those actions are very dependent on the actual computational approach taken by the programmer, and can become significantly complex algorithms.
-Since the development of those algorithms is not within the objectives of the project, the coding phase has been simplified by inserting those functions directly into the ``main'' function as simple routines, even though if complex functionality is to be implemented, the most adequate approach would be to create classes to group all the related information needed to perform those tasks.
+The reason is that those actions are very dependent on the actual computational approach taken by the developer, and can become significantly complex algorithms.
+Since the development of those algorithms is not within the objectives of the project, the coding phase has been simplified by inserting those functions directly into the \texttt{main} function as simple routines, even though if complex functionality is to be implemented, the most adequate approach would be to create classes to group all the related information needed to perform those tasks.
 
 \subsection{Script architecture}
 
@@ -318,7 +319,7 @@ As mentioned earlier, it is important for the OCAS to execute several critical t
 Fortunately, Raspbian is a multitasking Operating System, and Python provides a \texttt{threading} library that manages the system calls invisibly to the user (more information and derived methods can be found on \url{docs.python.org/2/library/threading.html}).
 
 For achieving better accessibility, the \texttt{thrd} class has been developed to allow calls to the \texttt{threading} library to perform actions defined by functions which might or might not demand additional arguments.
-The complete code is displayed in Appendix \ref{app:threads}.
+The complete code is copied in Appendix \ref{app:threads}.
 
 \subsection{Log information} \label{sec:logging}
 
@@ -338,7 +339,7 @@ The output of the function is the \texttt{vehicle} class which handles all the c
 \subsection{Observe state} \label{sec:sonar}
 
 The \texttt{Sonar} class performs the most important functions of the OCAS.
-It is not only responsible for operating the ultrasonic rangefinders via the built-in RPi.GPIO library, but also performs some basic signal processing to determine the speed and velocity of the UAV with respect to the detected obstacle, deciding if could become a threat for the flight and triggering the avoidance manoeuvre.
+It is not only responsible for operating the ultrasonic rangefinders via the built-in \texttt{RPi.GPIO} library, but also performs some basic signal processing to determine the speed and velocity of the UAV with respect to the detected obstacle, deciding if it could become a threat for the flight and triggering the avoidance manoeuvre.
 In the future, it might be interesting that these functions, which in principle could contain rather complex algorithms and processing techniques, would be developed in separate classes to enhance the modularity and upgradeability of the system.
 
 The \texttt{Sonar} class defines three different methods which operate the sonar and calculate the distance to the closest obstacle, compute the velocity from distance measurements and evaluate the potential of a collision to trigger the avoiding manoeuvre, respectively.
@@ -355,7 +356,7 @@ The distance to the obstacle can be calculated with the flight time of the ultra
 \end{equation}
 Unfortunately, the speed of sound depends on the temperature of the air it propagates through.
 Thus, if the most accurate results were to be achieved, a temperature sensor should be integrated to compensate for temperature variations during operation.
-Nevertheless, the effect that reasonable temperature fluctuations have on the final distance is relatively small, as shown in Appendix \ref{app:temperature}, and can be effectively neglected, setting $a(T)=340 m/s$ as the standard and constant speed of sound value.
+Nevertheless, the effect that reasonable temperature fluctuations have on the final distance is relatively small, as shown in Appendix \ref{app:temperature}, and can be effectively neglected, setting $a(T)=340 m/s$ as the standard and constant value for the speed of sound.
 
 Occasionally, the rangefinders give incorrect measurements (probably due to multipath errors, cross-interference or noise) that can make the algorithms believe that the UAV is moving closer or faster to the detected obstacle than reality, which causes false-positive activation of the ``avoid'' procedures.
 To prevent these kind of errors, a rolling average with a default window of 5 measurements is computed on the distance, even though more advanced filtering techniques could be implemented in the future, ranging from a basic low-pass filter to the more complex Extended Kalman Filter (EKF) combined with IMU data \cite{sasiadek2000}, for instance. 
@@ -422,7 +423,7 @@ From equation \eqref{eq:tsafe}, $t_{collision}$ is the estimated time to the obs
 When the condition is met that the UAV is approaching the detected obstacle and $t_{safe}$is calculated as smaller than zero, the trigger is released for the Python script to take control in order to avoid the collision.
 The most appropriate way, as explained in Section \ref{sec:advanced}, is to activate Ardupilot's Guided mode to allow the script to send commands to the UAV in real time.
 
-Thus, the \texttt{Control} class defines the methods \texttt{take()}, \texttt{checkTake()}, \texttt{give()} and \texttt{checkGive()} which, when called in pairs, performs the action given as argument (e.g. send a MAVlink command to the UAV) while simultaneously checks a certain condition (in this case the activation of a certain flight mode), both in independent parallel threads to avoid interference with the \texttt{main} function or with themselves (the complete code can be found in Appendix \ref{app:control}).
+Thus, the \texttt{Control} class defines the methods \texttt{take()}, \texttt{checkTake()}, \texttt{give()} and \texttt{checkGive()} which, when called in pairs, performs the action given as argument (e.g. send a MAVlink command to the UAV) while simultaneously checks a certain condition (for instance: the message was successfully sent, the vehicle has stopped or reached the commanded position, etc.), both in independent parallel threads to avoid interference with the \texttt{main} function or with themselves (the complete code can be found in Appendix \ref{app:control}).
 
 Finally, when both the \texttt{take()} and \texttt{checkTake()} threads are terminated (indicating that the action was successful) the script advances to the so called ``autonomous flight'', which in the Python script's scope represents the avoidance manoeuvre, not to be confused with Ardupilot's Auto mode.
 
@@ -451,14 +452,14 @@ It contains the required sequential calls to the previously mentioned functions 
 The complete file can be found in Appendix \ref{app:main}, but the main blocks it is divided in are:
 
 \begin{enumerate}
-	\item Import of the relevant libraries and files
-	\item Logging setup, as explained in Section \ref{sec:logging}
-	\item Connect to the vehicle (Section \ref{sec:connect}), returning the \texttt{vehicle} class
-	\item Operate and monitor the information from the ultrasonic rangefinders (Section \ref{sec:sonar}). This phase will not be exited until $t_{safe}<0$
-	\item Take control of the vehicle, changing to Guided mode as explained in Section \ref{sec:takeControl}
-	\item Perform the manoeuvre to avoid the detected obstacle (Section \ref{sec:avoid}). The manoeuvre is also defined within this step, and passed as argument to the \texttt{Auto} class
-	\item Safely return control to the pilot, as described in Section \ref{sec:returnControl}
-	\item End the script by closing the external connections and resetting the GPIO pins on the Raspberry Pi (to avoid errors on subsequent executions)
+	\item Import of the relevant libraries and files.
+	\item Logging setup, as explained in Section \ref{sec:logging}.
+	\item Connect to the vehicle (Section \ref{sec:connect}), returning the \texttt{vehicle} class.
+	\item Operate and monitor the information from the ultrasonic rangefinders (Section \ref{sec:sonar}). This phase will not be exited until $t_{safe}<0$.
+	\item Take control of the vehicle, changing to Guided mode as explained in Section \ref{sec:takeControl}.
+	\item Perform the manoeuvre to avoid the detected obstacle (Section \ref{sec:avoid}). The manoeuvre is also defined within this step, and passed as argument to the \texttt{Auto} class.
+	\item Safely return control to the pilot, as described in Section \ref{sec:returnControl}.
+	\item End the script by closing the external connections and resetting the GPIO pins on the Raspberry Pi (to avoid errors on subsequent executions).
 \end{enumerate}
 
 

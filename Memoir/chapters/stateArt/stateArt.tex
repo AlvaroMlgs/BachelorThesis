@@ -24,8 +24,8 @@ Its usage dates back to 1904, when H\"ulsmeyer registered the patent for his Tel
 Nowadays, the radar works by emitting one powerful radio signal impulse against the object that needs to be located.
 If the signal reaches a solid object on its path, the electromagnetic wave will be distorted and part of it will be reflected back to the emission point, where a second listening antenna can detect it.
 
-The distance of the detected object is calculated by measuring the flight time of the signal since it was emitted until it is detected, applying the signal propagation speed ($3 \cdot 10^{^8} m/s$ for electromagnetic waves) as correction factor.
-The azimuth position of the object can be estimated if the initial signal was created by a highly directional antenna, since the orientation of the transmitting antenna can be measured and the sensed object must be contained in the electromagnetic radiation field.
+The distance of the detected object is calculated by measuring the flight time of the signal since it was emitted until it is detected, applying the signal propagation speed ($3 \times 10^{^8} m/s$ for electromagnetic waves) as correction factor.
+The azimuth position of the object can be estimated if the initial signal was created by a highly directional antenna, since the orientation of the transmitting antenna can be measured, and the sensed object must be contained within the electromagnetic radiation field.
 
 The fact that radar uses electromagnetic waves implies that the response time can be very low, although some technical issues may arise for the same fact at the time of processing the returned signal.
 For that reason, radar-based sensor systems focus on temporal processing techniques to improve the results of the measurements \cite{krolik2005}.
@@ -45,7 +45,7 @@ However, instead of being electromagnetic waves, the carriers are sound waves, w
 It is important to mention that the calculation of distance from the flight time of the rebounded signal is to some degree dependent on the environment:
 The speed of propagation of sound depends on the temperature of the medium through which it propagates as $a=\sqrt{\gamma R_g T}$.
 Thus, the temperature of the air should be monitored to compensate for variations during the flight.
-Fortunately, the error associated with temperature changes around room temperature is of the same order than the accuracy of the sensor itself, so it is safe to consider ambient temperature at the initial calibration stage only and assume it stays constant thereafter, since it can be proven that for the measurement of distance to an object at approximately 1 metre, the error due to a temperature change of 10 K is of the order of 1 milimetre.
+Fortunately, the error associated with temperature changes around room temperature is of the same order than the accuracy of the sensor itself, so it is safe to consider ambient temperature at the initial calibration stage only and assume it stays constant thereafter, since it can be proven that for the measurement of distance to an object at approximately 1 metre, the error due to a temperature change of 10 K is of the order of 1 milimetre (the complete demonstration can be found in Appendix \ref{app:temperature}).
 
 \subsection{Lidar}
 
@@ -63,24 +63,18 @@ The usage of regular cameras for physical environment sensing is certainly diffe
 Instead, one or more cameras provide a two-dimensional array of data each that can be processed to extract information of distance and location, among others, of any object that is within frame.
 
 It is in that processing where both the advantages and draw backs of computer vision lie.
-On one hand, many different transformations can be applied to the stream of data from the cameras, and information can be extracted on very diverse aspects such as colour, luminosity, movement, position, texture\dots \cite{ballard1982}
+On one hand, many different transformations can be applied to the stream of data from the cameras, and information can be extracted on very diverse aspects such as colour, luminosity, movement, position, texture\dots \cite{ballard1982} 
 Additionally, advanced processing techniques and even artificial intelligence can be applied to the image, which is a very flexible source of information.
 On the other hand though, the aforementioned processing tasks should be computed on a relatively high rate video stream, which implies several transformations on various video streams (for stereoscopic vision) with a few million pixels per image, at several frames per second.
-Furthermore, if obstacle detection and ranging needs to be performed, more than one viewpoint (and hence more than one camera) are required, and the matching problem of the objects seen by the two and the geometric transformations are also some quite demanding computational problems.
+Furthermore, if obstacle detection and ranging needs to be performed, more than one viewpoint (and hence more than one camera) are required, and the matching problem (Figure \ref{fig:stereo}) of the objects seen by the two and the geometric transformations are also quite demanding computational problems.
 Such a workload can only be dealt with by higher-end computer graphics cards nowadays at a reasonable rate for the effective control of a moving vehicle.
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{./figures/stereo.png}
-	\caption{The stereo matching problem {\footnotesize Source: \cite{ballard1982}}}
-	\label{fig:stereo}
-\end{figure}
-
+\input{./figures/stereo.tex}
 
 \section{Collision avoidance}
 
 The conventional sense and control problem has two very defined parts: the data acquisition stage that has been studied in Section \ref{sec:sensing} and the actuation of the control variables to modify the state of the system.
-In this section, the application alternatives of the latter in TRL 9 \cite{assistantsecretaryofdefenseforresearchandengineering2011} products will be studied.
+In this section, the application alternatives of the latter in TRL 9 (Actual system proven through successful mission operations \cite{assistantsecretaryofdefenseforresearchandengineering2011}) products will be studied.
 
 \subsection{TCAS on conventional aircraft}
 
