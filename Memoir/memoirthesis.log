@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  11 SEP 2016 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  13 SEP 2016 11:32
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2599,6 +2599,11 @@ Underfull \hbox (badness 6758) in paragraph at lines 11--12
 []|\T1/fnc/m/n/10.95 (+20) Mission au-toma-
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]|\T1/fnc/m/n/10.95 (+20) Real-time com-
+ []
+
 )) [19] [20
 
 ] (chapters/problem/problem.tex
@@ -4032,11 +4037,11 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 ### simple group (level 1) entered at line 89 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 38188 strings out of 493673
- 721258 string characters out of 3141524
+ 38185 strings out of 493673
+ 721234 string characters out of 3141524
  1059514 words of memory out of 3000000
  39755 multiletter control sequences out of 15000+200000
- 162937 words of font info for 444 fonts, out of 3000000 for 9000
+ 162819 words of font info for 442 fonts, out of 3000000 for 9000
  1032 hyphenation exceptions out of 8191
  61i,18n,99p,1100b,1678s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
@@ -4056,7 +4061,7 @@ mtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (128 pages, 30131286 bytes).
+Output written on memoirthesis.pdf (128 pages, 30131275 bytes).
 PDF statistics:
  2289 PDF objects out of 2487 (max. 8388607)
  358 named destinations out of 1000 (max. 500000)
