@@ -1,0 +1,45 @@
+
+\begin{figure}[htbp]
+	\centering
+
+	\begin{tikzpicture}
+
+		\tikzstyle{reference}=[rectangle,rounded corners=0.35cm,
+			fill=black!30,draw=black,thin,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=0.5cm]
+		\tikzstyle{function}=[rectangle,rounded corners,
+			fill=teal!40,draw=black,semithick,
+			minimum height=0.7cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=0.5cm]
+		\tikzstyle{logic}=[circle,
+			fill=teal!70!black!70,text=white,
+			inner sep=1mm,node distance=0.5cm]
+		\tikzstyle{boundary}=[rounded corners,
+			draw=red!70!black!100,very thick,dashed]
+		\tikzstyle{arrow}=[>=stealth,->,thick]
+
+		\node[function](function){Function};
+		\node[right=0.5cm of function,align=left]{Represents an individual function or subfunction as defined in the Functional\\ Architecture from Figure \ref{fig:functArch}.};
+		
+		\node[logic,below=of function](logic){Logic};
+		\node[right=0.9cm of logic,align=left]{Represents a logical \textit{and} or \textit{or} gate for defining parallel or alternative paths,\\ respectively.};
+		
+		\node[reference,below=of logic](reference){Reference};
+		\node[right=0.5cm of reference,align=left]{Represents a reference block that specifies the origin or destination of a path\\ from an external function of the system.};
+
+		\node[boundary,below=of reference,node distance=0.5cm](boundary){Boundary};
+		\node[right=0.5cm of boundary,align=left]{Represents the boundaries of the functional description, be it the whole system\\ or a subfunction of it.};
+		
+		\draw[arrow] ($(boundary.center)+(-0.5,-1.2)$) -- ($(boundary.center)+(0.5,-1.2)$) ;
+		\node[align=left,anchor=west] at ($(boundary.center)+(1.5,-1.2)$) {Indicates the sequential order that is to be followed from one function to another.};
+
+		\draw[arrow,dashed] ($(boundary.center)+(-0.5,-2.2)$) -- ($(boundary.center)+(0.5,-2.2)$) ;
+		\node[align=left,anchor=west] at ($(boundary.center)+(1.5,-2.2)$) {Indicates an information flow between two functional blocks.};
+
+
+	\end{tikzpicture}
+
+	\caption{Symbology used for the FFBDs}
+	\label{fig:ffbdlegend}
+\end{figure}

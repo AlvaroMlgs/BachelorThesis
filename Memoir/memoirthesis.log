@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  13 SEP 2016 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  13 SEP 2016 20:49
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2413,29 +2413,39 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 9.29993pt on input line 71.
 
-[6] [7]
-Overfull \hbox (1.75146pt too wide) detected at line 102
+[6]
+Overfull \hbox (1.75146pt too wide) detected at line 100
+ \T1/fnc/b/n/10.95 101
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 101
  \T1/fnc/b/n/10.95 103
  []
 
-
-Overfull \hbox (1.75146pt too wide) detected at line 103
- \T1/fnc/b/n/10.95 105
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 104
+[7]
+Overfull \hbox (1.75146pt too wide) detected at line 102
  \T1/fnc/b/n/10.95 107
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 105
+Overfull \hbox (1.75146pt too wide) detected at line 103
  \T1/fnc/b/n/10.95 109
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 106
+Overfull \hbox (1.75146pt too wide) detected at line 104
+ \T1/fnc/b/n/10.95 111
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 105
  \T1/fnc/b/n/10.95 113
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 106
+ \T1/fnc/b/n/10.95 117
  []
 
 ) [8] (memoirthesis.lof
@@ -2650,28 +2660,29 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (chapters/stateArt/stateArt.tex [9
 
 ]
-<chapters/stateArt/./figures/antennaPattern.jpg, id=767, 127.22531pt x 119.6971
+<chapters/stateArt/./figures/antennaPattern.jpg, id=769, 127.22531pt x 119.6971
 9pt>
 File: chapters/stateArt/./figures/antennaPattern.jpg Graphic file (type jpg)
  <use chapters/stateArt/./figures/antennaPattern.jpg>
 Package pdftex.def Info: chapters/stateArt/./figures/antennaPattern.jpg used on
- input line 35.
+ input line 38.
 (pdftex.def)             Requested size: 134.40137pt x 126.45467pt.
-
-Underfull \vbox (badness 2088) has occurred while \output is active []
-
- [10 <./chapters/stateArt/./figures/antennaPattern.jpg>]
-(chapters/stateArt/./figures/stereo.tex
-<chapters/stateArt/./figures/stereo.png, id=780, 283.81032pt x 167.87718pt>
+ [10 <./chapters/stateArt/./figures/antennaPattern.jpg>] (chapters/stateArt/./f
+igures/stereo.tex
+<chapters/stateArt/./figures/stereo.png, id=782, 283.81032pt x 167.87718pt>
 File: chapters/stateArt/./figures/stereo.png Graphic file (type png)
 
 <use chapters/stateArt/./figures/stereo.png>
 Package pdftex.def Info: chapters/stateArt/./figures/stereo.png used on input l
 ine 4.
 (pdftex.def)             Requested size: 224.0pt x 132.50368pt.
-) [11] [12 <./chapters/stateArt/./figures/stereo.png>] (chapters/stateArt/./fig
-ures/phantom.tex
-<chapters/stateArt/./figures/phantom.png, id=795, 803.0pt x 401.5pt>
+)
+Underfull \vbox (badness 6978) has occurred while \output is active []
+
+ [11]
+[12 <./chapters/stateArt/./figures/stereo.png>]
+(chapters/stateArt/./figures/phantom.tex
+<chapters/stateArt/./figures/phantom.png, id=797, 803.0pt x 401.5pt>
 File: chapters/stateArt/./figures/phantom.png Graphic file (type png)
 
 <use chapters/stateArt/./figures/phantom.png>
@@ -2683,7 +2694,7 @@ line 3.
 ] (chapters/background/background.tex [15
 
 ]
-<chapters/background/./figures/RCtransmitter.jpg, id=822, 378.41376pt x 370.383
+<chapters/background/./figures/RCtransmitter.jpg, id=824, 378.41376pt x 370.383
 74pt>
 File: chapters/background/./figures/RCtransmitter.jpg Graphic file (type jpg)
  <use chapters/background/./figures/RCtransmitter.jpg>
@@ -2691,7 +2702,7 @@ Package pdftex.def Info: chapters/background/./figures/RCtransmitter.jpg used o
 n input line 30.
 (pdftex.def)             Requested size: 112.0pt x 109.62395pt.
 
-<chapters/background/./figures/RCreceiver.jpg, id=823, 401.5pt x 293.095pt>
+<chapters/background/./figures/RCreceiver.jpg, id=825, 401.5pt x 293.095pt>
 File: chapters/background/./figures/RCreceiver.jpg Graphic file (type jpg)
 
 <use chapters/background/./figures/RCreceiver.jpg>
@@ -2700,70 +2711,108 @@ nput line 36.
 (pdftex.def)             Requested size: 134.40137pt x 98.11252pt.
  [16 <./chapters/background/./figures/RCtransmitter.jpg> <./chapters/background
 /./figures/RCreceiver.jpg>]
-<chapters/background/./figures/missionplanner.png, id=836, 760.34062pt x 548.04
+<chapters/background/./figures/missionplanner.png, id=838, 760.34062pt x 548.04
 75pt>
 File: chapters/background/./figures/missionplanner.png Graphic file (type png)
  <use chapters/background/./figures/missionplanner.png>
 Package pdftex.def Info: chapters/background/./figures/missionplanner.png used 
 on input line 71.
 (pdftex.def)             Requested size: 448.0pt x 322.91873pt.
- [17 <./chapters/background/./figures/missionplanner.png>]
-LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 94.
-LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 9.29993pt on input line 94.
- [18]
+ [17 <./chapters/background/./figures/missionplanner.png>] [18]
 (chapters/background/./tables/modes.tex
-Underfull \hbox (badness 6758) in paragraph at lines 11--12
-[]|\T1/fnc/m/n/10.95 (+20) Mission au-toma-
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[]|\T1/fnc/m/n/10.95 (+20) Enhanced al-ti-tude
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-[]|\T1/fnc/m/n/10.95 (+20) Real-time com-
- []
-
-)) [19] [20
+) (chapters/background/./figures/vehicles.tex
+<chapters/background/./figures/vehicles.png, id=851, 607.51968pt x 243.15843pt>
+File: chapters/background/./figures/vehicles.png Graphic file (type png)
+<use chapters/background/./figures/vehicles.png>
+Package pdftex.def Info: chapters/background/./figures/vehicles.png used on inp
+ut line 4.
+(pdftex.def)             Requested size: 448.0pt x 179.3148pt.
+)) [19 <./chapters/background/./figures/vehicles.png>] [20
 
 ] (chapters/problem/problem.tex
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 32.23285pt on input line 5.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 47.41772pt on input line 5.
-LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 47.41772pt on input line 5.
-
 Underfull \hbox (badness 10000) in paragraph at lines 12--12
 
  []
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 12.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 12.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 11.15991pt on input line 16.
-LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10> not available
+LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/it' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 9.29993pt on input line 27.
+(Font)              scaled to size 10.18341pt on input line 27.
 [21
 
-]) [22] (chapters/design/design.tex
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 9.
- (chapters/design/./figures/incose.tex)
+]) [22] (chapters/design/design.tex (chapters/design/./figures/incose.tex)
 [23
 
 
 ] (chapters/design/./tables/sysReqs.tex
+Underfull \hbox (badness 1009) in paragraph at lines 23--23
+[]|\T1/fnc/m/n/10.95 (+20) The OCAS shall not in-ter-fere with ex-ist-ing
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 23--23
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 24--24
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 34--34
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 35--35
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 36--36
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
 Underfull \vbox (badness 10000) detected at line 37
  []
 
-[24]) (chapters/design/./figures/decomposition.tex) [25]
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 37--37
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 42--42
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 52--52
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+
+Overfull \hbox (6.85898pt too wide) in paragraph at lines 53--53
+ []|\T1/fnc/m/n/10.95 (-20) Communications| 
+ []
+
+[24]) [25] (chapters/design/./figures/decomposition.tex)
 (chapters/design/./figures/functArch.tex
 Overfull \hbox (40.39745pt too wide) in paragraph at lines 4--53
 [][]  [] 
+ []
+
+) (chapters/design/./figures/ffbdlegend.tex
+Overfull \hbox (11.63062pt too wide) in paragraph at lines 41--42
+ [][][] 
  []
 
 ) (chapters/design/./figures/ffbd.tex
@@ -2786,58 +2835,57 @@ Overfull \hbox (22.25194pt too wide) in paragraph at lines 191--192
  [][][] 
  []
 
-) [26] [27] [28]
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 72.
- (chapters/design/./figures/pbs.tex
+) [26] [27] [28] [29] (chapters/design/./figures/pbs.tex
 Overfull \hbox (1.81459pt too wide) in paragraph at lines 49--50
  [][][] 
  []
 
-) [29] (chapters/design/./tables/functPhys.tex)
+) (chapters/design/./tables/functPhys.tex [30])
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 113.
+(Font)              scaled to size 6.50995pt on input line 94.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 113.
+(Font)              scaled to size 11.03998pt on input line 94.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 113.
+(Font)              scaled to size 6.43999pt on input line 94.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 113.
+(Font)              scaled to size 11.03998pt on input line 94.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 113.
+(Font)              scaled to size 6.43999pt on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 113.
+(hyperref)                removing `math shift' on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 113.
+(hyperref)                removing `superscript' on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 113.
+(hyperref)                removing `math shift' on input line 94.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
 (chapters/design/./figures/N2example.tex
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 40.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 40.
+
 Overfull \hbox (6.03598pt too wide) in paragraph at lines 77--78
 [][][] 
  []
 
-) (chapters/design/./figures/N2.tex
+[31]) (chapters/design/./figures/N2.tex
 Overfull \hbox (52.49194pt too wide) in paragraph at lines 3--85
 [][]  [] 
  []
 
-)) [31] [32] (chapters/implementation/implementation.tex [33
+)) [32] [33] [34
 
+] (chapters/implementation/implementation.tex [35
 
 ]
 (chapters/implementation/./figures/uas.tex)
-(chapters/implementation/./figures/uas-ocas.tex) [34]
+(chapters/implementation/./figures/uas-ocas.tex) [36] [37]
 (chapters/implementation/./tables/tradeoff.tex
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
@@ -2848,30 +2896,31 @@ Overfull \hbox (12.72351pt too wide) in paragraph at lines 4--24
 [][]  [] 
  []
 
-) [35] (chapters/implementation/./figures/hc-sr04.tex
-<chapters/implementation/./figures/hc-sr04.jpg, id=976, 142.84805pt x 84.59698p
+) (chapters/implementation/./figures/hc-sr04.tex
+<chapters/implementation/./figures/hc-sr04.jpg, id=992, 142.84805pt x 84.59698p
 t>
 File: chapters/implementation/./figures/hc-sr04.jpg Graphic file (type jpg)
  <use chapters/implementation/./figures/hc-sr04.jpg>
 Package pdftex.def Info: chapters/implementation/./figures/hc-sr04.jpg used on 
 input line 4.
-(pdftex.def)             Requested size: 134.40137pt x 79.59602pt.
-) [36 <./chapters/implementation/./figures/hc-sr04.jpg>]
-<chapters/implementation/./figures/rpi.jpg, id=983, 1017.5616pt x 576.7146pt>
+(pdftex.def)             Requested size: 129.91699pt x 76.94075pt.
+) [38 <./chapters/implementation/./figures/hc-sr04.jpg>]
+<chapters/implementation/./figures/rpi.jpg, id=999, 1017.5616pt x 576.7146pt>
 File: chapters/implementation/./figures/rpi.jpg Graphic file (type jpg)
 
 <use chapters/implementation/./figures/rpi.jpg>
 Package pdftex.def Info: chapters/implementation/./figures/rpi.jpg used on inpu
-t line 113.
+t line 115.
 (pdftex.def)             Requested size: 134.40137pt x 76.17232pt.
 
-Underfull \hbox (badness 1082) in paragraph at lines 114--114
+Underfull \hbox (badness 1082) in paragraph at lines 116--116
 []\T1/fnc/m/n/10.95 (+20) Figure 6.4: |\T1/fnc/m/n/10 (+20) Rasp-berry Pi 2
  []
 
+[39 <./chapters/implementation/./figures/rpi.jpg>]
 (chapters/implementation/./figures/platform.tex
-<chapters/implementation/./figures/platform1.png, id=987, 3090.54625pt x 2129.9
-575pt>
+<chapters/implementation/./figures/platform1.png, id=1009, 3090.54625pt x 2129.
+9575pt>
 File: chapters/implementation/./figures/platform1.png Graphic file (type png)
  <use chapters/implementation/./figures/platform1.png>
 Package pdftex.def Info: chapters/implementation/./figures/platform1.png used o
@@ -2879,7 +2928,7 @@ n input line 4.
 (pdftex.def)             Requested size: 224.0pt x 154.37733pt.
 )
 (chapters/implementation/./figures/ocas.tex
-<chapters/implementation/./figures/usb.png, id=991, 1505.625pt x 722.7pt>
+<chapters/implementation/./figures/usb.png, id=1012, 1505.625pt x 722.7pt>
 File: chapters/implementation/./figures/usb.png Graphic file (type png)
 
 <use chapters/implementation/./figures/usb.png>
@@ -2894,18 +2943,18 @@ t line 73.
 (pdftex.def)             Requested size: 14.22636pt x 6.82602pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 8.36993pt on input line 73.
-) [37 <./chapters/implementation/./figures/rpi.jpg>] [38 <./chapters/implementa
-tion/./figures/platform1.png> <./chapters/implementation/./figures/usb.png>]
+) [40 <./chapters/implementation/./figures/platform1.png>] [41 <./chapters/impl
+ementation/./figures/usb.png>]
 (chapters/implementation/./figures/gpio.tex
-<chapters/implementation/./figures/gpio.png, id=1008, 1127.71312pt x 335.75438p
+<chapters/implementation/./figures/gpio.png, id=1028, 1127.71312pt x 335.75438p
 t>
 File: chapters/implementation/./figures/gpio.png Graphic file (type png)
  <use chapters/implementation/./figures/gpio.png>
 Package pdftex.def Info: chapters/implementation/./figures/gpio.png used on inp
 ut line 4.
 (pdftex.def)             Requested size: 268.80273pt x 80.02939pt.
-)
-(chapters/implementation/./figures/voltage.tex [39])
+) [42]
+(chapters/implementation/./figures/voltage.tex)
 (chapters/implementation/./figures/sonarconnect.tex
 File: chapters/implementation/./figures/gpio.png Graphic file (type png)
 
@@ -2925,7 +2974,7 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.25598pt on input line 23.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.25598pt on input line 23.
-) [40 <./chapters/implementation/./figures/gpio.png>] (chapters/implementation/
+) [43 <./chapters/implementation/./figures/gpio.png>] (chapters/implementation/
 ./figures/software.tex
 File: chapters/implementation/./figures/usb.png Graphic file (type png)
 
@@ -2939,7 +2988,7 @@ File: chapters/implementation/./figures/usb.png Graphic file (type png)
 Package pdftex.def Info: chapters/implementation/./figures/usb.png used on inpu
 t line 82.
 (pdftex.def)             Requested size: 14.22636pt x 6.82602pt.
-) [41]
+) [44]
 (chapters/implementation/./figures/mavproxy.tex
 File: chapters/implementation/./figures/usb.png Graphic file (type png)
 
@@ -2948,23 +2997,47 @@ Package pdftex.def Info: chapters/implementation/./figures/usb.png used on inpu
 t line 39.
 (pdftex.def)             Requested size: 14.22636pt x 6.82602pt.
 )
-<chapters/implementation/./figures/mavproxysh.pdf, id=1045, 597.45204pt x 845.1
+<chapters/implementation/./figures/mavproxysh.pdf, id=1064, 597.45204pt x 845.1
 575pt>
 File: chapters/implementation/./figures/mavproxysh.pdf Graphic file (type pdf)
  <use chapters/implementation/./figures/mavproxysh.pdf>
 Package pdftex.def Info: chapters/implementation/./figures/mavproxysh.pdf used 
-on input line 262.
+on input line 264.
 (pdftex.def)             Requested size: 403.19727pt x 18.52391pt.
- [42 <./chapters/implementation/./figures/mavproxysh.pdf>]
+ [45 <./chapters/implementation/./figures/mavproxysh.pdf>] [46]
 (chapters/implementation/./tables/allocation.tex)
-(chapters/implementation/./figures/script.tex [43]) [44] [45] [46]
+(chapters/implementation/./figures/script.tex) [47] [48]
+Overfull \hbox (3.87907pt too wide) in paragraph at lines 332--333
+[][]\T1/fnc/m/n/10.95 (-20) Additional in-for-ma-tion on the \T1/lmtt/m/n/10.95
+ logging \T1/fnc/m/n/10.95 (-20) li-brary can be found on []$\T1/lmtt/m/n/10.95
+ docs . python . org / 2 / library /
+ []
+
+
+Overfull \hbox (0.19202pt too wide) in paragraph at lines 336--338
+\T1/fnc/m/n/10.95 (-20) set-tings of MAVproxy as de-fined in Sec-tion []6.4.2[]
+. In ad-di-tion, the syn-tax \T1/lmtt/m/n/10.95 Connect(mode,address)
+ []
+
+[49] [50]
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 382.
+(nag)                Use amsmath's align instead on input line 384.
 
-[47] (chapters/implementation/./figures/collision.tex) [48] [49]
+[51] (chapters/implementation/./figures/collision.tex)
+Overfull \hbox (0.14873pt too wide) in paragraph at lines 428--429
+[][]\T1/fnc/m/n/10.95 (-20) Thus, the \T1/lmtt/m/n/10.95 Control \T1/fnc/m/n/10
+.95 (-20) class de-fines the meth-ods \T1/lmtt/m/n/10.95 take()\T1/fnc/m/n/10.9
+5 (-20) , \T1/lmtt/m/n/10.95 checkTake()\T1/fnc/m/n/10.95 (-20) , \T1/lmtt/m/n/
+10.95 give() \T1/fnc/m/n/10.95 (-20) and \T1/lmtt/m/n/10.95 checkGive()
+ []
+
+[52]
+Underfull \vbox (badness 5847) has occurred while \output is active []
+
+ [53]
 (chapters/implementation/./figures/gui.tex
-<chapters/implementation/./figures/GUIwin.png, id=1171, 410.2828pt x 130.23656p
+<chapters/implementation/./figures/GUIwin.png, id=1195, 410.2828pt x 130.23656p
 t>
 File: chapters/implementation/./figures/GUIwin.png Graphic file (type png)
  <use chapters/implementation/./figures/GUIwin.png>
@@ -2972,16 +3045,16 @@ Package pdftex.def Info: chapters/implementation/./figures/GUIwin.png used on i
 nput line 6.
 (pdftex.def)             Requested size: 313.59863pt x 99.54518pt.
 
-<chapters/implementation/./figures/GUIlinux.png, id=1172, 409.53pt x 126.4725pt
+<chapters/implementation/./figures/GUIlinux.png, id=1196, 409.53pt x 126.4725pt
 >
 File: chapters/implementation/./figures/GUIlinux.png Graphic file (type png)
  <use chapters/implementation/./figures/GUIlinux.png>
 Package pdftex.def Info: chapters/implementation/./figures/GUIlinux.png used on
  input line 11.
 (pdftex.def)             Requested size: 313.59863pt x 96.85341pt.
-) [50 <./chapters/implementation/./figures/GUIwin.png> <./chapters/implementati
-on/./figures/GUIlinux.png>] (chapters/implementation/./figures/f450stock.tex
-<chapters/implementation/./figures/f450/f450-stock.png, id=1187, 721.9773pt x 3
+) [54]
+(chapters/implementation/./figures/f450stock.tex
+<chapters/implementation/./figures/f450/f450-stock.png, id=1212, 721.9773pt x 3
 23.0469pt>
 File: chapters/implementation/./figures/f450/f450-stock.png Graphic file (type 
 png)
@@ -2990,8 +3063,10 @@ Package pdftex.def Info: chapters/implementation/./figures/f450/f450-stock.png
 used on input line 3.
 (pdftex.def)             Requested size: 313.59863pt x 140.31723pt.
 )
-(chapters/implementation/./figures/f450.tex
-<chapters/implementation/./figures/f450/front.png, id=1191, 3276.24pt x 2457.18
+[55 <./chapters/implementation/./figures/GUIwin.png> <./chapters/implementation
+/./figures/GUIlinux.png> <./chapters/implementation/./figures/f450/f450-stock.p
+ng>] (chapters/implementation/./figures/f450.tex
+<chapters/implementation/./figures/f450/front.png, id=1221, 3276.24pt x 2457.18
 pt>
 File: chapters/implementation/./figures/f450/front.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/front.png>
@@ -2999,7 +3074,7 @@ Package pdftex.def Info: chapters/implementation/./figures/f450/front.png used
 on input line 5.
 (pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
 
-<chapters/implementation/./figures/f450/side.png, id=1192, 3276.24pt x 2457.18p
+<chapters/implementation/./figures/f450/side.png, id=1222, 3276.24pt x 2457.18p
 t>
 File: chapters/implementation/./figures/f450/side.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/side.png>
@@ -3007,7 +3082,7 @@ Package pdftex.def Info: chapters/implementation/./figures/f450/side.png used o
 n input line 10.
 (pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
 
-<chapters/implementation/./figures/f450/top.png, id=1193, 3276.24pt x 2457.18pt
+<chapters/implementation/./figures/f450/top.png, id=1223, 3276.24pt x 2457.18pt
 >
 File: chapters/implementation/./figures/f450/top.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/top.png>
@@ -3015,26 +3090,23 @@ Package pdftex.def Info: chapters/implementation/./figures/f450/top.png used on
  input line 15.
 (pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
 
-<chapters/implementation/./figures/f450/back.png, id=1194, 3276.24pt x 2457.18p
+<chapters/implementation/./figures/f450/back.png, id=1224, 3276.24pt x 2457.18p
 t>
 File: chapters/implementation/./figures/f450/back.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/back.png>
 Package pdftex.def Info: chapters/implementation/./figures/f450/back.png used o
 n input line 20.
 (pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
-)) [51 <./chapters/implementation/./figures/f450/f450-stock.png>] [52 <./chapte
-rs/implementation/./figures/f450/front.png> <./chapters/implementation/./figure
-s/f450/side.png> <./chapters/implementation/./figures/f450/top.png> <./chapters
-/implementation/./figures/f450/back.png>] (chapters/testing/testing.tex
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
- [53
+)) [56 <./chapters/implementation/./figures/f450/front.png> <./chapters/impleme
+ntation/./figures/f450/side.png> <./chapters/implementation/./figures/f450/top.
+png> <./chapters/implementation/./figures/f450/back.png>] (chapters/testing/tes
+ting.tex [57
 
 
-]
-[54] [55] (chapters/testing/./figures/plate.tex) [56]
+] [58]
+[59] [60] (chapters/testing/./figures/plate.tex) [61]
 (chapters/testing/./figures/leganes.tex
-<chapters/testing/./figures/leganes.png, id=1255, 594.72188pt x 379.4175pt>
+<chapters/testing/./figures/leganes.png, id=1284, 594.72188pt x 379.4175pt>
 File: chapters/testing/./figures/leganes.png Graphic file (type png)
 
 <use chapters/testing/./figures/leganes.png>
@@ -3046,11 +3118,8 @@ Overfull \hbox (6.78821pt too wide) in paragraph at lines 6--7
  [][][] 
  []
 
-) [57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58 <./chapters/testing/./figures/leganes.png>] (chapters/testing/./figures/fl
-ight.tex
+) [62] [63 <./chapters/testing/./figures/leganes.png>]
+(chapters/testing/./figures/flight.tex
 Package epstopdf Info: Source file: <chapters/testing/./figures/flight.eps>
 (epstopdf)                    date: 2016-09-08 17:59:29
 (epstopdf)                    size: 311359 bytes
@@ -3063,7 +3132,7 @@ flight-eps-converted-to.pdf chapters/testing/./figures/flight.eps>
 (epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 
-<chapters/testing/./figures/flight-eps-converted-to.pdf, id=1267, 479.7925pt x 
+<chapters/testing/./figures/flight-eps-converted-to.pdf, id=1296, 479.7925pt x 
 173.64874pt>
 File: chapters/testing/./figures/flight-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -3072,12 +3141,11 @@ Package pdftex.def Info: chapters/testing/./figures/flight-eps-converted-to.pdf
  used on input line 4.
 (pdftex.def)             Requested size: 448.0pt x 162.14348pt.
 ))
-[59 <./chapters/testing/./figures/flight-eps-converted-to.pdf>] [60
+[64 <./chapters/testing/./figures/flight-eps-converted-to.pdf>]
+(chapters/conclusion/conclusion.tex [65
 
-]
-(chapters/conclusion/conclusion.tex [61
 
-] [62]) [63] [64
+] [66]) [67] [68
 
 ]
 (chapters/appendices/network.tex
@@ -3085,7 +3153,7 @@ Package pdftex.def Info: chapters/testing/./figures/flight-eps-converted-to.pdf
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/setnetwork.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/setnetwork.pdf, id=1314, 597.55246pt x 845.07724pt
+<chapters/appendices/./files/setnetwork.pdf, id=1338, 597.55246pt x 845.07724pt
 >
 File: chapters/appendices/./files/setnetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/setnetwork.pdf>
@@ -3102,7 +3170,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 21--22
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/startnetwork.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/startnetwork.pdf, id=1316, 597.55246pt x 845.07724
+<chapters/appendices/./files/startnetwork.pdf, id=1340, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/startnetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/startnetwork.pdf>
@@ -3114,12 +3182,14 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 25--26
 [][] [] 
  []
 
+[69
 
+ <./chapters/appendices/./files/setnetwork.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/restartif.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/restartif.pdf, id=1319, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/restartif.pdf, id=1379, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/restartif.pdf Graphic file (type pdf)
 <use chapters/appendices/./files/restartif.pdf>
 Package pdftex.def Info: chapters/appendices/./files/restartif.pdf used on inpu
@@ -3130,15 +3200,12 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 31--32
 [][] [] 
  []
 
-[65
 
- <./chapters/appendices/./files/setnetwork.pdf> <./chapters/appendices/./files/
-startnetwork.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/shownetwork.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/shownetwork.pdf, id=1384, 597.55246pt x 845.07724p
+<chapters/appendices/./files/shownetwork.pdf, id=1381, 597.55246pt x 845.07724p
 t>
 File: chapters/appendices/./files/shownetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/shownetwork.pdf>
@@ -3150,11 +3217,11 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 35--36
 [][] [] 
  []
 
-) [66 <./chapters/appendices/./files/restartif.pdf> <./chapters/appendices/./fi
-les/shownetwork.pdf>] (chapters/appendices/ssh.tex
+) [70 <./chapters/appendices/./files/startnetwork.pdf> <./chapters/appendices/.
+/files/restartif.pdf> <./chapters/appendices/./files/shownetwork.pdf>]
+(chapters/appendices/ssh.tex
 File: chapters/appendices/./files/shownetwork.pdf Graphic file (type pdf)
-
-<use chapters/appendices/./files/shownetwork.pdf>
+ <use chapters/appendices/./files/shownetwork.pdf>
 Package pdftex.def Info: chapters/appendices/./files/shownetwork.pdf used on in
 put line 11.
 (pdftex.def)             Requested size: 425.59863pt x 179.98734pt.
@@ -3168,7 +3235,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 11--12
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/arpnetwork.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/arpnetwork.pdf, id=1453, 597.55246pt x 845.07724pt
+<chapters/appendices/./files/arpnetwork.pdf, id=1478, 597.55246pt x 845.07724pt
 >
 File: chapters/appendices/./files/arpnetwork.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/arpnetwork.pdf>
@@ -3180,10 +3247,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 17--18
 [][] [] 
  []
 
-
-Underfull \vbox (badness 7631) has occurred while \output is active []
-
- [67
+[71
 
 
 ]
@@ -3191,7 +3255,7 @@ Underfull \vbox (badness 7631) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/flusharp.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/flusharp.pdf, id=1463, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/flusharp.pdf, id=1488, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/flusharp.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/flusharp.pdf>
@@ -3203,7 +3267,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 21--22
 [][] [] 
  []
 
-<chapters/appendices/./files/putty.png, id=1465, 340.27126pt x 328.97906pt>
+<chapters/appendices/./files/putty.png, id=1490, 340.27126pt x 328.97906pt>
 File: chapters/appendices/./files/putty.png Graphic file (type png)
 
 <use chapters/appendices/./files/putty.png>
@@ -3211,23 +3275,20 @@ Package pdftex.def Info: chapters/appendices/./files/putty.png used on input li
 ne 30.
 (pdftex.def)             Requested size: 268.80273pt x 259.89563pt.
 
-<chapters/appendices/./files/moba.png, id=1466, 667.74469pt x 389.95688pt>
+<chapters/appendices/./files/moba.png, id=1491, 667.74469pt x 389.95688pt>
 File: chapters/appendices/./files/moba.png Graphic file (type png)
 
 <use chapters/appendices/./files/moba.png>
 Package pdftex.def Info: chapters/appendices/./files/moba.png used on input lin
 e 36.
 (pdftex.def)             Requested size: 358.40137pt x 209.30617pt.
-
-Underfull \vbox (badness 1867) has occurred while \output is active []
-
- [68 <./chapters/appendices/./files/arpnetwork.pdf> <./chapters/appendices/./fi
+ [72 <./chapters/appendices/./files/arpnetwork.pdf> <./chapters/appendices/./fi
 les/flusharp.pdf> <./chapters/appendices/./files/putty.png>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/password.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/password.pdf, id=1525, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/password.pdf, id=1550, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/password.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/password.pdf>
@@ -3239,11 +3300,11 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 41--42
 [][] [] 
  []
 
-) [69 <./chapters/appendices/./files/password.pdf> <./chapters/appendices/./fil
-es/moba.png>] [70
+) [73 <./chapters/appendices/./files/password.pdf> <./chapters/appendices/./fil
+es/moba.png>] [74
 
 ] (chapters/appendices/sonar-doc.tex
-<chapters/appendices/./files/sonar-doc.pdf, id=1564, 597.23125pt x 845.1575pt>
+<chapters/appendices/./files/sonar-doc.pdf, id=1588, 597.23125pt x 845.1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/sonar-doc.pdf>
@@ -3269,7 +3330,7 @@ Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf used on inpu
 t line 4.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<chapters/appendices/./files/sonar-doc.pdf, id=1569, page=1, 597.23125pt x 845.
+<chapters/appendices/./files/sonar-doc.pdf, id=1593, page=1, 597.23125pt x 845.
 1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar-doc.pdf, page 1>
@@ -3282,7 +3343,7 @@ File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf, page1 used 
 on input line 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [71
+ [75
 
 ]
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
@@ -3303,8 +3364,8 @@ File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf, page1 used 
 on input line 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [72 <./chapters/appendices/./files/sonar-doc.pdf>]
-<chapters/appendices/./files/sonar-doc.pdf, id=1596, page=2, 597.23125pt x 845.
+ [76 <./chapters/appendices/./files/sonar-doc.pdf>]
+<chapters/appendices/./files/sonar-doc.pdf, id=1621, page=2, 597.23125pt x 845.
 1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar-doc.pdf, page 2>
@@ -3323,8 +3384,8 @@ File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf, page2 used 
 on input line 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [73 <./chapters/appendices/./files/sonar-doc.pdf>]
-<chapters/appendices/./files/sonar-doc.pdf, id=1603, page=3, 597.23125pt x 845.
+ [77 <./chapters/appendices/./files/sonar-doc.pdf>]
+<chapters/appendices/./files/sonar-doc.pdf, id=1628, page=3, 597.23125pt x 845.
 1575pt>
 File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar-doc.pdf, page 3>
@@ -3343,12 +3404,12 @@ File: chapters/appendices/./files/sonar-doc.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar-doc.pdf, page3 used 
 on input line 4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [74 <./chapters/appendices/./files/sonar-doc.pdf>]) (chapters/appendices/threa
+ [78 <./chapters/appendices/./files/sonar-doc.pdf>]) (chapters/appendices/threa
 ds.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/threads.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/threads.pdf, id=1608, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/threads.pdf, id=1633, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/threads.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/threads.pdf>
@@ -3360,17 +3421,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--462
 
  []
 
-[75
+[79
 
 
- <./chapters/appendices/./files/threads.pdf>] [76
+ <./chapters/appendices/./files/threads.pdf>] [80
 
 ]
 (chapters/appendices/logging.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/logging.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/logging.pdf, id=1637, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/logging.pdf, id=1661, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/logging.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/logging.pdf>
@@ -3382,16 +3443,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--465
 
  []
 
-[77
+[81
 
- <./chapters/appendices/./files/logging.pdf>] [78
+ <./chapters/appendices/./files/logging.pdf>] [82
 
 ]
 (chapters/appendices/connect.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/connect.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/connect.pdf, id=1673, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/connect.pdf, id=1698, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/connect.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/connect.pdf>
@@ -3403,16 +3464,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--468
 
  []
 
-[79
+[83
 
- <./chapters/appendices/./files/connect.pdf>] [80
+ <./chapters/appendices/./files/connect.pdf>] [84
 
 ]
 (chapters/appendices/sonar.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonar.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/sonar.pdf, id=1701, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/sonar.pdf, id=1726, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/sonar.pdf>
@@ -3437,7 +3498,7 @@ clusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonar.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonar.pdf, id=1704, page=1, 597.55246pt x 845.0772
+<chapters/appendices/./files/sonar.pdf, id=1729, page=1, 597.55246pt x 845.0772
 4pt>
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar.pdf, page 1>
@@ -3450,7 +3511,7 @@ File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar.pdf, page1 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [81
+ [85
 
 ]
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
@@ -3471,12 +3532,12 @@ File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar.pdf, page1 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [82 <./chapters/appendices/./files/sonar.pdf>]
+ [86 <./chapters/appendices/./files/sonar.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonar.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonar.pdf, id=1739, page=2, 597.55246pt x 845.0772
+<chapters/appendices/./files/sonar.pdf, id=1763, page=2, 597.55246pt x 845.0772
 4pt>
 File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonar.pdf, page 2>
@@ -3495,13 +3556,13 @@ File: chapters/appendices/./files/sonar.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonar.pdf, page2 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [83 <./chapters/appendices/./files/sonar.pdf>]) [84
+ [87 <./chapters/appendices/./files/sonar.pdf>]) [88
 
 ] (chapters/appendices/control.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/control.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/control.pdf, id=1748, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/control.pdf, id=1773, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/control.pdf>
@@ -3526,7 +3587,7 @@ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/control.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/control.pdf, id=1751, page=1, 597.55246pt x 845.07
+<chapters/appendices/./files/control.pdf, id=1776, page=1, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/control.pdf, page 1>
@@ -3539,7 +3600,7 @@ File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/control.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [85
+ [89
 
 ]
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
@@ -3560,12 +3621,12 @@ File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/control.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [86 <./chapters/appendices/./files/control.pdf>]
+ [90 <./chapters/appendices/./files/control.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/control.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/control.pdf, id=1785, page=2, 597.55246pt x 845.07
+<chapters/appendices/./files/control.pdf, id=1810, page=2, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/control.pdf, page 2>
@@ -3584,13 +3645,13 @@ File: chapters/appendices/./files/control.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/control.pdf, page2 used on
  input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [87 <./chapters/appendices/./files/control.pdf>]) [88
+ [91 <./chapters/appendices/./files/control.pdf>]) [92
 
 ] (chapters/appendices/auto.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/auto.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/auto.pdf, id=1795, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/auto.pdf, id=1819, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/auto.pdf>
@@ -3615,7 +3676,7 @@ lusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/auto.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/auto.pdf, id=1798, page=1, 597.55246pt x 845.07724
+<chapters/appendices/./files/auto.pdf, id=1822, page=1, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/auto.pdf, page 1>
@@ -3628,7 +3689,7 @@ File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/auto.pdf, page1 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [89
+ [93
 
 ]
 File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
@@ -3649,11 +3710,11 @@ File: chapters/appendices/./files/auto.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/auto.pdf, page1 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [90 <./chapters/appendices/./files/auto.pdf>]) (chapters/appendices/main.tex
+ [94 <./chapters/appendices/./files/auto.pdf>]) (chapters/appendices/main.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/main.pdf, id=1832, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/main.pdf, id=1857, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/main.pdf>
@@ -3678,7 +3739,7 @@ lusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1835, page=1, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1860, page=1, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 1>
@@ -3691,7 +3752,7 @@ File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/main.pdf, page1 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [91
+ [95
 
 
 ]
@@ -3713,12 +3774,12 @@ File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/main.pdf, page1 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [92 <./chapters/appendices/./files/main.pdf>]
+ [96 <./chapters/appendices/./files/main.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1869, page=2, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1894, page=2, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 2>
@@ -3737,12 +3798,12 @@ File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/main.pdf, page2 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [93 <./chapters/appendices/./files/main.pdf>]
+ [97 <./chapters/appendices/./files/main.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1875, page=3, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1899, page=3, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 3>
@@ -3761,12 +3822,12 @@ File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/main.pdf, page3 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [94 <./chapters/appendices/./files/main.pdf>]
+ [98 <./chapters/appendices/./files/main.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1880, page=4, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1904, page=4, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 4>
@@ -3785,12 +3846,12 @@ File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/main.pdf, page4 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [95 <./chapters/appendices/./files/main.pdf>]
+ [99 <./chapters/appendices/./files/main.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/main.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/main.pdf, id=1885, page=5, 597.55246pt x 845.07724
+<chapters/appendices/./files/main.pdf, id=1910, page=5, 597.55246pt x 845.07724
 pt>
 File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/main.pdf, page 5>
@@ -3809,18 +3870,16 @@ File: chapters/appendices/./files/main.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/main.pdf, page5 used on in
 put line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [96 <./chapters/appendices/./files/main.pdf>]) (chapters/appendices/temperatur
-e.tex) [97
+ [100 <./chapters/appendices/./files/main.pdf>]) (chapters/appendices/temperatu
+re.tex) [101
 
 
-] [98
-
-]
+] [102]
 (chapters/appendices/gui.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/GUIwin.pdf, id=1904, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/GUIwin.pdf, id=1929, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/GUIwin.pdf>
@@ -3845,7 +3904,7 @@ nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/GUIwin.pdf, id=1907, page=1, 597.55246pt x 845.077
+<chapters/appendices/./files/GUIwin.pdf, id=1932, page=1, 597.55246pt x 845.077
 24pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/GUIwin.pdf, page 1>
@@ -3858,7 +3917,8 @@ File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/GUIwin.pdf, page1 used on 
 input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [99
+ [103
+
 
 ]
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
@@ -3879,12 +3939,12 @@ File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/GUIwin.pdf, page1 used on 
 input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [100 <./chapters/appendices/./files/GUIwin.pdf>]
+ [104 <./chapters/appendices/./files/GUIwin.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/GUIwin.pdf, id=1942, page=2, 597.55246pt x 845.077
+<chapters/appendices/./files/GUIwin.pdf, id=1966, page=2, 597.55246pt x 845.077
 24pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/GUIwin.pdf, page 2>
@@ -3903,12 +3963,12 @@ File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/GUIwin.pdf, page2 used on 
 input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [101 <./chapters/appendices/./files/GUIwin.pdf>]
+ [105 <./chapters/appendices/./files/GUIwin.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/GUIwin.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/GUIwin.pdf, id=1947, page=3, 597.55246pt x 845.077
+<chapters/appendices/./files/GUIwin.pdf, id=1972, page=3, 597.55246pt x 845.077
 24pt>
 File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/GUIwin.pdf, page 3>
@@ -3927,13 +3987,13 @@ File: chapters/appendices/./files/GUIwin.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/GUIwin.pdf, page3 used on 
 input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [102 <./chapters/appendices/./files/GUIwin.pdf>]) (chapters/appendices/interfa
+ [106 <./chapters/appendices/./files/GUIwin.pdf>]) (chapters/appendices/interfa
 ces.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/interfaces.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/interfaces.pdf, id=1952, 597.55246pt x 845.07724pt
+<chapters/appendices/./files/interfaces.pdf, id=1977, 597.55246pt x 845.07724pt
 >
 File: chapters/appendices/./files/interfaces.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/interfaces.pdf>
@@ -3945,7 +4005,7 @@ ut line 4.
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/wpa_suplicant.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/wpa_suplicant.pdf, id=1954, 597.55246pt x 845.0772
+<chapters/appendices/./files/wpa_suplicant.pdf, id=1979, 597.55246pt x 845.0772
 4pt>
 File: chapters/appendices/./files/wpa_suplicant.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/wpa_suplicant.pdf>
@@ -3957,18 +4017,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--489
 
  []
 
-[103
+[107
 
 
  <./chapters/appendices/./files/interfaces.pdf> <./chapters/appendices/./files/
-wpa_suplicant.pdf>] [104
+wpa_suplicant.pdf>] [108
 
 ] (chapters/appendices/sonarDriver.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonarDriver.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonarDriver.pdf, id=2040, 597.55246pt x 845.07724p
+<chapters/appendices/./files/sonarDriver.pdf, id=2065, 597.55246pt x 845.07724p
 t>
 File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonarDriver.pdf>
@@ -3993,7 +4053,7 @@ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/sonarDriver.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/sonarDriver.pdf, id=2043, page=1, 597.55246pt x 84
+<chapters/appendices/./files/sonarDriver.pdf, id=2068, page=1, 597.55246pt x 84
 5.07724pt>
 File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/sonarDriver.pdf, page 1>
@@ -4006,7 +4066,7 @@ File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonarDriver.pdf, page1 use
 d on input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [105
+ [109
 
 ]
 File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
@@ -4027,28 +4087,28 @@ File: chapters/appendices/./files/sonarDriver.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/sonarDriver.pdf, page1 use
 d on input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [106 <./chapters/appendices/./files/sonarDriver.pdf>]) (chapters/appendices/ch
+ [110 <./chapters/appendices/./files/sonarDriver.pdf>]) (chapters/appendices/ch
 7.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/ch7.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/ch7.pdf, id=2078, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/ch7.pdf, id=2102, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/ch7.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/ch7.pdf>
 Package pdftex.def Info: chapters/appendices/./files/ch7.pdf used on input line
  4.
 (pdftex.def)             Requested size: 448.0pt x 193.74179pt.
-) [107
+) [111
 
 
- <./chapters/appendices/./files/ch7.pdf>] [108
+ <./chapters/appendices/./files/ch7.pdf>] [112
 
 ] (chapters/appendices/observe.tex
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/observe.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<chapters/appendices/./files/observe.pdf, id=2114, 597.55246pt x 845.07724pt>
+<chapters/appendices/./files/observe.pdf, id=2139, 597.55246pt x 845.07724pt>
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
 
 <use chapters/appendices/./files/observe.pdf>
@@ -4073,7 +4133,7 @@ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/observe.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/observe.pdf, id=2117, page=1, 597.55246pt x 845.07
+<chapters/appendices/./files/observe.pdf, id=2142, page=1, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/observe.pdf, page 1>
@@ -4086,7 +4146,7 @@ File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/observe.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [109
+ [113
 
 ]
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
@@ -4107,12 +4167,12 @@ File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/observe.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [110 <./chapters/appendices/./files/observe.pdf>]
+ [114 <./chapters/appendices/./files/observe.pdf>]
 
 pdfTeX warning: pdflatex (file ./chapters/appendices/./files/observe.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<chapters/appendices/./files/observe.pdf, id=2151, page=2, 597.55246pt x 845.07
+<chapters/appendices/./files/observe.pdf, id=2176, page=2, 597.55246pt x 845.07
 724pt>
 File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
  <use chapters/appendices/./files/observe.pdf, page 2>
@@ -4131,12 +4191,12 @@ File: chapters/appendices/./files/observe.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/appendices/./files/observe.pdf, page2 used on
  input line 4.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
- [111 <./chapters/appendices/./files/observe.pdf>]) [112
+ [115 <./chapters/appendices/./files/observe.pdf>]) [116
 
-] (memoirthesis.bbl [113
+] (memoirthesis.bbl [117
 
 
-]) [114]
+]) [118]
 
 Package nag Warning: 33 complaints in total.
 
@@ -4150,40 +4210,36 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 514.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 514.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 514.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 93B923DC218DDF45066D28015DC6B04F;6546.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 89 ({)
-### bottom level 
+(rerunfilecheck)             Checksum: 8ED61EEA9FB24FF4CD51CD7688A99AD4;6546.
+ ) 
 Here is how much of TeX's memory you used:
- 38218 strings out of 493673
- 721657 string characters out of 3141524
- 1060393 words of memory out of 3000000
- 39779 multiletter control sequences out of 15000+200000
- 160314 words of font info for 440 fonts, out of 3000000 for 9000
+ 38118 strings out of 493673
+ 721225 string characters out of 3141524
+ 1071301 words of memory out of 3000000
+ 39797 multiletter control sequences out of 15000+200000
+ 136840 words of font info for 344 fonts, out of 3000000 for 9000
  1032 hyphenation exceptions out of 8191
- 61i,18n,99p,1100b,1678s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
-}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/feybr10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/lm/lmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/l
-mtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (130 pages, 30134612 bytes).
+ 61i,18n,99p,1046b,1468s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/eurosym/feybr10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/fourier/fourier-mcl.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/fourier/fourier-mex.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/fourier/fourier-ml.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/fourier/fourier-mlit.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (134 pages, 30200302 bytes).
 PDF statistics:
- 2304 PDF objects out of 2487 (max. 8388607)
- 361 named destinations out of 1000 (max. 500000)
- 65871 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2329 PDF objects out of 2487 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
+ 58708 words of extra memory for PDF output out of 61914 (max. 10000000)
 

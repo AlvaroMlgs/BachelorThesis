@@ -63,30 +63,11 @@ In the case that a function is composed of several sub-functions, those will be 
 The FFBD shows \emph{what} must happen, and provides an end-to-end path considering all the functionality of the system and the predefined use-case scenarios.
 Parallel or alternate paths might be considered.
 
+For the block diagrams depicted in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}, the symbology explained in Figure \ref{fig:ffbdlegend} is used.
+
+\input{./figures/ffbdlegend.tex}
+
 \input{./figures/ffbd.tex}
-
-For the block diagrams depicted in Figures \ref{fig:ffbd0} to \ref{fig:ffbd6}, the symbology explained below is used:
-
-\begin{itemize}
-	\item 
-		\tikz \draw[rounded corners=1mm,fill=teal!40,draw=black,semithick] (0,0) rectangle (6mm,3mm);
-		\ represents an individual function or subfunction as defined in the Functional Architecture from Figure \ref{fig:functArch}.
-	\item
-		\tikz \draw[circle,fill=teal!70!black!70,draw=none,text=white,inner sep=1mm,node distance=2cm] (0,0) circle (2mm);
-		\ represents a logical \textit{and} or \textit{or} gate for defining parallel or alternative paths, respectively.
-	\item
-		\tikz \draw[rectangle,rounded corners=1.5mm,fill=black!30,draw=black,thin] (0,0) rectangle (5mm,3mm);
-		\ represents a reference block that specifies the origin or destination of a path from an external function of the system.
-	\item
-		\tikz \draw[rounded corners=1mm,draw=red!70!black!100,very thick,dashed] (0,0) rectangle (6mm,3mm);
-		\ represents the boundaries of the functional description, be it the whole system or a subfunction of it.
-	\item
-		\tikz \draw[>=stealth,->,thick] (0,0) -- (5mm,0);
-		\ indicates the secuential order that is to be followed from one function to another.
-	\item
-		\tikz \draw[>=stealth,->,thick,dashed] (0,0) -- (5mm,0);
-		\ indicates an information flow between two functional blocks.
-\end{itemize}
 
 
 \subsection{Product Breakdown Structure (PBS)}
