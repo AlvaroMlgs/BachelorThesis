@@ -3,96 +3,97 @@
 \BOOKMARK [1][-]{section*.3}{Table of Contents}{}% 3
 \BOOKMARK [1][-]{section*.4}{List of Figures}{}% 4
 \BOOKMARK [1][-]{section*.5}{List of Tables}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
-\BOOKMARK [1][-]{section.1.1}{Background information}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.2}{Socioeconomic environment}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.3}{Legal framework}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.4}{Motivation}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.5}{Project objectives}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.6}{Methodology}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.7}{Time planning}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.8}{Budget}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.8.1}{Personnel expenses}{section.1.8}% 15
-\BOOKMARK [2][-]{subsection.1.8.2}{Software cost}{section.1.8}% 16
-\BOOKMARK [2][-]{subsection.1.8.3}{Hardware cost}{section.1.8}% 17
-\BOOKMARK [0][-]{chapter.2}{State of the art}{}% 18
-\BOOKMARK [1][-]{section.2.1}{Environment sensing}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.1.1}{Radar}{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.2}{Sonar}{section.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.1.3}{Lidar}{section.2.1}% 22
-\BOOKMARK [2][-]{subsection.2.1.4}{Computer vision}{section.2.1}% 23
-\BOOKMARK [1][-]{section.2.2}{Collision avoidance}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.1}{TCAS on conventional aircraft}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.2}{DJI Phantom 4}{section.2.2}% 26
-\BOOKMARK [0][-]{chapter.3}{A brief introduction to Ardupilot}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Basic features}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{Ardupilot as part of a UAS}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.3}{Advanced features}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.1}{Flight modes}{section.3.3}% 31
-\BOOKMARK [0][-]{chapter.4}{Problem statement}{}% 32
-\BOOKMARK [0][-]{chapter.5}{System design}{}% 33
-\BOOKMARK [1][-]{section.5.1}{Requirements capture}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Logical Decomposition}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.2.1}{Functional Architecture}{section.5.2}% 36
-\BOOKMARK [2][-]{subsection.5.2.2}{Functional Flow Block Diagram \(FFBD\)}{section.5.2}% 37
-\BOOKMARK [2][-]{subsection.5.2.3}{Product Breakdown Structure \(PBS\)}{section.5.2}% 38
-\BOOKMARK [2][-]{subsection.5.2.4}{Functional-Physical matrix}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.5}{Interfaces definition \(N2 diagram\)}{section.5.2}% 40
-\BOOKMARK [0][-]{chapter.6}{System implementation}{}% 41
-\BOOKMARK [1][-]{section.6.1}{The OCAS within the UAS}{chapter.6}% 42
-\BOOKMARK [2][-]{subsection.6.1.1}{Overview of the existing UAS}{section.6.1}% 43
-\BOOKMARK [2][-]{subsection.6.1.2}{Integration of the OCAS}{section.6.1}% 44
-\BOOKMARK [1][-]{section.6.2}{Component choice}{chapter.6}% 45
-\BOOKMARK [2][-]{subsection.6.2.1}{Sensors}{section.6.2}% 46
-\BOOKMARK [2][-]{subsection.6.2.2}{Computer board}{section.6.2}% 47
-\BOOKMARK [2][-]{subsection.6.2.3}{Other components}{section.6.2}% 48
-\BOOKMARK [1][-]{section.6.3}{OCAS peripheral connections \(hardware interfaces\)}{chapter.6}% 49
-\BOOKMARK [2][-]{subsection.6.3.1}{Power connection}{section.6.3}% 50
-\BOOKMARK [2][-]{subsection.6.3.2}{MAVlink connection}{section.6.3}% 51
-\BOOKMARK [2][-]{subsection.6.3.3}{GCS connection}{section.6.3}% 52
-\BOOKMARK [2][-]{subsection.6.3.4}{GPIO connection}{section.6.3}% 53
-\BOOKMARK [1][-]{section.6.4}{Software: Bringing everything together}{chapter.6}% 54
-\BOOKMARK [2][-]{subsection.6.4.1}{The Operating System}{section.6.4}% 55
-\BOOKMARK [2][-]{subsection.6.4.2}{MAVproxy}{section.6.4}% 56
-\BOOKMARK [2][-]{subsection.6.4.3}{The Python environment}{section.6.4}% 57
-\BOOKMARK [1][-]{section.6.5}{The Python script}{chapter.6}% 58
-\BOOKMARK [2][-]{subsection.6.5.1}{Script architecture}{section.6.5}% 59
-\BOOKMARK [2][-]{subsection.6.5.2}{Multi-threading capabilities}{section.6.5}% 60
-\BOOKMARK [2][-]{subsection.6.5.3}{Log information}{section.6.5}% 61
-\BOOKMARK [2][-]{subsection.6.5.4}{Connect to UAV}{section.6.5}% 62
-\BOOKMARK [2][-]{subsection.6.5.5}{Observe state}{section.6.5}% 63
-\BOOKMARK [2][-]{subsection.6.5.6}{Take control of UAV}{section.6.5}% 64
-\BOOKMARK [2][-]{subsection.6.5.7}{Avoid obstacle}{section.6.5}% 65
-\BOOKMARK [2][-]{subsection.6.5.8}{Return control to the pilot}{section.6.5}% 66
-\BOOKMARK [2][-]{subsection.6.5.9}{The ``main'' file}{section.6.5}% 67
-\BOOKMARK [1][-]{section.6.6}{Graphical User Interface}{chapter.6}% 68
-\BOOKMARK [1][-]{section.6.7}{Hardware implementation}{chapter.6}% 69
-\BOOKMARK [0][-]{chapter.7}{Testing and results}{}% 70
-\BOOKMARK [1][-]{section.7.1}{Testing methods}{chapter.7}% 71
-\BOOKMARK [2][-]{subsection.7.1.1}{Component testing}{section.7.1}% 72
-\BOOKMARK [2][-]{subsection.7.1.2}{Software testing: SITL}{section.7.1}% 73
-\BOOKMARK [2][-]{subsection.7.1.3}{System testing}{section.7.1}% 74
-\BOOKMARK [1][-]{section.7.2}{Results}{chapter.7}% 75
-\BOOKMARK [2][-]{subsection.7.2.1}{Ultrasonic rangefinders}{section.7.2}% 76
-\BOOKMARK [2][-]{subsection.7.2.2}{Simulator}{section.7.2}% 77
-\BOOKMARK [2][-]{subsection.7.2.3}{UAS + OCAS}{section.7.2}% 78
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 79
-\BOOKMARK [1][-]{section.8.1}{Summary of contributions}{chapter.8}% 80
-\BOOKMARK [1][-]{section.8.2}{Future work}{chapter.8}% 81
-\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 82
-\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 83
-\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 84
-\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 85
-\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 86
-\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 87
-\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 88
-\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 89
-\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 90
-\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 91
-\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 92
-\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 93
-\BOOKMARK [0][-]{appendix.M}{Raspberry Pi's interfaces configuration}{}% 94
-\BOOKMARK [0][-]{appendix.N}{SonarDriver.py}{}% 95
-\BOOKMARK [0][-]{appendix.O}{Channel 7 script trigger}{}% 96
-\BOOKMARK [0][-]{appendix.P}{Observe.py}{}% 97
-\BOOKMARK [0][-]{section*.50}{Bibliography}{}% 98
+\BOOKMARK [1][-]{section*.6}{List of Acronyms}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{Background information}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{Socioeconomic environment}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{Legal framework}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{Motivation}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.5}{Project objectives}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.6}{Methodology}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.7}{Time planning}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.8}{Budget}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.8.1}{Personnel expenses}{section.1.8}% 16
+\BOOKMARK [2][-]{subsection.1.8.2}{Software cost}{section.1.8}% 17
+\BOOKMARK [2][-]{subsection.1.8.3}{Hardware cost}{section.1.8}% 18
+\BOOKMARK [0][-]{chapter.2}{State of the art}{}% 19
+\BOOKMARK [1][-]{section.2.1}{Environment sensing}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.1.1}{Radar}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.2}{Sonar}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.3}{Lidar}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.4}{Computer vision}{section.2.1}% 24
+\BOOKMARK [1][-]{section.2.2}{Collision avoidance}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.1}{TCAS on conventional aircraft}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.2}{DJI Phantom 4}{section.2.2}% 27
+\BOOKMARK [0][-]{chapter.3}{A brief introduction to Ardupilot}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Basic features}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Ardupilot as part of a UAS}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.3}{Advanced features}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{Flight modes}{section.3.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Problem statement}{}% 33
+\BOOKMARK [0][-]{chapter.5}{System design}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Requirements capture}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.2}{Logical Decomposition}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.2.1}{Functional Architecture}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.2}{Functional Flow Block Diagram \(FFBD\)}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.3}{Product Breakdown Structure \(PBS\)}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.4}{Functional-Physical matrix}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.5}{Interfaces definition \(N2 diagram\)}{section.5.2}% 41
+\BOOKMARK [0][-]{chapter.6}{System implementation}{}% 42
+\BOOKMARK [1][-]{section.6.1}{The OCAS within the UAS}{chapter.6}% 43
+\BOOKMARK [2][-]{subsection.6.1.1}{Overview of the existing UAS}{section.6.1}% 44
+\BOOKMARK [2][-]{subsection.6.1.2}{Integration of the OCAS}{section.6.1}% 45
+\BOOKMARK [1][-]{section.6.2}{Component choice}{chapter.6}% 46
+\BOOKMARK [2][-]{subsection.6.2.1}{Sensors}{section.6.2}% 47
+\BOOKMARK [2][-]{subsection.6.2.2}{Computer board}{section.6.2}% 48
+\BOOKMARK [2][-]{subsection.6.2.3}{Other components}{section.6.2}% 49
+\BOOKMARK [1][-]{section.6.3}{OCAS peripheral connections \(hardware interfaces\)}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.3.1}{Power connection}{section.6.3}% 51
+\BOOKMARK [2][-]{subsection.6.3.2}{MAVlink connection}{section.6.3}% 52
+\BOOKMARK [2][-]{subsection.6.3.3}{GCS connection}{section.6.3}% 53
+\BOOKMARK [2][-]{subsection.6.3.4}{GPIO connection}{section.6.3}% 54
+\BOOKMARK [1][-]{section.6.4}{Software: Bringing everything together}{chapter.6}% 55
+\BOOKMARK [2][-]{subsection.6.4.1}{The Operating System}{section.6.4}% 56
+\BOOKMARK [2][-]{subsection.6.4.2}{MAVproxy}{section.6.4}% 57
+\BOOKMARK [2][-]{subsection.6.4.3}{The Python environment}{section.6.4}% 58
+\BOOKMARK [1][-]{section.6.5}{The Python script}{chapter.6}% 59
+\BOOKMARK [2][-]{subsection.6.5.1}{Script architecture}{section.6.5}% 60
+\BOOKMARK [2][-]{subsection.6.5.2}{Multi-threading capabilities}{section.6.5}% 61
+\BOOKMARK [2][-]{subsection.6.5.3}{Log information}{section.6.5}% 62
+\BOOKMARK [2][-]{subsection.6.5.4}{Connect to UAV}{section.6.5}% 63
+\BOOKMARK [2][-]{subsection.6.5.5}{Observe state}{section.6.5}% 64
+\BOOKMARK [2][-]{subsection.6.5.6}{Take control of UAV}{section.6.5}% 65
+\BOOKMARK [2][-]{subsection.6.5.7}{Avoid obstacle}{section.6.5}% 66
+\BOOKMARK [2][-]{subsection.6.5.8}{Return control to the pilot}{section.6.5}% 67
+\BOOKMARK [2][-]{subsection.6.5.9}{The ``main'' file}{section.6.5}% 68
+\BOOKMARK [1][-]{section.6.6}{Graphical User Interface}{chapter.6}% 69
+\BOOKMARK [1][-]{section.6.7}{Hardware implementation}{chapter.6}% 70
+\BOOKMARK [0][-]{chapter.7}{Testing and results}{}% 71
+\BOOKMARK [1][-]{section.7.1}{Testing methods}{chapter.7}% 72
+\BOOKMARK [2][-]{subsection.7.1.1}{Component testing}{section.7.1}% 73
+\BOOKMARK [2][-]{subsection.7.1.2}{Software testing: SITL}{section.7.1}% 74
+\BOOKMARK [2][-]{subsection.7.1.3}{System testing}{section.7.1}% 75
+\BOOKMARK [1][-]{section.7.2}{Results}{chapter.7}% 76
+\BOOKMARK [2][-]{subsection.7.2.1}{Ultrasonic rangefinders}{section.7.2}% 77
+\BOOKMARK [2][-]{subsection.7.2.2}{Simulator}{section.7.2}% 78
+\BOOKMARK [2][-]{subsection.7.2.3}{UAS + OCAS}{section.7.2}% 79
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 80
+\BOOKMARK [1][-]{section.8.1}{Summary of contributions}{chapter.8}% 81
+\BOOKMARK [1][-]{section.8.2}{Future work}{chapter.8}% 82
+\BOOKMARK [0][-]{appendix.A}{Creation of GCS wireless network}{}% 83
+\BOOKMARK [0][-]{appendix.B}{SSH connection with the GCS}{}% 84
+\BOOKMARK [0][-]{appendix.C}{Technical documentation of the HC-SR04 rangefinder}{}% 85
+\BOOKMARK [0][-]{appendix.D}{Threads.py}{}% 86
+\BOOKMARK [0][-]{appendix.E}{Logging setup}{}% 87
+\BOOKMARK [0][-]{appendix.F}{Connect.py}{}% 88
+\BOOKMARK [0][-]{appendix.G}{Sonar.py}{}% 89
+\BOOKMARK [0][-]{appendix.H}{Control.py}{}% 90
+\BOOKMARK [0][-]{appendix.I}{Auto.py}{}% 91
+\BOOKMARK [0][-]{appendix.J}{Main.py}{}% 92
+\BOOKMARK [0][-]{appendix.K}{Temperature sensitivity of ultrasonic rangefinders}{}% 93
+\BOOKMARK [0][-]{appendix.L}{GUI.pyw}{}% 94
+\BOOKMARK [0][-]{appendix.M}{Raspberry Pi's interfaces configuration}{}% 95
+\BOOKMARK [0][-]{appendix.N}{SonarDriver.py}{}% 96
+\BOOKMARK [0][-]{appendix.O}{Channel 7 script trigger}{}% 97
+\BOOKMARK [0][-]{appendix.P}{Observe.py}{}% 98
+\BOOKMARK [0][-]{section*.51}{Bibliography}{}% 99

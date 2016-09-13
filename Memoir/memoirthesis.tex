@@ -218,6 +218,15 @@
 \usepackage[gen]{eurosym}
 \usepackage{listings}					%To include source code in the document
 	\renewcommand*{\ttdefault}{lmtt}	%A better font for teletype (monospaced) family
+%\usepackage{tocloft} % Already included with the memoir class
+	\newlistof{listofacronyms}{loa}{List of Acronyms}
+	\newcounter{acronym}[chapter]
+		%\renewcommand{\theacronym}{\arabic{acronym}}
+	\newcommand{\acr}[2]{	% Defines a new acronym
+		\refstepcounter{acronym}
+		%\par\noindent\textbf{Answer \theacronym. #1} % Do not type anything when defining an acronym
+		\addtocontents{loa}{\noindent\textbf{#1}\hspace{1cm}#2\par}
+	}
 %							
 
 %Reduce widows  (the last line of a paragraph at the start of a page) and orphans 
@@ -344,6 +353,8 @@
 %
 \renewcommand{\sfdefault}{lmss}
 %
+
+%
 \begin{document}
 % UoB guidlines:
 %
@@ -400,6 +411,12 @@
 	\listoftables
 \end{KeepFromToc}
 \addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
+\clearemptydoublepage
+%
+\phantomsection\addcontentsline{toc}{section}{List of Acronyms}
+\begin{KeepFromToc}	% To insert with 'section' format instead of 'chapter' in Table of Contents
+	\input{./frontmatter/acronyms.tex}
+\end{KeepFromToc}
 \clearemptydoublepage
 
 % The bulk of the document is delegated to these chapter files in subdirectories.

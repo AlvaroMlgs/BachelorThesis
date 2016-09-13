@@ -5,6 +5,7 @@
 \contentsline {section}{Table of Contents}{v}{section*.3}
 \contentsline {section}{List of Figures}{ix}{section*.4}
 \contentsline {section}{List of Tables}{xi}{section*.5}
+\contentsline {section}{List of Acronyms}{xiii}{section*.6}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background information}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Socioeconomic environment}{2}{section.1.2}
@@ -102,4 +103,4 @@
 \contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{105}{appendix.N}
 \contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{107}{appendix.O}
 \contentsline {appendix}{\chapternumberline {P}Observe.py}{109}{appendix.P}
-\contentsline {chapter}{Bibliography}{113}{section*.50}
+\contentsline {chapter}{Bibliography}{113}{section*.51}
