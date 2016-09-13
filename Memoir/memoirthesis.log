@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  13 SEP 2016 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  13 SEP 2016 11:58
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2280,18 +2280,16 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 19.28804pt on input line 25.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 26.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 26.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 30.
+(Font)              scaled to size 11.15991pt on input line 29.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 11.15991pt on input line 32.
+(Font)              scaled to size 11.15991pt on input line 31.
 <logos/logoUC3M.pdf, id=398, 87.32625pt x 27.10126pt>
 File: logos/logoUC3M.pdf Graphic file (type pdf)
  <use logos/logoUC3M.pdf>
-Package pdftex.def Info: logos/logoUC3M.pdf used on input line 34.
+Package pdftex.def Info: logos/logoUC3M.pdf used on input line 33.
 (pdftex.def)             Requested size: 134.40137pt x 136.32469pt.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 45.
 
 [1
 
@@ -2300,6 +2298,8 @@ Package pdftex.def Info: logos/logoUC3M.pdf used on input line 34.
 ogoUC3M.pdf>] [2
 
 ]) (frontmatter/abstract.tex
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 13.39188pt on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
@@ -2319,8 +2319,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
@@ -4037,11 +4035,11 @@ Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 ### simple group (level 1) entered at line 89 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 38185 strings out of 493673
- 721234 string characters out of 3141524
- 1059514 words of memory out of 3000000
- 39755 multiletter control sequences out of 15000+200000
- 162819 words of font info for 442 fonts, out of 3000000 for 9000
+ 38182 strings out of 493673
+ 721186 string characters out of 3141524
+ 1059512 words of memory out of 3000000
+ 39753 multiletter control sequences out of 15000+200000
+ 160314 words of font info for 440 fonts, out of 3000000 for 9000
  1032 hyphenation exceptions out of 8191
  61i,18n,99p,1100b,1678s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
@@ -4061,9 +4059,9 @@ mtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (128 pages, 30131275 bytes).
+Output written on memoirthesis.pdf (128 pages, 30131426 bytes).
 PDF statistics:
  2289 PDF objects out of 2487 (max. 8388607)
  358 named destinations out of 1000 (max. 500000)
- 66375 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 65863 words of extra memory for PDF output out of 74296 (max. 10000000)
 
