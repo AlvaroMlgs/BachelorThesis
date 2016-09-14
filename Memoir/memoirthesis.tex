@@ -175,8 +175,19 @@
 \usepackage{verbatim}					%Permits pre-formated text insertion
 \usepackage{upgreek}					%Calls other kind of greek alphabet
 \usepackage{latexsym}					%Extra symbols
-\usepackage[square,numbers,
-		     sort&compress]{natbib}		%Calls bibliography commands 
+%\usepackage[square,numbers,
+%		     sort&compress]{natbib}		%Calls bibliography commands 
+\usepackage[backend=bibtex,
+            style=numeric,
+			sorting=nyt,
+			hyperref=true,
+			backref=true,
+            isbn=false,
+            maxcitenames=3,
+            maxbibnames=100,
+            block=none]{biblatex}
+
+	\addbibresource{biblio.bib}
 \usepackage{url}						%Supports url commands
 %\usepackage{etex}						%eTeXÕs extended support for counters
 %\usepackage{fixltx2e}					%Eliminates some in felicities of the 
@@ -227,6 +238,7 @@
 		%\par\noindent\textbf{Answer \theacronym. #1} % Do not type anything when defining an acronym
 		\addtocontents{loa}{\noindent\textbf{#1}\hspace{1cm}#2\par}
 	}
+\usepackage{textcomp}					%For additional symbols
 %							
 
 %Reduce widows  (the last line of a paragraph at the start of a page) and orphans 
@@ -501,12 +513,12 @@
 % Apparently the guidelines don't say anything about citations or
 % bibliography styles so I guess we can use anything.
 \backmatter
-%\bibliographystyle{siam}
-\bibliographystyle{ieeetr}
-%\nocite{*}                  % Include non-cited entries too
-\refstepcounter{chapter}
-\bibliography{biblio}
-\clearemptydoublepage
+% \bibliographystyle{plainnat}
+% %\nocite{*}                  % Include non-cited entries too
+% \refstepcounter{chapter}
+% \bibliography{biblio}
+% \clearemptydoublepage
+\printbibliography
 %
 % Add index
 %\printindex

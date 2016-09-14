@@ -1,111 +1,891 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{wisniewski2016}
-A.~Wisniewski and M.~Mazur, ``Clarity from above pwc global report on the
-  commercial applications of drone technology,'' tech. rep., 05 2016.
+\sortlist[entry]{nyt/global/}
+  \entry{nationalaeronauticsandspaceadministration2007}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AN}{%
+         family={Aeronautics},
+         familyi={A\bibinitperiod},
+         given={National},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Administration},
+         familyi={A\bibinitperiod},
+         given={Space},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {US National Aeronautics}%
+      {Space Admin}%
+    }
+    \strng{namehash}{ANAS1}
+    \strng{fullhash}{ANAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{chapter}{4}
+    \field{edition}{1}
+    \field{isbn}{9780160797477}
+    \field{title}{NASA systems engineering handbook}
+    \list{location}{1}{%
+      {Washington}%
+    }
+    \field{month}{12}
+    \field{year}{2007}
+  \endentry
 
-\bibitem{ballard1982}
-D.~H. Ballard and C.~M. Brown, {\em Computer vision}.
-\newblock 1982.
+  \entry{ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014}{legislation}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={AESA},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {AESA}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{note}{Art. 50, Sec. 3}
+    \field{title}{Ley 18/2014, de 15 de octubre, de aprobacion de medidas
+  urgentes para el crecimiento, la competitividad y la eficiencia}
+    \field{day}{15}
+    \field{month}{10}
+    \field{year}{2014}
+  \endentry
 
-\bibitem{incoseuk2016}
-I.~UK, ``Why invest in systems engineering,'' 07 2016.
+  \entry{aguado2016}{unpublished}{}
+    \name{author}{7}{}{%
+      {{hash=AG}{%
+         family={Aguado},
+         familyi={A\bibinitperiod},
+         given={Gemma},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Melgosa},
+         familyi={M\bibinitperiod},
+         given={{\' A}lvaro},
+         giveni={{\' A}\bibinitperiod},
+      }}%
+      {{hash=dMA}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Miguel},
+         familyi={M\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Ordax},
+         familyi={O\bibinitperiod},
+         given={{\' A}lvaro},
+         giveni={{\' A}\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Perales},
+         familyi={P\bibinitperiod},
+         given={Jes{\' u}s},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJL}{%
+         family={S{\' a}ez},
+         familyi={S\bibinitperiod},
+         given={Jorge\bibnamedelima Luis},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SLC}{%
+         family={S{\' a}nchez},
+         familyi={S\bibinitperiod},
+         given={Lara\bibnamedelima Cristina},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AG+1}
+    \strng{fullhash}{AGMAMAdOAPJSJLSLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{UAV application in Search \& Rescue at sea}
+    \list{location}{1}{%
+      {UC3M}%
+    }
+    \field{month}{05}
+    \field{year}{2016}
+  \endentry
 
-\bibitem{daily2015}
-J.~Daily, ``Dull, dirty, dangerous - it's robot work,'' 02 2015.
+  \entry{airbusdemonstratesaircraftinspectionbydroneatfarnborough2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Airbus},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Airbus}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Airbus demonstrates aircraft inspection by drone at
+  Farnborough}
+    \verb{url}
+    \verb http://www.airbus.com/presscentre/pressreleases/press-release-detail/
+    \verb detail/airbus-demonstrates-aircraft-inspection-by-drone-at-farnboroug
+    \verb h-innovation-and-digitalisation-for-production-ramp-up/
+    \endverb
+    \field{month}{07}
+    \field{year}{2016}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{uasapplications2016}
-U.~aerial vehicle systems~association applications, ``Uas applications,'' 2016.
+  \entry{uasapplications2016}{online}{}
+    \name{author}{1}{}{%
+      {{hash=avsaaU}{%
+         prefix={aerial vehicle systems\bibnamedelima association},
+         prefixi={a\bibinitperiod\bibinitdelim v\bibinitperiod
+  s\bibinitperiod\bibinitdelim a\bibinitperiod},
+         family={applications},
+         familyi={a\bibinitperiod},
+         given={Unmanned},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{aUavsa1}
+    \strng{fullhash}{aUavsa1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{UAS Applications}
+    \verb{url}
+    \verb http://www.uavs.org/applications
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{aguado2016}
-G.~Aguado, {\' A}.~Melgosa, A.~de~Miguel, {\' A}.~Ordax, J.~Perales, J.~L. S{\'
-  a}ez, and L.~C. S{\' a}nchez, ``Uav application in search \& rescue at sea,''
-  UC3M, 05 2016.
+  \entry{asselin1972}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AR}{%
+         family={Asselin},
+         familyi={A\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AR1}
+    \strng{fullhash}{AR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{487\bibrangedash 490}
+    \field{title}{Frequency Filter for Time Integrations}
+    \field{journaltitle}{Monthly Weather Review}
+    \field{month}{06}
+    \field{year}{1972}
+  \endentry
 
-\bibitem{airbusdemonstratesaircraftinspectionbydroneatfarnborough2016}
-Airbus, ``Airbus demonstrates aircraft inspection by drone at farnborough,'' 07
-  2016.
+  \entry{unmannedaircraftsystemsperceptionsandpotentials2013}{report}{}
+    \name{author}{1}{}{%
+      {{hash=AAI}{%
+         family={Association},
+         familyi={A\bibinitperiod},
+         given={Aerospace\bibnamedelima Industries},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAI1}
+    \strng{fullhash}{AAI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Unmanned Aircraft Systems: Perceptions and Potentials}
+    \verb{url}
+    \verb http://www.aia-aerospace.org/assets/AIA\_UAS\_Report\_small.pdf
+    \endverb
+    \list{location}{1}{%
+      {Arlington}%
+    }
+    \field{type}{techreport}
+    \field{month}{05}
+    \field{year}{2013}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{valavanis2015}
-K.~P. Valavanis and G.~J. Vachtsevanos, {\em Handbook of Unmanned Aerial
-  Vehicles}.
-\newblock New York: Springer Reference, 2015.
+  \entry{vegaastorga2016}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ARV}{%
+         family={Astorga},
+         familyi={A\bibinitperiod},
+         given={Rub\'en\bibnamedelima Vega},
+         giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ARV1}
+    \strng{fullhash}{ARV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Simulation of an Unmanned Aerial Vehicle}
+    \list{location}{1}{%
+      {Legan\'es, Madrid}%
+    }
+    \list{institution}{1}{%
+      {Universidad Carlos III de Madrid}%
+    }
+    \field{type}{BSc Thesis}
+    \field{month}{06}
+    \field{year}{2016}
+  \endentry
 
-\bibitem{manualonremotelypilotedaircraftsystemsrpas2015}
-ICAO, ``Manual on remotely piloted aircraft systems (rpas),'' 2015.
+  \entry{ballard1982}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BDH}{%
+         family={Ballard},
+         familyi={B\bibinitperiod},
+         given={Dana\bibnamedelima H.},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BCM}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Christopher\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice Hall}%
+    }
+    \strng{namehash}{BDHBCM1}
+    \strng{fullhash}{BDHBCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{chapter}{2.2}
+    \field{title}{Computer vision}
+    \list{location}{1}{%
+      {New Jersey}%
+    }
+    \field{year}{1982}
+  \endentry
 
-\bibitem{ley182014de15deoctubredeaprobaciondemedidasurgentesparaelcrecimientolacompetitividadylaeficiencia2014}
-AESA, ``Ley 18/2014, de 15 de octubre, de aprobacion de medidas urgentes para
-  el crecimiento, la competitividad y la eficiencia,'' 10 2014.
+  \entry{beasley2015}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BR}{%
+         family={Beasley},
+         familyi={B\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BR1}
+    \strng{fullhash}{BR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{Magistral lecture}
+    \field{title}{Systems Engineering - What and why?}
+    \list{location}{1}{%
+      {University of Bristol}%
+    }
+    \field{month}{02}
+    \field{year}{2015}
+  \endentry
 
-\bibitem{regulationecno21620082008}
-EASA, ``Regulation (ec) no 216/2008,'' 02 2008.
+  \entry{bergqvist2014}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BP}{%
+         family={Bergqvist},
+         familyi={B\bibinitperiod},
+         given={Pia},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Flying Magazine}%
+    }
+    \strng{namehash}{BP1}
+    \strng{fullhash}{BP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Drone Jobs: What It Takes to Fly a UAV}
+    \verb{url}
+    \verb http://www.flyingmag.com/aircraft/drone-jobs-what-it-takes-fly-uav
+    \endverb
+    \field{month}{06}
+    \field{year}{2014}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{civilianunmannedaerialvehiclesreadyfortakeoff2012}
-``Civilian unmanned aerial vehicles ready for takeoff,'' tech. rep., 04 2012.
+  \entry{daily2015}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DJ}{%
+         family={Daily},
+         familyi={D\bibinitperiod},
+         given={Jim},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {GE Digital}%
+    }
+    \strng{namehash}{DJ1}
+    \strng{fullhash}{DJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Dull, dirty, dangerous - it's robot work}
+    \verb{url}
+    \verb https://www.ge.com/digital/blog/dull-dirty-dangerous-its-robot-work
+    \endverb
+    \field{day}{19}
+    \field{month}{02}
+    \field{year}{2015}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{unmannedaircraftsystemsperceptionsandpotentials2013}
-``Unmanned aircraft systems: Perceptions and potentials,'' tech. rep.,
-  Arlington, 05 2013.
+  \entry{dronecode2016}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Dronecode}
+    \verb{url}
+    \verb https://www.dronecode.org/
+    \endverb
+    \field{day}{28}
+    \field{month}{04}
+    \field{year}{2016}
+    \field{urlday}{03}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{bergqvist2014}
-P.~Bergqvist, ``Drone jobs: What it takes to fly a uav,'' 06 2014.
+  \entry{regulationecno21620082008}{legislation}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={EASA},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {EASA}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{note}{Annex II, p. 79/33}
+    \field{title}{Regulation (EC) No 216/2008}
+    \verb{url}
+    \verb http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:079:0
+    \verb 001:0049:EN:PDF
+    \endverb
+    \field{day}{20}
+    \field{month}{02}
+    \field{year}{2008}
+  \endentry
 
-\bibitem{whatissystemsengineering}
-INCOSE, ``What is systems engineering?.''
+  \entry{disposicin16097deboenm274de20112011}{legislation}{}
+    \name{author}{1}{}{%
+      {{hash=dEG}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={España},
+         familyi={E\bibinitperiod},
+         given={Gobierno},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Ministerio de la Presidencia}%
+    }
+    \strng{namehash}{EGd1}
+    \strng{fullhash}{EGd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{howpublished}{BOE-A-2011-16097}
+    \field{note}{Art. 23 \& 33}
+    \field{title}{Disposici\' on 16097 de BOE n\' um. 274 de 2011}
+    \verb{url}
+    \verb http://www.boe.es/boe/dias/2011/10/13/pdfs/BOE-A-2011-16097.pdf
+    \endverb
+    \field{day}{13}
+    \field{month}{10}
+    \field{year}{2011}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{nationalaeronauticsandspaceadministration2007}
-N.~Aeronautics and S.~Administration, {\em NASA systems engineering handbook}.
-\newblock Washington: US National Aeronautics and Space Admin, 1~ed., 12 2007.
+  \entry{arteta2015}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=FMA}{%
+         family={Fern\'andez},
+         familyi={F\bibinitperiod},
+         given={Maite\bibnamedelima Arteta},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMA1}
+    \strng{fullhash}{FMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Assembly, modeling, simulation and control of a quadcopter
+  for application to solar farm inspection}
+    \list{location}{1}{%
+      {Legan\'es, Madrid}%
+    }
+    \list{institution}{1}{%
+      {Universidad Carlos III de Madrid}%
+    }
+    \field{type}{BSc Thesis}
+    \field{month}{09}
+    \field{year}{2015}
+  \endentry
 
-\bibitem{disposicin16097deboenm274de20112011}
-``Disposici{\' o}n 16097 de boe n{\' u}m. 274 de 2011,'' 10 2011.
+  \entry{civilianunmannedaerialvehiclesreadyfortakeoff2012}{report}{}
+    \name{author}{1}{}{%
+      {{hash=GB}{%
+         family={Government},
+         familyi={G\bibinitperiod},
+         given={Bloomberg},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GB1}
+    \strng{fullhash}{GB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Civilian Unmanned Aerial Vehicles Ready For Takeoff}
+    \field{type}{techreport}
+    \field{month}{04}
+    \field{year}{2012}
+  \endentry
 
-\bibitem{assistantsecretaryofdefenseforresearchandengineering2011}
-A.~S. of~Defense~for Research and Engineering, ``Technology readiness
-  assessment (tra) guidance,'' tech. rep., USA, 04 2011.
+  \entry{hulsmeyer1904}{patent}{}
+    \name{author}{1}{}{%
+      {{hash=HC}{%
+         family={Hulsmeyer},
+         familyi={H\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HC1}
+    \strng{fullhash}{HC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Verfahren, um entfrente metallische Gegenst{\" a}nde mittels
+  elektrischer Wellen einem Beobachter zu meiden}
+    \verb{url}
+    \verb https://commons.wikimedia.org/wiki/File:DE165546.pdf
+    \endverb
+    \field{type}{patent}
+    \field{month}{04}
+    \field{year}{1904}
+    \field{urlday}{05}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{hulsmeyer1904}
-C.~Hulsmeyer, ``Verfahren, um entfrente metallische gegenst{\" a}nde mittels
-  elektrischer wellen einem beobachter zu meiden,'' 04 1904.
+  \entry{manualonremotelypilotedaircraftsystemsrpas2015}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={ICAO},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=I}{%
+         family={ICAO},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {International Civil Aviation Organization}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{edition}{1}
+    \field{title}{Manual on remotely piloted aircraft systems (RPAS)}
+    \list{location}{1}{%
+      {Montréal, Canada}%
+    }
+    \field{year}{2015}
+  \endentry
 
-\bibitem{krolik2005}
-J.~Krolik, ``Radar and sonar signal processing: Similarities and differences,''
-  05 2005.
+  \entry{whatissystemsengineering}{online}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={INCOSE},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{What is systems engineering?}
+    \verb{url}
+    \verb http://www.incose.org/AboutSE/WhatIsSE
+    \endverb
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{tooley2009}
-M.~Tooley and D.~Wyatt, {\em Aerospace engineering e-mega reference}.
-\newblock United Kingdom: Butterworth-Heinemann, 03 2009.
+  \entry{droneindustryinsights2016}{report}{}
+    \name{author}{1}{}{%
+      {{hash=IDI}{%
+         family={Insights},
+         familyi={I\bibinitperiod},
+         given={Drone\bibnamedelima Industry},
+         giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IDI1}
+    \strng{fullhash}{IDI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{TOP20 Drone Company Ranking Q2 2016}
+    \verb{url}
+    \verb http://www.droneii.com/project/drone-company-ranking-q2-2016
+    \endverb
+    \list{location}{1}{%
+      {Hamburg, Germany}%
+    }
+    \field{type}{techreport}
+    \field{month}{06}
+    \field{year}{2016}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{droneindustryinsights2016}
-D.~I. Insights, ``Top20 drone company ranking q2 2016,'' tech. rep., Hamburg,
-  Germany, 06 2016.
+  \entry{krolik2005}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KJ}{%
+         family={Krolik},
+         familyi={K\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Radar and Sonar Signal Processing: Similarities and
+  Differences}
+    \verb{url}
+    \verb http://people.ee.duke.edu/~jk/SAM%20Group_files/radarsonarcompare.pdf
+    \endverb
+    \field{month}{05}
+    \field{year}{2005}
+    \field{urlday}{06}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{dronecode2016}
-``Dronecode,'' 04 2016.
+  \entry{ogata2010}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OK}{%
+         family={Ogata},
+         familyi={O\bibinitperiod},
+         given={Katsuhiko},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice Hall}%
+    }
+    \strng{namehash}{OK1}
+    \strng{fullhash}{OK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{chapter}{8}
+    \field{edition}{5}
+    \field{isbn}{9780136156734}
+    \field{title}{Modern Control Engineering}
+    \field{year}{2010}
+  \endentry
 
-\bibitem{ogata2010}
-K.~Ogata, {\em Modern Control Engineering}.
-\newblock Prentice Hall, 5~ed., 2010.
+  \entry{assistantsecretaryofdefenseforresearchandengineering2011}{report}{}
+    \name{author}{2}{}{%
+      {{hash=oDfRAS}{%
+         prefix={of\bibnamedelima Defense\bibnamedelima for},
+         prefixi={o\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  f\bibinitperiod},
+         family={Research},
+         familyi={R\bibinitperiod},
+         given={Assistant\bibnamedelima Secretary},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=E}{%
+         family={Engineering},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {USA Department of Defence}%
+    }
+    \strng{namehash}{RASoDfE1}
+    \strng{fullhash}{RASoDfE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{2\bibrangedash 13 and 2\bibrangedash 14}
+    \field{title}{Technology Readiness Assessment (TRA) Guidance}
+    \list{location}{1}{%
+      {USA}%
+    }
+    \field{type}{techreport}
+    \field{month}{04}
+    \field{year}{2011}
+  \endentry
 
-\bibitem{beasley2015}
-R.~Beasley, ``Systems engineering - what and why?,'' 02 2015.
+  \entry{sasiadek2000}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SJ}{%
+         family={Sasiadek},
+         familyi={S\bibinitperiod},
+         given={J.Z.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WQ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Q.},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zeremba},
+         familyi={Z\bibinitperiod},
+         given={M.B.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJWQZM1}
+    \strng{fullhash}{SJWQZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Intelligent Control, 2000. Proceedings of the 2000 IEEE
+  International Symposium}
+    \field{pages}{181\bibrangedash 186}
+    \field{title}{Fuzzy adaptive Kalman filtering for INS/GPS data fusion}
+    \verb{url}
+    \verb http://ieeexplore.ieee.org/document/882920
+    \endverb
+    \field{year}{2000}
+    \field{urlday}{27}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{arteta2015}
-M.~Arteta, ``Assembly, modeling, simulation and control of a quadcopter for
-  application to solar farm inspection.'' BSc Thesis, 2015.
+  \entry{tooley2009}{book}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Tooley},
+         familyi={T\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wyatt},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=E}{%
+         family={Elsevier},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Butterworth-Heinemann}%
+    }
+    \strng{namehash}{TMWD1}
+    \strng{fullhash}{TMWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{edition}{1}
+    \field{isbn}{9781856175760}
+    \field{title}{Aerospace engineering e-mega reference}
+    \list{location}{1}{%
+      {United Kingdom}%
+    }
+    \field{day}{02}
+    \field{month}{03}
+    \field{year}{2009}
+  \endentry
 
-\bibitem{vegaastorga2016}
-R.~V. Astorga, ``Simulation of an unmanned aerial vehicle.'' BSc Thesis, 07
-  2016.
+  \entry{incoseuk2016}{booklet}{}
+    \name{author}{1}{}{%
+      {{hash=UI}{%
+         family={UK},
+         familyi={U\bibinitperiod},
+         given={INCOSE},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{UI1}
+    \strng{fullhash}{UI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{edition}{4}
+    \field{number}{Z3}
+    \field{title}{Why invest in Systems Engineering}
+    \verb{url}
+    \verb http://incoseonline.org.uk/Documents/zGuides/Z3_Why_invest_in_SE.pdf
+    \endverb
+    \field{month}{07}
+    \field{year}{2016}
+    \field{urlday}{14}
+    \field{urlmonth}{09}
+    \field{urlyear}{2016}
+  \endentry
 
-\bibitem{sasiadek2000}
-J.~Sasiadek, Q.~Wang, and M.~Zeremba, ``Fuzzy adaptive kalman filtering for
-  ins/gps data fusion,'' in {\em Proceedings of the 2000 IEEE International
-  Symposium}, 2000.
+  \entry{valavanis2015}{book}{}
+    \name{author}{2}{}{%
+      {{hash=VKP}{%
+         family={Valavanis},
+         familyi={V\bibinitperiod},
+         given={Kimon\bibnamedelima P.},
+         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=VGJ}{%
+         family={Vachtsevanos},
+         familyi={V\bibinitperiod},
+         given={George\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Reference}%
+    }
+    \strng{namehash}{VKPVGJ1}
+    \strng{fullhash}{VKPVGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{chapter}{75}
+    \field{pages}{1817\bibrangedash 1841}
+    \field{title}{Handbook of Unmanned Aerial Vehicles}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2015}
+  \endentry
 
-\bibitem{asselin1972}
-R.~Asselin, ``Frequency filter for time integrations,'' {\em Monthly Weather
-  Review}, pp.~487--490, 06 1972.
-
-\end{thebibliography}
+  \entry{wisniewski2016}{report}{}
+    \name{author}{2}{}{%
+      {{hash=WA}{%
+         family={Wisniewski},
+         familyi={W\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mazur},
+         familyi={M\bibinitperiod},
+         given={Michal},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Drone Powered Solutions}%
+    }
+    \strng{namehash}{WAMM1}
+    \strng{fullhash}{WAMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Clarity from above PwC global report on the commercial
+  applications of drone technology}
+    \verb{url}
+    \verb http://www.pwc.pl/pl/pdf/clarity-from-above-pwc.pdf
+    \endverb
+    \field{type}{techreport}
+    \field{month}{05}
+    \field{year}{2016}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+\endsortlist
+\endinput

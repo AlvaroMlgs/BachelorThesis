@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  13 SEP 2016 20:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  14 SEP 2016 13:15
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -1078,17 +1078,244 @@ Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip223
-\bibsep=\skip224
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count289
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
+Package: biblatex 2016/09/07 v3.5 programmable bibliographies (PK/JW/AB)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count289
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+\@xs@message=\write5
+\integerpart=\count290
+\decimalpart=\count291
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count292
+\c@listtotal=\count293
+\c@listcount=\count294
+\c@liststart=\count295
+\c@liststop=\count296
+\c@citecount=\count297
+\c@citetotal=\count298
+\c@multicitecount=\count299
+\c@multicitetotal=\count300
+\c@instcount=\count301
+\c@maxnames=\count302
+\c@minnames=\count303
+\c@maxitems=\count304
+\c@minitems=\count305
+\c@citecounter=\count306
+\c@savedcitecounter=\count307
+\c@uniquelist=\count308
+\c@uniquename=\count309
+\c@refsection=\count310
+\c@refsegment=\count311
+\c@maxextratitle=\count312
+\c@maxextratitleyear=\count313
+\c@maxextrayear=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\blx@maxsection=\count324
+\blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\blx@sectionciteorder@0=\count329
+\labelnumberwidth=\skip223
+\labelalphawidth=\skip224
+\biblabelsep=\skip225
+\bibnamesep=\skip226
+\bibinitsep=\skip227
+\bibparsep=\skip228
+\bibhang=\skip256
+\blx@bcfin=\read3
+\blx@bcfout=\write6
+\c@mincomprange=\count330
+\c@maxcomprange=\count331
+\c@mincompwidth=\count332
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def")
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count333
+\c@savedafterword=\count334
+\c@annotator=\count335
+\c@savedannotator=\count336
+\c@author=\count337
+\c@savedauthor=\count338
+\c@bookauthor=\count339
+\c@savedbookauthor=\count340
+\c@commentator=\count341
+\c@savedcommentator=\count342
+\c@editor=\count343
+\c@savededitor=\count344
+\c@editora=\count345
+\c@savededitora=\count346
+\c@editorb=\count347
+\c@savededitorb=\count348
+\c@editorc=\count349
+\c@savededitorc=\count350
+\c@foreword=\count351
+\c@savedforeword=\count352
+\c@holder=\count353
+\c@savedholder=\count354
+\c@introduction=\count355
+\c@savedintroduction=\count356
+\c@namea=\count357
+\c@savednamea=\count358
+\c@nameb=\count359
+\c@savednameb=\count360
+\c@namec=\count361
+\c@savednamec=\count362
+\c@translator=\count363
+\c@savedtranslator=\count364
+\c@shortauthor=\count365
+\c@savedshortauthor=\count366
+\c@shorteditor=\count367
+\c@savedshorteditor=\count368
+\c@labelname=\count369
+\c@savedlabelname=\count370
+\c@institution=\count371
+\c@savedinstitution=\count372
+\c@lista=\count373
+\c@savedlista=\count374
+\c@listb=\count375
+\c@savedlistb=\count376
+\c@listc=\count377
+\c@savedlistc=\count378
+\c@listd=\count379
+\c@savedlistd=\count380
+\c@liste=\count381
+\c@savedliste=\count382
+\c@listf=\count383
+\c@savedlistf=\count384
+\c@location=\count385
+\c@savedlocation=\count386
+\c@organization=\count387
+\c@savedorganization=\count388
+\c@origlocation=\count389
+\c@savedoriglocation=\count390
+\c@origpublisher=\count391
+\c@savedorigpublisher=\count392
+\c@publisher=\count393
+\c@savedpublisher=\count394
+\c@language=\count395
+\c@savedlanguage=\count396
+\c@pageref=\count397
+\c@savedpageref=\count398
+\shorthandwidth=\skip257
+\shortjournalwidth=\skip258
+\shortserieswidth=\skip259
+\shorttitlewidth=\skip260
+\shortauthorwidth=\skip261
+\shorteditorwidth=\skip262
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def"
+File: blx-compat.def 2016/09/07 v3.5 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\blx-bibtex.def"
+File: blx-bibtex.def 2016/09/07 v3.5 biblatex compatibility (PK/JW/AB)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
+File: biblatex.def 2016/09/07 v3.5 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count399
+\c@textcitetotal=\count400
+\c@textcitemaxnames=\count401
+\c@biburlnumpenalty=\count402
+\c@biburlucpenalty=\count403
+\c@biburllcpenalty=\count404
+\c@smartand=\count405
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx"
+File: numeric.bbx 2016/09/07 v3.5 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
+File: standard.bbx 2016/09/07 v3.5 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count406
+\c@bbx:relatedtotal=\count407
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx"
+File: numeric.cbx 2016/09/07 v3.5 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
+File: biblatex.cfg 
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2015/08/03 3.9m The Babel package
 
@@ -1103,11 +1330,11 @@ Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2015/08/03 3.9m Babel common definitions
-\babel@savecnt=\count290
+\babel@savecnt=\count408
 \U@D=\dimen179
 )
 \es@quottoks=\toks49
-\es@quotdepth=\count291
+\es@quotdepth=\count409
 Package babel Info: Making " an active character on input line 516.
 Package babel Info: Making . an active character on input line 617.
 Package babel Info: Making < an active character on input line 662.
@@ -1428,7 +1655,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count292
+\rownum=\count410
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -1456,19 +1683,10 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -1487,19 +1705,16 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
 \@linkdim=\dimen181
-\Hy@linkcounter=\count293
-\Hy@pagecounter=\count294
+\Hy@linkcounter=\count411
+\Hy@pagecounter=\count412
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count295
+\Hy@SavedSpaceFactor=\count413
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1511,10 +1726,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count296
+\c@Hy@tempcnt=\count414
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen182
-\Fld@menulength=\count297
+\Fld@menulength=\count415
 \Field@Width=\dimen183
 \Fld@charsize=\dimen184
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1526,34 +1741,34 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count298
-\c@Item=\count299
-\c@Hfootnote=\count300
+\Hy@abspage=\count416
+\c@Item=\count417
+\c@Hfootnote=\count418
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\memoir\memhfixc.sty"
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count301
-\c@Hpagenote=\count302
+\c@memhycontfloat=\count419
+\c@Hpagenote=\count420
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count303
-\c@bookmark@seq@number=\count304
+\Fld@listcount=\count421
+\c@bookmark@seq@number=\count422
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip225
+\Hy@SectionHShift=\skip263
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 201.
+(hyperref)                setting the option has no effect on input line 212.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mdwtools\footnote.sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
@@ -1563,18 +1778,18 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks52
-\MT@count=\count305
+\MT@count=\count423
 LaTeX Info: Redefining \textls on input line 774.
 \MT@outer@kern=\dimen186
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
-\MT@listname@count=\count306
+\MT@listname@count=\count424
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
 File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 916.
 LaTeX Info: Redefining \lslig on input line 916.
-\MT@outer@space=\skip226
+\MT@outer@space=\skip264
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -1595,7 +1810,7 @@ File: pppdftex.def 2016/04/13 v0.5e Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box43
 \AM@toc@title=\toks53
-\c@AM@survey=\count307
+\c@AM@survey=\count425
 \AM@templatesizebox=\box44
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
@@ -1661,12 +1876,12 @@ ode.tex"
 \pgf@yb=\dimen196
 \pgf@xc=\dimen197
 \pgf@yc=\dimen198
-\w@pgf@writea=\write5
-\r@pgf@reada=\read3
-\c@pgf@counta=\count308
-\c@pgf@countb=\count309
-\c@pgf@countc=\count310
-\c@pgf@countd=\count311
+\w@pgf@writea=\write7
+\r@pgf@reada=\read4
+\c@pgf@counta=\count426
+\c@pgf@countb=\count427
+\c@pgf@countc=\count428
+\c@pgf@countd=\count429
 \t@pgf@toka=\toks58
 \t@pgf@tokb=\toks59
 \t@pgf@tokc=\toks60
@@ -1687,8 +1902,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
 code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count312
-\pgfsyssoftpath@bigbuffer@items=\count313
+\pgfsyssoftpath@smallbuffer@items=\count430
+\pgfsyssoftpath@bigbuffer@items=\count431
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
 code.tex"
@@ -1703,7 +1918,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
 "
 \pgfmath@dimen=\dimen199
-\pgfmath@count=\count314
+\pgfmath@count=\count432
 \pgfmath@box=\box46
 \pgfmath@toks=\toks61
 \pgfmath@stack@operand=\toks62
@@ -1728,7 +1943,7 @@ code.tex")
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
 erarithmetics.code.tex")))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count315
+\c@pgfmathroundto@lastzeros=\count433
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
 de.tex"
@@ -1766,7 +1981,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box47
 \pgf@hbox=\box48
 \pgf@layerbox@main=\box49
-\pgf@picture@serial@count=\count316
+\pgf@picture@serial@count=\count434
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
 ate.code.tex"
@@ -1801,7 +2016,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen223
-\pgf@sys@shading@range@num=\count317
+\pgf@sys@shading@range@num=\count435
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
 e.tex"
@@ -1860,7 +2075,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
 dlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count318
+\pgf@plot@mark@count=\count436
 \pgfplotmarksize=\dimen226
 )
 \tikz@lastx=\dimen227
@@ -1873,19 +2088,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box53
 \tikz@tempbox=\box54
 \tikz@tempbox@bg=\box55
-\tikztreelevel=\count319
-\tikznumberofchildren=\count320
-\tikznumberofcurrentchild=\count321
-\tikz@fig@count=\count322
+\tikztreelevel=\count437
+\tikznumberofchildren=\count438
+\tikznumberofcurrentchild=\count439
+\tikz@fig@count=\count440
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
 e.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count323
-\pgfmatrixcurrentcolumn=\count324
-\pgf@matrix@numberofcolumns=\count325
+\pgfmatrixcurrentrow=\count441
+\pgfmatrixcurrentcolumn=\count442
+\pgf@matrix@numberofcolumns=\count443
 )
-\tikz@expandcount=\count326
+\tikz@expandcount=\count444
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarytopaths.code.tex"
@@ -1936,22 +2151,22 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfcalendar.code.
 tex"
 File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count327
+\pgfcalendarcurrentjulian=\count445
 ))
-\gtt@currentline=\count328
-\gtt@lasttitleline=\count329
-\gtt@currgrid=\count330
-\gtt@chartwidth=\count331
-\gtt@lasttitleslot=\count332
-\gtt@elementid=\count333
-\gtt@today@slot=\count334
-\gtt@startjulian=\count335
-\gtt@endjulian=\count336
-\gtt@calendar@slots=\count337
-\gtt@calendar@weeknumber=\count338
-\gtt@calendar@startofweek=\count339
-\gtt@left@slot=\count340
-\gtt@right@slot=\count341
+\gtt@currentline=\count446
+\gtt@lasttitleline=\count447
+\gtt@currgrid=\count448
+\gtt@chartwidth=\count449
+\gtt@lasttitleslot=\count450
+\gtt@elementid=\count451
+\gtt@today@slot=\count452
+\gtt@startjulian=\count453
+\gtt@endjulian=\count454
+\gtt@calendar@slots=\count455
+\gtt@calendar@weeknumber=\count456
+\gtt@calendar@startofweek=\count457
+\gtt@left@slot=\count458
+\gtt@right@slot=\count459
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibraryshapes.code.tex"
@@ -2024,7 +2239,7 @@ s.code.tex"
 \pgfdecoratedinputsegmentcompleteddistance=\dimen263
 \pgfdecoratedinputsegmentremainingdistance=\dimen264
 \pgf@decorate@distancetomove=\dimen265
-\pgf@decorate@repeatstate=\count342
+\pgf@decorate@repeatstate=\count460
 \pgfdecorationsegmentamplitude=\dimen266
 \pgfdecorationsegmentlength=\dimen267
 )
@@ -2064,7 +2279,7 @@ s\circuits\tikzlibrarycircuits.code.tex"
 s\tikzlibrarydecorations.markings.code.tex"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgfli
 brarydecorations.markings.code.tex"))
-\tikz@lib@circ@count=\count343
+\tikz@lib@circ@count=\count461
 \tikzcircuitssizeunit=\dimen268
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\circuits\p
@@ -2076,45 +2291,45 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box79
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count344
+\lst@mode=\count462
 \lst@gtempboxa=\box80
 \lst@token=\toks66
-\lst@length=\count345
+\lst@length=\count463
 \lst@currlwidth=\dimen269
-\lst@column=\count346
-\lst@pos=\count347
+\lst@column=\count464
+\lst@pos=\count465
 \lst@lostspace=\dimen270
 \lst@width=\dimen271
-\lst@newlines=\count348
-\lst@lineno=\count349
+\lst@newlines=\count466
+\lst@lineno=\count467
 \lst@maxwidth=\dimen272
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count350
-\lst@skipnumbers=\count351
+\c@lstnumber=\count468
+\lst@skipnumbers=\count469
 \lst@framebox=\box81
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-\c@loadepth=\count352
-\c@acronym=\count353
-\c@proofcount=\count354
+\c@loadepth=\count470
+\c@acronym=\count471
+\c@proofcount=\count472
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lettrine\lettrine.sty"
 File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
-\c@DefaultLines=\count355
-\c@DefaultDepth=\count356
+\c@DefaultLines=\count473
+\c@DefaultDepth=\count474
 \DefaultFindent=\dimen273
 \DefaultNindent=\dimen274
 \DefaultSlope=\dimen275
 \DiscardVskip=\dimen276
 \L@lbox=\box82
 \L@tbox=\box83
-\c@L@lines=\count357
-\c@L@depth=\count358
+\c@L@lines=\count475
+\c@L@depth=\count476
 \L@Pindent=\dimen277
 \L@Findent=\dimen278
 \L@Nindent=\dimen279
@@ -2130,84 +2345,101 @@ File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
 
 Loading lettrine.cfg
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lettrine\lettrine.cfg"))
-\c@theo=\count359
-\c@prop=\count360
-\c@dfn=\count361
-\c@lema=\count362
-\c@cor=\count363
-\c@resu=\count364
+\c@theo=\count477
+\c@prop=\count478
+\c@dfn=\count479
+\c@lema=\count480
+\c@cor=\count481
+\c@resu=\count482
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
+File: english.lbx 2016/09/07 v3.5 biblatex localization (PK/JW/AB)
+)
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\spanish.lbx"
+File: spanish.lbx 2016/09/07 v3.5 biblatex localization (PK/JW/AB)
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count483
+\@quotereset=\count484
 (memoirthesis.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 358.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 35
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 370.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 37
+0.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\fmlfncmi.fd"
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 358.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 358
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 370.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 370
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\fmsfncm.fd"
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 358.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 358
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 370.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 370
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 358.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 358.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 370.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 370.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 358.
-LaTeX Font Info:    ... okay on input line 358.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 358.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 370.
+LaTeX Font Info:    ... okay on input line 370.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 370.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\t1fnc.fd"
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 358.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 358.
+(Font)              scaled to size 10.18341pt on input line 370.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 370.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 358.
+Package layouts Warning: Layout scale set to 0.5 on input line 370.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count365
+\scratchcounter=\count485
 \scratchdimen=\dimen289
 \scratchbox=\box84
-\nofMPsegments=\count366
-\nofMParguments=\count367
+\nofMPsegments=\count486
+\nofMParguments=\count487
 \everyMPshowfont=\toks67
-\MPscratchCnt=\count368
+\MPscratchCnt=\count488
 \MPscratchDim=\dimen290
-\MPnumerator=\count369
-\makeMPintoPDFobject=\count370
+\MPnumerator=\count489
+\makeMPintoPDFobject=\count490
 \everyMPtoPDFconversion=\toks68
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -2220,8 +2452,20 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'memoirthesis.bbl' found.
+
+(memoirthesis.bbl)
+Package biblatex Info: Reference section=0 on input line 370.
+Package biblatex Info: Reference segment=0 on input line 370.
 \AtBeginShipoutBox=\box85
-Package hyperref Info: Link coloring OFF on input line 358.
+Package hyperref Info: Link coloring OFF on input line 370.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2229,17 +2473,17 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count371
+\c@section@level=\count491
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 358.
-LaTeX Info: Redefining \ref on input line 358.
-LaTeX Info: Redefining \pageref on input line 358.
-LaTeX Info: Redefining \nameref on input line 358.
+LaTeX Info: Redefining \nameref on input line 370.
+LaTeX Info: Redefining \ref on input line 370.
+LaTeX Info: Redefining \pageref on input line 370.
+LaTeX Info: Redefining \nameref on input line 370.
 (memoirthesis.out) (memoirthesis.out)
-\@outlinefile=\write6
-LaTeX Info: Redefining \microtypecontext on input line 358.
+\@outlinefile=\write8
+LaTeX Info: Redefining \microtypecontext on input line 370.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2263,15 +2507,15 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count372
+\c@lstlisting=\count492
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 358.
+t line 370.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 358.
+t line 370.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 358.
+line 370.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 358.
+line 370.
  (frontmatter/title.tex
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2337,7 +2581,7 @@ l.29 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.386 \clearemptydoublepage
+l.398 \clearemptydoublepage
                             [2
 
 
@@ -2349,31 +2593,31 @@ l.386 \clearemptydoublepage
 ]
 (memoirthesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 2.
+(Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 3.
+(Font)              scaled to size 7.71893pt on input line 7.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 3.
+(Font)              scaled to size 5.57996pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
+(Font)              scaled to size 10.07397pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
+(Font)              scaled to size 7.63599pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 3.
+(Font)              scaled to size 5.51999pt on input line 7.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fouriernc\fmlfncm.fd"
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
+(Font)              scaled to size 10.07397pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
+(Font)              scaled to size 7.63599pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+(Font)              scaled to size 5.51999pt on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2381,7 +2625,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2389,20 +2633,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 3.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
-LaTeX Font Info:    Try loading font information for U+lasy on input line 3.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 3.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -2411,51 +2655,51 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 ) [5]
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 71.
+(Font)              scaled to size 9.29993pt on input line 143.
 
 [6]
-Overfull \hbox (1.75146pt too wide) detected at line 100
+Overfull \hbox (1.75146pt too wide) detected at line 201
  \T1/fnc/b/n/10.95 101
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 101
+Overfull \hbox (1.75146pt too wide) detected at line 203
  \T1/fnc/b/n/10.95 103
  []
 
 [7]
-Overfull \hbox (1.75146pt too wide) detected at line 102
+Overfull \hbox (1.75146pt too wide) detected at line 205
  \T1/fnc/b/n/10.95 107
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 103
+Overfull \hbox (1.75146pt too wide) detected at line 207
  \T1/fnc/b/n/10.95 109
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 104
+Overfull \hbox (1.75146pt too wide) detected at line 209
  \T1/fnc/b/n/10.95 111
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 105
+Overfull \hbox (1.75146pt too wide) detected at line 211
  \T1/fnc/b/n/10.95 113
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 106
+Overfull \hbox (1.75146pt too wide) detected at line 213
  \T1/fnc/b/n/10.95 117
  []
 
 ) [8] (memoirthesis.lof
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 10.18341pt on input line 2.
+(Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 7.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
+(Font)              scaled to size 8.36993pt on input line 15.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 15.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2465,15 +2709,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 7.
+(Font)              scaled to size 7.06795pt on input line 15.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 7.
+(Font)              scaled to size 8.27998pt on input line 15.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 7.
+(Font)              scaled to size 6.99199pt on input line 15.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 7.
+(Font)              scaled to size 8.27998pt on input line 15.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 7.
+(Font)              scaled to size 6.99199pt on input line 15.
  [9
 
 ]) [10]
@@ -3417,7 +3661,7 @@ Package pdftex.def Info: chapters/appendices/./files/threads.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 448.0pt x 189.45985pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--462
+Underfull \hbox (badness 10000) in paragraph at lines 4--474
 
  []
 
@@ -3439,7 +3683,7 @@ Package pdftex.def Info: chapters/appendices/./files/logging.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 448.0pt x 112.66287pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--465
+Underfull \hbox (badness 10000) in paragraph at lines 4--477
 
  []
 
@@ -3460,7 +3704,7 @@ Package pdftex.def Info: chapters/appendices/./files/connect.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 448.0pt x 317.45482pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--468
+Underfull \hbox (badness 10000) in paragraph at lines 4--480
 
  []
 
@@ -4013,7 +4257,7 @@ Package pdftex.def Info: chapters/appendices/./files/wpa_suplicant.pdf used on
 input line 6.
 (pdftex.def)             Requested size: 448.0pt x 138.04842pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--489
+Underfull \hbox (badness 10000) in paragraph at lines 4--501
 
  []
 
@@ -4193,33 +4437,49 @@ Package pdftex.def Info: chapters/appendices/./files/observe.pdf, page2 used on
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
  [115 <./chapters/appendices/./files/observe.pdf>]) [116
 
-] (memoirthesis.bbl [117
+]
+
+Package biblatex Warning: No driver for entry type 'legislation'.
+(biblatex)                Using fallback driver on input line 521.
+
+[117
 
 
-]) [118]
+]
+
+Package biblatex Warning: No driver for entry type 'legislation'.
+(biblatex)                Using fallback driver on input line 521.
+
+
+Package biblatex Warning: No driver for entry type 'legislation'.
+(biblatex)                Using fallback driver on input line 521.
+
+[118]
 
 Package nag Warning: 33 complaints in total.
 
-\tf@toc=\write7
-\tf@lof=\write8
-\tf@lot=\write9
-\tf@loa=\write10
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 514.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 514.
-(memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 514.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 514.
+[119]
+\tf@toc=\write9
+\tf@lof=\write10
+\tf@lot=\write11
+\tf@loa=\write12
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
+ (memoirthesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 (rerunfilecheck)             Checksum: 8ED61EEA9FB24FF4CD51CD7688A99AD4;6546.
+Package logreq Info: Writing requests to 'memoirthesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 38118 strings out of 493673
- 721225 string characters out of 3141524
- 1071301 words of memory out of 3000000
- 39797 multiletter control sequences out of 15000+200000
- 136840 words of font info for 344 fonts, out of 3000000 for 9000
+ 43863 strings out of 493673
+ 832037 string characters out of 3141524
+ 1418995 words of memory out of 3000000
+ 45430 multiletter control sequences out of 15000+200000
+ 139786 words of font info for 383 fonts, out of 3000000 for 9000
  1032 hyphenation exceptions out of 8191
- 61i,18n,99p,1046b,1468s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,18n,99p,1046b,3325s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/eurosym/feybr10.pfb><C:/Program Files (x86)/MiKTeX
@@ -4237,9 +4497,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (134 pages, 30200302 bytes).
+Output written on memoirthesis.pdf (135 pages, 30228463 bytes).
 PDF statistics:
- 2329 PDF objects out of 2487 (max. 8388607)
+ 2394 PDF objects out of 2487 (max. 8388607)
  366 named destinations out of 1000 (max. 500000)
  58708 words of extra memory for PDF output out of 61914 (max. 10000000)
 
