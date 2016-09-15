@@ -164,7 +164,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.3}System testing}{60}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Results}{60}{section.7.2}
+\contentsline {section}{\numberline {7.2}Results}{61}{section.7.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2.1}Ultrasonic rangefinders}{61}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
@@ -172,42 +172,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2.3}UAS + OCAS}{63}{subsection.7.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Conclusions}{65}{chapter.8}
+\contentsline {chapter}{\chapternumberline {8}Conclusions}{67}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Summary of contributions}{66}{section.8.1}
+\contentsline {section}{\numberline {8.1}Summary of contributions}{68}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Future work}{67}{section.8.2}
+\contentsline {section}{\numberline {8.2}Future work}{69}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{69}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}Creation of GCS wireless network}{71}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{71}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}SSH connection with the GCS}{73}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{75}{appendix.C}
+\contentsline {appendix}{\chapternumberline {C}Technical documentation of the HC-SR04 rangefinder}{77}{appendix.C}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {D}Threads.py}{79}{appendix.D}
+\contentsline {appendix}{\chapternumberline {D}Threads.py}{81}{appendix.D}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {E}Logging setup}{81}{appendix.E}
+\contentsline {appendix}{\chapternumberline {E}Logging setup}{83}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {F}Connect.py}{83}{appendix.F}
+\contentsline {appendix}{\chapternumberline {F}Connect.py}{85}{appendix.F}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {G}Sonar.py}{85}{appendix.G}
+\contentsline {appendix}{\chapternumberline {G}Sonar.py}{87}{appendix.G}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {H}Control.py}{89}{appendix.H}
+\contentsline {appendix}{\chapternumberline {H}Control.py}{91}{appendix.H}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {I}Auto.py}{93}{appendix.I}
+\contentsline {appendix}{\chapternumberline {I}Auto.py}{95}{appendix.I}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {J}Main.py}{95}{appendix.J}
+\contentsline {appendix}{\chapternumberline {J}Main.py}{97}{appendix.J}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{101}{appendix.K}
+\contentsline {appendix}{\chapternumberline {K}Temperature sensitivity of ultrasonic rangefinders}{103}{appendix.K}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{103}{appendix.L}
+\contentsline {appendix}{\chapternumberline {L}GUI.pyw}{105}{appendix.L}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{107}{appendix.M}
+\contentsline {appendix}{\chapternumberline {M}Raspberry Pi's interfaces configuration}{109}{appendix.M}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{109}{appendix.N}
+\contentsline {appendix}{\chapternumberline {N}SonarDriver.py}{111}{appendix.N}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{111}{appendix.O}
+\contentsline {appendix}{\chapternumberline {O}Channel 7 script trigger}{113}{appendix.O}
 \defcounter {refsection}{0}\relax 
-\contentsline {appendix}{\chapternumberline {P}Observe.py}{113}{appendix.P}
+\contentsline {appendix}{\chapternumberline {P}Observe.py}{115}{appendix.P}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{117}{section*.53}
+\contentsline {chapter}{Bibliography}{119}{section*.54}

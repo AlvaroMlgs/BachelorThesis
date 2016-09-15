@@ -79,8 +79,10 @@ In addition, in the Windows version of the GUI application, the option to launch
 
 \subsection{System testing}
 
+\input{./figures/obstacle.tex}
+
 As the last step in the validation process, the OCAS shall be tested as a complete system in a realistic scenario.
-For that purpose, the full operative UAS was taken to a flight field and flown against a simulated soft (cardboard) obstacle to avoid any serious damage in case of failure.
+For that purpose, the full operative UAS was taken to a flight field and flown against a simulated soft (cardboard) obstacle to avoid any serious damage in case of failure, as shown in Figure \ref{fig:obstacle}.
 In this stage, the logs (defined in Section \ref{sec:logging}) acquire maximum importance since they allow to compare and contrast the data and sequence of events with the video footage from the tests.
 
 
@@ -138,17 +140,20 @@ Finally, it is necessary to confirm that each of the subsystems are properly int
 After a realistic test flight, the logged information provides some valuable insight on the execution of the tasks and their effectiveness to actually avoid the collision with foreign obstacles.
 
 For the selected flight test, vast amounts of data are recorded (more than 5000 individual messages) containing information on the complete state of the UAV as recorded from all the onboard sensors.
-Fortunately, since the particular script that was run defined as the avoidance manoeuvre to command a climb of the vehicle, the different stages of the flight can be easily recognised from the relative altitude plot depicted in Figure \ref{fig:flight}.
+Fortunately, since the particular script that was run defined as the avoidance manoeuvre to command a climb of the vehicle and the vehicle was flying mostly forward during the test, the different stages of the flight can be easily recognised from the relative altitude and the y-position with respect to the take off location in the body-fixed reference frame plots, depicted in Figures \ref{fig:h_flight} and \ref{fig:y_flight}, respectively.
+
 Additionally to Ardupilot's logs, the data recorded from the Python script itself is overlayed to show the precise moments at which commands are being sent to the UAV, and its response to them, indicating who is in control of the vehicle as the test progresses.
 Furthermore, from the telemetry logs the flight modes of the UAV at any instant of time can be extracted, as are displayed at the bottom of the plot.
 
 \input{./figures/flight.tex}
 
-As it can be seen, the initial stages of the flight are quite unsteady while the pilot tries to approach the testing obstacle.
-Then, when the ultrasonic rangefinders determine that the state of the UAV with respect to the obstacle is not safe enough, the Guided mode gets activated (after a $\approx$1 second delay), and the vehicle stabilises trying to keep the position of activation of the mode while the command is sent.
-A set of functions translates the position that lies exactly 3 metres over the actual position of the UAV at the time of the computation and sends the MAVlink message to Ardupilot, which starts to climb to the commanded location, which will be maintained until the pilot is given back control.
+As it can be seen, the initial stages of the flight are quite unsteady on the altitude side while the pilot tries to approach the testing obstacle.
+Then, when the ultrasonic rangefinders determine that the state of the UAV with respect to the obstacle is not safe enough, the Guided mode gets activated (after a $\approx$1 second delay), and the vehicle stabilises trying to keep the position of activation of the mode and effectively stopping the UAV while the command is sent.
+A set of functions translates the position that lies exactly 4 metres over the actual position of the UAV at the time of the computation and sends the MAVlink message to Ardupilot, which starts to climb to the commanded location, which will be maintained until the pilot is given back control.
+Notice that the GPS localisation is only accurate up to one metre, and small variations can be seen on the horizontal position of the UAV for that reason, while the altitude is better maintained during the Guided phase as a result of the more precise barometer.
+
 After a small delay, the Python script assumes that the UAV has reached the commanded location, and proceeds to return control to the pilot, which takes $\approx$2 seconds.
-The control of the vehicle is given back to the pilot in Loiter mode, since it allows for adjustments in the horizontal plane and the vertical controls behave similarly to Altitude Hold mode (see Chapter \ref{chap:ardupilot}), allowing for a smooth transition.
+The control of the vehicle is given back to the pilot in Loiter mode, since it allows for adjustments in the horizontal plane while the vertical controls behave similarly to Altitude Hold mode (see Chapter \ref{chap:ardupilot}), allowing for a smooth transition.
 Finally, the pilot changes back to Stabilize mode and performs the landing manually.
-Notice that the landing altitude lies 2 metres below the reference take off altitude; such discrepancy is due to the fact that the take off was done from an elevated site to avoid false-positive activation of the avoidance stage by the reflection of the ultrasonic signals on the ground itself.
+Observe that the landing altitude lies 2 metres below the reference take off altitude; such discrepancy is due to the fact that the take off was done from an elevated site to avoid false-positive activation of the avoidance stage by the reflection of the ultrasonic signals on the ground itself.
 
