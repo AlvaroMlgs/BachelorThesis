@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  15 SEP 2016 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  15 SEP 2016 23:53
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -3372,12 +3372,12 @@ ine 4.
 ) [62] [63 <./chapters/testing/./figures/leganes.png>] (chapters/testing/./figu
 res/flight.tex
 Package epstopdf Info: Source file: <chapters/testing/./figures/h_flight.eps>
-(epstopdf)                    date: 2016-09-15 23:43:17
-(epstopdf)                    size: 238501 bytes
+(epstopdf)                    date: 2016-09-15 23:53:38
+(epstopdf)                    size: 247245 bytes
 (epstopdf)             Output file: <chapters/testing/./figures/h_flight-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2016-09-15 21:27:02
-(epstopdf)                    size: 15935 bytes
+(epstopdf)                    date: 2016-09-15 23:52:33
+(epstopdf)                    size: 15023 bytes
 (epstopdf)             Command: <epstopdf --outfile=chapters/testing/./figures/
 h_flight-eps-converted-to.pdf chapters/testing/./figures/h_flight.eps>
 (epstopdf)             \includegraphics on input line 5.
@@ -3386,8 +3386,8 @@ to.pdf chapters/testing/./figures/h_flight.eps)...executed (allowed).
 
 Package epstopdf Info: Result file: <chapters/testing/./figures/h_flight-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2016-09-15 23:43:57
-(epstopdf)                    size: 14997 bytes.
+(epstopdf)                    date: 2016-09-15 23:54:15
+(epstopdf)                    size: 15021 bytes.
 
 <chapters/testing/./figures/h_flight-eps-converted-to.pdf, id=1303, 603.25375pt
  x 201.75375pt>
@@ -3398,12 +3398,12 @@ Package pdftex.def Info: chapters/testing/./figures/h_flight-eps-converted-to.p
 df used on input line 5.
 (pdftex.def)             Requested size: 448.0pt x 149.828pt.
 Package epstopdf Info: Source file: <chapters/testing/./figures/y_flight.eps>
-(epstopdf)                    date: 2016-09-15 23:43:12
-(epstopdf)                    size: 219226 bytes
+(epstopdf)                    date: 2016-09-15 23:53:53
+(epstopdf)                    size: 226280 bytes
 (epstopdf)             Output file: <chapters/testing/./figures/y_flight-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2016-09-15 21:27:02
-(epstopdf)                    size: 14195 bytes
+(epstopdf)                    date: 2016-09-15 23:52:34
+(epstopdf)                    size: 13188 bytes
 (epstopdf)             Command: <epstopdf --outfile=chapters/testing/./figures/
 y_flight-eps-converted-to.pdf chapters/testing/./figures/y_flight.eps>
 (epstopdf)             \includegraphics on input line 10.
@@ -3412,8 +3412,8 @@ to.pdf chapters/testing/./figures/y_flight.eps)...executed (allowed).
 
 Package epstopdf Info: Result file: <chapters/testing/./figures/y_flight-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2016-09-15 23:43:58
-(epstopdf)                    size: 13216 bytes.
+(epstopdf)                    date: 2016-09-15 23:54:16
+(epstopdf)                    size: 13188 bytes.
 
 <chapters/testing/./figures/y_flight-eps-converted-to.pdf, id=1304, 603.25375pt
  x 201.75375pt>
@@ -4537,7 +4537,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (137 pages, 31512701 bytes).
+Output written on memoirthesis.pdf (137 pages, 31512699 bytes).
 PDF statistics:
  2416 PDF objects out of 2487 (max. 8388607)
  369 named destinations out of 1000 (max. 500000)
