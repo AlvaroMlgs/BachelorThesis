@@ -73,8 +73,8 @@
 		\draw[loosely dashdotted,thick] (pilot) -- node[above,sloped]{RC} (uav);
 		\draw[thick] (pilot) -- node[above,sloped]{Physical} (gcs);
 		\draw[dashed,thick] (uav) -- node[above,sloped]{Telemetry} (gcs);
-		\draw[thick,decorate,decoration={coil,aspect=0,segment length=0.9cm}] (ocas) -- node[below=2mm,sloped]{MAVlink} (uav);
-		\draw[thick,decorate,decoration={expanding waves,angle=6,segment length=2mm}] (ocas) -- node[below=2mm,sloped]{SSH (WiFi)} (gcs);
+		\draw[thick,decorate,decoration={coil,aspect=0,segment length=0.9cm}] (ocas) -- node[below=2mm,sloped]{\small MAVlink (USB)} (uav);
+		\draw[thick,decorate,decoration={expanding waves,angle=6,segment length=2mm}] (ocas) -- node[below=2mm,sloped]{\small SSH (WiFi)} (gcs);
 
 	\end{tikzpicture}
 

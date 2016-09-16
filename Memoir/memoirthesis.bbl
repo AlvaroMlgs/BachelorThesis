@@ -465,6 +465,40 @@
     \field{urlyear}{2016}
   \endentry
 
+  \entry{faulconbridge2003}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FRI}{%
+         family={Faulconbridge},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima Ian},
+         giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=RMJ}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={Michael\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Artech House}%
+    }
+    \strng{namehash}{FRIRMJ1}
+    \strng{fullhash}{FRIRMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{chapter}{4.3.2}
+    \field{pages}{100\bibrangedash 103}
+    \field{title}{Managing Complex Technical Projects: A Systems Engineering
+  Approach}
+    \list{location}{1}{%
+      {Norwood, MA, USA}%
+    }
+    \field{year}{2003}
+  \endentry
+
   \entry{arteta2015}{thesis}{}
     \name{author}{1}{}{%
       {{hash=FMA}{%
