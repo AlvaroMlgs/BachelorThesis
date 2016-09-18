@@ -1,0 +1,29 @@
+
+\documentclass{minimal}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+	\centering
+	\begin{tikzpicture}
+		
+		\tikzstyle{function}=[rectangle,
+			fill=teal!50,draw=black,semithick,
+			minimum height=1.2cm,minimum width=2cm,inner sep=2mm,
+			align=center,node distance=2cm]
+
+		\node[function]	(reqs)	{Requirements};
+		\node[function,below right of=reqs,xshift=2cm]	(logical)	{Logical\\ decomposition};
+		\node[function,below right of=logical,xshift=2cm]	(design)	{Implementation};
+
+		\draw[->,>=stealth,thick,out=0,in=90] (reqs) to node[fill=white,inner sep=-1mm,xshift=2mm,align=center]{\footnotesize Requirements\\\footnotesize  loop} (logical);
+		\draw[<-,>=stealth,thick,out=270,in=180] (reqs) to (logical);
+
+		\draw[->,>=stealth,thick,out=0,in=90] (logical) to node[fill=white,inner sep=-1mm,align=center]{\footnotesize Design\\\footnotesize  loop} (design);
+		\draw[<-,>=stealth,thick,out=270,in=180] (logical) to (design);
+
+	\end{tikzpicture}
+
+\end{document}
