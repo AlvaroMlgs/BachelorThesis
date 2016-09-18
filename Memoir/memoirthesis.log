@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  17 SEP 2016 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  18 SEP 2016 21:30
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -2995,57 +2995,47 @@ LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
 
 
 ] (chapters/design/./tables/sysReqs.tex
-Underfull \hbox (badness 1009) in paragraph at lines 23--23
+Overfull \hbox (1.46057pt too wide) in paragraph at lines 7--7
+ [][]|\T1/fnc/m/n/10.95 (-20) Req. 
+ []
+
+
+Overfull \hbox (14.07452pt too wide) in alignment at lines 4--7
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (14.07452pt too wide) in alignment at lines 7--7
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 24--24
 []|\T1/fnc/m/n/10.95 (+20) The OCAS shall not in-ter-fere with ex-ist-ing
  []
 
 
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 23--23
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
+Overfull \hbox (14.07452pt too wide) in alignment at lines 7--38
+ [] [] [] [] [] 
  []
 
 
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 24--24
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
+Underfull \vbox (badness 10000) detected at line 38
  []
 
 
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 34--34
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
+Overfull \hbox (2.34848pt too wide) in paragraph at lines 62--62
+ [][]|\T1/fnc/m/n/10.95 (-20) 10.1| 
  []
 
 
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 35--35
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
+Overfull \hbox (2.34848pt too wide) in paragraph at lines 66--66
+ [][]|\T1/fnc/m/n/10.95 (-20) 11.1| 
  []
 
 
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 36--36
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 37
- []
-
-
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 37--37
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
- []
-
-
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 42--42
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
- []
-
-
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 52--52
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
- []
-
-
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 53--53
- []|\T1/fnc/m/n/10.95 (-20) Communications| 
+Overfull \hbox (14.07452pt too wide) in alignment at lines 38--73
+ [] [] [] [] [] 
  []
 
 [24]) [25] (chapters/design/./figures/decomposition.tex)
@@ -4525,7 +4515,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (137 pages, 31513803 bytes).
+Output written on memoirthesis.pdf (137 pages, 31513763 bytes).
 PDF statistics:
  2421 PDF objects out of 2487 (max. 8388607)
  370 named destinations out of 1000 (max. 500000)
