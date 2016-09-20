@@ -393,14 +393,14 @@ Performing the Taylor expansion to that equation at both the previous data point
 
 Summing both equations together:
 \begin{equation}
-	x_1+x_2=2x_0+\frac{dx}{dt}\Bigg\rvert_{t_0}
+	x_1+x_2=2x_0-\frac{dx}{dt}\Bigg\rvert_{t_0}
 		\left[\left(t_0-t_1\right)+\left(t_0-t_2\right)\right]
 	\label{eq:finite}
 \end{equation}
 
 Since $\frac{dx}{dt}\big\rvert_{t_0}=v$:
 \begin{equation}
-	v\left(t_0\right)=v_0=\frac{x_1+x_2-2x_0}{2t_0-t_1-t_2}
+	v\left(t_0\right)=v_0=\frac{2x_0-x_1-x_2}{2t_0-t_1-t_2}
 	\label{eq:finitediff}
 \end{equation}
 
