@@ -1,41 +1,33 @@
+\documentclass[10pt]{beamer}
 
-\documentclass[9pt]{beamer}
+\usepackage{graphicx}
+%\usepackage{multimedia}
+\usepackage{media9}
+\usepackage{tikz}
+	\usetikzlibrary{calc}
 
-%\usetheme{Frankfurt}
-\useoutertheme{miniframes}
-\useinnertheme{circles}
+\setlength{\paperwidth}{25.4cm}
+\setlength{\paperheight}{19.05cm}
 
-\DefineNamedColor{named}{blue}{rgb}{0.12196,0.35804,0.65686}
-\DefineNamedColor{named}{teal}{rgb}{0,0.5,0.5}
-\setbeamercolor*{structure}{fg=teal,bg=white}
-
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc} % Allows for accents
-\usepackage{lmodern}
-
-\usepackage{graphicx} % Allows including images
-\usepackage{hyperref}
-\usepackage{epstopdf}
-\usepackage[compatibility=false]{caption}
-\usepackage{subcaption}
-
-
-
-\title[UAV Planning, Autonomous Tracking, and Obstacle Identification and Avoidance]{\Huge UAV Planning, Autonomous Tracking, and Obstacle Identification and Avoidance}
-
-\author{Álvaro Melgosa Pascual} % Your name
-\institute[UC3M]{Universidad Carlos III Madrid, Leganés}
-\date{ 11$^\text{th}$ October 2016} % Date, can be changed to a custom date
 
 \begin{document}
 
-\begin{frame}
-	\titlepage
-\end{frame}
+\usebackgroundtemplate{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle (\the\paperwidth,\the\paperheight); 
+	  \node at (current page.center) {\includegraphics[width=\the\paperwidth]{slide6.pdf}};
+  %\path[fill=teal] (0,0) rectangle (2.59cm,\the\paperheight);
+  %\node[anchor=center] at (2.59cm/2,\the\paperheight-2.59cm/2){
+  %	\includegraphics[height=1.4cm,clip,trim={0 0 2.1cm 0}]{./logos/logoUC3Mwhite.png}
+  %	};
+  \end{tikzpicture}
+}
 
 \begin{frame}
-	
+	%\movie[width=20.6cm,height=11.59cm,showcontrols]{}{./videos/Gizmodo_DJI_Phantom_4.mp4}
+	\includemedia[width=20.6cm,height=11.59cm]{}{./videos/Gizmodo_DJI_Phantom_4.mp4}
 \end{frame}
+
 
 
 \end{document}
