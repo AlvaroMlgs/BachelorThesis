@@ -1,6 +1,6 @@
 
 \begin{figure}[hbtp]
-\centering
+\hspace{-2em}
 	\begin{tikzpicture}
 		
 		\tikzstyle{reference}=[ellipse,
@@ -24,7 +24,7 @@
 		\node[logic,right of=start-mission]	(start-and)	{and};
 		\node[function,above right of=start-and]	(detect)	{3.0/ Detect\\ obstacle};
 		\node[function,right of=detect]	(avoid)	{4.0/ Avoid\\ collision};
-		\node[function,right of=start-and,xshift=2cm]	(UAV)	{5.0/ Communicate\\ with UAV};
+		\node[function,right of=start-and,xshift=2.1cm]	(UAV)	{5.0/ Communicate\\ with UAV};
 		\node[function,below right of=start-and]	(GCS)	{6.0/ Communicate\\ with GCS};
 		\node[function,below of=start-mission,yshift=-1cm]	(power)	{7.0/ Provide\\ power};
 		\node[function,right of=UAV,xshift=1.5cm]	(end-mission)	{8.0/ Terminate\\ mission};
@@ -101,7 +101,7 @@
 
 
 \begin{figure}[hbtp]
-\centering
+\hspace{-2em}
 	\begin{tikzpicture}
 		
 		\tikzstyle{reference}=[rectangle,rounded corners=0.5cm,

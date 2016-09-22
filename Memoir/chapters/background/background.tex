@@ -46,7 +46,7 @@ These can vary depending on the type of vehicle (for example the yaw command aff
 
 Every Ardupilot controller board must have at least and Inertial Measurement Unit (IMU) consisting of a 3-axis accelerometer plus a 3-axis gyroscope for the state determination of the vehicle.
 Additionally, a barometer, a GPS and other sensors can be integrated.
-Hence, reading the pilot's commands from the RC receiver and the state of the vehicle from the IMU, the output to the control elements can be computed by some regular PID control loops (more information on the topic can be found at \cite{ogata2010}).
+Hence, reading the pilot's commands from the RC receiver and the state of the vehicle from the IMU, the output to the control elements can be computed by some regular PID control loops (more information on the topic can be found in \cite{ogata2010}).
 To the output pins of the controller board are connected the control elements, be it some servo-motors for the control surfaces of a fixed-wing aircraft or brushless motors with propellers for the case of a multicopter.
 These elements are externally powered by the primary battery.
 
@@ -83,7 +83,7 @@ Secondly, a wireless data-link provides a much more flexible way of interacting 
 \subsection{Flight modes}
 
 Ardupilot has separated the mentioned advanced features in different flight modes, which can be activated with the 5$^{\text{th}}$ channel on the RC transmitter or from the GCS.
-At the time of writing, there are 15 different flight modes, but just the most relevant ones for the project will be described here.
+At the time of writing, there are 15 different flight modes, but only the most relevant ones for the project will be described here.
 A summary of the most important features can be found in Table \ref{tab:modes}.
 
 From this point onwards the concepts involving Ardupilot will be particularised for the quadcopter variant, since it is the type of aircraft that will be used for the prototype.

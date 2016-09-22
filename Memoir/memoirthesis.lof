@@ -62,7 +62,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.2}{\ignorespaces OCAS-equiped UAS architecture\relax }}{37}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Chosen ultrasonic rangefinder: HC-SR04. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {arduinolearning.com}}\relax }}{38}{figure.caption.34}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Chosen ultrasonic rangefinder: HC-SR04. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {arduinolearning.com}}\relax }}{39}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.4}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Raspberry Pi 2 Model B. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {raspberrypi.org}}\relax }}{39}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
@@ -80,25 +80,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.11}{\ignorespaces MAVproxy setup\relax }}{45}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Functional flow diagram of the Python script\relax }}{48}{figure.caption.44}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Functional flow diagram of the Python script\relax }}{49}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Prediction of a collision by the OCAS\relax }}{52}{figure.caption.45}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Prediction of a collision by the OCAS\relax }}{53}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.14}{\ignorespaces Graphical User Interface\relax }}{55}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Default F450 configuration. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {rcgroups.com}}\relax }}{55}{figure.caption.47}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Default F450 configuration. {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep \parsepi \topsep \topsepi \itemsep \itemsepi {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Source: \url {rcgroups.com}}\relax }}{56}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.16}{\ignorespaces Final platform architecture\relax }}{56}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Testing obstacle\relax }}{60}{figure.caption.49}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Testing obstacle\relax }}{62}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Ultrasonic rangefinder FOV test setup\relax }}{61}{figure.caption.50}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Ultrasonic rangefinder FOV test setup\relax }}{63}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Initial testing site within the city\relax }}{63}{figure.caption.51}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Initial testing site within the city\relax }}{65}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Results of the flight test\relax }}{64}{figure.caption.52}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Results of the flight test\relax }}{66}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 

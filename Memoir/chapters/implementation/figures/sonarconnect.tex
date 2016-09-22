@@ -3,17 +3,17 @@
 	\begin{tikzpicture}
 
 		\node(rpi){\includegraphics[width=0.5\textwidth,trim={0 6cm 0 0},clip]{./figures/gpio.png}};
-		\node[above=15mm of rpi,xshift=-1.2cm](sonar){\includegraphics[width=0.3\textwidth,trim={0 2mm 0 2mm},clip]{./figures/hc-sr04.jpg}};
+		\node[above=15mm of rpi,xshift=-1.2cm](sonar){\includegraphics[width=0.2\textwidth,trim={0 2mm 0 2mm},clip]{./figures/hc-sr04.jpg}};
 
-		\coordinate(VCC) at ($(sonar.south)+(-3.8mm,5mm)$);
-		\coordinate(TRIG) at ($(sonar.south)+(-1.5mm,5mm)$);
-		\coordinate(ECHO) at ($(sonar.south)+(1mm,5mm)$);
-		\coordinate(GND) at ($(sonar.south)+(3.3mm,5mm)$);
+		\coordinate(VCC) at ($(sonar.south)+(-2.7mm,4mm)$);
+		\coordinate(TRIG) at ($(sonar.south)+(-1.1mm,4mm)$);
+		\coordinate(ECHO) at ($(sonar.south)+(0.7mm,4mm)$);
+		\coordinate(GND) at ($(sonar.south)+(2.3mm,4mm)$);
 
-		\coordinate(v) at ($(sonar.south)+(-3.8mm,0)$);
-		\coordinate(t) at ($(sonar.south)+(-1.5mm,-2mm)$);
-		\coordinate(e) at ($(sonar.south)+(1mm,-7mm)$);
-		\coordinate(g) at ($(sonar.south)+(3.3mm,-15mm)$);
+		\coordinate(v) at ($(sonar.south)+(-2.7mm,0)$);
+		\coordinate(t) at ($(sonar.south)+(-1.1mm,-2mm)$);
+		\coordinate(e) at ($(sonar.south)+(0.7mm,-7mm)$);
+		\coordinate(g) at ($(sonar.south)+(2.3mm,-15mm)$);
 
 		\coordinate(vcc) at ($(rpi.north west)+(17.6mm,-5.7mm)$);
 		\coordinate(gnd) at ($(rpi.north west)+(20.8mm,-5.7mm)$);

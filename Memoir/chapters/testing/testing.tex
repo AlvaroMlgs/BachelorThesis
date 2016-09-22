@@ -36,7 +36,7 @@ Thus, for a more convenient debugging option, an static IP interface was selecte
 Finally, in order to resemble the described setting on the Raspberry Pi, the configuration must be done by modifying the \texttt{interfaces} file which is present in all Debian-based Operating Systems at /etc/network/interfaces.
 The specific file for the OCAS computer board is copied in Appendix \ref{app:interfaces} for completeness, together with an example of the \texttt{wpa\_suplicant.conf} file which holds the parameters for the wireless network connections.
 
-In terms of the evaluation of the connection, considering the scope of the project, it is considered that the interface is successfully connected if the communication is responsive and stable, which can be certainly proven by construction\footnote{From Wolfram Mathworld: A constructive proof is a proof that directly provides a specific example, or which gives an algorithm for producing an example. Constructive proofs are also called demonstrative proofs}, following the steps in Appendices \ref{app:network} and \ref{app:ssh}.
+In terms of the evaluation of the connection, within the scope of the project, it is considered that the interface is successfully connected if the communication is responsive and stable, which can be certainly proven by construction\footnote{From Wolfram Mathworld: A constructive proof is a proof that directly provides a specific example, or which gives an algorithm for producing an example. Constructive proofs are also called demonstrative proofs}, following the steps in Appendices \ref{app:network} and \ref{app:ssh}.
 
 \subsubsection{Ultrasonic rangefinders} \label{sec:sonartest}
 
@@ -44,7 +44,7 @@ The selected HC-SR04 sensors are mainly built to be connected to Arduino microco
 Hence, in order to obtain some familiarity with their usage, as documented by the manufacturer (see Appendix \ref{app:sonar-doc}), the operation was initially made from an Arduino Mega board, which would trigger the ultrasonic signal and receive the processed echo to be transformed into the distance to the closest obstacle.
 
 Ensuring that all the connections on the Arduino board were successful, the following logical step is to perform the same test from the Raspberry Pi, which inherits the inclusion of the voltage dividers (Figure \ref{fig:voltage}) and the Python GPIO libraries.
-It was during this stage that the \texttt{Sonar} class was developed, requiring only a ``driver'' file that would make calls to the \texttt{Sonar}'s methods, which can be found in Appendix \ref{app:sonarDriver}.
+It was during this stage that the \texttt{Sonar} class was developed, requiring only a ``driver'' file which would make calls to the \texttt{Sonar}'s methods, and can be found in Appendix \ref{app:sonarDriver}.
 
 Apart from triggering the ultrasonic rangefinders, the driver file would print the measured distance for any amount of attached sensors and display a graph with their values together with the calculated velocity, to help with their study in the Results section.
 
@@ -132,7 +132,7 @@ Furthermore, the GPS signals can rebound on the walls of buildings, effectively 
 Once the possible source of error was pointed down, the only action needed to verify or discard it was to move to a countryside location for the tests, which indeed proved the multipath error to be the source of the unwanted behaviour of the UAV in the preceeding tests.
 
 The lesson to be learnt from these events is the dependence of the Guided mode on a high quality GPS signal, which implies that the solution presented in this thesis is not still applicable to indoor nor urban flight; at least not if the control commands encode information on the global location of the UAV.
-Nevertheless, in future work, some control procedures could be implemented in order to consider the input streams from the ultrasonic rangefinder as the main source of information for the navigation algorithms, overriding the RC transmitter channels directly instead of commanding higher level ``go-to'' manoeuvres to the Ardupilot control board.
+Nevertheless, in future work, some control procedures could be implemented in order to consider the input streams from the ultrasonic rangefinders as the main source of information for the navigation algorithms, overriding the RC transmitter channels directly instead of commanding higher level ``go-to'' manoeuvres to the Ardupilot control board.
 
 \subsection{UAS + OCAS}
 
@@ -155,5 +155,6 @@ Notice that the GPS localisation is only accurate up to one metre, and small var
 After a small delay, the Python script assumes that the UAV has reached the commanded location, and proceeds to return control to the pilot, which takes $\approx$2 seconds.
 The control of the vehicle is given back to the pilot in Loiter mode, since it allows for adjustments in the horizontal plane while the vertical controls behave similarly to Altitude Hold mode (see Chapter \ref{chap:ardupilot}), allowing for a smooth transition.
 Finally, the pilot changes back to Stabilize mode and performs the landing manually.
+
 Observe that the landing altitude lies 2 metres below the reference take off altitude; such discrepancy is due to the fact that the take off was done from an elevated site to avoid false-positive activation of the avoidance stage by the reflection of the ultrasonic signals on the ground itself.
 

@@ -708,6 +708,36 @@
     \field{year}{2010}
   \endentry
 
+  \entry{otto1991}{inbook}{}
+    \name{author}{2}{}{%
+      {{hash=OKN}{%
+         family={Otto},
+         familyi={O\bibinitperiod},
+         given={Kevin\bibnamedelima N.},
+         giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=AEK}{%
+         family={Antonsson},
+         familyi={A\bibinitperiod},
+         given={Erik\bibnamedelima K.},
+         giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OKNAEK1}
+    \strng{fullhash}{OKNAEK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{chapter}{2}
+    \field{maintitle}{Research in Engineering Design}
+    \field{number}{2}
+    \field{pages}{87\bibrangedash 104}
+    \field{title}{Trade-off Strategies in Engineering Design}
+    \field{volume}{3}
+    \field{year}{1991}
+  \endentry
+
   \entry{assistantsecretaryofdefenseforresearchandengineering2011}{report}{}
     \name{author}{2}{}{%
       {{hash=oDfRAS}{%

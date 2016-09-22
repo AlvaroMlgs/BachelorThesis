@@ -30,15 +30,11 @@ If the signal reaches a solid object on its path, the electromagnetic wave will 
 The distance of the detected object is calculated by measuring the flight time of the signal since it was emitted until it is detected, applying the signal propagation speed ($3 \times 10^{^8} m/s$ for electromagnetic waves) as correction factor.
 The azimuth position of the object can be estimated if the initial signal was created by a highly directional antenna, since the orientation of the transmitting antenna can be measured, and the sensed object must be contained within the electromagnetic radiation field.
 
+\input{./figures/antenna.tex}
+
 The fact that radar uses electromagnetic waves implies that the response time can be very low, although some technical issues may arise for the same fact at the time of processing the returned signal.
 For that reason, radar-based sensor systems focus on temporal processing techniques to improve the results of the measurements \cite{krolik2005}.
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{./figures/antennaPattern.jpg}
-	\caption{Highly directional radiation pattern. {\footnotesize Source: \url{cisco.com}}}
-	\label{fig:antenna}
-\end{figure}
 
 \subsection{Sonar}
 
@@ -48,7 +44,7 @@ However, instead of being electromagnetic waves, the carriers are sound waves, w
 It is important to mention that the calculation of distance from the flight time of the rebounded signal is to some degree dependent on the environment:
 The speed of propagation of sound depends on the temperature of the medium through which it propagates as $a=\sqrt{\gamma R_g T}$.
 Thus, the temperature of the air should be monitored to compensate for variations during the flight.
-Fortunately, the error associated with temperature changes around room temperature is of the same order than the accuracy of the sensor itself, so it is safe to consider ambient temperature at the initial calibration stage only and assume it stays constant thereafter, since it can be proven that for the measurement of distance to an object at approximately 1 metre, the error due to a temperature change of 10 K is of the order of 1 milimetre (the complete demonstration can be found in Appendix \ref{app:temperature}).
+Fortunately, the error associated with temperature changes around room temperature is of the same order than the accuracy of the sensor itself, so it is safe to consider ambient temperature at the initial calibration stage only and assume it stays constant thereafter.
 
 \subsection{Lidar}
 
