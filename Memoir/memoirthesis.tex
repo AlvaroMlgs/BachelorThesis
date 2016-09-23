@@ -227,8 +227,17 @@
 				petri,topaths,trees,
 				fit,circuits.ee.IEC}	%To use diverse features from tikz		
 \usepackage[gen]{eurosym}
+%\usepackage[scaled=0.85]{luximono}			%Monospaced font
 \usepackage{listings}					%To include source code in the document
-	\renewcommand*{\ttdefault}{lmtt}	%A better font for teletype (monospaced) family
+	%\renewcommand*{\ttdefault}{lmtt}	%A better font for teletype (monospaced) family
+	\lstset{
+		  language=Python,
+		  breaklines=true,                 % automatic line breaking only at whitespace
+		  showstringspaces=false,
+		  tabsize=4,
+		  commentstyle=\itshape,
+		  basicstyle=\linespread{0.85}\ttfamily,
+		}
 %\usepackage{tocloft} % Already included with the memoir class
 	\newlistof{listofacronyms}{loa}{List of Acronyms}
 	\newcounter{acronym}[chapter]
