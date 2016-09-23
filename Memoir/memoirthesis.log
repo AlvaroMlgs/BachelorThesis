@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  23 SEP 2016 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.1)  23 SEP 2016 20:56
 entering extended mode
 **memoirthesis.tex
 (memoirthesis.tex
@@ -3299,39 +3299,39 @@ used on input line 3.
 )
 [55 <./chapters/implementation/./figures/GUIwin.png> <./chapters/implementation
 /./figures/GUIlinux.png>] (chapters/implementation/./figures/f450.tex
-<chapters/implementation/./figures/f450/front.png, id=1228, 3276.24pt x 2457.18
+<chapters/implementation/./figures/f450/front.png, id=1228, 1638.12pt x 1228.59
 pt>
 File: chapters/implementation/./figures/f450/front.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/front.png>
 Package pdftex.def Info: chapters/implementation/./figures/f450/front.png used 
 on input line 5.
-(pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
+(pdftex.def)             Requested size: 201.59863pt x 151.19254pt.
 
-<chapters/implementation/./figures/f450/side.png, id=1229, 3276.24pt x 2457.18p
+<chapters/implementation/./figures/f450/side.png, id=1229, 1638.12pt x 1228.59p
 t>
 File: chapters/implementation/./figures/f450/side.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/side.png>
 Package pdftex.def Info: chapters/implementation/./figures/f450/side.png used o
 n input line 10.
-(pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
+(pdftex.def)             Requested size: 201.59863pt x 151.19254pt.
 
-<chapters/implementation/./figures/f450/top.png, id=1230, 3276.24pt x 2457.18pt
+<chapters/implementation/./figures/f450/top.png, id=1230, 1638.12pt x 1228.59pt
 >
 File: chapters/implementation/./figures/f450/top.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/top.png>
 Package pdftex.def Info: chapters/implementation/./figures/f450/top.png used on
  input line 15.
-(pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
+(pdftex.def)             Requested size: 201.59863pt x 151.19254pt.
 
-<chapters/implementation/./figures/f450/back.png, id=1231, 3276.24pt x 2457.18p
+<chapters/implementation/./figures/f450/back.png, id=1231, 1638.12pt x 1228.59p
 t>
 File: chapters/implementation/./figures/f450/back.png Graphic file (type png)
  <use chapters/implementation/./figures/f450/back.png>
 Package pdftex.def Info: chapters/implementation/./figures/f450/back.png used o
 n input line 20.
-(pdftex.def)             Requested size: 201.59863pt x 151.17378pt.
+(pdftex.def)             Requested size: 201.59863pt x 151.19254pt.
 ))
-Underfull \vbox (badness 2762) has occurred while \output is active []
+Underfull \vbox (badness 2744) has occurred while \output is active []
 
  [56 <./chapters/implementation/./figures/f450/f450-stock.png> <./chapters/impl
 ementation/./figures/f450/front.png> <./chapters/implementation/./figures/f450/
@@ -4519,7 +4519,7 @@ rw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntr
 sbk/uncbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/unc
 r8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb
 >
-Output written on memoirthesis.pdf (139 pages, 31491484 bytes).
+Output written on memoirthesis.pdf (139 pages, 19348958 bytes).
 PDF statistics:
  2531 PDF objects out of 2984 (max. 8388607)
  373 named destinations out of 1000 (max. 500000)
